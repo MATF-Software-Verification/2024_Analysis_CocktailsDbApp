@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # 2024_Analysis_CocktailsDbApp
 
 ## Project Description  
@@ -76,7 +74,7 @@ Contact: dragana.zdravkovic602@gmail.com
 - Android Studio or Android SDK
 - Gradle
 - Homebrew (macOS) or package manager
-- Git
+
 
 ### Installation Steps
 
@@ -97,22 +95,11 @@ Contact: dragana.zdravkovic602@gmail.com
 
 3. **Run analysis tools:**
    ```bash
-   bash ktlint/run_ktlint.sh
-   bash detekt/run_detekt.sh
-   bash junit/run_tests.sh
-   bash espresso/run_espresso.sh
+   bash ktlint/run_ktlint.sh           # Code style analysis
+   bash detekt/run_detekt.sh           # Static code analysis
+   bash junit/run_tests.sh             # Unit tests with Kover coverage
+   bash espresso/run_espresso.sh       # Instrumented tests with JaCoCo coverage
    ```
-
-## Running Tools
-
-Run each tool individually:
-
-```bash
-bash ktlint/run_ktlint.sh           # Code style analysis
-bash detekt/run_detekt.sh           # Static code analysis
-bash junit/run_tests.sh             # Unit tests with Kover coverage
-bash espresso/run_espresso.sh       # Instrumented tests with JaCoCo coverage
-```
 
 ## Reports Location
 
@@ -124,8 +111,7 @@ All analysis reports are generated in tool-specific `results/` directories:
 
 - **detekt:** `detekt/results/`
   - `detekt-report.html` - HTML report
-  - `detekt-report.txt` - Text summary
-  - `detekt-report.xml` - XML format
+  - `detekt-report.md` - Markdown summary
 
 - **JUnit Tests:** `junit/results/`
   - Android unit tests
@@ -139,16 +125,7 @@ All analysis reports are generated in tool-specific `results/` directories:
 
 ## Reproducing Results
 
-Each tool has a dedicated script that can be executed independently:
-
-```bash
-bash ktlint/run_ktlint.sh          # Kotlin code style analysis
-bash detekt/run_detekt.sh          # Static code analysis
-bash junit/run_tests.sh            # Unit tests + Kover coverage
-bash espresso/run_espresso.sh      # Instrumented tests + JaCoCo coverage
-```
-
-All scripts are self-contained and generate reports in their respective `results/` directories.
+All scripts are self-contained and generate reports in their respective `results/` directories. Each tool can be executed independently using the commands shown in the Setup Instructions section above.
 
 ---
 
