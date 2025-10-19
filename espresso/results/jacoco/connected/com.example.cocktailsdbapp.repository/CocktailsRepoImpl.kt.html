@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CocktailsRepoImpl.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.repository</a> &gt; <span class="el_source">CocktailsRepoImpl.kt</span></div><h1>CocktailsRepoImpl.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.repository
+
+import com.example.cocktailsdbapp.database.CocktailDao
+import com.example.cocktailsdbapp.database.RoomCocktail
+import com.example.cocktailsdbapp.database.RoomFavorite
+import com.example.cocktailsdbapp.model.AlcoholContentResponse
+import com.example.cocktailsdbapp.model.CocktailDetailsResponse
+import com.example.cocktailsdbapp.model.CocktailResponse
+import com.example.cocktailsdbapp.model.FilterResponse
+import com.example.cocktailsdbapp.model.GlassesResponse
+import com.example.cocktailsdbapp.model.IngredientListResponse
+import com.example.cocktailsdbapp.network.CocktailApiService
+import com.example.cocktailsdbapp.utils.toCocktailsResponse
+
+<span class="fc" id="L15">class CocktailsRepoImpl(private val serviceApi: CocktailApiService, private val cocktailDao: CocktailDao): CocktailsRepo {</span>
+    override suspend fun getCocktailsByAlcoholContent(alcoholContent: String): CocktailResponse {
+<span class="fc" id="L17">        return serviceApi.getCocktailsByAlcoholContent(alcoholContent)</span>
+    }
+
+    override suspend fun getCocktailsByGlass(glass: String): CocktailResponse {
+<span class="nc" id="L21">        return serviceApi.getCocktailsByGlass(glass)</span>
+    }
+
+    override suspend fun getCocktailsByCategory(category: String): CocktailResponse {
+<span class="nc" id="L25">        return serviceApi.getCocktailsByCategory(category)</span>
+    }
+
+    override suspend fun getCocktailsByFirstLetter(letter: String): CocktailResponse {
+<span class="nc" id="L29">        return serviceApi.getCocktailsByFirstLetter(letter)</span>
+    }
+
+    override suspend fun getCocktailsByIngredient(ingredient: String): CocktailResponse {
+<span class="nc" id="L33">        return serviceApi.getCocktailsByIngredient(ingredient)</span>
+    }
+
+    override suspend fun getAlcoholContent(): AlcoholContentResponse {
+<span class="nc" id="L37">        return serviceApi.getAlcoholContent()</span>
+    }
+
+    override suspend fun getCategories(): FilterResponse {
+<span class="nc" id="L41">        return serviceApi.getCategories()</span>
+    }
+
+    override suspend fun getGlasses(): GlassesResponse {
+<span class="nc" id="L45">        return serviceApi.getGlasses()</span>
+    }
+
+    override suspend fun getIngredients(): IngredientListResponse {
+<span class="nc" id="L49">        return serviceApi.getIngredients()</span>
+    }
+
+    override suspend fun getCocktailDetails(cocktailId: String): CocktailDetailsResponse {
+<span class="fc" id="L53">         return serviceApi.getCocktailDetails(cocktailId)</span>
+    }
+
+<span class="nc" id="L56">    override suspend fun getSearch(searchParam: String): CocktailResponse {</span>
+<span class="nc" id="L57">        val response = serviceApi.getSearch(searchParam)</span>
+<span class="nc" id="L58">        return response.toCocktailsResponse()</span>
+    }
+
+    override suspend fun getFavorites(userEmail: String): List&lt;RoomCocktail&gt;? {
+<span class="fc" id="L62">        return cocktailDao.getFavoriteCocktails(userEmail)</span>
+    }
+
+    override suspend fun findFavoriteCocktail(userEmail: String, idDrink: String): RoomCocktail? {
+<span class="nc" id="L66">        return cocktailDao.findFavoriteCocktail(userEmail, idDrink)</span>
+    }
+
+    override suspend fun removeFavorite(userEmail: String, idDrink: String) {
+<span class="nc" id="L70">        cocktailDao.removeFavorite(userEmail, idDrink)</span>
+<span class="nc" id="L71">    }</span>
+
+    override suspend fun insertCocktail(userEmail: String, roomCocktail: RoomCocktail) {
+<span class="nc" id="L74">        cocktailDao.insertCocktail(roomCocktail)</span>
+<span class="nc" id="L75">        cocktailDao.insertFavorite(RoomFavorite(userEmail, roomCocktail.idDrink))</span>
+<span class="nc" id="L76">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

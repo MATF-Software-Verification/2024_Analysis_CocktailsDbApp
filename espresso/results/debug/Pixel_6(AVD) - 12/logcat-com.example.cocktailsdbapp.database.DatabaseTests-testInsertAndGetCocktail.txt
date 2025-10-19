@@ -1,0 +1,2 @@
+10-20 00:56:59.148  1545  1569 I TestRunner: started: testInsertAndGetCocktail(com.example.cocktailsdbapp.database.DatabaseTests)
+10-20 00:56:59.226  1545  1569 I TestRunner: finished: testInsertAndGetCocktail(com.example.cocktailsdbapp.database.DatabaseTests)

@@ -1,0 +1,2616 @@
+# 2025-10-19T23:01:05.067Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 50
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "com.example.cocktailsdbapp"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1760914627
+      nanos: 296000000
+    }
+    end_time {
+      seconds: 1760914627
+      nanos: 329000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "DatabaseTests"
+    test_package: "com.example.cocktailsdbapp.database"
+    test_method: "testInsertAndGetCocktail"
+    start_time {
+      seconds: 1760914627
+      nanos: 348000000
+    }
+    end_time {
+      seconds: 1760914627
+      nanos: 380000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testInsertAndGetCocktail.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "DatabaseTests"
+    test_package: "com.example.cocktailsdbapp.database"
+    test_method: "testDeleteCocktail"
+    start_time {
+      seconds: 1760914627
+      nanos: 382000000
+    }
+    end_time {
+      seconds: 1760914627
+      nanos: 413000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testDeleteCocktail.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "DatabaseTests"
+    test_package: "com.example.cocktailsdbapp.database"
+    test_method: "testUserIsolation"
+    start_time {
+      seconds: 1760914627
+      nanos: 415000000
+    }
+    end_time {
+      seconds: 1760914627
+      nanos: 444000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testUserIsolation.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "DatabaseTests"
+    test_package: "com.example.cocktailsdbapp.database"
+    test_method: "testGetAllFavorites"
+    start_time {
+      seconds: 1760914627
+      nanos: 445000000
+    }
+    end_time {
+      seconds: 1760914627
+      nanos: 477000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testGetAllFavorites.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NetworkTest"
+    test_package: "com.example.cocktailsdbapp.network"
+    test_method: "testNetworkConnectivity"
+    start_time {
+      seconds: 1760914627
+      nanos: 478000000
+    }
+    end_time {
+      seconds: 1760914627
+      nanos: 651000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.network.NetworkTest-testNetworkConnectivity.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NetworkTest"
+    test_package: "com.example.cocktailsdbapp.network"
+    test_method: "testApiEndpointConfiguration"
+    start_time {
+      seconds: 1760914627
+      nanos: 682000000
+    }
+    end_time {
+      seconds: 1760914627
+      nanos: 684000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.network.NetworkTest-testApiEndpointConfiguration.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "MainActivityTest"
+    test_package: "com.example.cocktailsdbapp.ui"
+    test_method: "testActivityIsNotDestroyed"
+    start_time {
+      seconds: 1760914627
+      nanos: 685000000
+    }
+    end_time {
+      seconds: 1760914630
+      nanos: 36000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityIsNotDestroyed.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "MainActivityTest"
+    test_package: "com.example.cocktailsdbapp.ui"
+    test_method: "testActivityHasWindowFocus"
+    start_time {
+      seconds: 1760914630
+      nanos: 38000000
+    }
+    end_time {
+      seconds: 1760914631
+      nanos: 110000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityHasWindowFocus.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "MainActivityTest"
+    test_package: "com.example.cocktailsdbapp.ui"
+    test_method: "testMainActivityLaunches"
+    start_time {
+      seconds: 1760914631
+      nanos: 141000000
+    }
+    end_time {
+      seconds: 1760914632
+      nanos: 194000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testMainActivityLaunches.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "MainActivityTest"
+    test_package: "com.example.cocktailsdbapp.ui"
+    test_method: "testActivityLifecycle"
+    start_time {
+      seconds: 1760914632
+      nanos: 196000000
+    }
+    end_time {
+      seconds: 1760914633
+      nanos: 346000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityLifecycle.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "MainActivityTest"
+    test_package: "com.example.cocktailsdbapp.ui"
+    test_method: "testActivityNotFinishing"
+    start_time {
+      seconds: 1760914633
+      nanos: 347000000
+    }
+    end_time {
+      seconds: 1760914634
+      nanos: 395000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityNotFinishing.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testLoginWithValidCredentials"
+    start_time {
+      seconds: 1760914634
+      nanos: 422000000
+    }
+    end_time {
+      seconds: 1760914639
+      nanos: 196000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginWithValidCredentials.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testInvalidEmailFormat"
+    start_time {
+      seconds: 1760914639
+      nanos: 256000000
+    }
+    end_time {
+      seconds: 1760914642
+      nanos: 673000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testInvalidEmailFormat.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testPasswordVisibilityToggle"
+    start_time {
+      seconds: 1760914642
+      nanos: 704000000
+    }
+    end_time {
+      seconds: 1760914645
+      nanos: 253000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testPasswordVisibilityToggle.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testLoginButtonClick"
+    start_time {
+      seconds: 1760914645
+      nanos: 339000000
+    }
+    end_time {
+      seconds: 1760914650
+      nanos: 3000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginButtonClick.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegisterButtonClick"
+    start_time {
+      seconds: 1760914650
+      nanos: 63000000
+    }
+    end_time {
+      seconds: 1760914651
+      nanos: 906000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testRegisterButtonClick.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testEmptyEmailValidation"
+    start_time {
+      seconds: 1760914651
+      nanos: 936000000
+    }
+    end_time {
+      seconds: 1760914654
+      nanos: 403000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testEmptyEmailValidation.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testLoginFragmentDisplaysCorrectly"
+    start_time {
+      seconds: 1760914654
+      nanos: 405000000
+    }
+    end_time {
+      seconds: 1760914656
+      nanos: 407000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginFragmentDisplaysCorrectly.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testEmailFieldInteraction"
+    start_time {
+      seconds: 1760914656
+      nanos: 439000000
+    }
+    end_time {
+      seconds: 1760914657
+      nanos: 304000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testEmailFieldInteraction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testEmptyPasswordValidation"
+    start_time {
+      seconds: 1760914657
+      nanos: 335000000
+    }
+    end_time {
+      seconds: 1760914660
+      nanos: 263000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testEmptyPasswordValidation.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testLoginWithInvalidCredentials"
+    start_time {
+      seconds: 1760914660
+      nanos: 264000000
+    }
+    end_time {
+      seconds: 1760914664
+      nanos: 979000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginWithInvalidCredentials.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LoginFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testPasswordFieldInteraction"
+    start_time {
+      seconds: 1760914665
+      nanos: 10000000
+    }
+    end_time {
+      seconds: 1760914667
+      nanos: 703000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testPasswordFieldInteraction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegistrationFragmentLayout"
+    start_time {
+      seconds: 1760914667
+      nanos: 735000000
+    }
+    end_time {
+      seconds: 1760914670
+      nanos: 604000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFragmentLayout.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegistrationFormValidation"
+    start_time {
+      seconds: 1760914670
+      nanos: 721000000
+    }
+    end_time {
+      seconds: 1760914679
+      nanos: 409000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFormValidation.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testLoginButtonNavigation"
+    start_time {
+      seconds: 1760914679
+      nanos: 440000000
+    }
+    end_time {
+      seconds: 1760914684
+      nanos: 348000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testLoginButtonNavigation.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testNameInputInteraction"
+    start_time {
+      seconds: 1760914684
+      nanos: 409000000
+    }
+    end_time {
+      seconds: 1760914688
+      nanos: 655000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testNameInputInteraction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testInputFieldFocus"
+    start_time {
+      seconds: 1760914688
+      nanos: 687000000
+    }
+    end_time {
+      seconds: 1760914692
+      nanos: 796000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testInputFieldFocus.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegistrationFragmentDisplaysCorrectly"
+    start_time {
+      seconds: 1760914692
+      nanos: 943000000
+    }
+    end_time {
+      seconds: 1760914695
+      nanos: 540000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFragmentDisplaysCorrectly.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegistrationWithSpecialCharacters"
+    start_time {
+      seconds: 1760914695
+      nanos: 598000000
+    }
+    end_time {
+      seconds: 1760914698
+      nanos: 747000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationWithSpecialCharacters.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegistrationWithLongInputs"
+    start_time {
+      seconds: 1760914698
+      nanos: 778000000
+    }
+    end_time {
+      seconds: 1760914706
+      nanos: 669000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationWithLongInputs.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegisterButtonWithValidInput"
+    start_time {
+      seconds: 1760914706
+      nanos: 672000000
+    }
+    end_time {
+      seconds: 1760914714
+      nanos: 972000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegisterButtonWithValidInput.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testMultipleInputInteractions"
+    start_time {
+      seconds: 1760914715
+      nanos: 87000000
+    }
+    end_time {
+      seconds: 1760914720
+      nanos: 252000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testMultipleInputInteractions.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testValidInputRemovesError"
+    start_time {
+      seconds: 1760914720
+      nanos: 255000000
+    }
+    end_time {
+      seconds: 1760914724
+      nanos: 512000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testValidInputRemovesError.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testEmailInputInteraction"
+    start_time {
+      seconds: 1760914724
+      nanos: 514000000
+    }
+    end_time {
+      seconds: 1760914728
+      nanos: 541000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testEmailInputInteraction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testInputFieldClearing"
+    start_time {
+      seconds: 1760914728
+      nanos: 602000000
+    }
+    end_time {
+      seconds: 1760914733
+      nanos: 619000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testInputFieldClearing.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testPasswordValidation"
+    start_time {
+      seconds: 1760914733
+      nanos: 620000000
+    }
+    end_time {
+      seconds: 1760914737
+      nanos: 54000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testPasswordValidation.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testPasswordInputInteraction"
+    start_time {
+      seconds: 1760914737
+      nanos: 85000000
+    }
+    end_time {
+      seconds: 1760914740
+      nanos: 688000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testPasswordInputInteraction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testEmailValidation"
+    start_time {
+      seconds: 1760914740
+      nanos: 719000000
+    }
+    end_time {
+      seconds: 1760914744
+      nanos: 218000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testEmailValidation.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegistrationFragmentBackground"
+    start_time {
+      seconds: 1760914744
+      nanos: 250000000
+    }
+    end_time {
+      seconds: 1760914746
+      nanos: 588000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFragmentBackground.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RegistrationFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.authorization"
+    test_method: "testRegisterButtonWithInvalidInput"
+    start_time {
+      seconds: 1760914746
+      nanos: 619000000
+    }
+    end_time {
+      seconds: 1760914750
+      nanos: 816000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegisterButtonWithInvalidInput.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsRecyclerViewIsScrollable"
+    start_time {
+      seconds: 1760914750
+      nanos: 817000000
+    }
+    end_time {
+      seconds: 1760914765
+      nanos: 280000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsRecyclerViewIsScrollable.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsFilterAction"
+    start_time {
+      seconds: 1760914765
+      nanos: 304000000
+    }
+    end_time {
+      seconds: 1760914778
+      nanos: 274000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsFilterAction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsItemClick"
+    start_time {
+      seconds: 1760914778
+      nanos: 311000000
+    }
+    end_time {
+      seconds: 1760914789
+      nanos: 348000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsItemClick.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsRecyclerViewHasItems"
+    start_time {
+      seconds: 1760914789
+      nanos: 377000000
+    }
+    end_time {
+      seconds: 1760914799
+      nanos: 935000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsRecyclerViewHasItems.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsNavigationToProfile"
+    start_time {
+      seconds: 1760914799
+      nanos: 967000000
+    }
+    end_time {
+      seconds: 1760914813
+      nanos: 156000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsNavigationToProfile.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsNavigationToFavorites"
+    start_time {
+      seconds: 1760914813
+      nanos: 157000000
+    }
+    end_time {
+      seconds: 1760914825
+      nanos: 752000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsNavigationToFavorites.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsFragmentDisplaysCorrectly"
+    start_time {
+      seconds: 1760914825
+      nanos: 753000000
+    }
+    end_time {
+      seconds: 1760914837
+      nanos: 152000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsFragmentDisplaysCorrectly.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsSearchAction"
+    start_time {
+      seconds: 1760914837
+      nanos: 214000000
+    }
+    end_time {
+      seconds: 1760914848
+      nanos: 548000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsSearchAction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CocktailsFragmentTest"
+    test_package: "com.example.cocktailsdbapp.ui.cocktails"
+    test_method: "testCocktailsFavoriteButtonInteraction"
+    start_time {
+      seconds: 1760914848
+      nanos: 610000000
+    }
+    end_time {
+      seconds: 1760914859
+      nanos: 624000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsFavoriteButtonInteraction.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

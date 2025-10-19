@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CocktailAdapter.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.ui.cocktails</a> &gt; <span class="el_source">CocktailAdapter.kt</span></div><h1>CocktailAdapter.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.ui.cocktails
+
+
+import android.view.animation.AnimationUtils
+import androidx.recyclerview.widget.DiffUtil
+import com.bumptech.glide.Glide
+import com.example.cocktailsdbapp.R
+import com.example.cocktailsdbapp.databinding.ItemCocktailBinding
+import com.example.cocktailsdbapp.model.Cocktail
+import com.example.cocktailsdbapp.ui.BaseAdapter
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+
+<span class="pc" id="L16">class CocktailAdapter(</span>
+<span class="pc" id="L17">    private val onItemClickListener: OnItemClickListener? = null,</span>
+<span class="pc" id="L18">    private val onFavoriteClickListener: OnFavoriteClickListener? = null</span>
+<span class="fc" id="L19">) : BaseAdapter&lt;Cocktail, ItemCocktailBinding&gt;(</span>
+<span class="fc" id="L20">    inflate = { inflater, parent, attachToParent -&gt;</span>
+<span class="fc" id="L21">        ItemCocktailBinding.inflate(inflater, parent, attachToParent)</span>
+    }
+) {
+
+<span class="fc" id="L25">    private var isFavoriteClickable = true</span>
+
+    interface OnItemClickListener {
+        fun openCocktailDetails(cocktailId: String)
+    }
+
+    interface OnFavoriteClickListener {
+        fun favoriteCocktail(cocktail: Cocktail)
+
+    }
+
+    override fun bindItem(holder: ViewHolder, item: Cocktail) {
+<span class="fc" id="L37">        with(holder.binding) {</span>
+<span class="fc" id="L38">            tvCocktailName.text = item.strDrink</span>
+<span class="fc" id="L39">            ivFavorite.isSelected = item.isFavorite</span>
+
+<span class="fc" id="L41">            cvItem.setOnClickListener {</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">                onItemClickListener?.openCocktailDetails(item.idDrink)</span>
+<span class="fc" id="L43">            }</span>
+<span class="fc" id="L44">            ivFavorite.setOnClickListener {</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">                if (isFavoriteClickable) {</span>
+<span class="nc" id="L46">                    isFavoriteClickable = false</span>
+
+<span class="nc bnc" id="L48" title="All 2 branches missed.">                    ivFavorite.isSelected = !ivFavorite.isSelected</span>
+
+                    // Load the animation
+<span class="nc bnc" id="L51" title="All 2 branches missed.">                    val animationId = if (ivFavorite.isSelected) {</span>
+<span class="nc" id="L52">                        R.anim.ic_favorite_animation // Selection animation</span>
+                    } else {
+<span class="nc" id="L54">                        R.anim.ic_favorite_animation_deselect // Deselection animation</span>
+                    }
+                    // Apply the animation to the ImageView
+<span class="nc" id="L57">                    ivFavorite.startAnimation(AnimationUtils.loadAnimation(root.context, animationId))</span>
+
+<span class="nc bnc" id="L59" title="All 2 branches missed.">                    onFavoriteClickListener?.favoriteCocktail(item)</span>
+
+                    // Enable clickable after a delay (e.g., 1000 milliseconds)
+<span class="nc" id="L62">                    CoroutineScope(Dispatchers.Main).launch {</span>
+<span class="nc" id="L63">                        delay(600)</span>
+<span class="nc" id="L64">                        isFavoriteClickable = true</span>
+<span class="nc" id="L65">                    }</span>
+                }
+<span class="nc" id="L67">            }</span>
+<span class="fc" id="L68">            Glide.with(root.context)</span>
+<span class="fc" id="L69">                .load(item.strDrinkThumb)</span>
+<span class="fc" id="L70">                .into(ivDrink)</span>
+        }
+<span class="fc" id="L72">    }</span>
+
+    override fun getDiffCallback(
+        oldList: List&lt;Cocktail&gt;,
+        newList: List&lt;Cocktail&gt;
+    ): DiffUtil.Callback {
+<span class="fc" id="L78">        return DiffCallback(</span>
+<span class="fc" id="L79">            oldList = oldList,</span>
+<span class="fc" id="L80">            newList = newList,</span>
+<span class="fc" id="L81">            areItemsTheSame = { oldItem, newItem -&gt;</span>
+<span class="fc" id="L82">                oldItem.idDrink == newItem.idDrink</span>
+            },
+<span class="fc" id="L84">            areContentsTheSame = { oldItem, newItem -&gt;</span>
+<span class="fc" id="L85">                oldItem == newItem</span>
+            }
+        )
+    }
+
+<span class="nc" id="L90">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

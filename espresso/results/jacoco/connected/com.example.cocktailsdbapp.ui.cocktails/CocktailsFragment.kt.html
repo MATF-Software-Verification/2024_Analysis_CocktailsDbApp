@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CocktailsFragment.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.ui.cocktails</a> &gt; <span class="el_source">CocktailsFragment.kt</span></div><h1>CocktailsFragment.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.ui.cocktails
+
+import android.os.Bundle
+import android.view.View
+import androidx.core.os.bundleOf
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
+import com.example.cocktailsdbapp.R
+import com.example.cocktailsdbapp.databinding.FragmentCocktailsBinding
+import com.example.cocktailsdbapp.model.Cocktail
+import com.example.cocktailsdbapp.ui.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+<span class="fc" id="L16">class CocktailsFragment: BaseFragment&lt;FragmentCocktailsBinding&gt;(FragmentCocktailsBinding::inflate), CocktailAdapter.OnFavoriteClickListener, CocktailAdapter.OnItemClickListener {</span>
+
+<span class="fc" id="L18">    private val cocktailsViewModel: CocktailsViewModel by viewModels()</span>
+
+    private var cocktailAdapter: CocktailAdapter? = null
+
+<span class="fc" id="L22">    private val args: CocktailsFragmentArgs by navArgs()</span>
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+<span class="fc" id="L25">        super.onViewCreated(view, savedInstanceState)</span>
+<span class="fc" id="L26">        setObservers()</span>
+<span class="fc" id="L27">        setFilterText()</span>
+<span class="fc" id="L28">        communicator.disableBackButton()</span>
+<span class="fc" id="L29">    }</span>
+
+    override fun onStart() {
+<span class="fc" id="L32">        super.onStart()</span>
+<span class="fc" id="L33">        communicator.apply {</span>
+<span class="pc bpc" id="L34" title="1 of 2 branches missed.">            getCurrentLoggedInUser()?.let { cocktailsViewModel.fetchData(it, args.filterCategory, args.filter) }</span>
+<span class="fc" id="L35">            showSearchIconView(true)</span>
+<span class="fc" id="L36">            showSearchInputView(false)</span>
+<span class="fc" id="L37">            showFilterView(true)</span>
+<span class="fc" id="L38">        }</span>
+<span class="fc" id="L39">    }</span>
+
+    private fun setObservers() {
+<span class="fc" id="L42">        cocktailsViewModel.cocktailsData.observe(viewLifecycleOwner) {</span>
+<span class="fc" id="L43">            setCocktailsAdapter(it)</span>
+<span class="pc bpc" id="L44" title="1 of 2 branches missed.">            it?.let {</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">                cocktailAdapter?.updateData(it)</span>
+<span class="fc" id="L46">            }</span>
+<span class="fc" id="L47">        }</span>
+<span class="fc" id="L48">    }</span>
+
+    private fun setFilterText() {
+<span class="fc" id="L51">        binding.tvFilterParam.text = getString(</span>
+<span class="fc" id="L52">            R.string.filter_param,</span>
+<span class="pc bpc" id="L53" title="2 of 4 branches missed.">            args.filter.ifEmpty {</span>
+<span class="nc" id="L54">                getString(R.string.filter_param_default)</span>
+            }
+        )
+<span class="fc" id="L57">    }</span>
+
+    private fun setCocktailsAdapter(cocktails: List&lt;Cocktail&gt;?) {
+<span class="fc" id="L60">        cocktailAdapter = CocktailAdapter(this, this)</span>
+<span class="pc bpc" id="L61" title="1 of 2 branches missed.">        cocktailAdapter?.let { adapter -&gt;</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">            cocktails?.let { items -&gt; adapter.updateData(items) }</span>
+<span class="fc" id="L63">            binding.rvCocktails.adapter = adapter</span>
+<span class="fc" id="L64">        }</span>
+<span class="fc" id="L65">    }</span>
+
+    override fun favoriteCocktail(cocktail: Cocktail) {
+<span class="nc bnc" id="L68" title="All 2 branches missed.">        communicator.getCurrentLoggedInUser()?.let {</span>
+<span class="nc" id="L69">            cocktailsViewModel.favoriteCocktail(</span>
+<span class="nc" id="L70">                it,</span>
+<span class="nc" id="L71">                cocktail</span>
+            )
+<span class="nc" id="L73">        }</span>
+<span class="nc" id="L74">    }</span>
+
+    override fun openCocktailDetails(cocktailId: String) {
+<span class="fc" id="L77">        val args = bundleOf(getString(R.string.argument_cocktail_id) to cocktailId)</span>
+<span class="fc" id="L78">        findNavController().navigate(R.id.action_cocktailsFragment_to_CocktailDetailsFragment, args)</span>
+<span class="fc" id="L79">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

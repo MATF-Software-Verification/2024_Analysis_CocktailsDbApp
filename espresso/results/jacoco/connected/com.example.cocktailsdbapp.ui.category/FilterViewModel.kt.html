@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FilterViewModel.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.ui.category</a> &gt; <span class="el_source">FilterViewModel.kt</span></div><h1>FilterViewModel.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.ui.category
+
+
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.cocktailsdbapp.repository.CocktailsRepo
+import com.example.cocktailsdbapp.utils.Constants
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@HiltViewModel
+<span class="nc" id="L14">    class FilterViewModel @Inject constructor(private val cocktailsRepo: CocktailsRepo) : ViewModel() {</span>
+
+<span class="nc" id="L16">    var filterData = MutableLiveData&lt;List&lt;String&gt;?&gt;()</span>
+
+    fun fetchData(type: String) {
+<span class="nc" id="L19">        val functionMap = mapOf(</span>
+<span class="nc" id="L20">            Constants.FILTER_ALCOHOL to ::getAlcoholContent,</span>
+<span class="nc" id="L21">            Constants.FILTER_CATEGORY to ::getCategories,</span>
+<span class="nc" id="L22">            Constants.FILTER_GLASS to ::getGlasses,</span>
+<span class="nc" id="L23">            Constants.FILTER_INGREDIENT to ::getIngredients,</span>
+<span class="nc" id="L24">            Constants.FILTER_LETTER to ::getFirstLetters</span>
+        )
+
+<span class="nc" id="L27">        val fetchFunction = functionMap[type]</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        fetchFunction?.invoke()</span>
+<span class="nc" id="L29">    }</span>
+
+    private fun getAlcoholContent() {
+<span class="nc" id="L32">        viewModelScope.launch {</span>
+<span class="nc" id="L33">            try {</span>
+<span class="nc" id="L34">                filterData.postValue(</span>
+<span class="nc" id="L35">                    cocktailsRepo.getAlcoholContent().drinks.map {</span>
+<span class="nc" id="L36">                        it.strAlcoholic</span>
+                    }
+                )
+<span class="nc" id="L39">            } catch (e: Exception) {</span>
+                // Handle errors
+            }
+<span class="nc" id="L42">        }</span>
+<span class="nc" id="L43">    }</span>
+
+    private fun getCategories() {
+<span class="nc" id="L46">        viewModelScope.launch {</span>
+<span class="nc" id="L47">            try {</span>
+<span class="nc" id="L48">                filterData.postValue(cocktailsRepo.getCategories().drinks.map {</span>
+<span class="nc" id="L49">                    it.strCategory</span>
+                })
+<span class="nc" id="L51">            } catch (e: Exception) {</span>
+                // Handle errors
+            }
+<span class="nc" id="L54">        }</span>
+<span class="nc" id="L55">    }</span>
+
+    private fun getGlasses() {
+<span class="nc" id="L58">        viewModelScope.launch {</span>
+<span class="nc" id="L59">            try {</span>
+<span class="nc" id="L60">                filterData.postValue(cocktailsRepo.getGlasses().drinks.map {</span>
+<span class="nc" id="L61">                    it.strGlass</span>
+                })
+<span class="nc" id="L63">            } catch (e: Exception) {</span>
+                // Handle errors
+            }
+<span class="nc" id="L66">        }</span>
+<span class="nc" id="L67">    }</span>
+
+    private fun getIngredients() {
+<span class="nc" id="L70">        viewModelScope.launch {</span>
+<span class="nc" id="L71">            try {</span>
+<span class="nc" id="L72">                filterData.postValue(cocktailsRepo.getIngredients().drinks.map {</span>
+<span class="nc" id="L73">                    it.strIngredient</span>
+                })
+<span class="nc" id="L75">            } catch (e: Exception) {</span>
+                // Handle errors
+            }
+<span class="nc" id="L78">        }</span>
+<span class="nc" id="L79">    }</span>
+
+    private fun getFirstLetters() {
+<span class="nc" id="L82">        val alphabetLettersList: List&lt;String&gt; = (Constants.ALPHABET_FIRST_LETTER..Constants.ALPHABET_LAST_LETTER).map { it.toString() }</span>
+<span class="nc" id="L83">        filterData.postValue(alphabetLettersList)</span>
+<span class="nc" id="L84">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RegistrationFragment.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.ui.authorization</a> &gt; <span class="el_source">RegistrationFragment.kt</span></div><h1>RegistrationFragment.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.ui.authorization
+
+import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.view.View
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.example.cocktailsdbapp.R
+import com.example.cocktailsdbapp.databinding.FragmentRegistrationBinding
+import com.example.cocktailsdbapp.model.User
+import com.example.cocktailsdbapp.ui.BaseFragment
+import com.example.cocktailsdbapp.utils.Constants
+import com.example.cocktailsdbapp.utils.makeLastNCharactersBold
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+<span class="fc" id="L18">class RegistrationFragment :</span>
+<span class="fc" id="L19">    BaseFragment&lt;FragmentRegistrationBinding&gt;(FragmentRegistrationBinding::inflate) {</span>
+
+<span class="fc" id="L21">    private val authViewModel: AuthViewModel by viewModels()</span>
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+<span class="fc" id="L24">        super.onViewCreated(view, savedInstanceState)</span>
+
+<span class="fc" id="L26">        registerListeners()</span>
+<span class="fc" id="L27">        binding.tvRegister.makeLastNCharactersBold(Constants.REGISTER_BOLD_LETTER_AMOUNT)</span>
+<span class="fc" id="L28">        communicator.disableBackButton()</span>
+<span class="fc" id="L29">    }</span>
+
+    private fun registerListeners() {
+<span class="fc" id="L32">        binding.etEmailInput.addTextChangedListener(object : TextWatcher {</span>
+<span class="fc" id="L33">            override fun beforeTextChanged(input: CharSequence?, start: Int, count: Int, after: Int) {}</span>
+
+            override fun onTextChanged(input: CharSequence?, start: Int, before: Int, count: Int) {
+                // Check if the input is valid (e.g., more than 3 characters)
+<span class="pc bpc" id="L37" title="1 of 4 branches missed.">                val isInputValid = (input?.length ?: 0) &gt;= Constants.VALIDATION_MINIMUM_CHARACTERS</span>
+
+                // Show/hide error message based on input validity
+<span class="fc" id="L40">                binding.etEmailInput.error =</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">                    if (isInputValid) null else getString(R.string.input_validation_error)</span>
+<span class="fc" id="L42">            }</span>
+
+<span class="fc" id="L44">            override fun afterTextChanged(input: Editable?) {}</span>
+        })
+<span class="fc" id="L46">        binding.etPasswordInput.addTextChangedListener(object : TextWatcher {</span>
+<span class="fc" id="L47">            override fun beforeTextChanged(input: CharSequence?, start: Int, count: Int, after: Int) {}</span>
+
+            override fun onTextChanged(input: CharSequence?, start: Int, before: Int, count: Int) {
+                // Check if the input is valid (e.g., more than 3 characters)
+<span class="pc bpc" id="L51" title="1 of 4 branches missed.">                val isInputValid = (input?.length ?: 0) &gt;= Constants.VALIDATION_MINIMUM_CHARACTERS</span>
+
+                // Show/hide error message based on input validity
+<span class="fc" id="L54">                binding.etPasswordInput.error =</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">                    if (isInputValid) null else getString(R.string.input_validation_error)</span>
+<span class="fc" id="L56">            }</span>
+
+<span class="fc" id="L58">            override fun afterTextChanged(input: Editable?) {}</span>
+        })
+<span class="fc" id="L60">        binding.btLogin.setOnClickListener {</span>
+<span class="fc" id="L61">            findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)</span>
+<span class="fc" id="L62">        }</span>
+<span class="fc" id="L63">        binding.btRegister.setOnClickListener {</span>
+<span class="fc" id="L64">            val email = binding.etEmailInput.text.toString()</span>
+<span class="fc" id="L65">            val name = binding.etNameInput.text.toString()</span>
+<span class="fc" id="L66">            val password = binding.etPasswordInput.text.toString()</span>
+<span class="fc bfc" id="L67" title="All 4 branches covered.">            if (email.length &gt;= Constants.VALIDATION_MINIMUM_CHARACTERS &amp;&amp; password.length &gt;= Constants.VALIDATION_MINIMUM_CHARACTERS) {</span>
+<span class="fc" id="L68">                val success = authViewModel.saveUserData(User(name, email, password))</span>
+<span class="pc bpc" id="L69" title="1 of 2 branches missed.">                if (success) {</span>
+<span class="fc" id="L70">                    communicator.setCurrentLoggedInUser(email)</span>
+<span class="fc" id="L71">                    showSuccessPopUp(</span>
+<span class="fc" id="L72">                        getString(R.string.registration_success_message),</span>
+<span class="fc" id="L73">                        R.id.action_registrationFragment_to_cocktailsFragment</span>
+                    )
+                }
+            }
+<span class="fc" id="L77">        }</span>
+
+<span class="fc" id="L79">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CocktailDao_Impl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.database</a> &gt; <span class="el_source">CocktailDao_Impl.java</span></div><h1>CocktailDao_Impl.java</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.database;
+
+import android.database.Cursor;
+import android.os.CancellationSignal;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.room.CoroutinesRoom;
+import androidx.room.EntityInsertionAdapter;
+import androidx.room.RoomDatabase;
+import androidx.room.RoomSQLiteQuery;
+import androidx.room.SharedSQLiteStatement;
+import androidx.room.util.DBUtil;
+import androidx.sqlite.db.SupportSQLiteStatement;
+import java.lang.Class;
+import java.lang.Exception;
+import java.lang.Object;
+import java.lang.Override;
+import java.lang.String;
+import java.lang.SuppressWarnings;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.Callable;
+import javax.annotation.processing.Generated;
+import kotlin.coroutines.Continuation;
+
+@Generated(&quot;androidx.room.RoomProcessor&quot;)
+@SuppressWarnings({&quot;unchecked&quot;, &quot;deprecation&quot;})
+public final class CocktailDao_Impl implements CocktailDao {
+  private final RoomDatabase __db;
+
+  private final EntityInsertionAdapter&lt;RoomCocktail&gt; __insertionAdapterOfRoomCocktail;
+
+  private final EntityInsertionAdapter&lt;RoomFavorite&gt; __insertionAdapterOfRoomFavorite;
+
+  private final SharedSQLiteStatement __preparedStmtOfRemoveFavorite;
+
+<span class="fc" id="L38">  public CocktailDao_Impl(@NonNull final RoomDatabase __db) {</span>
+<span class="fc" id="L39">    this.__db = __db;</span>
+<span class="fc" id="L40">    this.__insertionAdapterOfRoomCocktail = new EntityInsertionAdapter&lt;RoomCocktail&gt;(__db) {</span>
+      @Override
+      @NonNull
+      protected String createQuery() {
+<span class="fc" id="L44">        return &quot;INSERT OR REPLACE INTO `roomCocktail` (`strDrink`,`strDrinkThumb`,`idDrink`) VALUES (?,?,?)&quot;;</span>
+      }
+
+      @Override
+      protected void bind(@NonNull final SupportSQLiteStatement statement,
+          @NonNull final RoomCocktail entity) {
+<span class="fc" id="L50">        statement.bindString(1, entity.getStrDrink());</span>
+<span class="fc" id="L51">        statement.bindString(2, entity.getStrDrinkThumb());</span>
+<span class="fc" id="L52">        statement.bindString(3, entity.getIdDrink());</span>
+<span class="fc" id="L53">      }</span>
+    };
+<span class="fc" id="L55">    this.__insertionAdapterOfRoomFavorite = new EntityInsertionAdapter&lt;RoomFavorite&gt;(__db) {</span>
+      @Override
+      @NonNull
+      protected String createQuery() {
+<span class="fc" id="L59">        return &quot;INSERT OR REPLACE INTO `roomFavorite` (`userEmail`,`idDrink`) VALUES (?,?)&quot;;</span>
+      }
+
+      @Override
+      protected void bind(@NonNull final SupportSQLiteStatement statement,
+          @NonNull final RoomFavorite entity) {
+<span class="fc" id="L65">        statement.bindString(1, entity.getUserEmail());</span>
+<span class="fc" id="L66">        statement.bindString(2, entity.getIdDrink());</span>
+<span class="fc" id="L67">      }</span>
+    };
+<span class="fc" id="L69">    this.__preparedStmtOfRemoveFavorite = new SharedSQLiteStatement(__db) {</span>
+      @Override
+      @NonNull
+      public String createQuery() {
+<span class="fc" id="L73">        final String _query = &quot;DELETE FROM roomFavorite WHERE userEmail = ? AND idDrink = ?&quot;;</span>
+<span class="fc" id="L74">        return _query;</span>
+      }
+    };
+<span class="fc" id="L77">  }</span>
+
+  @Override
+  public void insertCocktail(final RoomCocktail cocktail) {
+<span class="fc" id="L81">    __db.assertNotSuspendingTransaction();</span>
+<span class="fc" id="L82">    __db.beginTransaction();</span>
+    try {
+<span class="fc" id="L84">      __insertionAdapterOfRoomCocktail.insert(cocktail);</span>
+<span class="fc" id="L85">      __db.setTransactionSuccessful();</span>
+    } finally {
+<span class="fc" id="L87">      __db.endTransaction();</span>
+    }
+<span class="fc" id="L89">  }</span>
+
+  @Override
+  public void insertFavorite(final RoomFavorite favorite) {
+<span class="fc" id="L93">    __db.assertNotSuspendingTransaction();</span>
+<span class="fc" id="L94">    __db.beginTransaction();</span>
+    try {
+<span class="fc" id="L96">      __insertionAdapterOfRoomFavorite.insert(favorite);</span>
+<span class="fc" id="L97">      __db.setTransactionSuccessful();</span>
+    } finally {
+<span class="fc" id="L99">      __db.endTransaction();</span>
+    }
+<span class="fc" id="L101">  }</span>
+
+  @Override
+  public void removeFavorite(final String userEmail, final String idDrink) {
+<span class="fc" id="L105">    __db.assertNotSuspendingTransaction();</span>
+<span class="fc" id="L106">    final SupportSQLiteStatement _stmt = __preparedStmtOfRemoveFavorite.acquire();</span>
+<span class="fc" id="L107">    int _argIndex = 1;</span>
+<span class="fc" id="L108">    _stmt.bindString(_argIndex, userEmail);</span>
+<span class="fc" id="L109">    _argIndex = 2;</span>
+<span class="fc" id="L110">    _stmt.bindString(_argIndex, idDrink);</span>
+    try {
+<span class="fc" id="L112">      __db.beginTransaction();</span>
+      try {
+<span class="fc" id="L114">        _stmt.executeUpdateDelete();</span>
+<span class="fc" id="L115">        __db.setTransactionSuccessful();</span>
+      } finally {
+<span class="fc" id="L117">        __db.endTransaction();</span>
+      }
+    } finally {
+<span class="fc" id="L120">      __preparedStmtOfRemoveFavorite.release(_stmt);</span>
+    }
+<span class="fc" id="L122">  }</span>
+
+  @Override
+  public Object getFavoriteCocktails(final String userEmail,
+      final Continuation&lt;? super List&lt;RoomCocktail&gt;&gt; $completion) {
+<span class="fc" id="L127">    final String _sql = &quot;SELECT roomCocktail.strDrinkThumb, roomCocktail.strDrink, roomCocktail.idDrink FROM roomFavorite INNER JOIN roomCocktail ON roomFavorite.idDrink = roomCocktail.idDrink WHERE userEmail = ?&quot;;</span>
+<span class="fc" id="L128">    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);</span>
+<span class="fc" id="L129">    int _argIndex = 1;</span>
+<span class="fc" id="L130">    _statement.bindString(_argIndex, userEmail);</span>
+<span class="fc" id="L131">    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();</span>
+<span class="fc" id="L132">    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable&lt;List&lt;RoomCocktail&gt;&gt;() {</span>
+      @Override
+      @Nullable
+      public List&lt;RoomCocktail&gt; call() throws Exception {
+<span class="fc" id="L136">        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);</span>
+        try {
+<span class="fc" id="L138">          final int _cursorIndexOfStrDrinkThumb = 0;</span>
+<span class="fc" id="L139">          final int _cursorIndexOfStrDrink = 1;</span>
+<span class="fc" id="L140">          final int _cursorIndexOfIdDrink = 2;</span>
+<span class="fc" id="L141">          final List&lt;RoomCocktail&gt; _result = new ArrayList&lt;RoomCocktail&gt;(_cursor.getCount());</span>
+<span class="fc bfc" id="L142" title="All 2 branches covered.">          while (_cursor.moveToNext()) {</span>
+            final RoomCocktail _item;
+            final String _tmpStrDrinkThumb;
+<span class="fc" id="L145">            _tmpStrDrinkThumb = _cursor.getString(_cursorIndexOfStrDrinkThumb);</span>
+            final String _tmpStrDrink;
+<span class="fc" id="L147">            _tmpStrDrink = _cursor.getString(_cursorIndexOfStrDrink);</span>
+            final String _tmpIdDrink;
+<span class="fc" id="L149">            _tmpIdDrink = _cursor.getString(_cursorIndexOfIdDrink);</span>
+<span class="fc" id="L150">            _item = new RoomCocktail(_tmpStrDrink,_tmpStrDrinkThumb,_tmpIdDrink);</span>
+<span class="fc" id="L151">            _result.add(_item);</span>
+<span class="fc" id="L152">          }</span>
+<span class="fc" id="L153">          return _result;</span>
+        } finally {
+<span class="fc" id="L155">          _cursor.close();</span>
+<span class="fc" id="L156">          _statement.release();</span>
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
+  public Object findFavoriteCocktail(final String userEmail, final String idDrink,
+      final Continuation&lt;? super RoomCocktail&gt; $completion) {
+<span class="fc" id="L165">    final String _sql = &quot;SELECT roomCocktail.strDrinkThumb, roomCocktail.strDrink, roomCocktail.idDrink FROM roomFavorite INNER JOIN roomCocktail ON roomFavorite.idDrink = roomCocktail.idDrink WHERE userEmail = ? AND roomCocktail.idDrink = ?&quot;;</span>
+<span class="fc" id="L166">    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);</span>
+<span class="fc" id="L167">    int _argIndex = 1;</span>
+<span class="fc" id="L168">    _statement.bindString(_argIndex, userEmail);</span>
+<span class="fc" id="L169">    _argIndex = 2;</span>
+<span class="fc" id="L170">    _statement.bindString(_argIndex, idDrink);</span>
+<span class="fc" id="L171">    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();</span>
+<span class="fc" id="L172">    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable&lt;RoomCocktail&gt;() {</span>
+      @Override
+      @Nullable
+      public RoomCocktail call() throws Exception {
+<span class="fc" id="L176">        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);</span>
+        try {
+<span class="fc" id="L178">          final int _cursorIndexOfStrDrinkThumb = 0;</span>
+<span class="fc" id="L179">          final int _cursorIndexOfStrDrink = 1;</span>
+<span class="fc" id="L180">          final int _cursorIndexOfIdDrink = 2;</span>
+          final RoomCocktail _result;
+<span class="fc bfc" id="L182" title="All 2 branches covered.">          if (_cursor.moveToFirst()) {</span>
+            final String _tmpStrDrinkThumb;
+<span class="fc" id="L184">            _tmpStrDrinkThumb = _cursor.getString(_cursorIndexOfStrDrinkThumb);</span>
+            final String _tmpStrDrink;
+<span class="fc" id="L186">            _tmpStrDrink = _cursor.getString(_cursorIndexOfStrDrink);</span>
+            final String _tmpIdDrink;
+<span class="fc" id="L188">            _tmpIdDrink = _cursor.getString(_cursorIndexOfIdDrink);</span>
+<span class="fc" id="L189">            _result = new RoomCocktail(_tmpStrDrink,_tmpStrDrinkThumb,_tmpIdDrink);</span>
+<span class="fc" id="L190">          } else {</span>
+<span class="fc" id="L191">            _result = null;</span>
+          }
+<span class="fc" id="L193">          return _result;</span>
+        } finally {
+<span class="fc" id="L195">          _cursor.close();</span>
+<span class="fc" id="L196">          _statement.release();</span>
+        }
+      }
+    }, $completion);
+  }
+
+  @NonNull
+  public static List&lt;Class&lt;?&gt;&gt; getRequiredConverters() {
+<span class="fc" id="L204">    return Collections.emptyList();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

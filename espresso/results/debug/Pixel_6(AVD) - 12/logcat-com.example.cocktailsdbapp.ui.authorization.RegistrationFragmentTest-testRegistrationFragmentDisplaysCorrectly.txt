@@ -1,0 +1,70 @@
+10-20 00:58:04.782  1545  1569 I TestRunner: started: testRegistrationFragmentDisplaysCorrectly(com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest)
+10-20 00:58:04.833  1545  1569 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-20 00:58:04.858   582  2204 W InputManager-JNI: Input channel object '2a2323b Splash Screen com.example.cocktailsdbapp.test (client)' was disposed without first being removed with the input manager!
+10-20 00:58:04.871  1186  1256 D EGL_emulation: app_time_stats: avg=88.39ms min=6.82ms max=1244.17ms count=17
+10-20 00:58:04.888  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{c440455 V.E...... ......ID 0,0-0,0}
+10-20 00:58:04.888  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 00:58:04.888  1186  1240 D SplashScreenView: Branding: view: android.view.View{105ee6a G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 00:58:04.918   582   593 I system_server: NativeAlloc concurrent copying GC freed 67065(2983KB) AllocSpace objects, 24(592KB) LOS objects, 48% free, 25MB/49MB, paused 44us,47us total 684.448ms
+10-20 00:58:04.947  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@6c9c68c in: PRE_ON_CREATE
+10-20 00:58:04.947  1545  1545 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-20 00:58:04.982   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3eede4000 0x3ef7c8000]
+10-20 00:58:04.998   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
+10-20 00:58:05.003   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
+10-20 00:58:05.016  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+10-20 00:58:05.016  2153  2153 E HwDetectorWithState: a: 3
+10-20 00:58:05.156  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@6c9c68c in: CREATED
+10-20 00:58:05.156  1545  1545 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@6c9c68c
+10-20 00:58:05.161  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@6c9c68c in: STARTED
+10-20 00:58:05.162  1545  1545 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@6c9c68c
+10-20 00:58:05.163  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@6c9c68c in: RESUMED
+10-20 00:58:05.164  1545  1545 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@6c9c68c
+10-20 00:58:05.212   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ea6c7000 0x3eb0ab000]
+10-20 00:58:05.215   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
+10-20 00:58:05.218   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f30a8000 0x3f3a8c000]
+10-20 00:58:05.269   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +399ms
+10-20 00:58:05.331  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 00:58:05.332  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 00:58:05.333  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 00:58:05.379   582  1255 W InputManager-JNI: Input channel object 'ea9e4a5 com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-20 00:58:05.387  1545  1545 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296378/com.example.cocktailsdbapp:id/bt_register>
+10-20 00:58:05.551   582  1255 W InputManager-JNI: Input channel object 'b054432 Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
+10-20 00:58:05.725  1186  1256 D EGL_emulation: app_time_stats: avg=241.59ms min=5.78ms max=1257.79ms count=6
+10-20 00:58:06.814  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296810/com.example.cocktailsdbapp:id/tv_register>
+10-20 00:58:06.818  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296468/com.example.cocktailsdbapp:id/et_name_input>
+10-20 00:58:06.821  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
+10-20 00:58:06.824  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296469/com.example.cocktailsdbapp:id/et_password_input>
+10-20 00:58:06.827  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296378/com.example.cocktailsdbapp:id/bt_register>
+10-20 00:58:06.830  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296376/com.example.cocktailsdbapp:id/bt_login>
+10-20 00:58:06.833  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296541/com.example.cocktailsdbapp:id/ll_spacer>
+10-20 00:58:06.836  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296808/com.example.cocktailsdbapp:id/tv_or>
+10-20 00:58:06.849  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{429fa10 V.E...... ......ID 0,0-0,0}
+10-20 00:58:06.849  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 00:58:06.849  1186  1240 D SplashScreenView: Branding: view: android.view.View{8708909 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 00:58:06.856  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@6c9c68c in: PAUSED
+10-20 00:58:06.856  1545  1545 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@6c9c68c
+10-20 00:58:06.902   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3e9ce3000 0x3ea6c7000]
+10-20 00:58:06.919  1545  1579 D EGL_emulation: app_time_stats: avg=94.92ms min=2.06ms max=1244.85ms count=16
+10-20 00:58:06.929   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ee790000 0x3ef174000]
+10-20 00:58:06.935   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
+10-20 00:58:06.964   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ef174000 0x3ef7c8000]
+10-20 00:58:07.050  1186  1256 D EGL_emulation: app_time_stats: avg=147.04ms min=10.35ms max=1187.87ms count=9
+10-20 00:58:07.070  1186  1256 D EGL_emulation: app_time_stats: avg=101.66ms min=3.07ms max=1204.08ms count=21
+10-20 00:58:07.107   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
+10-20 00:58:07.116   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
+10-20 00:58:07.122   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
+10-20 00:58:07.167  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@6c9c68c in: STOPPED
+10-20 00:58:07.168  1545  1545 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@6c9c68c
+10-20 00:58:07.198   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +342ms
+10-20 00:58:07.238   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f09e4000 0x3f1038000]
+10-20 00:58:07.309  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@6c9c68c in: DESTROYED
+10-20 00:58:07.310  1545  1545 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-20 00:58:07.327   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f1038000 0x3f1a1c000]
+10-20 00:58:07.335   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f1a1c000 0x3f2400000]
+10-20 00:58:07.343   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f2400000 0x3f2de4000]
+10-20 00:58:07.357  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+10-20 00:58:07.358  2153  2153 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+10-20 00:58:07.358  2153  2153 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+10-20 00:58:07.359  2441  2781 I OpenGLRenderer: Davey! duration=11340ms; Flags=1, FrameTimelineVsyncId=220523, IntendedVsync=30862934071568, Vsync=30862934071568, InputEventId=0, HandleInputStart=30862936169426, AnimationStart=30862936169992, PerformTraversalsStart=30862936170263, DrawStart=30863008918145, FrameDeadline=30862967404900, FrameInterval=30862936167432, FrameStartTime=16666666, SyncQueued=30863009035981, SyncStart=30863009534598, IssueDrawCommandsStart=30863009705325, SwapBuffers=30863010430040, FrameCompleted=30874275553960, DequeueBufferDuration=4644, QueueBufferDuration=2855087, GpuCompleted=30874275553960, SwapBuffersCompleted=30863015170183, DisplayPresentTime=0,
+10-20 00:58:07.365   582  2833 W InputManager-JNI: Input channel object '11559f4 com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
+10-20 00:58:07.385  1545  1569 I TestRunner: finished: testRegistrationFragmentDisplaysCorrectly(com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest)

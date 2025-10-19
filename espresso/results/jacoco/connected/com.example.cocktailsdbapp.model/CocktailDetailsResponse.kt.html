@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CocktailDetailsResponse.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.model</a> &gt; <span class="el_source">CocktailDetailsResponse.kt</span></div><h1>CocktailDetailsResponse.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.model
+
+import com.google.gson.annotations.SerializedName
+
+<span class="nc" id="L5">data class CocktailDetailsResponse(</span>
+<span class="nc" id="L6">    @SerializedName(&quot;drinks&quot;)</span>
+<span class="fc" id="L7">    val drinks: List&lt;CocktailDetails&gt;?</span>
+)
+
+<span class="nc" id="L10">data class CocktailDetails(</span>
+<span class="nc" id="L11">    @SerializedName(&quot;idDrink&quot;) val idDrink: String?,</span>
+<span class="pc" id="L12">    @SerializedName(&quot;strDrink&quot;) val strDrink: String?,</span>
+<span class="nc" id="L13">    @SerializedName(&quot;strDrinkAlternate&quot;) val strDrinkAlternate: String?,</span>
+<span class="nc" id="L14">    @SerializedName(&quot;strTags&quot;) val strTags: String?,</span>
+<span class="nc" id="L15">    @SerializedName(&quot;strVideo&quot;) val strVideo: String?,</span>
+<span class="pc" id="L16">    @SerializedName(&quot;strCategory&quot;) val strCategory: String?,</span>
+<span class="nc" id="L17">    @SerializedName(&quot;strIBA&quot;) val strIBA: String?,</span>
+<span class="nc" id="L18">    @SerializedName(&quot;strAlcoholic&quot;) val strAlcoholic: String?,</span>
+<span class="pc" id="L19">    @SerializedName(&quot;strGlass&quot;) val strGlass: String?,</span>
+<span class="pc" id="L20">    @SerializedName(&quot;strInstructions&quot;) val strInstructions: String?,</span>
+<span class="nc" id="L21">    @SerializedName(&quot;strInstructionsES&quot;) val strInstructionsES: String?,</span>
+<span class="nc" id="L22">    @SerializedName(&quot;strInstructionsDE&quot;) val strInstructionsDE: String?,</span>
+<span class="nc" id="L23">    @SerializedName(&quot;strInstructionsFR&quot;) val strInstructionsFR: String?,</span>
+<span class="nc" id="L24">    @SerializedName(&quot;strInstructionsIT&quot;) val strInstructionsIT: String?,</span>
+<span class="nc" id="L25">    @SerializedName(&quot;strInstructionsZH-HANS&quot;) val strInstructionsZH_HANS: String?,</span>
+<span class="nc" id="L26">    @SerializedName(&quot;strInstructionsZH-HANT&quot;) val strInstructionsZH_HANT: String?,</span>
+<span class="pc" id="L27">    @SerializedName(&quot;strDrinkThumb&quot;) val strDrinkThumb: String?,</span>
+<span class="nc" id="L28">    @SerializedName(&quot;strIngredient1&quot;) val strIngredient1: String?,</span>
+<span class="nc" id="L29">    @SerializedName(&quot;strIngredient2&quot;) val strIngredient2: String?,</span>
+<span class="nc" id="L30">    @SerializedName(&quot;strIngredient3&quot;) val strIngredient3: String?,</span>
+<span class="nc" id="L31">    @SerializedName(&quot;strIngredient4&quot;) val strIngredient4: String?,</span>
+<span class="nc" id="L32">    @SerializedName(&quot;strIngredient5&quot;) val strIngredient5: String?,</span>
+<span class="nc" id="L33">    @SerializedName(&quot;strIngredient6&quot;) val strIngredient6: String?,</span>
+<span class="nc" id="L34">    @SerializedName(&quot;strIngredient7&quot;) val strIngredient7: String?,</span>
+<span class="nc" id="L35">    @SerializedName(&quot;strIngredient8&quot;) val strIngredient8: String?,</span>
+<span class="nc" id="L36">    @SerializedName(&quot;strIngredient9&quot;) val strIngredient9: String?,</span>
+<span class="nc" id="L37">    @SerializedName(&quot;strIngredient10&quot;) val strIngredient10: String?,</span>
+<span class="nc" id="L38">    @SerializedName(&quot;strIngredient11&quot;) val strIngredient11: String?,</span>
+<span class="nc" id="L39">    @SerializedName(&quot;strIngredient12&quot;) val strIngredient12: String?,</span>
+<span class="nc" id="L40">    @SerializedName(&quot;strIngredient13&quot;) val strIngredient13: String?,</span>
+<span class="nc" id="L41">    @SerializedName(&quot;strIngredient14&quot;) val strIngredient14: String?,</span>
+<span class="nc" id="L42">    @SerializedName(&quot;strIngredient15&quot;) val strIngredient15: String?,</span>
+<span class="nc" id="L43">    @SerializedName(&quot;strMeasure1&quot;) val strMeasure1: String?,</span>
+<span class="nc" id="L44">    @SerializedName(&quot;strMeasure2&quot;) val strMeasure2: String?,</span>
+<span class="nc" id="L45">    @SerializedName(&quot;strMeasure3&quot;) val strMeasure3: String?,</span>
+<span class="nc" id="L46">    @SerializedName(&quot;strMeasure4&quot;) val strMeasure4: String?,</span>
+<span class="nc" id="L47">    @SerializedName(&quot;strMeasure5&quot;) val strMeasure5: String?,</span>
+<span class="nc" id="L48">    @SerializedName(&quot;strMeasure6&quot;) val strMeasure6: String?,</span>
+<span class="nc" id="L49">    @SerializedName(&quot;strMeasure7&quot;) val strMeasure7: String?,</span>
+<span class="nc" id="L50">    @SerializedName(&quot;strMeasure8&quot;) val strMeasure8: String?,</span>
+<span class="nc" id="L51">    @SerializedName(&quot;strMeasure9&quot;) val strMeasure9: String?,</span>
+<span class="nc" id="L52">    @SerializedName(&quot;strMeasure10&quot;) val strMeasure10: String?,</span>
+<span class="nc" id="L53">    @SerializedName(&quot;strMeasure11&quot;) val strMeasure11: String?,</span>
+<span class="nc" id="L54">    @SerializedName(&quot;strMeasure12&quot;) val strMeasure12: String?,</span>
+<span class="nc" id="L55">    @SerializedName(&quot;strMeasure13&quot;) val strMeasure13: String?,</span>
+<span class="nc" id="L56">    @SerializedName(&quot;strMeasure14&quot;) val strMeasure14: String?,</span>
+<span class="nc" id="L57">    @SerializedName(&quot;strMeasure15&quot;) val strMeasure15: String?,</span>
+<span class="nc" id="L58">    @SerializedName(&quot;strImageSource&quot;) val strImageSource: String?,</span>
+<span class="nc" id="L59">    @SerializedName(&quot;strImageAttribution&quot;) val strImageAttribution: String?,</span>
+<span class="nc" id="L60">    @SerializedName(&quot;strCreativeCommonsConfirmed&quot;) val strCreativeCommonsConfirmed: String?,</span>
+<span class="nc" id="L61">    @SerializedName(&quot;dateModified&quot;) val dateModified: String?,</span>
+<span class="nc" id="L62">    @SerializedName(&quot;isFavorite&quot;) var isFavorite: Boolean = false</span>
+
+) {
+    fun getIngredientsWithMeasures(): List&lt;Pair&lt;String, String&gt;&gt; {
+<span class="fc" id="L66">        val ingredientsWithMeasures = mutableListOf&lt;Pair&lt;String, String&gt;&gt;()</span>
+<span class="fc" id="L67">        val ingredients = listOf&lt;String?&gt;(</span>
+<span class="fc" id="L68">            strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,</span>
+<span class="fc" id="L69">            strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,</span>
+<span class="fc" id="L70">            strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15</span>
+        )
+
+<span class="fc" id="L73">        val measures = listOf(</span>
+<span class="fc" id="L74">            strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,</span>
+<span class="fc" id="L75">            strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,</span>
+<span class="fc" id="L76">            strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15</span>
+        )
+
+<span class="fc bfc" id="L79" title="All 2 branches covered.">        for (i in ingredients.indices) {</span>
+<span class="fc" id="L80">            val ingredient = ingredients.getOrNull(i)</span>
+<span class="fc" id="L81">            val measure = measures.getOrNull(i)</span>
+
+<span class="pc bpc" id="L83" title="4 of 12 branches missed.">            if (!ingredient.isNullOrBlank() &amp;&amp; !measure.isNullOrBlank()) {</span>
+<span class="fc" id="L84">                ingredientsWithMeasures.add(Pair(ingredient, measure))</span>
+            }
+        }
+<span class="fc" id="L87">        return ingredientsWithMeasures</span>
+    }
+<span class="nc" id="L89">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

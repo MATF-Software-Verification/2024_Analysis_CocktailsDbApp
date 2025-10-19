@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SearchViewModel.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.ui.search</a> &gt; <span class="el_source">SearchViewModel.kt</span></div><h1>SearchViewModel.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.ui.search
+
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.cocktailsdbapp.database.RoomCocktail
+import com.example.cocktailsdbapp.model.Cocktail
+import com.example.cocktailsdbapp.repository.CocktailsRepo
+import com.example.cocktailsdbapp.utils.markFavorites
+import com.example.cocktailsdbapp.utils.toCocktail
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.debounce
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@HiltViewModel
+<span class="fc" id="L21">class SearchViewModel @Inject constructor(private val cocktailsRepo: CocktailsRepo): ViewModel() {</span>
+
+    private var searchJob: Job? = null
+
+<span class="pc" id="L25">    var searchResultsData = MutableLiveData&lt;List&lt;Cocktail&gt;?&gt;()</span>
+
+<span class="fc" id="L27">    private val searchQueryFlow = MutableStateFlow(&quot;&quot;)</span>
+
+    fun setSearchQuery(query: String) {
+        // Update the search query in the flow
+<span class="nc" id="L31">        searchQueryFlow.value = query</span>
+<span class="nc" id="L32">    }</span>
+
+    fun fetchSearchData(userEmail: String) {
+        // Cancel the previous search job if it exists
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        searchJob?.cancel()</span>
+
+        // Start a new search job with debounce effect
+<span class="nc" id="L39">        searchJob = viewModelScope.launch {</span>
+<span class="nc" id="L40">            searchQueryFlow</span>
+<span class="nc" id="L41">                .debounce(700)</span>
+<span class="nc" id="L42">                .distinctUntilChanged()</span>
+<span class="nc" id="L43">                .collect { query -&gt;</span>
+                    // Use the collected query for the search
+<span class="nc" id="L45">                    executeSearch(userEmail, query)</span>
+<span class="nc" id="L46">                }</span>
+<span class="nc" id="L47">        }</span>
+<span class="nc" id="L48">    }</span>
+
+<span class="nc" id="L50">    private suspend fun executeSearch(userEmail: String, queryParam: String) {</span>
+<span class="nc" id="L51">        try {</span>
+<span class="nc" id="L52">            val response = cocktailsRepo.getSearch(queryParam)</span>
+<span class="nc" id="L53">            val favorites = cocktailsRepo.getFavorites(userEmail)</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">            favorites?.map { it.toCocktail(true) }</span>
+<span class="nc bnc" id="L55" title="All 6 branches missed.">            if (response.drinks.isNullOrEmpty()) {</span>
+<span class="nc" id="L56">                searchResultsData.postValue(null)</span>
+            } else {
+<span class="nc" id="L58">                val processedResponse = response.markFavorites(favorites)</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">                searchResultsData.postValue(processedResponse?.drinks)</span>
+            }
+<span class="nc" id="L61">        } catch (e: Exception) {</span>
+            // Handle errors
+        }
+<span class="nc" id="L64">    }</span>
+
+    fun favoriteCocktail(userEmail: String, cocktail: Cocktail) {
+<span class="nc" id="L67">        viewModelScope.launch(Dispatchers.IO) {</span>
+<span class="nc" id="L68">            val isFavorite = cocktailsRepo.findFavoriteCocktail(userEmail, cocktail.idDrink)</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">            if(isFavorite != null) {</span>
+<span class="nc" id="L70">                cocktailsRepo.removeFavorite(userEmail, cocktail.idDrink)</span>
+            } else {
+<span class="nc" id="L72">                cocktailsRepo.insertCocktail(userEmail, RoomCocktail(cocktail.strDrink, cocktail.strDrinkThumb, cocktail.idDrink))</span>
+            }
+<span class="nc" id="L74">        }</span>
+<span class="nc" id="L75">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

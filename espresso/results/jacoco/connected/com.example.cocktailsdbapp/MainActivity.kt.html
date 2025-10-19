@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainActivity.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp</a> &gt; <span class="el_source">MainActivity.kt</span></div><h1>MainActivity.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.widget.SearchView
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
+import com.example.cocktailsdbapp.ui.search.SearchFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+<span class="fc" id="L20">class MainActivity : AppCompatActivity(), Communicator {</span>
+
+    private lateinit var navController: NavController
+    private var searchIcon: MenuItem? = null
+    private var searchInput: MenuItem? = null
+    private var micOn: MenuItem? = null
+    private var filter: MenuItem? = null
+
+    private var currentUser: String? = null
+    override fun onCreate(savedInstanceState: Bundle?) {
+<span class="fc" id="L30">        super.onCreate(savedInstanceState)</span>
+<span class="fc" id="L31">        setContentView(R.layout.activity_main)</span>
+<span class="fc" id="L32">        setupNavigation()</span>
+<span class="fc" id="L33">    }</span>
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+<span class="fc" id="L36">        menuInflater.inflate(R.menu.toolbar_menu, menu)</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">        searchIcon = menu?.findItem(R.id.action_search)</span>
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">        searchInput = menu?.findItem(R.id.action_search_input)</span>
+<span class="pc bpc" id="L39" title="1 of 2 branches missed.">        micOn = menu?.findItem(R.id.action_mic)</span>
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        filter = menu?.findItem(R.id.action_filter)</span>
+<span class="fc" id="L41">        return true</span>
+    }
+
+<span class="fc" id="L44">    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {</span>
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        R.id.action_filter -&gt; {</span>
+            // User chooses the &quot;Filter&quot; item. Open filter fragment.
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">            navController.navigate(R.id.action_global_category_fragment)</span>
+<span class="fc" id="L48">            true</span>
+        }
+
+<span class="pc bpc" id="L51" title="1 of 2 branches missed.">        R.id.action_search -&gt; {</span>
+            // User chooses the &quot;Search&quot; action. Open Search fragment.
+<span class="pc bpc" id="L53" title="1 of 2 branches missed.">            navController.navigate(R.id.action_global_search_fragment)</span>
+<span class="fc" id="L54">            true</span>
+        }
+
+<span class="nc bnc" id="L57" title="All 2 branches missed.">        R.id.action_mic -&gt; {</span>
+<span class="nc" id="L58">            val navHostFragment = supportFragmentManager.fragments.first()</span>
+<span class="nc" id="L59">            val wantedFragment = navHostFragment.childFragmentManager.fragments.first()</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">            if (wantedFragment is SearchFragment) {</span>
+<span class="nc" id="L61">                wantedFragment.startVoiceInput()</span>
+            }
+<span class="nc" id="L63">            true</span>
+        }
+
+        else -&gt; {
+            // The user's action isn't recognized.
+            // Invoke the superclass to handle it.
+<span class="nc" id="L69">            false</span>
+        }
+<span class="fc" id="L71">    }</span>
+
+    private fun setupNavigation() {
+<span class="fc" id="L74">        navController = findNavController(R.id.nav_host_fragment)</span>
+<span class="fc" id="L75">        val bottomNav = findViewById&lt;BottomNavigationView&gt;(R.id.bottomNavigationMenu)</span>
+<span class="fc" id="L76">        val toolbar = findViewById&lt;Toolbar&gt;(R.id.toolbar)</span>
+
+<span class="fc" id="L78">        val appBarConfiguration = AppBarConfiguration(</span>
+<span class="fc" id="L79">            setOf(</span>
+<span class="fc" id="L80">                R.id.navigation_cocktails, R.id.navigation_favorites, R.id.navigation_profile</span>
+            )
+        )
+<span class="pc bpc" id="L83" title="1 of 2 branches missed.">        toolbar.setupWithNavController(navController, appBarConfiguration)</span>
+<span class="fc" id="L84">        setSupportActionBar(toolbar)</span>
+
+<span class="pc bpc" id="L86" title="1 of 2 branches missed.">        bottomNav.setupWithNavController(navController)</span>
+
+<span class="pc bpc" id="L88" title="1 of 2 branches missed.">        navController.addOnDestinationChangedListener { _, destination, _ -&gt;</span>
+<span class="fc bfc" id="L89" title="All 4 branches covered.">            if (destination.id == R.id.loginFragment || destination.id == R.id.registrationFragment) {</span>
+<span class="fc" id="L90">                bottomNav.visibility = View.GONE</span>
+<span class="fc" id="L91">                toolbar.visibility = View.GONE</span>
+            } else {
+<span class="fc" id="L93">                bottomNav.visibility = View.VISIBLE</span>
+<span class="fc" id="L94">                toolbar.visibility = View.VISIBLE</span>
+            }
+<span class="fc" id="L96">        }</span>
+<span class="fc" id="L97">    }</span>
+
+    override fun showSearchIconView(show: Boolean) {
+<span class="pc bpc" id="L100" title="1 of 2 branches missed.">        searchIcon?.isVisible = show</span>
+<span class="fc" id="L101">    }</span>
+
+    override fun showSearchInputView(show: Boolean) {
+<span class="pc bpc" id="L104" title="1 of 2 branches missed.">        searchInput?.isVisible = show</span>
+<span class="pc bpc" id="L105" title="1 of 2 branches missed.">        micOn?.isVisible = show</span>
+<span class="fc" id="L106">    }</span>
+
+    override fun showFilterView(show: Boolean) {
+<span class="pc bpc" id="L109" title="1 of 2 branches missed.">        filter?.isVisible = show</span>
+<span class="fc" id="L110">    }</span>
+
+    override fun getCurrentLoggedInUser(): String? {
+<span class="fc" id="L113">        return currentUser</span>
+    }
+
+    override fun setCurrentLoggedInUser(email: String?) {
+<span class="fc" id="L117">        currentUser = email</span>
+<span class="fc" id="L118">    }</span>
+
+
+    override fun onSupportNavigateUp(): Boolean {
+<span class="nc bnc" id="L122" title="All 6 branches missed.">        return navController.navigateUp() || super.onSupportNavigateUp()</span>
+    }
+
+
+    override fun disableBackButton() {
+<span class="fc" id="L127">        onBackPressedDispatcher.addCallback(</span>
+<span class="fc" id="L128">            this,</span>
+<span class="fc" id="L129">            object : OnBackPressedCallback(true) {</span>
+                override fun handleOnBackPressed() {
+                    // this disables the Android native back button
+<span class="nc" id="L132">                }</span>
+            }
+        )
+<span class="fc" id="L135">    }</span>
+
+    override fun getSearchInputViewReference(): SearchView? {
+<span class="pc bpc" id="L138" title="2 of 4 branches missed.">        return searchInput?.actionView as? SearchView</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

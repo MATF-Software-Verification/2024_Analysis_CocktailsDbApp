@@ -1,0 +1,2 @@
+10-20 00:56:59.234  1545  1569 I TestRunner: started: testDeleteCocktail(com.example.cocktailsdbapp.database.DatabaseTests)
+10-20 00:56:59.263  1545  1569 I TestRunner: finished: testDeleteCocktail(com.example.cocktailsdbapp.database.DatabaseTests)

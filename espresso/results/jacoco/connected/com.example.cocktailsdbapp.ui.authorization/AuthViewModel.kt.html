@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AuthViewModel.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.ui.authorization</a> &gt; <span class="el_source">AuthViewModel.kt</span></div><h1>AuthViewModel.kt</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.ui.authorization
+
+import android.content.SharedPreferences
+import androidx.lifecycle.ViewModel
+import com.example.cocktailsdbapp.model.User
+import com.example.cocktailsdbapp.utils.Constants
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
+
+@HiltViewModel
+<span class="fc" id="L11">class AuthViewModel @Inject constructor(</span>
+<span class="fc" id="L12">    private val sharedPreferences: SharedPreferences</span>
+<span class="fc" id="L13">) : ViewModel() {</span>
+
+<span class="fc" id="L15">    private var userPool = mutableSetOf&lt;String&gt;()</span>
+
+    fun saveUserData(userData: User) : Boolean {
+<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        if(userPool.contains(userData.email)) return false</span>
+<span class="fc" id="L19">        val editor = sharedPreferences.edit()</span>
+<span class="fc" id="L20">        editor.putString(&quot;${userData.email}${Constants.SHARED_PREF_NAME}&quot;, userData.name)</span>
+<span class="fc" id="L21">        editor.putString(&quot;${userData.email}${Constants.SHARED_PREF_EMAIL}&quot;, userData.email)</span>
+<span class="fc" id="L22">        editor.putString(&quot;${userData.email}${Constants.SHARED_PREF_PASSWORD}&quot;, userData.password)</span>
+<span class="fc" id="L23">        editor.apply()</span>
+<span class="fc" id="L24">        userPool.add(userData.email)</span>
+<span class="fc" id="L25">        return true</span>
+    }
+
+    fun getUserData(userEmail: String): User {
+<span class="fc" id="L29">            return User(</span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_NAME}&quot;, &quot;&quot;) ?: &quot;&quot;,</span>
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_EMAIL}&quot;, &quot;&quot;) ?: &quot;&quot;,</span>
+<span class="pc bpc" id="L32" title="1 of 2 branches missed.">                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_PASSWORD}&quot;, &quot;&quot;) ?: &quot;&quot;</span>
+            )
+        }
+
+    fun isUserInfoValid(userEmail: String, password: String): Boolean {
+<span class="pc bpc" id="L37" title="3 of 6 branches missed.">        return !(sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_EMAIL}&quot;, &quot;&quot;).isNullOrEmpty() ||</span>
+<span class="pc bnc" id="L38" title="All 2 branches missed.">                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_PASSWORD}&quot;, &quot;&quot;) != password)</span>
+    }
+
+    fun editUserName(userEmail: String, newName: String) {
+        // Copy the current user using updated name
+<span class="nc" id="L43">        val updatedUser = getUserData(userEmail).copy(name = newName)</span>
+
+        // Save the updated user data back to shared preferences
+<span class="nc" id="L46">        with(sharedPreferences.edit()) {</span>
+<span class="nc" id="L47">            putString(&quot;${userEmail}${Constants.SHARED_PREF_NAME}&quot;, updatedUser.name)</span>
+<span class="nc" id="L48">            apply()</span>
+<span class="nc" id="L49">        }</span>
+<span class="nc" id="L50">    }</span>
+    fun editPassword(userEmail: String, newPassword: String) {
+        // Update the name
+<span class="nc" id="L53">        val updatedUser = getUserData(userEmail).copy(password = newPassword)</span>
+
+        // Save the updated user data back to shared preferences
+<span class="nc" id="L56">        with(sharedPreferences.edit()) {</span>
+<span class="nc" id="L57">            putString(&quot;${userEmail}${Constants.SHARED_PREF_PASSWORD}&quot;, updatedUser.password)</span>
+<span class="nc" id="L58">            apply()</span>
+<span class="nc" id="L59">        }</span>
+<span class="nc" id="L60">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

@@ -1,0 +1,340 @@
+10-20 01:00:17.681  1545  1569 I TestRunner: started: testCocktailsFragmentDisplaysCorrectly(com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest)
+10-20 01:00:17.702  1545  1569 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-20 01:00:17.721   582   623 W InputManager-JNI: Input channel object '8f0cd35 Splash Screen com.example.cocktailsdbapp.test (client)' was disposed without first being removed with the input manager!
+10-20 01:00:17.726   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e8654000 0x3e9038000]
+10-20 01:00:17.733   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e9038000 0x3e9a1c000]
+10-20 01:00:17.740   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
+10-20 01:00:17.762  2441  2647 I OpenGLRenderer: Davey! duration=36595ms; Flags=1, FrameTimelineVsyncId=231093, IntendedVsync=30968084067362, Vsync=30968084067362, InputEventId=0, HandleInputStart=30968086511395, AnimationStart=30968086512029, PerformTraversalsStart=30968086512289, DrawStart=30968107441061, FrameDeadline=30968117400694, FrameInterval=30968086509364, FrameStartTime=16666666, SyncQueued=30968107584617, SyncStart=30968108190795, IssueDrawCommandsStart=30968108853003, SwapBuffers=30968108928098, FrameCompleted=31004680430854, DequeueBufferDuration=4049, QueueBufferDuration=6105808, GpuCompleted=31004680430854, SwapBuffersCompleted=30968116661128, DisplayPresentTime=0,
+10-20 01:00:17.772  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+10-20 01:00:17.772  2153  2153 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+10-20 01:00:17.773  2153  2153 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+10-20 01:00:17.784   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f2a54000 0x3f3438000]
+10-20 01:00:17.791   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f3438000 0x3f3e1c000]
+10-20 01:00:17.795   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f13c8000 0x3f1dac000]
+10-20 01:00:17.825  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{55c1bf6 V.E...... ......ID 0,0-0,0}
+10-20 01:00:17.825  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 01:00:17.825  1186  1240 D SplashScreenView: Branding: view: android.view.View{f010bf7 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 01:00:17.874  1186  1295 D EglHelper: createEglContext start
+10-20 01:00:17.887  1186  1295 D EGL_emulation: eglCreateContext: 0x7eb6786b7210: maj 3 min 0 rcv 3
+10-20 01:00:17.887  1186  1295 D EglHelper: createEglContext done
+10-20 01:00:17.887  1186  1295 D EglHelper: createEglSurface start
+10-20 01:00:17.889   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f1dac000 0x3f2287000]
+10-20 01:00:17.894  1186  1295 D EglHelper: createEglSurface done
+10-20 01:00:17.894  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@dc3fc1c in: PRE_ON_CREATE
+10-20 01:00:17.894  1545  1545 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-20 01:00:17.905  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+10-20 01:00:17.908  2153  2153 E HwDetectorWithState: a: 3
+10-20 01:00:17.918  1186  1197 I ndroid.systemu: NativeAlloc concurrent copying GC freed 34998(1392KB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 10MB/20MB, paused 28us,35us total 294.726ms
+10-20 01:00:17.923   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f3438000 0x3f3e1c000]
+10-20 01:00:17.933   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f09e4000 0x3f13c8000]
+10-20 01:00:17.939   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f13c8000 0x3f1dac000]
+10-20 01:00:18.199   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e8654000 0x3e8b2f000]
+10-20 01:00:18.273  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@dc3fc1c in: CREATED
+10-20 01:00:18.273  1545  1545 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@dc3fc1c
+10-20 01:00:18.276  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@dc3fc1c in: STARTED
+10-20 01:00:18.277  1545  1545 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@dc3fc1c
+10-20 01:00:18.278  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@dc3fc1c in: RESUMED
+10-20 01:00:18.279  1545  1545 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@dc3fc1c
+10-20 01:00:18.313   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e8b2f000 0x3e9513000]
+10-20 01:00:18.317   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
+10-20 01:00:18.320   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f2a54000 0x3f3438000]
+10-20 01:00:18.363   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +581ms
+10-20 01:00:18.417  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 01:00:18.418  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 01:00:18.419  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:18.625  1545  1545 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296378/com.example.cocktailsdbapp:id/bt_register>
+10-20 01:00:18.649   582  2255 W InputManager-JNI: Input channel object 'cb65f9c com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-20 01:00:18.665   582  2229 W InputManager-JNI: Input channel object '23b4683 Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
+10-20 01:00:18.826  1186  1256 D EGL_emulation: app_time_stats: avg=184.67ms min=14.64ms max=1137.58ms count=7
+10-20 01:00:18.831  1186  1256 D EGL_emulation: app_time_stats: avg=185.27ms min=13.76ms max=1048.23ms count=7
+10-20 01:00:20.044  1545  1545 I ViewInteraction: Performing 'replace text()' action on view view.getId() is <2131296468/com.example.cocktailsdbapp:id/et_name_input>
+10-20 01:00:20.114  1545  1579 D EGL_emulation: app_time_stats: avg=104.61ms min=2.88ms max=1222.57ms count=16
+10-20 01:00:20.141  1545  1545 I ViewInteraction: Performing 'type text(Cocktails Test User)' action on view view.getId() is <2131296468/com.example.cocktailsdbapp:id/et_name_input>
+10-20 01:00:20.292  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 01:00:20.296  1545  1545 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{87efc0e VFED..CL. .F.P..ID 119,284-959,392 #7f0900d4 app:id/et_name_input aid=1073741827} flags=0 reason=SHOW_SOFT_INPUT
+10-20 01:00:20.300  1929  1929 W KeyboardViewController: KeyboardViewController.show():477 Requesting to show sub view with id 2131428268(#0x7f0b03ac) when keyboard HEADER view is not ready to show
+10-20 01:00:20.330  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 01:00:20.334  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:20.348  1545  1545 I AssistStructure: Flattened final assist data: 2988 bytes, containing 1 windows, 17 views
+10-20 01:00:20.364  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
+10-20 01:00:20.366  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:20.369  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-20 01:00:20.371  1929  1929 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=Text imeActionName=NEXT dump=[inputType=0x61 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=name label=null packageName=com.example.cocktailsdbapp autofillId=1073741827 fieldId=2131296468 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
+10-20 01:00:20.373  1929  1929 I Delight5Facilitator: Delight5Facilitator.initializeForIme():718 initializeForIme() : Locale = [en_US], layout = qwerty
+10-20 01:00:20.374  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():54 cancelShutdown()
+10-20 01:00:20.375  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():66 syncLanguagePacks()
+10-20 01:00:20.379  1929  1929 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1293 inline flag updated to:false
+10-20 01:00:20.385  1929 13454 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():182 maybeScheduleAutoPackDownloadForFallback()
+10-20 01:00:20.394  1929 13454 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():194 maybeScheduleAutoPackDownload() for language tag en-US
+10-20 01:00:20.410  7378  7378 W svc     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+10-20 01:00:20.411  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-20 01:00:20.447  1957  1957 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:2144555430
+10-20 01:00:20.459  1929  1929 I KeyboardViewHelper: KeyboardViewHelper.getView():167 Get view with height ratio:1.000000
+10-20 01:00:20.516  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-20 01:00:20.539  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:20.542  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-20 01:00:20.544  1929  2492 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-20 01:00:20.552  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:20.555  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-20 01:00:20.556  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:20.561  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-20 01:00:20.566  1929  1929 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
+10-20 01:00:20.619  1186  1256 D EGL_emulation: app_time_stats: avg=198.57ms min=13.41ms max=1657.69ms count=9
+10-20 01:00:20.617  1545  1545 D UiControllerImpl: Injecting string: "Cocktails Test User"
+10-20 01:00:20.643  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:20.648   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3e9513000 0x3e9eb4000]
+10-20 01:00:20.658  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:20.659  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:20.662  1929  2492 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-20 01:00:20.676  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:20.718   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ef174000 0x3efb15000]
+10-20 01:00:20.765  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13508<13509, inputStateId=12900, lastInputStateId=12899
+10-20 01:00:20.780  1545  1545 D InsetsController: show(ime(), fromIme=true)
+10-20 01:00:20.931   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec654000 0x3ecff5000]
+10-20 01:00:21.052  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:21.052  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:21.163  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:21.188  1545  1579 D EGL_emulation: app_time_stats: avg=153.08ms min=47.71ms max=408.76ms count=7
+10-20 01:00:21.348  1929  2492 I native  : I1020 01:00:21.348114    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:21.394  1929  2492 E InputContextLock: InputContextLock.maybeTrackAcquireLockTime():63 Acquire InputContextLock takes 22 ms, mainThreadForSure=false.
+10-20 01:00:21.464  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13511<13513, inputStateId=12903, lastInputStateId=12903
+10-20 01:00:21.571  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13513<13515, inputStateId=12904, lastInputStateId=12905
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 4 milliseconds, 145137 nanoseconds delay) for ott@985fcd8[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@826a831]]]
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-20 01:00:21.695  1929  1929 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-20 01:00:21.739  1929  1929 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 154 ms
+10-20 01:00:21.933  1929  2492 I native  : I1020 01:00:21.933765    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:21.936  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13515<13517, inputStateId=12906, lastInputStateId=12906
+10-20 01:00:22.217  1929  2492 I native  : I1020 01:00:22.217298    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:22.247  1545  1579 D EGL_emulation: app_time_stats: avg=175.38ms min=20.64ms max=308.43ms count=6
+10-20 01:00:22.301  1929  2492 I native  : I1020 01:00:22.301265    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:22.309  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13517<13521, inputStateId=12907, lastInputStateId=12908
+10-20 01:00:22.310  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13519<13521, inputStateId=12908, lastInputStateId=12908
+10-20 01:00:22.407  1929  2492 I native  : I1020 01:00:22.407619    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:22.411  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13521<13523, inputStateId=12909, lastInputStateId=12909
+10-20 01:00:22.472  1929  2492 I native  : I1020 01:00:22.472302    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:22.478  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13523<13525, inputStateId=12910, lastInputStateId=12910
+10-20 01:00:22.576  1929  2492 I native  : I1020 01:00:22.576234    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:22.577  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13525<13527, inputStateId=12911, lastInputStateId=12911
+10-20 01:00:22.587  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:22.690  1929  2403 D EGL_emulation: app_time_stats: avg=651.39ms min=138.51ms max=1612.32ms count=3
+10-20 01:00:22.724  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:22.742  1929  2492 E InputContextLock: InputContextLock.maybeTrackAcquireLockTime():63 Acquire InputContextLock takes 20 ms, mainThreadForSure=false.
+10-20 01:00:22.763  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:22.954  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13532<13536, inputStateId=12919, lastInputStateId=12922
+10-20 01:00:23.030  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:23.048  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.libs.framework.keyboard.widget.AccessPointsBar{130b33d I.E...... ......ID 95,0-975,116 #7f0b0017 app:id/0_resource_name_obfuscated} to show itself, DEFAULT
+10-20 01:00:23.131  1929  2492 I native  : I1020 01:00:23.131494    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:23.134  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13539<13541, inputStateId=12925, lastInputStateId=12925
+10-20 01:00:23.224  1929  2492 I native  : I1020 01:00:23.224465    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:23.246  1929  2492 I native  : I1020 01:00:23.246550    2492 input-context-store.cc:161] Ignoring stale client request for OverrideDecodedCandidates
+10-20 01:00:23.248  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13541<13542, inputStateId=0, lastInputStateId=12926
+10-20 01:00:23.263  1545  1579 D EGL_emulation: app_time_stats: avg=66.23ms min=7.43ms max=121.93ms count=15
+10-20 01:00:23.318  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:23.421  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:23.515  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13548<13550, inputStateId=12932, lastInputStateId=12933
+10-20 01:00:23.588  1545  1545 I ViewInteraction: Performing 'replace text()' action on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
+10-20 01:00:23.598  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:23.623  1545  1545 I ViewInteraction: Performing 'type text(cocktailstest@example.com)' action on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
+10-20 01:00:23.717  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
+10-20 01:00:23.718  1545  1545 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{fb1c62f VFED..CL. .F.P..ID 119,418-959,526 #7f0900d3 app:id/et_email_input aid=1073741828} flags=0 reason=SHOW_SOFT_INPUT
+10-20 01:00:23.719  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
+10-20 01:00:23.738  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-20 01:00:23.742  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():76 shutdown()
+10-20 01:00:23.747  1929  1929 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+10-20 01:00:23.751  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 01:00:23.754  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 01:00:23.756  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:23.761  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
+10-20 01:00:23.764  1929  2492 W Delight5Decoder: Delight5DecoderWrapper.shouldAbandonMessage():1874 Detected old [FetchSuggestions] request in background: 13552<13553
+10-20 01:00:23.776  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:23.778   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc1d000 0x3ebc6a000]
+10-20 01:00:23.780  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-20 01:00:23.783  1929  1929 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=Email imeActionName=NEXT dump=[inputType=0x21 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=email label=null packageName=com.example.cocktailsdbapp autofillId=1073741828 fieldId=2131296467 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
+10-20 01:00:23.788  1929  1929 I Delight5Facilitator: Delight5Facilitator.initializeForIme():718 initializeForIme() : Locale = [en_US], layout = qwerty
+10-20 01:00:23.790  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():54 cancelShutdown()
+10-20 01:00:23.792  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():66 syncLanguagePacks()
+10-20 01:00:23.795  1929 13454 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():182 maybeScheduleAutoPackDownloadForFallback()
+10-20 01:00:23.796  1929 13454 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():194 maybeScheduleAutoPackDownload() for language tag en-US
+10-20 01:00:23.798  1929  1929 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1293 inline flag updated to:false
+10-20 01:00:23.807   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc6a000 0x3ebcb7000]
+10-20 01:00:23.810   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebcb7000 0x3ebd04000]
+10-20 01:00:23.814  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-20 01:00:23.822  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-20 01:00:23.834  1545  1545 W IInputConnectionWrapper: setComposingRegion on inactive InputConnection
+10-20 01:00:23.844  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:23.847  1929  2492 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-20 01:00:23.848  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-20 01:00:23.855  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:23.857  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-20 01:00:23.859  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:23.863  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-20 01:00:23.865  1929  1929 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
+10-20 01:00:23.867  1929  1929 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
+10-20 01:00:23.884  1545  1545 D InsetsController: show(ime(), fromIme=true)
+10-20 01:00:23.894  1929  2403 D EGL_emulation: app_time_stats: avg=100.15ms min=19.00ms max=281.85ms count=12
+10-20 01:00:23.913  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:23.913  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:23.922  1545  1545 D InsetsController: show(ime(), fromIme=true)
+10-20 01:00:23.931  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:23.946  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:23.946  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:23.959  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:24.065  1545  1545 D UiControllerImpl: Injecting string: "cocktailstest@example.com"
+10-20 01:00:24.188  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13557<13559, inputStateId=12940, lastInputStateId=12942
+10-20 01:00:24.201  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:24.223   582  1255 W InputManager-JNI: Input channel object '5a3a4c6 PopupWindow:876918e (client)' was disposed without first being removed with the input manager!
+10-20 01:00:24.225  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:24.276  1545  1579 D EGL_emulation: app_time_stats: avg=65.30ms min=6.85ms max=217.92ms count=15
+10-20 01:00:24.353  1929  2492 E InputContextLock: InputContextLock.maybeTrackAcquireLockTime():63 Acquire InputContextLock takes 5 ms, mainThreadForSure=false.
+10-20 01:00:24.410  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13564<13567, inputStateId=12947, lastInputStateId=12950
+10-20 01:00:24.414  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13566<13567, inputStateId=12949, lastInputStateId=12950
+10-20 01:00:24.459  1929  2492 I native  : I1020 01:00:24.459362    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:24.461  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13568<13570, inputStateId=12951, lastInputStateId=12951
+10-20 01:00:24.508  1929  2492 I native  : I1020 01:00:24.508403    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:24.509  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13570<13572, inputStateId=12952, lastInputStateId=12952
+10-20 01:00:24.545  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13572<13574, inputStateId=12953, lastInputStateId=12954
+10-20 01:00:24.571  1929  2492 I native  : I1020 01:00:24.571479    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:24.573  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13574<13576, inputStateId=12955, lastInputStateId=12955
+10-20 01:00:24.608  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13576<13577, inputStateId=12956, lastInputStateId=12957
+10-20 01:00:24.653  1929  2492 I native  : I1020 01:00:24.653816    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-20 01:00:24.658  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13578<13580, inputStateId=12958, lastInputStateId=12958
+10-20 01:00:24.693  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13580<13582, inputStateId=12959, lastInputStateId=12960
+10-20 01:00:24.741  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13582<13585, inputStateId=12961, lastInputStateId=12962
+10-20 01:00:24.792  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-20 01:00:24.850  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13587<13592, inputStateId=12965, lastInputStateId=12969
+10-20 01:00:24.853  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 13589<13592, inputStateId=12967, lastInputStateId=12969
+10-20 01:00:24.981  1929  2403 D EGL_emulation: app_time_stats: avg=155.13ms min=21.34ms max=492.21ms count=7
+10-20 01:00:25.133  1545  1545 I ViewInteraction: Performing 'replace text()' action on view view.getId() is <2131296469/com.example.cocktailsdbapp:id/et_password_input>
+10-20 01:00:25.145  1545  1545 I ViewInteraction: Performing 'type text(password123)' action on view view.getId() is <2131296469/com.example.cocktailsdbapp:id/et_password_input>
+10-20 01:00:25.207  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
+10-20 01:00:25.210  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
+10-20 01:00:25.215  1545  1545 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{6de43c VFED..CL. .F.P..ID 119,552-959,660 #7f0900d5 app:id/et_password_input aid=1073741829} flags=0 reason=SHOW_SOFT_INPUT
+10-20 01:00:25.216  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-20 01:00:25.217  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():76 shutdown()
+10-20 01:00:25.219  1929  1929 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+10-20 01:00:25.225  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 01:00:25.226  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 01:00:25.229  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:25.233  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
+10-20 01:00:25.246   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc1d000 0x3ebc6a000]
+10-20 01:00:25.251  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:25.259   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc6a000 0x3ebcb7000]
+10-20 01:00:25.275   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebcb7000 0x3ebd04000]
+10-20 01:00:25.291  1545  1579 D EGL_emulation: app_time_stats: avg=34.40ms min=7.03ms max=76.44ms count=29
+10-20 01:00:25.298  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-20 01:00:25.299  1929  1929 I AndroidIME: AbstractIme.onActivate():86 PasswordIme.onActivate() : EditorInfo = inputType=Password imeActionName=DONE dump=[inputType=0x81 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=password label=null packageName=com.example.cocktailsdbapp autofillId=1073741829 fieldId=2131296469 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
+10-20 01:00:25.306  1929  1929 I KeyboardViewHelper: KeyboardViewHelper.getView():167 Get view with height ratio:1.000000
+10-20 01:00:25.315  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-20 01:00:25.316  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
+10-20 01:00:25.317  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-20 01:00:25.318  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:25.319  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-20 01:00:25.319  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-20 01:00:25.320  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-20 01:00:25.321  1929  1929 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-SettingOff,MicIconHidden-PasswordOrNumberOrDateInputType,}
+10-20 01:00:25.321  1929  1929 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
+10-20 01:00:25.329  1545  1545 D InsetsController: show(ime(), fromIme=true)
+10-20 01:00:25.342  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:25.343  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:25.351  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:25.351  1545  1545 D InsetsController: show(ime(), fromIme=true)
+10-20 01:00:25.361  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:25.361  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:25.365  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-20 01:00:25.508  1545  1545 D UiControllerImpl: Injecting string: "password123"
+10-20 01:00:25.584   582  2255 W InputManager-JNI: Input channel object '32a9e49 PopupWindow:1c4d52b (client)' was disposed without first being removed with the input manager!
+10-20 01:00:25.875  1545  1545 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296378/com.example.cocktailsdbapp:id/bt_register>
+10-20 01:00:26.002   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc1d000 0x3ebdde000]
+10-20 01:00:26.014   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ebdde000 0x3ebf9f000]
+10-20 01:00:26.017   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eb0a8000 0x3eb269000]
+10-20 01:00:26.078  1186  1256 D EGL_emulation: app_time_stats: avg=453.61ms min=9.25ms max=4662.72ms count=12
+10-20 01:00:26.294  1545  1579 D EGL_emulation: app_time_stats: avg=27.01ms min=4.80ms max=237.27ms count=36
+10-20 01:00:27.355  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Registration Successful!"
+10-20 01:00:27.358  1545  1579 D EGL_emulation: app_time_stats: avg=36.57ms min=11.73ms max=598.04ms count=29
+10-20 01:00:27.358  1545  1545 I ViewInteraction: Performing 'single click' action on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "OK"
+10-20 01:00:27.431  1545  1579 D EGL_emulation: app_time_stats: avg=126.06ms min=8.67ms max=1236.71ms count=11
+10-20 01:00:27.445  1545  1579 D OpenGLRenderer: endAllActiveAnimators on 0x7eb6f889a440 (RippleDrawable) with handle 0x7eb608722e70
+10-20 01:00:27.447   582  1255 W InputManager-JNI: Input channel object 'ea8a0a com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
+10-20 01:00:27.485  1186  1256 D EGL_emulation: app_time_stats: avg=153.46ms min=11.50ms max=1273.48ms count=9
+10-20 01:00:27.510  1545  2071 I okhttp.OkHttpClient: --> GET https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic
+10-20 01:00:27.512  1545  2071 I okhttp.OkHttpClient: --> END GET
+10-20 01:00:27.545  1545  1545 E RecyclerView: No adapter attached; skipping layout
+10-20 01:00:27.553  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
+10-20 01:00:27.554  1929  1929 I AndroidIME: AbstractIme.onDeactivate():207 PasswordIme.onDeactivate()
+10-20 01:00:27.564  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 01:00:27.565  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 01:00:27.566  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 01:00:27.583  1929  2403 D EGL_emulation: app_time_stats: avg=866.52ms min=13.34ms max=2234.78ms count=3
+10-20 01:00:27.618  1545  2071 I okhttp.OkHttpClient: <-- 200 https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic (103ms)
+10-20 01:00:27.618  1545  2071 I okhttp.OkHttpClient: date: Sun, 19 Oct 2025 23:00:35 GMT
+10-20 01:00:27.618  1545  2071 I okhttp.OkHttpClient: content-type: application/json
+10-20 01:00:27.618  1545  2071 I okhttp.OkHttpClient: server: cloudflare
+10-20 01:00:27.619  1545  2071 I okhttp.OkHttpClient: x-powered-by: PHP/7.4.33
+10-20 01:00:27.619  1545  2071 I okhttp.OkHttpClient: access-control-allow-origin: *
+10-20 01:00:27.619  1545  2071 I okhttp.OkHttpClient: cf-cache-status: DYNAMIC
+10-20 01:00:27.619  1545  2071 I okhttp.OkHttpClient: nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+10-20 01:00:27.620  1545  2071 I okhttp.OkHttpClient: server-timing: cfCacheStatus;desc="DYNAMIC"
+10-20 01:00:27.621  1545  2071 I okhttp.OkHttpClient: server-timing: cfEdge;dur=3,cfOrigin;dur=45
+10-20 01:00:27.621  1545  2071 I okhttp.OkHttpClient: report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dT29jguoEzKw%2FHGIkO6%2FehDPktfMmVfdiVl0meXE%2BwoZDzVrwnpiCsK9%2FMXjcfTPJoK7ponPGpMfKxn2E0SrK81hSvxM9J7%2FofgWxbu6aEPM%2F%2Bs%3D"}]}
+10-20 01:00:27.621  1545  2071 I okhttp.OkHttpClient: cf-ray: 9913e47b48b2bbed-BEG
+10-20 01:00:27.621  1545  2071 I okhttp.OkHttpClient: alt-svc: h3=":443"; ma=86400
+10-20 01:00:27.625  1545  2071 I okhttp.OkHttpClient: {"drinks":[{"strDrink":"110 in the shade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xxyywq1454511117.jpg","idDrink":"15423"},{"strDrink":"151 Florida Bushwacker","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rvwrvv1468877323.jpg","idDrink":"14588"},{"strDrink":"155 Belmont","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg","idDrink":"15346"},{"strDrink":"24k nightmare","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yyrwty1468877498.jpg","idDrink":"17060"},{"strDrink":"252","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rtpxqw1468877562.jpg","idDrink":"15288"},{"strDrink":"3 Wise Men","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wxqpyw1468877677.jpg","idDrink":"13899"},{"strDrink":"3-Mile Long Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rrtssw1472668972.jpg","idDrink":"15300"},{"strDrink":"410 Gone","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xtuyqv1472669026.jpg","idDrink":"13581"},{"strDrink":"50\/50","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wwpyvr1461919316.jpg","idDrink":"14598"},{"strDrink":"501 Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1461867097.jpg","idDrink":"17105"},{"strDrink":"57 Chevy with a White License Plate","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg","idDrink":"14029"},{"strDrink":"69 Special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vqyxqx1472669095.jpg","idDrink":"13940"},{"strDrink":"747","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xxsxqy1472668106.jpg","idDrink":"14229"},{"strDrink":"747 Drink","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/i9suxb1582474926.jpg","idDrink":"178318"},{"strDrink":"9 1\/2 Weeks","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xvwusr1472669302.jpg","idDrink":"16108"},{"strDrink":"A Day at the Beach","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/trptts1454514474.jpg","idDrink":"15200"},{"strDrink":"A Furlong Too Late","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ssxvww1472669166.jpg","idDrink":"17831"},{"strDrink":"A Gilligan's Island","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wysqut1461867176.jpg","idDrink":"16943"},{"strDrink":"A midsummernight dream","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ysqvqp1461867292.jpg","idDrink":"15675"},{"strDrink":"A Night In Old Mandalay","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vyrvxt1461919380.jpg","idDrink":"17832"},{"strDrink":"A Piece of Ass","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tqxyxx1472719737.jpg","idDrink":"16405"},{"strDrink":"A Splash of Nash","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rsvtrr1472668201.jpg","idDrink":"14564"},{"strDrink":"A True Amaretto Sour","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rptuxy1472669372.jpg","idDrink":"17005"},{"strDrink":"A. J.","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l74qo91582480316.jpg","idDrink":"17833"},{"strDrink":"A.D.M. (After Dinner Mint)","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ruxuvp1472669600.jpg","idDrink":"14560"},{"strDrink":"A1","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2x8thr1504816928.jpg","idDrink":"17222"},{"strDrink":"Abbey Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/mr30ob1582479875.jpg","idDrink":"17834"},{"strDrink":"Abbey Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2mcozt1504817403.jpg","idDrink":"17223"},{
+10-20 01:00:27.625  1545  2071 I okhttp.OkHttpClient: "strDrink":"ABC","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tqpvqp1472668328.jpg","idDrink":"13501"},{"strDrink":"Abilene","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/smb2oe1582479072.jpg","idDrink":"17835"},{"strDrink":"Absinthe #2","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uxxtrt1472667197.jpg","idDrink":"12790"},{"strDrink":"Absolut Evergreen","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wrxrxp1472812609.jpg","idDrink":"14374"},{"strDrink":"Absolut limousine","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ssqpyw1472719844.jpg","idDrink":"14372"},{"strDrink":"Absolut Sex","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xtrvtx1472668436.jpg","idDrink":"14360"},{"strDrink":"Absolut Stress #2","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xuyqrw1472811825.jpg","idDrink":"15597"},{"strDrink":"Absolut Summertime","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/trpxxs1472669662.jpg","idDrink":"14107"},{"strDrink":"Absolutely Cranberry Smash","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vqwstv1472811884.jpg","idDrink":"15024"},{"strDrink":"Absolutely Fabulous","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/abcpwr1504817734.jpg","idDrink":"17224"},{"strDrink":"Absolutly Screwed Up","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yvxrwv1472669728.jpg","idDrink":"16134"},{"strDrink":"Acapulco","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/il9e0r1582478841.jpg","idDrink":"17836"},{"strDrink":"Ace","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l3cd7f1504818306.jpg","idDrink":"17225"},{"strDrink":"ACID","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xuxpxt1479209317.jpg","idDrink":"14610"},{"strDrink":"Adam","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/v0at4i1582478473.jpg","idDrink":"17837"},{"strDrink":"Adam & Eve","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vfeumw1504819077.jpg","idDrink":"17226"},{"strDrink":"Adam Bomb","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpxurs1454513016.jpg","idDrink":"16333"},{"strDrink":"Adam Sunrise","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtuyvu1472812112.jpg","idDrink":"15567"},{"strDrink":"Addington","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ib0b7g1504818925.jpg","idDrink":"17227"},{"strDrink":"Addison","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yzva7x1504820300.jpg","idDrink":"17228"},{"strDrink":"Addison Special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4vo5651493068493.jpg","idDrink":"14272"},{"strDrink":"Adios Amigos Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/8nk2mp1504819893.jpg","idDrink":"17229"},{"strDrink":"Adonis Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xrvruq1472812030.jpg","idDrink":"17838"},{"strDrink":"Affair","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/h5za6y1582477994.jpg","idDrink":"17839"},{"strDrink":"Affinity","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wzdtnn1582477684.jpg","idDrink":"17840"},{"strDrink":"After Dinner Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtytxq1483387578.jpg","idDrink":"11010"},{"strDrink":"After Five","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/sk3lr91493068595.jpg","idDrink":"13807"},{"strDrink":"After sex","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xrl66i1493068702.jpg","idDrink":"15182"},{"strDrink":"After Supper Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb
+10-20 01:00:27.625  1545  2071 I okhttp.OkHttpClient: .com\/images\/media\/drink\/quyxwu1483387610.jpg","idDrink":"11011"},{"strDrink":"Afternoon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vyrurp1472667777.jpg","idDrink":"13162"},{"strDrink":"Alabama Slammer","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/jntghf1606771886.jpg","idDrink":"11012"},{"strDrink":"Alaska Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wsyryt1483387720.jpg","idDrink":"11013"},{"strDrink":"Alexander","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/0clus51606772388.jpg","idDrink":"11014"},{"strDrink":"Alfie Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ypxsqy1483387829.jpg","idDrink":"11019"},{"strDrink":"Algonquin","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uwryxx1483387873.jpg","idDrink":"11020"},{"strDrink":"Alice in Wonderland","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/g12lj41493069391.jpg","idDrink":"17094"},{"strDrink":"Allegheny","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uwvyts1483387934.jpg","idDrink":"11021"},{"strDrink":"Allies Cocktail","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qvprvp1483388104.jpg","idDrink":"11022"},{"strDrink":"Almeria","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rwsyyu1483388181.jpg","idDrink":"11023"},{"strDrink":"Almond Chocolate Coffee","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/jls02c1493069441.jpg","idDrink":"16082"},{"strDrink":"Almond Joy","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xutuqs1483388296.jpg","idDrink":"11024"},{"strDrink":"Amaretto And Cream","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dj8n0r1504375018.jpg","idDrink":"11025"},{"strDrink":"Amaretto fizz","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/92h3jz1582474310.jpg","idDrink":"178321"},{"strDrink":"Amaretto Liqueur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/swqxuv1472719649.jpg","idDrink":"12792"},{"strDrink":"Amaretto Mist","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/utpxxq1483388370.jpg","idDrink":"11026"},{"strDrink":"Amaretto Rose","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3jm41q1493069578.jpg","idDrink":"11027"},{"strDrink":"Amaretto Shake","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xk79al1493069655.jpg","idDrink":"15194"},{"strDrink":"Amaretto Sour","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xnzc541493070211.jpg","idDrink":"13731"},{"strDrink":"Amaretto Stinger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vvop4w1493069934.jpg","idDrink":"11028"},{"strDrink":"Amaretto Stone Sour","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xwryyx1472719921.jpg","idDrink":"14306"},{"strDrink":"Amaretto Stone Sour Alternative","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wutxqr1472720012.jpg","idDrink":"16100"},{"strDrink":"Amaretto Sunrise","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/akcpsh1493070267.jpg","idDrink":"14578"},{"strDrink":"Amaretto Sunset","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/apictz1493069760.jpg","idDrink":"17168"},{"strDrink":"Amaretto Sweet & Sour","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vswwus1472668546.jpg","idDrink":"16202"},{"strDrink":"Amaretto Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/b7qzo21493070167.jpg","idDrink":"11029"},{"strDrink":"Americano","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/709s6m1613655124.jpg","idDrink":"15941"},{"strDrink":"Angel Face","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images
+10-20 01:00:27.626  1545  2071 I okhttp.OkHttpClient: \/media\/drink\/vaukir1606772580.jpg","idDrink":"11034"},{"strDrink":"Angelica Liqueur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yuurps1472667672.jpg","idDrink":"12794"},{"strDrink":"Aperol Spritz","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/iloasq1587661955.jpg","idDrink":"178325"},{"strDrink":"Apple Grande","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wqrptx1472668622.jpg","idDrink":"16289"},{"strDrink":"Apple Highball","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/66mt9b1619695719.jpg","idDrink":"178353"},{"strDrink":"Apple Pie with A Crust","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qspqxt1472720078.jpg","idDrink":"16958"},{"strDrink":"Apple Slammer","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/09yd5f1493069852.jpg","idDrink":"13683"},{"strDrink":"Applecar","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/sbffau1504389764.jpg","idDrink":"11046"},{"strDrink":"Applejack","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/sutyqp1479209062.jpg","idDrink":"16311"},{"strDrink":"Apricot Lady","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7ityp11582579598.jpg","idDrink":"11050"},{"strDrink":"Apricot punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuxxtp1472668667.jpg","idDrink":"15849"},{"strDrink":"Aquamarine","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/zvsre31572902738.jpg","idDrink":"178319"},{"strDrink":"Archbishop","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4g6xds1582579703.jpg","idDrink":"11052"},{"strDrink":"Arctic Fish","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttsvwy1472668781.jpg","idDrink":"14622"},{"strDrink":"Arctic Mouthwash","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wqstwv1478963735.jpg","idDrink":"17118"},{"strDrink":"Arise My Love","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wyrrwv1441207432.jpg","idDrink":"11053"}]}
+10-20 01:00:27.626  1545  2071 I okhttp.OkHttpClient: <-- END HTTP (14173-byte body)
+10-20 01:00:28.836  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296681/com.example.cocktailsdbapp:id/rv_cocktails>
+10-20 01:00:28.840  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296540/com.example.cocktailsdbapp:id/ll_label>
+10-20 01:00:28.842  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296339/com.example.cocktailsdbapp:id/action_search>
+10-20 01:00:28.846  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296322/com.example.cocktailsdbapp:id/action_filter>
+10-20 01:00:28.848  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296371/com.example.cocktailsdbapp:id/bottomNavigationMenu>
+10-20 01:00:28.850  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296615/com.example.cocktailsdbapp:id/navigation_cocktails>
+10-20 01:00:28.853  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296616/com.example.cocktailsdbapp:id/navigation_favorites>
+10-20 01:00:28.856  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296618/com.example.cocktailsdbapp:id/navigation_profile>
+10-20 01:00:28.875  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{5a9d614 V.E...... ......ID 0,0-0,0}
+10-20 01:00:28.875  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 01:00:28.875  1186  1240 D SplashScreenView: Branding: view: android.view.View{26ebd G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 01:00:28.890  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@dc3fc1c in: PAUSED
+10-20 01:00:28.891  1545  1545 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@dc3fc1c
+10-20 01:00:28.915   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f3438000 0x3f3e1c000]
+10-20 01:00:28.933   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
+10-20 01:00:28.936   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f09e4000 0x3f13c8000]
+10-20 01:00:28.944   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eb0a8000 0x3eb6fc000]
+10-20 01:00:28.967  1545  1579 D EGL_emulation: app_time_stats: avg=159.68ms min=7.77ms max=1204.50ms count=10
+10-20 01:00:28.991  1186  1256 D EGL_emulation: app_time_stats: avg=1129.28ms min=12.96ms max=10032.19ms count=9
+10-20 01:00:28.995  1186  1256 D EGL_emulation: app_time_stats: avg=71.79ms min=2.84ms max=1205.30ms count=19
+10-20 01:00:29.007   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f13c8000 0x3f1dac000]
+10-20 01:00:29.012  1489  1512 W System  : A resource failed to call release.
+10-20 01:00:29.014  1489  1512 W System  : A resource failed to call release.
+10-20 01:00:29.015  1489  1512 W System  : A resource failed to call release.
+10-20 01:00:29.016  1489  1512 W System  : A resource failed to call release.
+10-20 01:00:29.019   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
+10-20 01:00:29.022   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f49e4000]
+10-20 01:00:29.034  1489  1512 W System  : A resource failed to call release.
+10-20 01:00:29.035  1489  1512 W System  : A resource failed to call release.
+10-20 01:00:29.040  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@dc3fc1c in: STOPPED
+10-20 01:00:29.045  1545  1545 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@dc3fc1c
+10-20 01:00:29.047  1545  1545 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+10-20 01:00:29.056  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@dc3fc1c in: DESTROYED
+10-20 01:00:29.069   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f77c8000 0x3f7e1c000]
+10-20 01:00:29.058  1545  1545 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-20 01:00:29.077  1545  1569 I TestRunner: finished: testCocktailsFragmentDisplaysCorrectly(com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest)

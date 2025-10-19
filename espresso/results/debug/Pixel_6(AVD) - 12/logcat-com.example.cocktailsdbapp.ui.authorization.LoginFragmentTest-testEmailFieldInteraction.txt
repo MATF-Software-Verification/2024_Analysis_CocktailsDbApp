@@ -1,0 +1,52 @@
+10-20 00:57:28.285  1545  1569 I TestRunner: started: testEmailFieldInteraction(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
+10-20 00:57:28.303  1545  1569 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-20 00:57:28.373  1186  1197 I ndroid.systemu: NativeAlloc concurrent copying GC freed 20510(962KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 10125KB/19MB, paused 398us,1.932ms total 306.412ms
+10-20 00:57:28.378   582   776 W InputManager-JNI: Input channel object '6730a88 Splash Screen com.example.cocktailsdbapp.test (client)' was disposed without first being removed with the input manager!
+10-20 00:57:28.402  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: PRE_ON_CREATE
+10-20 00:57:28.402  1545  1545 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-20 00:57:28.409  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{dd6e770 V.E...... ......ID 0,0-0,0}
+10-20 00:57:28.409  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 00:57:28.409  1186  1240 D SplashScreenView: Branding: view: android.view.View{fa4dae9 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 00:57:28.433   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
+10-20 00:57:28.444   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
+10-20 00:57:28.447   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
+10-20 00:57:28.452  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+10-20 00:57:28.454  2153  2153 E HwDetectorWithState: a: 3
+10-20 00:57:28.502   582   593 I system_server: NativeAlloc concurrent copying GC freed 56884(2551KB) AllocSpace objects, 9(180KB) LOS objects, 48% free, 25MB/49MB, paused 4.508ms,46us total 503.257ms
+10-20 00:57:28.604  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: CREATED
+10-20 00:57:28.606  1545  1545 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
+10-20 00:57:28.613  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: STARTED
+10-20 00:57:28.614  1545  1545 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
+10-20 00:57:28.617  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: RESUMED
+10-20 00:57:28.618  1545  1545 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
+10-20 00:57:28.677   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ea337000 0x3ead1b000]
+10-20 00:57:28.681   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ef438000 0x3efe1c000]
+10-20 00:57:28.684   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f2400000 0x3f2de4000]
+10-20 00:57:28.744   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +413ms
+10-20 00:57:28.831  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 00:57:28.832  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 00:57:28.833  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 00:57:28.876  1545  1545 I ViewInteraction: Performing 'replace text(test@example.com)' action on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
+10-20 00:57:28.880   582  2175 W InputManager-JNI: Input channel object '67e7a07 com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-20 00:57:28.931  1545  1545 I AssistStructure: Flattened final assist data: 2700 bytes, containing 1 windows, 16 views
+10-20 00:57:28.946  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "test@example.com"}' assertion on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
+10-20 00:57:28.970  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: PAUSED
+10-20 00:57:28.971  1545  1545 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
+10-20 00:57:28.978  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{5b15b5d V.E...... ......ID 0,0-0,0}
+10-20 00:57:28.978  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 00:57:28.978  1186  1240 D SplashScreenView: Branding: view: android.view.View{d486cd2 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 00:57:29.012   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
+10-20 00:57:29.030   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f1038000 0x3f1a1c000]
+10-20 00:57:29.035   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f1a1c000 0x3f2400000]
+10-20 00:57:29.042   582   641 W InputManager-JNI: Input channel object 'be99a30 Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
+10-20 00:57:29.049   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f4ca8000 0x3f52fc000]
+10-20 00:57:29.108   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e9ce3000 0x3ea6c7000]
+10-20 00:57:29.118   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ea6c7000 0x3eb0ab000]
+10-20 00:57:29.126   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
+10-20 00:57:29.136  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: STOPPED
+10-20 00:57:29.138  1545  1545 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
+10-20 00:57:29.140  1545  1545 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+10-20 00:57:29.144  1957  1957 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1369126554
+10-20 00:57:29.148  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: DESTROYED
+10-20 00:57:29.149  1545  1545 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-20 00:57:29.152  1545  1569 I TestRunner: finished: testEmailFieldInteraction(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)

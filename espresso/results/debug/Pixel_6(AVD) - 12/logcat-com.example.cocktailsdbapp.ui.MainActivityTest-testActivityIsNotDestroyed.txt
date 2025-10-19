@@ -1,0 +1,93 @@
+10-20 00:56:59.537  1545  1569 I TestRunner: started: testActivityIsNotDestroyed(com.example.cocktailsdbapp.ui.MainActivityTest)
+10-20 00:56:59.552  1545  1569 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-20 00:56:59.597  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{b831339 V.E...... ......ID 0,0-0,0}
+10-20 00:56:59.597  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 00:56:59.597  1186  1240 D SplashScreenView: Branding: view: android.view.View{dc0bd7e G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 00:56:59.636   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e8654000 0x3e9038000]
+10-20 00:56:59.640  1545  1580 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-20 00:56:59.653   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e9038000 0x3e9a1c000]
+10-20 00:56:59.666   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e9a1c000 0x3ea400000]
+10-20 00:56:59.683  1489  2527 D EGL_emulation: app_time_stats: avg=5151.17ms min=5151.17ms max=5151.17ms count=1
+10-20 00:56:59.705  1545  1580 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-20 00:56:59.721  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+10-20 00:56:59.722  2153  2153 E HwDetectorWithState: a: 3
+10-20 00:56:59.778  1545  1580 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-20 00:56:59.813  1545  1545 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+10-20 00:56:59.850  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@9d82628 in: PRE_ON_CREATE
+10-20 00:56:59.852  1545  1545 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-20 00:56:59.897  1545  1557 I .cocktailsdbap: Background young concurrent copying GC freed 78135(4937KB) AllocSpace objects, 0(0B) LOS objects, 86% free, 3695KB/27MB, paused 8.869ms,526us total 216.228ms
+10-20 00:57:00.021  1545  1545 W .cocktailsdbap: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+10-20 00:57:00.022  1545  1545 W .cocktailsdbap: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+10-20 00:57:00.065  1186  1256 D EGL_emulation: app_time_stats: avg=3989.80ms min=3989.80ms max=3989.80ms count=1
+10-20 00:57:00.582  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@9d82628 in: CREATED
+10-20 00:57:00.583  1545  1545 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@9d82628
+10-20 00:57:00.590  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@9d82628 in: STARTED
+10-20 00:57:00.591  1545  1545 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@9d82628
+10-20 00:57:00.595  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@9d82628 in: RESUMED
+10-20 00:57:00.596  1545  1545 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@9d82628
+10-20 00:57:00.683   429   452 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10253 pid=1545
+10-20 00:57:00.683   429   452 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10253 => denied (734 us)
+10-20 00:57:00.684   429   452 W ServiceManager: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10253 pid=1545
+10-20 00:57:00.685   429   452 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10253 => denied (1807 us)
+10-20 00:57:00.700  1545  1579 D HostConnection: createUnique: call
+10-20 00:57:00.710  1545  1579 D HostConnection: HostConnection::get() New Host Connection established 0x7eb6786b36d0, tid 1579
+10-20 00:57:00.770  1545  1579 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-20 00:57:00.775   199   199 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+10-20 00:57:00.776  1545  1579 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-20 00:57:00.777  1545  1579 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-20 00:57:00.806  1545  1579 D EGL_emulation: eglCreateContext: 0x7eb6786b2110: maj 3 min 0 rcv 3
+10-20 00:57:00.810  1545  1579 D EGL_emulation: eglMakeCurrent: 0x7eb6786b2110: ver 3 0 (tinfo 0x7eb89e8ee080) (first time)
+10-20 00:57:00.828   429   451 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 4619827259835644672: Unsupported (8)
+10-20 00:57:00.831   199   199 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-20 00:57:00.832  1545  1579 I Gralloc4: mapper 4.x is not supported
+10-20 00:57:00.837  1545  1579 D HostConnection: createUnique: call
+10-20 00:57:00.838  1545  1579 D HostConnection: HostConnection::get() New Host Connection established 0x7eb6786b3490, tid 1579
+10-20 00:57:00.839  1545  1579 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-20 00:57:00.841  1545  1579 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3e7ffe000 size 0x2000
+10-20 00:57:00.847   199   199 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+10-20 00:57:00.848  1545  1579 W Gralloc4: allocator 4.x is not supported
+10-20 00:57:00.853   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ea400000 0x3eade4000]
+10-20 00:57:00.925  1545  1579 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-20 00:57:00.930   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ee070000 0x3eea54000]
+10-20 00:57:00.935   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3eea54000 0x3ef438000]
+10-20 00:57:01.100   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +1s536ms
+10-20 00:57:01.174  1545  1545 I Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.
+10-20 00:57:01.219  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-20 00:57:01.222  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-20 00:57:01.230  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-20 00:57:01.231  7378  7402 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+10-20 00:57:01.232  7378  7402 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+10-20 00:57:01.240  7378  7402 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+10-20 00:57:01.267  7378  7401 I FontLog : Pulling font file for id = 70, cache size = 4 [CONTEXT service_id=132 ]
+10-20 00:57:01.280  7378  7401 I FontLog : Pulling font file for id = 70, cache size = 4 [CONTEXT service_id=132 ]
+10-20 00:57:01.389  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@9d82628 in: PAUSED
+10-20 00:57:01.397  1545  1545 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@9d82628
+10-20 00:57:01.407   354   354 D Zygote  : Forked child process 1591
+10-20 00:57:01.431  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{f32a9e2 V.E...... ......ID 0,0-0,0}
+10-20 00:57:01.431  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-20 00:57:01.431  1186  1240 D SplashScreenView: Branding: view: android.view.View{f216173 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-20 00:57:01.442   582   776 W InputManager-JNI: Input channel object 'c3b682c Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
+10-20 00:57:01.462  1591  1591 I tailsdbapp.tes: Late-enabling -Xcheck:jni
+10-20 00:57:01.471   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
+10-20 00:57:01.485   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
+10-20 00:57:01.490   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
+10-20 00:57:01.519   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ed3c8000 0x3eda1c000]
+10-20 00:57:01.606  1591  1591 W tailsdbapp.tes: Unexpected CPU variant for X86 using defaults: x86_64
+10-20 00:57:01.638   450   475 I adbd    : jdwp connection from 1591
+10-20 00:57:01.694  1591  1591 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10254; state: ENABLED
+10-20 00:57:01.710  1591  1591 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-20 00:57:01.717  1591  1591 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-20 00:57:01.721  1591  1591 W tailsdbapp.tes: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]})
+10-20 00:57:01.767  1591  1591 V GraphicsEnvironment: ANGLE Developer option for 'com.example.cocktailsdbapp.test' set to: 'default'
+10-20 00:57:01.768  1591  1591 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-20 00:57:01.772  1591  1591 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-20 00:57:01.773  1591  1591 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-20 00:57:01.813  1591  1612 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-20 00:57:01.820  1591  1612 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-20 00:57:01.833  1591  1612 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-20 00:57:01.851  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@9d82628 in: STOPPED
+10-20 00:57:01.851  1545  1545 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@9d82628
+10-20 00:57:01.863  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@9d82628 in: DESTROYED
+10-20 00:57:01.864  1545  1545 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-20 00:57:01.871   582   776 W InputManager-JNI: Input channel object '70fdbf com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
+10-20 00:57:01.878  1545  1569 I TestRunner: finished: testActivityIsNotDestroyed(com.example.cocktailsdbapp.ui.MainActivityTest)

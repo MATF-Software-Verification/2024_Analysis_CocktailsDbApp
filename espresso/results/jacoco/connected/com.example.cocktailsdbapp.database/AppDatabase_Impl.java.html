@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AppDatabase_Impl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=0;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">debug</a> &gt; <a href="index.source.html" class="el_package">com.example.cocktailsdbapp.database</a> &gt; <span class="el_source">AppDatabase_Impl.java</span></div><h1>AppDatabase_Impl.java</h1><pre class="source lang-java linenums">package com.example.cocktailsdbapp.database;
+
+import androidx.annotation.NonNull;
+import androidx.room.DatabaseConfiguration;
+import androidx.room.InvalidationTracker;
+import androidx.room.RoomDatabase;
+import androidx.room.RoomOpenHelper;
+import androidx.room.migration.AutoMigrationSpec;
+import androidx.room.migration.Migration;
+import androidx.room.util.DBUtil;
+import androidx.room.util.TableInfo;
+import androidx.sqlite.db.SupportSQLiteDatabase;
+import androidx.sqlite.db.SupportSQLiteOpenHelper;
+import java.lang.Class;
+import java.lang.Override;
+import java.lang.String;
+import java.lang.SuppressWarnings;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import javax.annotation.processing.Generated;
+
+@Generated(&quot;androidx.room.RoomProcessor&quot;)
+@SuppressWarnings({&quot;unchecked&quot;, &quot;deprecation&quot;})
+<span class="fc" id="L28">public final class AppDatabase_Impl extends AppDatabase {</span>
+  private volatile CocktailDao _cocktailDao;
+
+  @Override
+  @NonNull
+  protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
+<span class="fc" id="L34">    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(1) {</span>
+      @Override
+      public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
+<span class="fc" id="L37">        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS `roomCocktail` (`strDrink` TEXT NOT NULL, `strDrinkThumb` TEXT NOT NULL, `idDrink` TEXT NOT NULL, PRIMARY KEY(`idDrink`))&quot;);</span>
+<span class="fc" id="L38">        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS `roomFavorite` (`userEmail` TEXT NOT NULL, `idDrink` TEXT NOT NULL, PRIMARY KEY(`idDrink`))&quot;);</span>
+<span class="fc" id="L39">        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)&quot;);</span>
+<span class="fc" id="L40">        db.execSQL(&quot;INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9347357afc5e97d14942e6f0af48b71d')&quot;);</span>
+<span class="fc" id="L41">      }</span>
+
+      @Override
+      public void dropAllTables(@NonNull final SupportSQLiteDatabase db) {
+<span class="nc" id="L45">        db.execSQL(&quot;DROP TABLE IF EXISTS `roomCocktail`&quot;);</span>
+<span class="nc" id="L46">        db.execSQL(&quot;DROP TABLE IF EXISTS `roomFavorite`&quot;);</span>
+<span class="nc" id="L47">        final List&lt;? extends RoomDatabase.Callback&gt; _callbacks = mCallbacks;</span>
+<span class="nc bnc" id="L48" title="All 2 branches missed.">        if (_callbacks != null) {</span>
+<span class="nc bnc" id="L49" title="All 2 branches missed.">          for (RoomDatabase.Callback _callback : _callbacks) {</span>
+<span class="nc" id="L50">            _callback.onDestructiveMigration(db);</span>
+<span class="nc" id="L51">          }</span>
+        }
+<span class="nc" id="L53">      }</span>
+
+      @Override
+      public void onCreate(@NonNull final SupportSQLiteDatabase db) {
+<span class="fc" id="L57">        final List&lt;? extends RoomDatabase.Callback&gt; _callbacks = mCallbacks;</span>
+<span class="pc bpc" id="L58" title="1 of 2 branches missed.">        if (_callbacks != null) {</span>
+<span class="pc bpc" id="L59" title="1 of 2 branches missed.">          for (RoomDatabase.Callback _callback : _callbacks) {</span>
+<span class="nc" id="L60">            _callback.onCreate(db);</span>
+<span class="nc" id="L61">          }</span>
+        }
+<span class="fc" id="L63">      }</span>
+
+      @Override
+      public void onOpen(@NonNull final SupportSQLiteDatabase db) {
+<span class="fc" id="L67">        mDatabase = db;</span>
+<span class="fc" id="L68">        internalInitInvalidationTracker(db);</span>
+<span class="fc" id="L69">        final List&lt;? extends RoomDatabase.Callback&gt; _callbacks = mCallbacks;</span>
+<span class="pc bpc" id="L70" title="1 of 2 branches missed.">        if (_callbacks != null) {</span>
+<span class="pc bpc" id="L71" title="1 of 2 branches missed.">          for (RoomDatabase.Callback _callback : _callbacks) {</span>
+<span class="nc" id="L72">            _callback.onOpen(db);</span>
+<span class="nc" id="L73">          }</span>
+        }
+<span class="fc" id="L75">      }</span>
+
+      @Override
+      public void onPreMigrate(@NonNull final SupportSQLiteDatabase db) {
+<span class="nc" id="L79">        DBUtil.dropFtsSyncTriggers(db);</span>
+<span class="nc" id="L80">      }</span>
+
+      @Override
+      public void onPostMigrate(@NonNull final SupportSQLiteDatabase db) {
+<span class="nc" id="L84">      }</span>
+
+      @Override
+      @NonNull
+      public RoomOpenHelper.ValidationResult onValidateSchema(
+          @NonNull final SupportSQLiteDatabase db) {
+<span class="nc" id="L90">        final HashMap&lt;String, TableInfo.Column&gt; _columnsRoomCocktail = new HashMap&lt;String, TableInfo.Column&gt;(3);</span>
+<span class="nc" id="L91">        _columnsRoomCocktail.put(&quot;strDrink&quot;, new TableInfo.Column(&quot;strDrink&quot;, &quot;TEXT&quot;, true, 0, null, TableInfo.CREATED_FROM_ENTITY));</span>
+<span class="nc" id="L92">        _columnsRoomCocktail.put(&quot;strDrinkThumb&quot;, new TableInfo.Column(&quot;strDrinkThumb&quot;, &quot;TEXT&quot;, true, 0, null, TableInfo.CREATED_FROM_ENTITY));</span>
+<span class="nc" id="L93">        _columnsRoomCocktail.put(&quot;idDrink&quot;, new TableInfo.Column(&quot;idDrink&quot;, &quot;TEXT&quot;, true, 1, null, TableInfo.CREATED_FROM_ENTITY));</span>
+<span class="nc" id="L94">        final HashSet&lt;TableInfo.ForeignKey&gt; _foreignKeysRoomCocktail = new HashSet&lt;TableInfo.ForeignKey&gt;(0);</span>
+<span class="nc" id="L95">        final HashSet&lt;TableInfo.Index&gt; _indicesRoomCocktail = new HashSet&lt;TableInfo.Index&gt;(0);</span>
+<span class="nc" id="L96">        final TableInfo _infoRoomCocktail = new TableInfo(&quot;roomCocktail&quot;, _columnsRoomCocktail, _foreignKeysRoomCocktail, _indicesRoomCocktail);</span>
+<span class="nc" id="L97">        final TableInfo _existingRoomCocktail = TableInfo.read(db, &quot;roomCocktail&quot;);</span>
+<span class="nc bnc" id="L98" title="All 2 branches missed.">        if (!_infoRoomCocktail.equals(_existingRoomCocktail)) {</span>
+<span class="nc" id="L99">          return new RoomOpenHelper.ValidationResult(false, &quot;roomCocktail(com.example.cocktailsdbapp.database.RoomCocktail).\n&quot;</span>
+                  + &quot; Expected:\n&quot; + _infoRoomCocktail + &quot;\n&quot;
+                  + &quot; Found:\n&quot; + _existingRoomCocktail);
+        }
+<span class="nc" id="L103">        final HashMap&lt;String, TableInfo.Column&gt; _columnsRoomFavorite = new HashMap&lt;String, TableInfo.Column&gt;(2);</span>
+<span class="nc" id="L104">        _columnsRoomFavorite.put(&quot;userEmail&quot;, new TableInfo.Column(&quot;userEmail&quot;, &quot;TEXT&quot;, true, 0, null, TableInfo.CREATED_FROM_ENTITY));</span>
+<span class="nc" id="L105">        _columnsRoomFavorite.put(&quot;idDrink&quot;, new TableInfo.Column(&quot;idDrink&quot;, &quot;TEXT&quot;, true, 1, null, TableInfo.CREATED_FROM_ENTITY));</span>
+<span class="nc" id="L106">        final HashSet&lt;TableInfo.ForeignKey&gt; _foreignKeysRoomFavorite = new HashSet&lt;TableInfo.ForeignKey&gt;(0);</span>
+<span class="nc" id="L107">        final HashSet&lt;TableInfo.Index&gt; _indicesRoomFavorite = new HashSet&lt;TableInfo.Index&gt;(0);</span>
+<span class="nc" id="L108">        final TableInfo _infoRoomFavorite = new TableInfo(&quot;roomFavorite&quot;, _columnsRoomFavorite, _foreignKeysRoomFavorite, _indicesRoomFavorite);</span>
+<span class="nc" id="L109">        final TableInfo _existingRoomFavorite = TableInfo.read(db, &quot;roomFavorite&quot;);</span>
+<span class="nc bnc" id="L110" title="All 2 branches missed.">        if (!_infoRoomFavorite.equals(_existingRoomFavorite)) {</span>
+<span class="nc" id="L111">          return new RoomOpenHelper.ValidationResult(false, &quot;roomFavorite(com.example.cocktailsdbapp.database.RoomFavorite).\n&quot;</span>
+                  + &quot; Expected:\n&quot; + _infoRoomFavorite + &quot;\n&quot;
+                  + &quot; Found:\n&quot; + _existingRoomFavorite);
+        }
+<span class="nc" id="L115">        return new RoomOpenHelper.ValidationResult(true, null);</span>
+      }
+    }, &quot;9347357afc5e97d14942e6f0af48b71d&quot;, &quot;b9dd780a513f6113fb0cc176ad44fb23&quot;);
+<span class="fc" id="L118">    final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();</span>
+<span class="fc" id="L119">    final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);</span>
+<span class="fc" id="L120">    return _helper;</span>
+  }
+
+  @Override
+  @NonNull
+  protected InvalidationTracker createInvalidationTracker() {
+<span class="fc" id="L126">    final HashMap&lt;String, String&gt; _shadowTablesMap = new HashMap&lt;String, String&gt;(0);</span>
+<span class="fc" id="L127">    final HashMap&lt;String, Set&lt;String&gt;&gt; _viewTables = new HashMap&lt;String, Set&lt;String&gt;&gt;(0);</span>
+<span class="fc" id="L128">    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, &quot;roomCocktail&quot;,&quot;roomFavorite&quot;);</span>
+  }
+
+  @Override
+  public void clearAllTables() {
+<span class="nc" id="L133">    super.assertNotMainThread();</span>
+<span class="nc" id="L134">    final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();</span>
+    try {
+<span class="nc" id="L136">      super.beginTransaction();</span>
+<span class="nc" id="L137">      _db.execSQL(&quot;DELETE FROM `roomCocktail`&quot;);</span>
+<span class="nc" id="L138">      _db.execSQL(&quot;DELETE FROM `roomFavorite`&quot;);</span>
+<span class="nc" id="L139">      super.setTransactionSuccessful();</span>
+    } finally {
+<span class="nc" id="L141">      super.endTransaction();</span>
+<span class="nc" id="L142">      _db.query(&quot;PRAGMA wal_checkpoint(FULL)&quot;).close();</span>
+<span class="nc bnc" id="L143" title="All 2 branches missed.">      if (!_db.inTransaction()) {</span>
+<span class="nc" id="L144">        _db.execSQL(&quot;VACUUM&quot;);</span>
+      }
+    }
+<span class="nc" id="L147">  }</span>
+
+  @Override
+  @NonNull
+  protected Map&lt;Class&lt;?&gt;, List&lt;Class&lt;?&gt;&gt;&gt; getRequiredTypeConverters() {
+<span class="fc" id="L152">    final HashMap&lt;Class&lt;?&gt;, List&lt;Class&lt;?&gt;&gt;&gt; _typeConvertersMap = new HashMap&lt;Class&lt;?&gt;, List&lt;Class&lt;?&gt;&gt;&gt;();</span>
+<span class="fc" id="L153">    _typeConvertersMap.put(CocktailDao.class, CocktailDao_Impl.getRequiredConverters());</span>
+<span class="fc" id="L154">    return _typeConvertersMap;</span>
+  }
+
+  @Override
+  @NonNull
+  public Set&lt;Class&lt;? extends AutoMigrationSpec&gt;&gt; getRequiredAutoMigrationSpecs() {
+<span class="fc" id="L160">    final HashSet&lt;Class&lt;? extends AutoMigrationSpec&gt;&gt; _autoMigrationSpecsSet = new HashSet&lt;Class&lt;? extends AutoMigrationSpec&gt;&gt;();</span>
+<span class="fc" id="L161">    return _autoMigrationSpecsSet;</span>
+  }
+
+  @Override
+  @NonNull
+  public List&lt;Migration&gt; getAutoMigrations(
+      @NonNull final Map&lt;Class&lt;? extends AutoMigrationSpec&gt;, AutoMigrationSpec&gt; autoMigrationSpecs) {
+<span class="fc" id="L168">    final List&lt;Migration&gt; _autoMigrations = new ArrayList&lt;Migration&gt;();</span>
+<span class="fc" id="L169">    return _autoMigrations;</span>
+  }
+
+  @Override
+  public CocktailDao cocktailDao() {
+<span class="pc bpc" id="L174" title="1 of 2 branches missed.">    if (_cocktailDao != null) {</span>
+<span class="nc" id="L175">      return _cocktailDao;</span>
+    } else {
+<span class="fc" id="L177">      synchronized(this) {</span>
+<span class="pc bpc" id="L178" title="1 of 2 branches missed.">        if(_cocktailDao == null) {</span>
+<span class="fc" id="L179">          _cocktailDao = new CocktailDao_Impl(this);</span>
+        }
+<span class="fc" id="L181">        return _cocktailDao;</span>
+      }
+    }
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

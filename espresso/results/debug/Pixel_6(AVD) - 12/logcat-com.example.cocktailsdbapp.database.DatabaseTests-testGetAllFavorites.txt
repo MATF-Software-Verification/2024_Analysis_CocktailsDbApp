@@ -1,0 +1,2 @@
+10-20 00:56:59.307  1545  1569 I TestRunner: started: testGetAllFavorites(com.example.cocktailsdbapp.database.DatabaseTests)
+10-20 00:56:59.338  1545  1569 I TestRunner: finished: testGetAllFavorites(com.example.cocktailsdbapp.database.DatabaseTests)
