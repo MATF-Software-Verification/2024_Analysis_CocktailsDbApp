@@ -1,2 +1,2 @@
-10-20 00:56:59.272  1545  1569 I TestRunner: started: testUserIsolation(com.example.cocktailsdbapp.database.DatabaseTests)
-10-20 00:56:59.299  1545  1569 I TestRunner: finished: testUserIsolation(com.example.cocktailsdbapp.database.DatabaseTests)
+10-22 00:11:27.765 21439 21456 I TestRunner: started: testUserIsolation(com.example.cocktailsdbapp.database.DatabaseTests)
+10-22 00:11:27.799 21439 21456 I TestRunner: finished: testUserIsolation(com.example.cocktailsdbapp.database.DatabaseTests)

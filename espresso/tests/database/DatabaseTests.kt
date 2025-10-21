@@ -47,13 +47,13 @@ class DatabaseTests {
         // When
         cocktailDao.insertCocktail(cocktail)
         cocktailDao.insertFavorite(RoomFavorite(userEmail, cocktail.idDrink))
-        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, "11007")
+        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, cocktail.idDrink)
 
         // Then
         assertNotNull(retrieved)
-        assertEquals("Mojito", retrieved?.strDrink)
-        assertEquals("mojito.jpg", retrieved?.strDrinkThumb)
-        assertEquals("11007", retrieved?.idDrink)
+        assertEquals(cocktail.strDrink, retrieved?.strDrink)
+        assertEquals(cocktail.strDrinkThumb, retrieved?.strDrinkThumb)
+        assertEquals(cocktail.idDrink, retrieved?.idDrink)
     }
 
     @Test
@@ -61,12 +61,13 @@ class DatabaseTests {
         // Given
         val cocktail = RoomCocktail("Margarita", "margarita.jpg", "11008")
         val userEmail = "test@example.com"
+
         cocktailDao.insertCocktail(cocktail)
         cocktailDao.insertFavorite(RoomFavorite(userEmail, cocktail.idDrink))
 
         // When
-        cocktailDao.removeFavorite(userEmail, "11008")
-        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, "11008")
+        cocktailDao.removeFavorite(userEmail, cocktail.idDrink)
+        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, cocktail.idDrink)
 
         // Then
         assertNull(retrieved)
@@ -92,9 +93,9 @@ class DatabaseTests {
         // Then
         assertNotNull(favorites)
         assertEquals(3, favorites?.size)
-        assertEquals("Mojito", favorites?.get(0)?.strDrink)
-        assertEquals("Margarita", favorites?.get(1)?.strDrink)
-        assertEquals("Martini", favorites?.get(2)?.strDrink)
+        assertEquals(cocktails[0].strDrink, favorites?.get(0)?.strDrink)
+        assertEquals(cocktails[1].strDrink, favorites?.get(1)?.strDrink)
+        assertEquals(cocktails[2].strDrink, favorites?.get(2)?.strDrink)
     }
 
     @Test
@@ -117,7 +118,7 @@ class DatabaseTests {
         // Then
         assertEquals(1, user1Favorites?.size)
         assertEquals(1, user2Favorites?.size)
-        assertEquals("Mojito", user1Favorites?.get(0)?.strDrink)
-        assertEquals("Margarita", user2Favorites?.get(0)?.strDrink)
+        assertEquals(cocktail1.strDrink, user1Favorites?.get(0)?.strDrink)
+        assertEquals(cocktail2.strDrink, user2Favorites?.get(0)?.strDrink)
     }
 }

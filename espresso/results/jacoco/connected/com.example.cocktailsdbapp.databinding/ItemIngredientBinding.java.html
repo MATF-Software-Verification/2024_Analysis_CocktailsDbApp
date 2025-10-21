@@ -30,17 +30,17 @@ public final class ItemIngredientBinding implements ViewBinding {
 
   private ItemIngredientBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout clIngredient, @NonNull TextView tvIngredient,
-<span class="fc" id="L33">      @NonNull TextView tvMeasure) {</span>
-<span class="fc" id="L34">    this.rootView = rootView;</span>
-<span class="fc" id="L35">    this.clIngredient = clIngredient;</span>
-<span class="fc" id="L36">    this.tvIngredient = tvIngredient;</span>
-<span class="fc" id="L37">    this.tvMeasure = tvMeasure;</span>
-<span class="fc" id="L38">  }</span>
+<span class="nc" id="L33">      @NonNull TextView tvMeasure) {</span>
+<span class="nc" id="L34">    this.rootView = rootView;</span>
+<span class="nc" id="L35">    this.clIngredient = clIngredient;</span>
+<span class="nc" id="L36">    this.tvIngredient = tvIngredient;</span>
+<span class="nc" id="L37">    this.tvMeasure = tvMeasure;</span>
+<span class="nc" id="L38">  }</span>
 
   @Override
   @NonNull
   public ConstraintLayout getRoot() {
-<span class="fc" id="L43">    return rootView;</span>
+<span class="nc" id="L43">    return rootView;</span>
   }
 
   @NonNull
@@ -51,11 +51,11 @@ public final class ItemIngredientBinding implements ViewBinding {
   @NonNull
   public static ItemIngredientBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
-<span class="fc" id="L54">    View root = inflater.inflate(R.layout.item_ingredient, parent, false);</span>
-<span class="pc bpc" id="L55" title="1 of 2 branches missed.">    if (attachToParent) {</span>
+<span class="nc" id="L54">    View root = inflater.inflate(R.layout.item_ingredient, parent, false);</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">    if (attachToParent) {</span>
 <span class="nc" id="L56">      parent.addView(root);</span>
     }
-<span class="fc" id="L58">    return bind(root);</span>
+<span class="nc" id="L58">    return bind(root);</span>
   }
 
   @NonNull
@@ -64,21 +64,21 @@ public final class ItemIngredientBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-<span class="fc" id="L67">      ConstraintLayout clIngredient = (ConstraintLayout) rootView;</span>
+<span class="nc" id="L67">      ConstraintLayout clIngredient = (ConstraintLayout) rootView;</span>
 
-<span class="fc" id="L69">      id = R.id.tv_ingredient;</span>
-<span class="fc" id="L70">      TextView tvIngredient = ViewBindings.findChildViewById(rootView, id);</span>
-<span class="pc bpc" id="L71" title="1 of 2 branches missed.">      if (tvIngredient == null) {</span>
+<span class="nc" id="L69">      id = R.id.tv_ingredient;</span>
+<span class="nc" id="L70">      TextView tvIngredient = ViewBindings.findChildViewById(rootView, id);</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">      if (tvIngredient == null) {</span>
 <span class="nc" id="L72">        break missingId;</span>
       }
 
-<span class="fc" id="L75">      id = R.id.tv_measure;</span>
-<span class="fc" id="L76">      TextView tvMeasure = ViewBindings.findChildViewById(rootView, id);</span>
-<span class="pc bpc" id="L77" title="1 of 2 branches missed.">      if (tvMeasure == null) {</span>
+<span class="nc" id="L75">      id = R.id.tv_measure;</span>
+<span class="nc" id="L76">      TextView tvMeasure = ViewBindings.findChildViewById(rootView, id);</span>
+<span class="nc bnc" id="L77" title="All 2 branches missed.">      if (tvMeasure == null) {</span>
 <span class="nc" id="L78">        break missingId;</span>
       }
 
-<span class="fc" id="L81">      return new ItemIngredientBinding((ConstraintLayout) rootView, clIngredient, tvIngredient,</span>
+<span class="nc" id="L81">      return new ItemIngredientBinding((ConstraintLayout) rootView, clIngredient, tvIngredient,</span>
           tvMeasure);
     }
 <span class="nc" id="L84">    String missingId = rootView.getResources().getResourceName(id);</span>

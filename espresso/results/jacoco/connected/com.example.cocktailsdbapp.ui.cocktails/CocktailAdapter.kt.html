@@ -39,32 +39,32 @@ import kotlinx.coroutines.launch
 <span class="fc" id="L39">            ivFavorite.isSelected = item.isFavorite</span>
 
 <span class="fc" id="L41">            cvItem.setOnClickListener {</span>
-<span class="pc bpc" id="L42" title="1 of 2 branches missed.">                onItemClickListener?.openCocktailDetails(item.idDrink)</span>
-<span class="fc" id="L43">            }</span>
+<span class="nc bnc" id="L42" title="All 2 branches missed.">                onItemClickListener?.openCocktailDetails(item.idDrink)</span>
+<span class="nc" id="L43">            }</span>
 <span class="fc" id="L44">            ivFavorite.setOnClickListener {</span>
-<span class="nc bnc" id="L45" title="All 2 branches missed.">                if (isFavoriteClickable) {</span>
-<span class="nc" id="L46">                    isFavoriteClickable = false</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">                if (isFavoriteClickable) {</span>
+<span class="fc" id="L46">                    isFavoriteClickable = false</span>
 
-<span class="nc bnc" id="L48" title="All 2 branches missed.">                    ivFavorite.isSelected = !ivFavorite.isSelected</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">                    ivFavorite.isSelected = !ivFavorite.isSelected</span>
 
                     // Load the animation
-<span class="nc bnc" id="L51" title="All 2 branches missed.">                    val animationId = if (ivFavorite.isSelected) {</span>
-<span class="nc" id="L52">                        R.anim.ic_favorite_animation // Selection animation</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">                    val animationId = if (ivFavorite.isSelected) {</span>
+<span class="fc" id="L52">                        R.anim.ic_favorite_animation // Selection animation</span>
                     } else {
-<span class="nc" id="L54">                        R.anim.ic_favorite_animation_deselect // Deselection animation</span>
+<span class="fc" id="L54">                        R.anim.ic_favorite_animation_deselect // Deselection animation</span>
                     }
                     // Apply the animation to the ImageView
-<span class="nc" id="L57">                    ivFavorite.startAnimation(AnimationUtils.loadAnimation(root.context, animationId))</span>
+<span class="fc" id="L57">                    ivFavorite.startAnimation(AnimationUtils.loadAnimation(root.context, animationId))</span>
 
-<span class="nc bnc" id="L59" title="All 2 branches missed.">                    onFavoriteClickListener?.favoriteCocktail(item)</span>
+<span class="pc bpc" id="L59" title="1 of 2 branches missed.">                    onFavoriteClickListener?.favoriteCocktail(item)</span>
 
                     // Enable clickable after a delay (e.g., 1000 milliseconds)
-<span class="nc" id="L62">                    CoroutineScope(Dispatchers.Main).launch {</span>
-<span class="nc" id="L63">                        delay(600)</span>
-<span class="nc" id="L64">                        isFavoriteClickable = true</span>
-<span class="nc" id="L65">                    }</span>
+<span class="fc" id="L62">                    CoroutineScope(Dispatchers.Main).launch {</span>
+<span class="fc" id="L63">                        delay(600)</span>
+<span class="fc" id="L64">                        isFavoriteClickable = true</span>
+<span class="fc" id="L65">                    }</span>
                 }
-<span class="nc" id="L67">            }</span>
+<span class="fc" id="L67">            }</span>
 <span class="fc" id="L68">            Glide.with(root.context)</span>
 <span class="fc" id="L69">                .load(item.strDrinkThumb)</span>
 <span class="fc" id="L70">                .into(ivDrink)</span>

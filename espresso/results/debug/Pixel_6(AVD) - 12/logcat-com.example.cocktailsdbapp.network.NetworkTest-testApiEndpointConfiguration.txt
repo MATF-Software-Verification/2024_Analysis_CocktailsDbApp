@@ -1,2 +1,0 @@
-10-20 00:56:59.525  1545  1569 I TestRunner: started: testApiEndpointConfiguration(com.example.cocktailsdbapp.network.NetworkTest)
-10-20 00:56:59.531  1545  1569 I TestRunner: finished: testApiEndpointConfiguration(com.example.cocktailsdbapp.network.NetworkTest)

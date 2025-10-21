@@ -4,27 +4,27 @@ import com.google.gson.annotations.SerializedName
 
 <span class="nc" id="L5">data class CocktailDetailsResponse(</span>
 <span class="nc" id="L6">    @SerializedName(&quot;drinks&quot;)</span>
-<span class="fc" id="L7">    val drinks: List&lt;CocktailDetails&gt;?</span>
+<span class="nc" id="L7">    val drinks: List&lt;CocktailDetails&gt;?</span>
 )
 
 <span class="nc" id="L10">data class CocktailDetails(</span>
 <span class="nc" id="L11">    @SerializedName(&quot;idDrink&quot;) val idDrink: String?,</span>
-<span class="pc" id="L12">    @SerializedName(&quot;strDrink&quot;) val strDrink: String?,</span>
+<span class="nc" id="L12">    @SerializedName(&quot;strDrink&quot;) val strDrink: String?,</span>
 <span class="nc" id="L13">    @SerializedName(&quot;strDrinkAlternate&quot;) val strDrinkAlternate: String?,</span>
 <span class="nc" id="L14">    @SerializedName(&quot;strTags&quot;) val strTags: String?,</span>
 <span class="nc" id="L15">    @SerializedName(&quot;strVideo&quot;) val strVideo: String?,</span>
-<span class="pc" id="L16">    @SerializedName(&quot;strCategory&quot;) val strCategory: String?,</span>
+<span class="nc" id="L16">    @SerializedName(&quot;strCategory&quot;) val strCategory: String?,</span>
 <span class="nc" id="L17">    @SerializedName(&quot;strIBA&quot;) val strIBA: String?,</span>
 <span class="nc" id="L18">    @SerializedName(&quot;strAlcoholic&quot;) val strAlcoholic: String?,</span>
-<span class="pc" id="L19">    @SerializedName(&quot;strGlass&quot;) val strGlass: String?,</span>
-<span class="pc" id="L20">    @SerializedName(&quot;strInstructions&quot;) val strInstructions: String?,</span>
+<span class="nc" id="L19">    @SerializedName(&quot;strGlass&quot;) val strGlass: String?,</span>
+<span class="nc" id="L20">    @SerializedName(&quot;strInstructions&quot;) val strInstructions: String?,</span>
 <span class="nc" id="L21">    @SerializedName(&quot;strInstructionsES&quot;) val strInstructionsES: String?,</span>
 <span class="nc" id="L22">    @SerializedName(&quot;strInstructionsDE&quot;) val strInstructionsDE: String?,</span>
 <span class="nc" id="L23">    @SerializedName(&quot;strInstructionsFR&quot;) val strInstructionsFR: String?,</span>
 <span class="nc" id="L24">    @SerializedName(&quot;strInstructionsIT&quot;) val strInstructionsIT: String?,</span>
 <span class="nc" id="L25">    @SerializedName(&quot;strInstructionsZH-HANS&quot;) val strInstructionsZH_HANS: String?,</span>
 <span class="nc" id="L26">    @SerializedName(&quot;strInstructionsZH-HANT&quot;) val strInstructionsZH_HANT: String?,</span>
-<span class="pc" id="L27">    @SerializedName(&quot;strDrinkThumb&quot;) val strDrinkThumb: String?,</span>
+<span class="nc" id="L27">    @SerializedName(&quot;strDrinkThumb&quot;) val strDrinkThumb: String?,</span>
 <span class="nc" id="L28">    @SerializedName(&quot;strIngredient1&quot;) val strIngredient1: String?,</span>
 <span class="nc" id="L29">    @SerializedName(&quot;strIngredient2&quot;) val strIngredient2: String?,</span>
 <span class="nc" id="L30">    @SerializedName(&quot;strIngredient3&quot;) val strIngredient3: String?,</span>
@@ -63,28 +63,28 @@ import com.google.gson.annotations.SerializedName
 
 ) {
     fun getIngredientsWithMeasures(): List&lt;Pair&lt;String, String&gt;&gt; {
-<span class="fc" id="L66">        val ingredientsWithMeasures = mutableListOf&lt;Pair&lt;String, String&gt;&gt;()</span>
-<span class="fc" id="L67">        val ingredients = listOf&lt;String?&gt;(</span>
-<span class="fc" id="L68">            strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,</span>
-<span class="fc" id="L69">            strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,</span>
-<span class="fc" id="L70">            strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15</span>
+<span class="nc" id="L66">        val ingredientsWithMeasures = mutableListOf&lt;Pair&lt;String, String&gt;&gt;()</span>
+<span class="nc" id="L67">        val ingredients = listOf&lt;String?&gt;(</span>
+<span class="nc" id="L68">            strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,</span>
+<span class="nc" id="L69">            strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,</span>
+<span class="nc" id="L70">            strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15</span>
         )
 
-<span class="fc" id="L73">        val measures = listOf(</span>
-<span class="fc" id="L74">            strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,</span>
-<span class="fc" id="L75">            strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,</span>
-<span class="fc" id="L76">            strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15</span>
+<span class="nc" id="L73">        val measures = listOf(</span>
+<span class="nc" id="L74">            strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,</span>
+<span class="nc" id="L75">            strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,</span>
+<span class="nc" id="L76">            strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15</span>
         )
 
-<span class="fc bfc" id="L79" title="All 2 branches covered.">        for (i in ingredients.indices) {</span>
-<span class="fc" id="L80">            val ingredient = ingredients.getOrNull(i)</span>
-<span class="fc" id="L81">            val measure = measures.getOrNull(i)</span>
+<span class="nc bnc" id="L79" title="All 2 branches missed.">        for (i in ingredients.indices) {</span>
+<span class="nc" id="L80">            val ingredient = ingredients.getOrNull(i)</span>
+<span class="nc" id="L81">            val measure = measures.getOrNull(i)</span>
 
-<span class="pc bpc" id="L83" title="4 of 12 branches missed.">            if (!ingredient.isNullOrBlank() &amp;&amp; !measure.isNullOrBlank()) {</span>
-<span class="fc" id="L84">                ingredientsWithMeasures.add(Pair(ingredient, measure))</span>
+<span class="nc bnc" id="L83" title="All 12 branches missed.">            if (!ingredient.isNullOrBlank() &amp;&amp; !measure.isNullOrBlank()) {</span>
+<span class="nc" id="L84">                ingredientsWithMeasures.add(Pair(ingredient, measure))</span>
             }
         }
-<span class="fc" id="L87">        return ingredientsWithMeasures</span>
+<span class="nc" id="L87">        return ingredientsWithMeasures</span>
     }
 <span class="nc" id="L89">}</span>
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

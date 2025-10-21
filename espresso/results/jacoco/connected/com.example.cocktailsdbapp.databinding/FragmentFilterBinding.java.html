@@ -23,15 +23,15 @@ public final class FragmentFilterBinding implements ViewBinding {
   public final RecyclerView rvFilter;
 
   private FragmentFilterBinding(@NonNull ConstraintLayout rootView,
-<span class="nc" id="L26">      @NonNull RecyclerView rvFilter) {</span>
-<span class="nc" id="L27">    this.rootView = rootView;</span>
-<span class="nc" id="L28">    this.rvFilter = rvFilter;</span>
-<span class="nc" id="L29">  }</span>
+<span class="fc" id="L26">      @NonNull RecyclerView rvFilter) {</span>
+<span class="fc" id="L27">    this.rootView = rootView;</span>
+<span class="fc" id="L28">    this.rvFilter = rvFilter;</span>
+<span class="fc" id="L29">  }</span>
 
   @Override
   @NonNull
   public ConstraintLayout getRoot() {
-<span class="nc" id="L34">    return rootView;</span>
+<span class="fc" id="L34">    return rootView;</span>
   }
 
   @NonNull
@@ -42,11 +42,11 @@ public final class FragmentFilterBinding implements ViewBinding {
   @NonNull
   public static FragmentFilterBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
-<span class="nc" id="L45">    View root = inflater.inflate(R.layout.fragment_filter, parent, false);</span>
-<span class="nc bnc" id="L46" title="All 2 branches missed.">    if (attachToParent) {</span>
+<span class="fc" id="L45">    View root = inflater.inflate(R.layout.fragment_filter, parent, false);</span>
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">    if (attachToParent) {</span>
 <span class="nc" id="L47">      parent.addView(root);</span>
     }
-<span class="nc" id="L49">    return bind(root);</span>
+<span class="fc" id="L49">    return bind(root);</span>
   }
 
   @NonNull
@@ -55,13 +55,13 @@ public final class FragmentFilterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-<span class="nc" id="L58">      id = R.id.rv_filter;</span>
-<span class="nc" id="L59">      RecyclerView rvFilter = ViewBindings.findChildViewById(rootView, id);</span>
-<span class="nc bnc" id="L60" title="All 2 branches missed.">      if (rvFilter == null) {</span>
+<span class="fc" id="L58">      id = R.id.rv_filter;</span>
+<span class="fc" id="L59">      RecyclerView rvFilter = ViewBindings.findChildViewById(rootView, id);</span>
+<span class="pc bpc" id="L60" title="1 of 2 branches missed.">      if (rvFilter == null) {</span>
 <span class="nc" id="L61">        break missingId;</span>
       }
 
-<span class="nc" id="L64">      return new FragmentFilterBinding((ConstraintLayout) rootView, rvFilter);</span>
+<span class="fc" id="L64">      return new FragmentFilterBinding((ConstraintLayout) rootView, rvFilter);</span>
     }
 <span class="nc" id="L66">    String missingId = rootView.getResources().getResourceName(id);</span>
 <span class="nc" id="L67">    throw new NullPointerException(&quot;Missing required view with ID: &quot;.concat(missingId));</span>

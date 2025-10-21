@@ -4,31 +4,31 @@ import androidx.recyclerview.widget.DiffUtil
 import com.example.cocktailsdbapp.databinding.ItemIngredientBinding
 import com.example.cocktailsdbapp.ui.BaseAdapter
 
-<span class="fc" id="L7">class IngredientsAdapter :</span>
-<span class="fc" id="L8">    BaseAdapter&lt;Pair&lt;String, String&gt;, ItemIngredientBinding&gt;(</span>
-<span class="fc" id="L9">        inflate = { inflater, parent, attachToParent -&gt;</span>
-<span class="fc" id="L10">            ItemIngredientBinding.inflate(inflater, parent, attachToParent)</span>
+<span class="nc" id="L7">class IngredientsAdapter :</span>
+<span class="nc" id="L8">    BaseAdapter&lt;Pair&lt;String, String&gt;, ItemIngredientBinding&gt;(</span>
+<span class="nc" id="L9">        inflate = { inflater, parent, attachToParent -&gt;</span>
+<span class="nc" id="L10">            ItemIngredientBinding.inflate(inflater, parent, attachToParent)</span>
         }
     ) {
 
     override fun bindItem(holder: ViewHolder, item: Pair&lt;String, String&gt;) {
-<span class="fc" id="L15">        with(holder.binding) {</span>
-<span class="fc" id="L16">            tvIngredient.text = item.first</span>
-<span class="fc" id="L17">            tvMeasure.text = item.second</span>
-<span class="fc" id="L18">        }</span>
-<span class="fc" id="L19">    }</span>
+<span class="nc" id="L15">        with(holder.binding) {</span>
+<span class="nc" id="L16">            tvIngredient.text = item.first</span>
+<span class="nc" id="L17">            tvMeasure.text = item.second</span>
+<span class="nc" id="L18">        }</span>
+<span class="nc" id="L19">    }</span>
 
     override fun getDiffCallback(
         oldList: List&lt;Pair&lt;String, String&gt;&gt;,
         newList: List&lt;Pair&lt;String, String&gt;&gt;
     ): DiffUtil.Callback {
-<span class="fc" id="L25">        return DiffCallback(</span>
-<span class="fc" id="L26">            oldList = oldList,</span>
-<span class="fc" id="L27">            newList = newList,</span>
-<span class="fc" id="L28">            areItemsTheSame = { oldItem, newItem -&gt;</span>
+<span class="nc" id="L25">        return DiffCallback(</span>
+<span class="nc" id="L26">            oldList = oldList,</span>
+<span class="nc" id="L27">            newList = newList,</span>
+<span class="nc" id="L28">            areItemsTheSame = { oldItem, newItem -&gt;</span>
 <span class="nc" id="L29">                oldItem.first == newItem.first</span>
             },
-<span class="fc" id="L31">            areContentsTheSame = { oldItem, newItem -&gt;</span>
+<span class="nc" id="L31">            areContentsTheSame = { oldItem, newItem -&gt;</span>
 <span class="nc" id="L32">                oldItem == newItem</span>
             }
         )

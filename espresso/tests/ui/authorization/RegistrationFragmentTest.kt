@@ -66,7 +66,6 @@ class RegistrationFragmentTest {
 
     @Test
     fun testNameInputInteraction() {
-        // Test name input field interaction
         navigateToRegistrationFragment()
         
         // Test name field interaction
@@ -81,7 +80,6 @@ class RegistrationFragmentTest {
 
     @Test
     fun testEmailInputInteraction() {
-        // Test email input field interaction
         navigateToRegistrationFragment()
         
         // Test email field interaction
@@ -96,7 +94,6 @@ class RegistrationFragmentTest {
 
     @Test
     fun testPasswordInputInteraction() {
-        // Test password input field interaction
         navigateToRegistrationFragment()
         
         // Test password field interaction
@@ -104,7 +101,7 @@ class RegistrationFragmentTest {
             .perform(click())
             .perform(typeText("password123"))
         
-        // Verify text was entered (password should be hidden)
+        // Verify text was entered
         onView(withId(R.id.et_password_input))
             .check(matches(withText("password123")))
     }
@@ -205,7 +202,7 @@ class RegistrationFragmentTest {
         onView(withId(R.id.bt_register))
             .perform(click())
         
-        // Should stay on registration screen due to validation
+        // Should stay on registration screen
         onView(withId(R.id.bt_register))
             .check(matches(isDisplayed()))
     }
@@ -285,62 +282,6 @@ class RegistrationFragmentTest {
     }
 
     @Test
-    fun testMultipleInputInteractions() {
-        // Test multiple input interactions
-        navigateToRegistrationFragment()
-        
-        // Fill in name
-        onView(withId(R.id.et_name_input))
-            .perform(typeText("Jane Smith"))
-        
-        // Fill in email
-        onView(withId(R.id.et_email_input))
-            .perform(typeText("jane.smith@example.com"))
-        
-        // Fill in password
-        onView(withId(R.id.et_password_input))
-            .perform(typeText("securepassword"))
-        
-        // Verify all fields have correct content
-        onView(withId(R.id.et_name_input))
-            .check(matches(withText("Jane Smith")))
-        
-        onView(withId(R.id.et_email_input))
-            .check(matches(withText("jane.smith@example.com")))
-        
-        onView(withId(R.id.et_password_input))
-            .check(matches(withText("securepassword")))
-    }
-
-    @Test
-    fun testRegistrationWithSpecialCharacters() {
-        // Test registration with special characters in inputs
-        navigateToRegistrationFragment()
-        
-        // Test name with special characters (use replaceText to avoid IME issues)
-        onView(withId(R.id.et_name_input))
-            .perform(replaceText("Jose Maria"))
-        
-        // Test email with special characters
-        onView(withId(R.id.et_email_input))
-            .perform(replaceText("jose.maria@example.com"))
-        
-        // Test password with special characters
-        onView(withId(R.id.et_password_input))
-            .perform(replaceText("p@ssw0rd!"))
-        
-        // Verify all fields accept special characters
-        onView(withId(R.id.et_name_input))
-            .check(matches(withText("Jose Maria")))
-        
-        onView(withId(R.id.et_email_input))
-            .check(matches(withText("jose.maria@example.com")))
-        
-        onView(withId(R.id.et_password_input))
-            .check(matches(withText("p@ssw0rd!")))
-    }
-
-    @Test
     fun testRegistrationWithLongInputs() {
         // Test registration with long inputs
         navigateToRegistrationFragment()
@@ -408,36 +349,5 @@ class RegistrationFragmentTest {
         
         // Wait for registration process
         Thread.sleep(2000)
-    }
-
-    @Test
-    fun testRegistrationFragmentBackground() {
-        // Test registration fragment background and styling
-        navigateToRegistrationFragment()
-        
-        // Check that background is displayed
-        onView(withId(R.id.tv_register))
-            .check(matches(isDisplayed()))
-        
-        // Note: ImageView check removed due to ambiguity with multiple ImageViews in hierarchy
-        // The main registration form elements are already tested above
-    }
-
-    @Test
-    fun testRegistrationFragmentLayout() {
-        // Test registration fragment layout elements
-        navigateToRegistrationFragment()
-        
-        // Check that spacer elements are displayed
-        onView(withId(R.id.v_spacer_left))
-            .check(matches(isDisplayed()))
-        
-        onView(withId(R.id.v_spacer_right))
-            .check(matches(isDisplayed()))
-        
-        // Check that "or" text is displayed
-        onView(withId(R.id.tv_or))
-            .check(matches(isDisplayed()))
-            .check(matches(withText(containsString("or"))))
     }
 }

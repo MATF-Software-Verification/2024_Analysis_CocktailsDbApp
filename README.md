@@ -29,15 +29,14 @@ Contact: dragana.zdravkovic602@gmail.com
 
 ### 3. **Unit Tests + Kover** - Kotlin/Android Unit Testing with Code Coverage
 - **Purpose:** Validates business logic and measures code test coverage
-- **Type:** Unit Testing (different test category from UI tests)
+- **Type:** Unit Testing
 - **Coverage Tool:** Kover (Kotlin-specific coverage tool, integrated into test infrastructure)
 - **Output:** Test reports and coverage metrics
 - **Reproducibility:** Script: `junit/run_tests.sh`
 
 ### 4. **Espresso** - Android Instrumented UI Testing
 - **Purpose:** Tests UI interactions and Android-specific functionality
-- **Type:** Instrumented/Integration Testing (different test category from unit tests)
-- **Note:** This tool was NOT covered in course exercises
+- **Type:** Instrumented/Integration Testing
 - **Requires:** Connected Android device or emulator
 - **Output:** Android instrumented test reports
 - **Reproducibility:** Script: `espresso/run_espresso.sh`
@@ -63,7 +62,7 @@ Contact: dragana.zdravkovic602@gmail.com
 ├── .github/                    # CI/CD configuration
 │   └── workflows/              # GitHub Actions workflows
 ├── ProjectAnalysisReport.md   # Detailed analysis findings
-├── README.md                  # This file
+├── README.md                  
 └── .gitmodules               # Git submodule configuration
 ```
 
@@ -116,12 +115,12 @@ All analysis reports are generated in tool-specific `results/` directories:
 - **JUnit Tests:** `junit/results/`
   - Android unit tests
   - `index.html` - Test results HTML
-  - `coverage/` - Kover coverage report
+  - `coverage/index.html` - Kover coverage report
 
 - **Espresso:** `espresso/results/`
   - Android instrumented test reports
-  - `jacoco/` - JaCoCo coverage report
-  - (Requires connected device/emulator)
+  - `debug/index.html` - Test results HTML
+  - `jacoco/connected/index.html` - JaCoCo coverage report
 
 ## Reproducing Results
 

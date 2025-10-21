@@ -7,8 +7,8 @@ import java.lang.IllegalArgumentException
 import kotlin.String
 import kotlin.jvm.JvmStatic
 
-<span class="nc" id="L10">public data class FilterFragmentArgs(</span>
-<span class="nc" id="L11">  public val filter: String = &quot;&quot;,</span>
+<span class="pc" id="L10">public data class FilterFragmentArgs(</span>
+<span class="pc" id="L11">  public val filter: String = &quot;&quot;,</span>
 ) : NavArgs {
   public fun toBundle(): Bundle {
 <span class="nc" id="L14">    val result = Bundle()</span>
@@ -25,17 +25,17 @@ import kotlin.jvm.JvmStatic
   public companion object {
     @JvmStatic
     public fun fromBundle(bundle: Bundle): FilterFragmentArgs {
-<span class="nc" id="L28">      bundle.setClassLoader(FilterFragmentArgs::class.java.classLoader)</span>
+<span class="fc" id="L28">      bundle.setClassLoader(FilterFragmentArgs::class.java.classLoader)</span>
       val __filter : String?
-<span class="nc bnc" id="L30" title="All 2 branches missed.">      if (bundle.containsKey(&quot;filter&quot;)) {</span>
-<span class="nc" id="L31">        __filter = bundle.getString(&quot;filter&quot;)</span>
-<span class="nc bnc" id="L32" title="All 2 branches missed.">        if (__filter == null) {</span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">      if (bundle.containsKey(&quot;filter&quot;)) {</span>
+<span class="fc" id="L31">        __filter = bundle.getString(&quot;filter&quot;)</span>
+<span class="pc bpc" id="L32" title="1 of 2 branches missed.">        if (__filter == null) {</span>
 <span class="nc" id="L33">          throw IllegalArgumentException(&quot;Argument \&quot;filter\&quot; is marked as non-null but was passed a null value.&quot;)</span>
         }
       } else {
 <span class="nc" id="L36">        __filter = &quot;&quot;</span>
       }
-<span class="nc" id="L38">      return FilterFragmentArgs(__filter)</span>
+<span class="fc" id="L38">      return FilterFragmentArgs(__filter)</span>
     }
 
     @JvmStatic

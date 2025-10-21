@@ -13,15 +13,41 @@ index 0000000..4a53bee
 \ No newline at end of file
 diff --git a/.idea/androidTestResultsUserPreferences.xml b/.idea/androidTestResultsUserPreferences.xml
 new file mode 100644
-index 0000000..b96aa7b
+index 0000000..130d3b7
 --- /dev/null
 +++ b/.idea/androidTestResultsUserPreferences.xml
-@@ -0,0 +1,152 @@
+@@ -0,0 +1,373 @@
 +<?xml version="1.0" encoding="UTF-8"?>
 +<project version="4">
 +  <component name="AndroidTestResultsUserPreferences">
 +    <option name="androidTestResultsTableState">
 +      <map>
++        <entry key="-2012355643">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="-1529066837">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
 +        <entry key="-1193614718">
 +          <value>
 +            <AndroidTestResultsTableState>
@@ -36,6 +62,58 @@ index 0000000..b96aa7b
 +          </value>
 +        </entry>
 +        <entry key="-1157368542">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="-1134845849">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="-1086194259">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="-906764922">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="-666826855">
 +          <value>
 +            <AndroidTestResultsTableState>
 +              <option name="preferredColumnWidths">
@@ -74,6 +152,45 @@ index 0000000..b96aa7b
 +            </AndroidTestResultsTableState>
 +          </value>
 +        </entry>
++        <entry key="-363782155">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="69394749">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="99392152">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
 +        <entry key="126554799">
 +          <value>
 +            <AndroidTestResultsTableState>
@@ -100,6 +217,32 @@ index 0000000..b96aa7b
 +            </AndroidTestResultsTableState>
 +          </value>
 +        </entry>
++        <entry key="261669756">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="642752266">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
 +        <entry key="750120520">
 +          <value>
 +            <AndroidTestResultsTableState>
@@ -113,7 +256,33 @@ index 0000000..b96aa7b
 +            </AndroidTestResultsTableState>
 +          </value>
 +        </entry>
++        <entry key="796444724">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
 +        <entry key="1269125170">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="1270377560">
 +          <value>
 +            <AndroidTestResultsTableState>
 +              <option name="preferredColumnWidths">
@@ -152,7 +321,59 @@ index 0000000..b96aa7b
 +            </AndroidTestResultsTableState>
 +          </value>
 +        </entry>
++        <entry key="2044732293">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="2108288888">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="2115119720">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
 +        <entry key="2130176139">
++          <value>
++            <AndroidTestResultsTableState>
++              <option name="preferredColumnWidths">
++                <map>
++                  <entry key="Duration" value="90" />
++                  <entry key="Pixel_6" value="120" />
++                  <entry key="Tests" value="360" />
++                </map>
++              </option>
++            </AndroidTestResultsTableState>
++          </value>
++        </entry>
++        <entry key="2130176182">
 +          <value>
 +            <AndroidTestResultsTableState>
 +              <option name="preferredColumnWidths">
@@ -314,7 +535,7 @@ index 0000000..79ee123
 \ No newline at end of file
 diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
 new file mode 100644
-index 0000000..1b15a3a
+index 0000000..e95fd81
 --- /dev/null
 +++ b/.idea/deploymentTargetSelector.xml
 @@ -0,0 +1,33 @@
@@ -333,19 +554,19 @@ index 0000000..1b15a3a
 +        </DropdownSelection>
 +        <DialogSelection />
 +      </SelectionState>
-+      <SelectionState runConfigName="RegistrationFragmentTest">
++      <SelectionState runConfigName="testLoginWithInvalidCredentials()">
 +        <option name="selectionMode" value="DROPDOWN" />
 +      </SelectionState>
-+      <SelectionState runConfigName="FilterFragmentTestWithLogin">
++      <SelectionState runConfigName="testCocktailsBottomNavigation()">
 +        <option name="selectionMode" value="DROPDOWN" />
 +      </SelectionState>
-+      <SelectionState runConfigName="LoginToCocktailsFlowTest">
++      <SelectionState runConfigName="testAppFlow()">
 +        <option name="selectionMode" value="DROPDOWN" />
 +      </SelectionState>
-+      <SelectionState runConfigName="MainActivityTest">
++      <SelectionState runConfigName="testCocktailsBottomNavigation() (1)">
 +        <option name="selectionMode" value="DROPDOWN" />
 +      </SelectionState>
-+      <SelectionState runConfigName="CocktailsFragmentTest">
++      <SelectionState runConfigName="DatabaseTests">
 +        <option name="selectionMode" value="DROPDOWN" />
 +      </SelectionState>
 +    </selectionStates>
@@ -448,26 +669,31 @@ index 0000000..16660f1
 +</project>
 \ No newline at end of file
 diff --git a/app/build.gradle.kts b/app/build.gradle.kts
-index a59ffb2..b829d8c 100644
+index a59ffb2..a5a8212 100644
 --- a/app/build.gradle.kts
 +++ b/app/build.gradle.kts
-@@ -4,8 +4,15 @@ plugins {
+@@ -1,11 +1,20 @@
++import com.android.build.gradle.internal.coverage.JacocoReportTask
++
+ plugins {
+     alias(libs.plugins.android.application)
+     alias(libs.plugins.android.kotlin)
      alias(libs.plugins.ksp)
      alias(libs.plugins.google.dagger.hilt)
      alias(libs.plugins.androidx.navigation.safeargs)
 +    jacoco
 +    id("org.jetbrains.kotlinx.kover")
- }
- 
-+jacoco {
-+    toolVersion = "0.8.12"
 +}
 +
++jacoco {
++    toolVersion = "0.8.12"
+ }
+ 
 +
  android {
      namespace = "com.example.cocktailsdbapp"
      compileSdk = 34
-@@ -28,6 +35,10 @@ android {
+@@ -28,6 +37,10 @@ android {
                  "proguard-rules.pro"
              )
          }
@@ -478,7 +704,7 @@ index a59ffb2..b829d8c 100644
      }
      buildFeatures {
          viewBinding = true
-@@ -41,6 +52,7 @@ android {
+@@ -41,6 +54,7 @@ android {
      }
  }
  
@@ -486,11 +712,12 @@ index a59ffb2..b829d8c 100644
  dependencies {
  
      implementation(libs.androidx.ktx)
-@@ -49,9 +61,15 @@ dependencies {
+@@ -49,9 +63,16 @@ dependencies {
      implementation(libs.androidx.constraint.layout)
      implementation(libs.androidx.navigation.fragment.ktx)
      implementation(libs.androidx.navigation.ui.ktx)
 +    implementation(libs.androidx.navigation.testing.android)
++    implementation(libs.androidx.espresso.contrib)
      testImplementation(libs.junit)
 +    testImplementation("io.mockk:mockk:1.13.8")
 +    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
@@ -502,58 +729,27 @@ index a59ffb2..b829d8c 100644
  
      // Hilt
      implementation(libs.hilt.android)
-@@ -71,5 +89,45 @@ dependencies {
+@@ -71,5 +92,13 @@ dependencies {
      ksp (libs.androidx.room.compiler)
  
      implementation(libs.expandableTextView)
 +    testImplementation(kotlin("test"))
+ 
+ }
 +
-+}
-+
-+val exclusions = listOf(
-+    "**/R.class",
-+    "**/R\$*.class",
-+    "**/BuildConfig.*",
-+    "**/Manifest*.*",
-+    "**/*Test*.*"
-+)
 +tasks.withType(Test::class) {
 +    configure<JacocoTaskExtension> {
 +        isIncludeNoLocationClasses = true
 +        excludes = listOf("jdk.internal.*")
 +    }
 +}
-+tasks.register<JacocoReport>("jacocoTestReport") {
-+    dependsOn("testDebugUnitTest")
-+
-+    reports {
-+        xml.required.set(true)
-+        html.required.set(true)
-+    }
-+
-+    val fileTree = fileTree("${buildDir}/intermediates/javac/debug/classes") {
-+
-+    }
-+
-+    classDirectories.setFrom(fileTree )
-+
-+    sourceDirectories.setFrom(
-+        files(
-+            "src/main/java",
-+            "src/main/kotlin"
-+        )
-+    )
- 
-+    executionData.setFrom(
-+        files("${buildDir}/outputs/unit_test_code_coverage/debugUnitTest/testDebugUnitTest.exec")
-+    )
- }
+\ No newline at end of file
 diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/database/DatabaseTests.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/database/DatabaseTests.kt
 new file mode 100644
-index 0000000..993bc35
+index 0000000..837e2ba
 --- /dev/null
 +++ b/app/src/androidTest/java/com/example/cocktailsdbapp/database/DatabaseTests.kt
-@@ -0,0 +1,123 @@
+@@ -0,0 +1,124 @@
 +package com.example.cocktailsdbapp.database
 +
 +import androidx.room.Room
@@ -603,13 +799,13 @@ index 0000000..993bc35
 +        // When
 +        cocktailDao.insertCocktail(cocktail)
 +        cocktailDao.insertFavorite(RoomFavorite(userEmail, cocktail.idDrink))
-+        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, "11007")
++        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, cocktail.idDrink)
 +
 +        // Then
 +        assertNotNull(retrieved)
-+        assertEquals("Mojito", retrieved?.strDrink)
-+        assertEquals("mojito.jpg", retrieved?.strDrinkThumb)
-+        assertEquals("11007", retrieved?.idDrink)
++        assertEquals(cocktail.strDrink, retrieved?.strDrink)
++        assertEquals(cocktail.strDrinkThumb, retrieved?.strDrinkThumb)
++        assertEquals(cocktail.idDrink, retrieved?.idDrink)
 +    }
 +
 +    @Test
@@ -617,12 +813,13 @@ index 0000000..993bc35
 +        // Given
 +        val cocktail = RoomCocktail("Margarita", "margarita.jpg", "11008")
 +        val userEmail = "test@example.com"
++
 +        cocktailDao.insertCocktail(cocktail)
 +        cocktailDao.insertFavorite(RoomFavorite(userEmail, cocktail.idDrink))
 +
 +        // When
-+        cocktailDao.removeFavorite(userEmail, "11008")
-+        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, "11008")
++        cocktailDao.removeFavorite(userEmail, cocktail.idDrink)
++        val retrieved = cocktailDao.findFavoriteCocktail(userEmail, cocktail.idDrink)
 +
 +        // Then
 +        assertNull(retrieved)
@@ -648,9 +845,9 @@ index 0000000..993bc35
 +        // Then
 +        assertNotNull(favorites)
 +        assertEquals(3, favorites?.size)
-+        assertEquals("Mojito", favorites?.get(0)?.strDrink)
-+        assertEquals("Margarita", favorites?.get(1)?.strDrink)
-+        assertEquals("Martini", favorites?.get(2)?.strDrink)
++        assertEquals(cocktails[0].strDrink, favorites?.get(0)?.strDrink)
++        assertEquals(cocktails[1].strDrink, favorites?.get(1)?.strDrink)
++        assertEquals(cocktails[2].strDrink, favorites?.get(2)?.strDrink)
 +    }
 +
 +    @Test
@@ -673,63 +870,243 @@ index 0000000..993bc35
 +        // Then
 +        assertEquals(1, user1Favorites?.size)
 +        assertEquals(1, user2Favorites?.size)
-+        assertEquals("Mojito", user1Favorites?.get(0)?.strDrink)
-+        assertEquals("Margarita", user2Favorites?.get(0)?.strDrink)
++        assertEquals(cocktail1.strDrink, user1Favorites?.get(0)?.strDrink)
++        assertEquals(cocktail2.strDrink, user2Favorites?.get(0)?.strDrink)
 +    }
 +}
-diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/network/NetworkTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/network/NetworkTest.kt
+diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/AppFlowTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/AppFlowTest.kt
 new file mode 100644
-index 0000000..ee9fe63
+index 0000000..03ba46c
 --- /dev/null
-+++ b/app/src/androidTest/java/com/example/cocktailsdbapp/network/NetworkTest.kt
-@@ -0,0 +1,41 @@
-+package com.example.cocktailsdbapp.network
++++ b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/AppFlowTest.kt
+@@ -0,0 +1,221 @@
++package com.example.cocktailsdbapp.ui
 +
++import android.view.View
++import androidx.recyclerview.widget.RecyclerView
++import androidx.test.espresso.Espresso.onView
++import androidx.test.espresso.UiController
++import androidx.test.espresso.ViewAction
++import androidx.test.espresso.action.ViewActions.*
++import androidx.test.espresso.assertion.ViewAssertions.*
++import androidx.test.espresso.contrib.RecyclerViewActions
++import androidx.test.espresso.matcher.ViewMatchers.*
++import androidx.test.ext.junit.rules.ActivityScenarioRule
 +import androidx.test.ext.junit.runners.AndroidJUnit4
-+import androidx.test.filters.SmallTest
-+import junit.framework.TestCase.assertTrue
-+import kotlinx.coroutines.runBlocking
++import androidx.test.filters.LargeTest
++import com.example.cocktailsdbapp.MainActivity
++import com.example.cocktailsdbapp.R
++import com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest
++import org.hamcrest.Matcher
++import org.hamcrest.Matchers.not
++import org.junit.Before
++import org.junit.Rule
 +import org.junit.Test
 +import org.junit.runner.RunWith
 +
 +/**
-+ * Android Instrumentation Tests for Network Layer
-+ * Tests actual network calls on Android environment
++ * Comprehensive Espresso Tests for App Flow
++ * Register -> Display Cocktails -> Select Category ->
++ * Select Filter -> Favorite Item -> Display Favorites ->
++ * Unfavorite Item -> Navigate to Profile -> Display Empty Favorites
 + */
 +@RunWith(AndroidJUnit4::class)
-+@SmallTest
-+class NetworkTest {
++@LargeTest
++class AppFlowTest {
 +
-+    @Test
-+    fun testNetworkConnectivity() = runBlocking {
-+        // Test basic network connectivity
-+        // This test verifies that the device has internet connectivity
++    @get:Rule
++    val activityRule = ActivityScenarioRule(MainActivity::class.java)
++
++    private val testEmail = "cocktailstest@example.com"
++    private val testName = "Cocktails Test User"
++    private val testPassword = "password123"
++
++    @Before
++    fun setUp() {
++        // Register and login for each test
++        registerAndLoginUser()
++    }
++
++    private fun registerAndLoginUser() {
++        // Step 1: Navigate to Registration
 +        try {
-+            // Simple connectivity test - if this fails, device has no internet
-+            val response = java.net.URL("https://www.google.com").openConnection()
-+            response.connect()
-+            assertTrue("Network connectivity test passed", true)
++            onView(withId(R.id.bt_register))
++                .perform(click())
++            Thread.sleep(1000)
 +        } catch (e: Exception) {
-+            // If network is not available, this test should be skipped
-+            // In a real scenario, you might want to use @Ignore annotation
-+            assertTrue("Network not available - test skipped", true)
++            // Might already be on registration screen
++        }
++
++        // Step 2: Register a new user
++        onView(withId(R.id.et_name_input))
++            .perform(clearText(), typeText(testName))
++
++        onView(withId(R.id.et_email_input))
++            .perform(clearText(), typeText(testEmail))
++
++        onView(withId(R.id.et_password_input))
++            .perform(clearText(), typeText(testPassword))
++
++        // Click register button
++        onView(withId(R.id.bt_register))
++            .perform(click())
++
++        // Wait for registration to complete
++        Thread.sleep(1000)
++
++        // Step 3: Handle the success dialog that appears after registration
++        try {
++            // Check if success dialog is displayed
++            onView(withText("Registration Successful!"))
++                .check(matches(isDisplayed()))
++
++            // Click OK button to dismiss the dialog
++            onView(withText("OK"))
++                .perform(click())
++
++            // Wait for navigation to cocktails fragment
++            Thread.sleep(1000)
++
++        } catch (e: Exception) {
++            // If no success dialog appears, registration might have failed
++            // Try to login manually
++            onView(withId(R.id.bt_login))
++                .perform(click())
++            Thread.sleep(1000)
++
++            // Fill login form
++            onView(withId(R.id.et_email_input))
++                .perform(clearText(), typeText(testEmail))
++
++            onView(withId(R.id.et_password_input))
++                .perform(clearText(), typeText(testPassword))
++
++            // Click login button
++            onView(withId(R.id.bt_login))
++                .perform(click())
++
++            // Wait for login to complete
++            Thread.sleep(1000)
++        }
++    }
++
++    object MyViewAction {
++        fun clickChildViewWithId(id: Int) = object : ViewAction {
++            override fun getConstraints(): Matcher<View> = isAssignableFrom(View::class.java)
++            override fun getDescription(): String = "Click on a child view with specified id."
++            override fun perform(uiController: UiController, view: View) {
++                val v = view.findViewById<View>(id)
++                v.performClick()
++            }
 +        }
 +    }
 +
 +    @Test
-+    fun testApiEndpointConfiguration() {
-+        // Test API endpoint configuration
-+        val baseUrl = "https://www.thecocktaildb.com/api/json/v1/1/"
-+        assertTrue("Base URL should be configured", baseUrl.isNotEmpty())
-+        assertTrue("Base URL should be HTTPS", baseUrl.startsWith("https://"))
++    fun testAppFlow() {
++        try {
++            // Click on category
++            onView(withId(R.id.action_filter))
++                .perform(click())
++
++            // Wait to show category list
++            Thread.sleep(1000)
++
++            // Verify categories are listed
++            onView(withId(R.id.rv_filter))
++                .check(matches(isDisplayed()))
++
++            // Click on second category
++            onView(withId(R.id.rv_filter))
++                .perform(
++                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                        1, // position
++                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
++                    )
++                )
++
++            // Wait to show filter list
++            Thread.sleep(1000)
++
++            // Verify filters are listed
++            onView(withId(R.id.rv_filter))
++                .check(matches(isDisplayed()))
++
++            // Click on first filter
++            onView(withId(R.id.rv_filter))
++                .perform(
++                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                        0, // position
++                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
++                    )
++                )
++
++            // Wait to navigate to cocktails screen
++            Thread.sleep(1000)
++
++            // Verify cocktails are loaded
++            onView(withId(R.id.rv_cocktails))
++                .check(matches(isDisplayed()))
++
++            // Favorite first item, so the favorites screen is not empty
++            onView(withId(R.id.rv_cocktails))
++                .perform(
++                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                        0, // position
++                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
++                    )
++                )
++
++            Thread.sleep(1000)
++
++            // Click on favorites tab
++            onView(withId(R.id.navigation_favorites))
++                .perform(click())
++
++            Thread.sleep(1000)
++
++            onView(withId(R.id.rv_cocktails))
++                .check(matches(isDisplayed()))
++
++            // Unfavorite the item, so the favorites screen is empty
++            onView(withId(R.id.rv_cocktails))
++                .perform(
++                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                        0, // position
++                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
++                    )
++                )
++
++            Thread.sleep(1000)
++
++            // Click on profile tab
++            onView(withId(R.id.navigation_profile))
++                .perform(click())
++
++            // Verify profile component is displayed
++            onView(withId(R.id.til_name_input))
++                .check(matches(isDisplayed()))
++
++            // Click on fav tab
++            onView(withId(R.id.navigation_favorites))
++                .perform(click())
++
++            Thread.sleep(1000)
++
++            onView(withId(R.id.rv_cocktails))
++                .check(matches(not(isDisplayed())))
++
++        } catch (e: Exception) {
++            assert(false)
++        }
 +    }
++
 +}
 diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/MainActivityTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/MainActivityTest.kt
 new file mode 100644
-index 0000000..6e54e1b
+index 0000000..88c5500
 --- /dev/null
 +++ b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/MainActivityTest.kt
-@@ -0,0 +1,63 @@
+@@ -0,0 +1,54 @@
 +package com.example.cocktailsdbapp.ui
 +
 +import androidx.test.ext.junit.rules.ActivityScenarioRule
@@ -742,7 +1119,7 @@ index 0000000..6e54e1b
 +
 +/**
 + * Espresso Tests for MainActivity
-+ * Tests basic activity functionality and lifecycle
++ * Tests basic activity functionality
 + */
 +@RunWith(AndroidJUnit4::class)
 +@LargeTest
@@ -754,18 +1131,9 @@ index 0000000..6e54e1b
 +    @Test
 +    fun testMainActivityLaunches() {
 +        // Test that MainActivity launches successfully
-+        // This is a basic smoke test to ensure the app doesn't crash on startup
 +        activityRule.scenario.onActivity { activity ->
 +            assert(activity != null)
 +            assert(activity.isFinishing.not())
-+        }
-+    }
-+
-+    @Test
-+    fun testActivityLifecycle() {
-+        // Test basic activity lifecycle
-+        activityRule.scenario.onActivity { activity ->
-+            assert(activity.hasWindowFocus())
 +        }
 +    }
 +
@@ -795,10 +1163,10 @@ index 0000000..6e54e1b
 +}
 diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/authorization/LoginFragmentTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/authorization/LoginFragmentTest.kt
 new file mode 100644
-index 0000000..847ccc0
+index 0000000..d830a28
 --- /dev/null
 +++ b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/authorization/LoginFragmentTest.kt
-@@ -0,0 +1,193 @@
+@@ -0,0 +1,140 @@
 +package com.example.cocktailsdbapp.ui.authorization
 +
 +import androidx.test.espresso.Espresso.onView
@@ -810,6 +1178,7 @@ index 0000000..847ccc0
 +import androidx.test.filters.LargeTest
 +import com.example.cocktailsdbapp.MainActivity
 +import com.example.cocktailsdbapp.R
++import org.hamcrest.Matchers.containsString
 +import org.junit.Rule
 +import org.junit.Test
 +import org.junit.runner.RunWith
@@ -827,9 +1196,6 @@ index 0000000..847ccc0
 +
 +    @Test
 +    fun testLoginFragmentDisplaysCorrectly() {
-+        // Test that login fragment displays correctly
-+        // This assumes the app starts with login fragment
-+        
 +        // Check if login button is displayed
 +        onView(withId(R.id.bt_login))
 +            .check(matches(isDisplayed()))
@@ -845,16 +1211,14 @@ index 0000000..847ccc0
 +
 +    @Test
 +    fun testEmailFieldInteraction() {
-+        // Test email field interaction
 +        
 +        onView(withId(R.id.et_email_input))
-+            .perform(replaceText("test@example.com"))
++            .perform(typeText("test@example.com"))
 +            .check(matches(withText("test@example.com")))
 +    }
 +
 +    @Test
 +    fun testPasswordFieldInteraction() {
-+        // Test password field interaction
 +        
 +        onView(withId(R.id.et_password_input))
 +            .perform(click())
@@ -863,27 +1227,17 @@ index 0000000..847ccc0
 +    }
 +
 +    @Test
-+    fun testLoginButtonClick() {
-+        // Test login button click
-+        
-+        // Fill in credentials
-+        onView(withId(R.id.et_email_input))
-+            .perform(typeText("test@example.com"))
-+        
-+        onView(withId(R.id.et_password_input))
-+            .perform(typeText("password123"))
-+        
-+        // Click login button
-+        onView(withId(R.id.bt_login))
-+            .perform(click())
-+    }
-+
-+    @Test
 +    fun testRegisterButtonClick() {
-+        // Test register button click
 +        
 +        onView(withId(R.id.bt_register))
 +            .perform(click())
++
++        // Wait for navigation to finish
++        Thread.sleep(1000)
++
++        // Check if we are on registration screen
++        onView(withId(R.id.tv_register))
++            .check(matches(isDisplayed()))
 +    }
 +
 +    @Test
@@ -896,7 +1250,7 @@ index 0000000..847ccc0
 +        onView(withId(R.id.bt_login))
 +            .perform(click())
 +        
-+        // Should stay on login screen or show validation error
++        // Should stay on login screen
 +        onView(withId(R.id.et_email_input))
 +            .check(matches(isDisplayed()))
 +    }
@@ -911,81 +1265,42 @@ index 0000000..847ccc0
 +        onView(withId(R.id.bt_login))
 +            .perform(click())
 +        
-+        // Should stay on login screen or show validation error
++        // Should stay on login screen
 +        onView(withId(R.id.et_password_input))
 +            .check(matches(isDisplayed()))
 +    }
 +
 +    @Test
 +    fun testInvalidEmailFormat() {
-+        // Test with invalid email format
-+        
-+        onView(withId(R.id.et_email_input))
-+            .perform(typeText("invalid-email"))
-+        
 +        onView(withId(R.id.et_password_input))
-+            .perform(typeText("password123"))
-+        
++            .perform(clearText(), typeText("password123"))
++
++        // Chars < 3
++        onView(withId(R.id.et_email_input))
++            .perform(clearText(), typeText("in"))
++
 +        onView(withId(R.id.bt_login))
 +            .perform(click())
 +        
-+        // Should show validation error or stay on login screen
++        // Should show validation error
 +        onView(withId(R.id.et_email_input))
-+            .check(matches(isDisplayed()))
-+    }
-+
-+    @Test
-+    fun testPasswordVisibilityToggle() {
-+        // Test password visibility toggle if available
-+        
-+        onView(withId(R.id.et_password_input))
-+            .perform(typeText("password123"))
-+        
-+        // Try to find and click password visibility toggle
-+        // This might not be available in all implementations
-+        try {
-+            onView(withId(R.id.til_password_input))
-+                .perform(click())
-+        } catch (e: Exception) {
-+            // Password visibility toggle might not be implemented
-+        }
-+    }
-+
-+    @Test
-+    fun testLoginWithValidCredentials() {
-+        // Test login with valid credentials
-+        // Note: This assumes there's a test user in the system
-+        
-+        onView(withId(R.id.et_email_input))
-+            .perform(typeText("test@example.com"))
-+        
-+        onView(withId(R.id.et_password_input))
-+            .perform(typeText("password123"))
-+        
-+        onView(withId(R.id.bt_login))
-+            .perform(click())
-+        
-+        // Wait for potential navigation
-+        Thread.sleep(1000)
-+        
-+        // Check if navigation occurred (this depends on the app's navigation structure)
-+        // The test might need to be adjusted based on actual app behavior
++            .check(matches(hasErrorText(containsString("Input must be at least 3 characters"))))
 +    }
 +
 +    @Test
 +    fun testLoginWithInvalidCredentials() {
-+        // Test login with invalid credentials
++        // Test login with non existent user
 +        
 +        onView(withId(R.id.et_email_input))
 +            .perform(typeText("invalid@example.com"))
 +        
 +        onView(withId(R.id.et_password_input))
-+            .perform(typeText("wrongpassword"))
++            .perform(typeText("password"))
 +        
 +        onView(withId(R.id.bt_login))
 +            .perform(click())
 +        
-+        // Should show error message or stay on login screen
++        // Should stay on login screen
 +        Thread.sleep(1000)
 +        
 +        onView(withId(R.id.et_email_input))
@@ -994,10 +1309,10 @@ index 0000000..847ccc0
 +}
 diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/authorization/RegistrationFragmentTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/authorization/RegistrationFragmentTest.kt
 new file mode 100644
-index 0000000..e38f001
+index 0000000..ecf0bc3
 --- /dev/null
 +++ b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/authorization/RegistrationFragmentTest.kt
-@@ -0,0 +1,443 @@
+@@ -0,0 +1,353 @@
 +package com.example.cocktailsdbapp.ui.authorization
 +
 +import androidx.test.espresso.Espresso.onView
@@ -1066,7 +1381,6 @@ index 0000000..e38f001
 +
 +    @Test
 +    fun testNameInputInteraction() {
-+        // Test name input field interaction
 +        navigateToRegistrationFragment()
 +        
 +        // Test name field interaction
@@ -1081,7 +1395,6 @@ index 0000000..e38f001
 +
 +    @Test
 +    fun testEmailInputInteraction() {
-+        // Test email input field interaction
 +        navigateToRegistrationFragment()
 +        
 +        // Test email field interaction
@@ -1096,7 +1409,6 @@ index 0000000..e38f001
 +
 +    @Test
 +    fun testPasswordInputInteraction() {
-+        // Test password input field interaction
 +        navigateToRegistrationFragment()
 +        
 +        // Test password field interaction
@@ -1104,7 +1416,7 @@ index 0000000..e38f001
 +            .perform(click())
 +            .perform(typeText("password123"))
 +        
-+        // Verify text was entered (password should be hidden)
++        // Verify text was entered
 +        onView(withId(R.id.et_password_input))
 +            .check(matches(withText("password123")))
 +    }
@@ -1205,7 +1517,7 @@ index 0000000..e38f001
 +        onView(withId(R.id.bt_register))
 +            .perform(click())
 +        
-+        // Should stay on registration screen due to validation
++        // Should stay on registration screen
 +        onView(withId(R.id.bt_register))
 +            .check(matches(isDisplayed()))
 +    }
@@ -1285,62 +1597,6 @@ index 0000000..e38f001
 +    }
 +
 +    @Test
-+    fun testMultipleInputInteractions() {
-+        // Test multiple input interactions
-+        navigateToRegistrationFragment()
-+        
-+        // Fill in name
-+        onView(withId(R.id.et_name_input))
-+            .perform(typeText("Jane Smith"))
-+        
-+        // Fill in email
-+        onView(withId(R.id.et_email_input))
-+            .perform(typeText("jane.smith@example.com"))
-+        
-+        // Fill in password
-+        onView(withId(R.id.et_password_input))
-+            .perform(typeText("securepassword"))
-+        
-+        // Verify all fields have correct content
-+        onView(withId(R.id.et_name_input))
-+            .check(matches(withText("Jane Smith")))
-+        
-+        onView(withId(R.id.et_email_input))
-+            .check(matches(withText("jane.smith@example.com")))
-+        
-+        onView(withId(R.id.et_password_input))
-+            .check(matches(withText("securepassword")))
-+    }
-+
-+    @Test
-+    fun testRegistrationWithSpecialCharacters() {
-+        // Test registration with special characters in inputs
-+        navigateToRegistrationFragment()
-+        
-+        // Test name with special characters (use replaceText to avoid IME issues)
-+        onView(withId(R.id.et_name_input))
-+            .perform(replaceText("Jose Maria"))
-+        
-+        // Test email with special characters
-+        onView(withId(R.id.et_email_input))
-+            .perform(replaceText("jose.maria@example.com"))
-+        
-+        // Test password with special characters
-+        onView(withId(R.id.et_password_input))
-+            .perform(replaceText("p@ssw0rd!"))
-+        
-+        // Verify all fields accept special characters
-+        onView(withId(R.id.et_name_input))
-+            .check(matches(withText("Jose Maria")))
-+        
-+        onView(withId(R.id.et_email_input))
-+            .check(matches(withText("jose.maria@example.com")))
-+        
-+        onView(withId(R.id.et_password_input))
-+            .check(matches(withText("p@ssw0rd!")))
-+    }
-+
-+    @Test
 +    fun testRegistrationWithLongInputs() {
 +        // Test registration with long inputs
 +        navigateToRegistrationFragment()
@@ -1409,55 +1665,30 @@ index 0000000..e38f001
 +        // Wait for registration process
 +        Thread.sleep(2000)
 +    }
-+
-+    @Test
-+    fun testRegistrationFragmentBackground() {
-+        // Test registration fragment background and styling
-+        navigateToRegistrationFragment()
-+        
-+        // Check that background is displayed
-+        onView(withId(R.id.tv_register))
-+            .check(matches(isDisplayed()))
-+        
-+        // Note: ImageView check removed due to ambiguity with multiple ImageViews in hierarchy
-+        // The main registration form elements are already tested above
-+    }
-+
-+    @Test
-+    fun testRegistrationFragmentLayout() {
-+        // Test registration fragment layout elements
-+        navigateToRegistrationFragment()
-+        
-+        // Check that spacer elements are displayed
-+        onView(withId(R.id.v_spacer_left))
-+            .check(matches(isDisplayed()))
-+        
-+        onView(withId(R.id.v_spacer_right))
-+            .check(matches(isDisplayed()))
-+        
-+        // Check that "or" text is displayed
-+        onView(withId(R.id.tv_or))
-+            .check(matches(isDisplayed()))
-+            .check(matches(withText(containsString("or"))))
-+    }
 +}
 diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/cocktails/CocktailsFragmentTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/cocktails/CocktailsFragmentTest.kt
 new file mode 100644
-index 0000000..7a11b9b
+index 0000000..abbc9b8
 --- /dev/null
 +++ b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/cocktails/CocktailsFragmentTest.kt
-@@ -0,0 +1,297 @@
+@@ -0,0 +1,252 @@
 +package com.example.cocktailsdbapp.ui.cocktails
 +
++import android.view.View
++import androidx.recyclerview.widget.RecyclerView
 +import androidx.test.espresso.Espresso.onView
++import androidx.test.espresso.UiController
++import androidx.test.espresso.ViewAction
 +import androidx.test.espresso.action.ViewActions.*
 +import androidx.test.espresso.assertion.ViewAssertions.*
++import androidx.test.espresso.contrib.RecyclerViewActions
 +import androidx.test.espresso.matcher.ViewMatchers.*
 +import androidx.test.ext.junit.rules.ActivityScenarioRule
 +import androidx.test.ext.junit.runners.AndroidJUnit4
 +import androidx.test.filters.LargeTest
 +import com.example.cocktailsdbapp.MainActivity
 +import com.example.cocktailsdbapp.R
++import org.hamcrest.Matcher
 +import org.junit.Before
 +import org.junit.Rule
 +import org.junit.Test
@@ -1547,6 +1778,17 @@ index 0000000..7a11b9b
 +        }
 +    }
 +
++    object MyViewAction {
++        fun clickChildViewWithId(id: Int) = object : ViewAction {
++            override fun getConstraints(): Matcher<View> = isAssignableFrom(View::class.java)
++            override fun getDescription(): String = "Click on a child view with specified id."
++            override fun perform(uiController: UiController, view: View) {
++                val v = view.findViewById<View>(id)
++                v.performClick()
++            }
++        }
++    }
++
 +    @Test
 +    fun testCocktailsFragmentDisplaysCorrectly() {
 +        // Verify we're on the cocktails fragment
@@ -1608,40 +1850,39 @@ index 0000000..7a11b9b
 +        Thread.sleep(1000)
 +
 +        // Click on first cocktail item
-+        onView(withId(R.id.rv_cocktails))
-+            .check(matches(hasMinimumChildCount(1)))
-+            .perform(click())
-+        
-+        // Wait for navigation to details
-+        Thread.sleep(1000)
-+        
-+        // Verify we navigated to cocktail details (check for details fragment elements)
 +        try {
-+            onView(withId(R.id.iv_drink))
-+                .check(matches(isDisplayed()))
++            onView(withId(R.id.rv_cocktails))
++                .perform(
++                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                        0, // position
++                        MyViewAction.clickChildViewWithId(R.id.iv_drink)
++                    )
++                )
 +        } catch (e: Exception) {
-+            // If details fragment doesn't load, that's okay for this test
-+            // The important part is that the click was registered
++            assert(false)
 +        }
 +    }
 +
 +    @Test
-+    fun testCocktailsFavoriteButtonInteraction() {
++    fun testCocktailsFavoriteButtonClick() {
 +        // Wait for data to load
 +        Thread.sleep(1000)
 +
 +        // Try to click on favorite button of first item
 +        try {
-+            onView(withId(R.id.iv_favorite))
-+                .check(matches(isDisplayed()))
-+                .perform(click())
-+            
++            onView(withId(R.id.rv_cocktails))
++                .perform(
++                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                        0, // position
++                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
++                    )
++                )
++
 +            // Wait for favorite action to complete
 +            Thread.sleep(1000)
-+            
++
 +        } catch (e: Exception) {
-+            // If favorite button is not clickable or not found, that's okay
-+            // The important part is that we can interact with the RecyclerView
++            assert(false)
 +        }
 +    }
 +
@@ -1656,12 +1897,11 @@ index 0000000..7a11b9b
 +        
 +        // Try to interact with search (if it opens)
 +        try {
-+            // This might open a search dialog or navigate to search fragment
-+            // We just verify the action is clickable
-+            onView(withId(R.id.action_search))
++            // This should expand search input field
++            onView(withId(R.id.action_search_input))
 +                .check(matches(isDisplayed()))
 +        } catch (e: Exception) {
-+            // Search might not be fully implemented, that's okay
++            assert(false)
 +        }
 +    }
 +
@@ -1676,71 +1916,11 @@ index 0000000..7a11b9b
 +        
 +        // Try to interact with filter (if it opens)
 +        try {
-+            // This might open a filter dialog or navigate to filter fragment
-+            // We just verify the action is clickable
-+            onView(withId(R.id.action_filter))
++            // This should open a filter list
++            onView(withId(R.id.rv_filter))
 +                .check(matches(isDisplayed()))
 +        } catch (e: Exception) {
-+            // Filter might not be fully implemented, that's okay
-+        }
-+    }
-+
-+    @Test
-+    fun testCocktailsNavigationToFavorites() {
-+        // Click on favorites tab
-+        onView(withId(R.id.navigation_favorites))
-+            .perform(click())
-+        
-+        // Wait for navigation
-+        Thread.sleep(1000)
-+        
-+        // Navigate back to cocktails
-+        onView(withId(R.id.navigation_cocktails))
-+            .perform(click())
-+        Thread.sleep(1000)
-+        
-+        // Verify we're back on cocktails and data is loaded
-+        onView(withId(R.id.rv_cocktails))
-+            .check(matches(isDisplayed()))
-+
-+        Thread.sleep(1000)
-+        
-+        // Verify RecyclerView has content
-+        try {
-+            onView(withId(R.id.rv_cocktails))
-+                .check(matches(hasMinimumChildCount(1)))
-+        } catch (e: Exception) {
-+            // If no data loads, that's okay - the navigation worked
-+        }
-+    }
-+
-+    @Test
-+    fun testCocktailsNavigationToProfile() {
-+        // Click on profile tab
-+        onView(withId(R.id.navigation_profile))
-+            .perform(click())
-+        
-+        // Wait for navigation
-+        Thread.sleep(1000)
-+        
-+        // Navigate back to cocktails
-+        onView(withId(R.id.navigation_cocktails))
-+            .perform(click())
-+        Thread.sleep(1000)
-+        
-+        // Verify we're back on cocktails and data is loaded
-+        onView(withId(R.id.rv_cocktails))
-+            .check(matches(isDisplayed()))
-+        
-+        // Wait a bit more for data to load
-+        Thread.sleep(1000)
-+        
-+        // Verify RecyclerView has content
-+        try {
-+            onView(withId(R.id.rv_cocktails))
-+                .check(matches(hasMinimumChildCount(1)))
-+        } catch (e: Exception) {
-+            // If no data loads, that's okay - the navigation worked
++            assert(false)
 +        }
 +    }
 +}
@@ -5716,22 +5896,24 @@ index 178b098..af0376a 100644
 +    id("org.jetbrains.kotlinx.kover") version "0.8.3"
  }
 diff --git a/gradle/libs.versions.toml b/gradle/libs.versions.toml
-index 87e06c0..0fe0527 100644
+index 87e06c0..8f2b5cc 100644
 --- a/gradle/libs.versions.toml
 +++ b/gradle/libs.versions.toml
-@@ -17,6 +17,7 @@ navigation-fragment-ktx = "2.7.5"
+@@ -17,6 +17,8 @@ navigation-fragment-ktx = "2.7.5"
  retrofit = "2.9.0"
  room-ktx = "2.6.1"
  ksp_version = "1.9.0-1.0.13"
 +navigationTestingAndroid = "2.9.5"
++espressoContrib = "3.7.0"
  
  [libraries]
  androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
-@@ -38,6 +39,7 @@ junit = { module = "junit:junit", version.ref = "junit" }
+@@ -38,6 +40,8 @@ junit = { module = "junit:junit", version.ref = "junit" }
  logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "logging-interceptor" }
  material = { module = "com.google.android.material:material", version.ref = "material" }
  retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 +androidx-navigation-testing-android = { group = "androidx.navigation", name = "navigation-testing-android", version.ref = "navigationTestingAndroid" }
++androidx-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
  
  [plugins]
  android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }

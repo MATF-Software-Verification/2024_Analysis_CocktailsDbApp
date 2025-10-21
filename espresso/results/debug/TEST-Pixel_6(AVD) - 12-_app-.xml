@@ -1,58 +1,47 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.cocktailsdbapp.ExampleInstrumentedTest" tests="50" failures="0" errors="0" skipped="0" time="237.132" timestamp="2025-10-19T23:01:04" hostname="localhost">
+<testsuite name="com.example.cocktailsdbapp.ExampleInstrumentedTest" tests="39" failures="0" errors="0" skipped="0" time="247.464" timestamp="2025-10-21T22:15:35" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_6(AVD) - 12" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
   <testcase name="useAppContext" classname="com.example.cocktailsdbapp.ExampleInstrumentedTest" time="0.015" />
-  <testcase name="testInsertAndGetCocktail" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.006" />
-  <testcase name="testDeleteCocktail" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.032" />
-  <testcase name="testUserIsolation" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.029" />
-  <testcase name="testGetAllFavorites" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.031" />
-  <testcase name="testNetworkConnectivity" classname="com.example.cocktailsdbapp.network.NetworkTest" time="0.173" />
-  <testcase name="testApiEndpointConfiguration" classname="com.example.cocktailsdbapp.network.NetworkTest" time="0.003" />
-  <testcase name="testActivityIsNotDestroyed" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="2.352" />
-  <testcase name="testActivityHasWindowFocus" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="1.073" />
-  <testcase name="testMainActivityLaunches" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="1.054" />
-  <testcase name="testActivityLifecycle" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="1.15" />
-  <testcase name="testActivityNotFinishing" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="1.047" />
-  <testcase name="testLoginWithValidCredentials" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="4.773" />
-  <testcase name="testInvalidEmailFormat" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="3.417" />
-  <testcase name="testPasswordVisibilityToggle" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="2.549" />
-  <testcase name="testLoginButtonClick" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="4.664" />
-  <testcase name="testRegisterButtonClick" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="1.844" />
-  <testcase name="testEmptyEmailValidation" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="2.467" />
-  <testcase name="testLoginFragmentDisplaysCorrectly" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="2.003" />
-  <testcase name="testEmailFieldInteraction" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="0.865" />
-  <testcase name="testEmptyPasswordValidation" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="2.927" />
-  <testcase name="testLoginWithInvalidCredentials" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="4.715" />
-  <testcase name="testPasswordFieldInteraction" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="2.694" />
-  <testcase name="testRegistrationFragmentLayout" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="2.868" />
-  <testcase name="testRegistrationFormValidation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="8.692" />
-  <testcase name="testLoginButtonNavigation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.907" />
-  <testcase name="testNameInputInteraction" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.246" />
-  <testcase name="testInputFieldFocus" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.11" />
-  <testcase name="testRegistrationFragmentDisplaysCorrectly" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="2.597" />
-  <testcase name="testRegistrationWithSpecialCharacters" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="3.151" />
-  <testcase name="testRegistrationWithLongInputs" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="7.894" />
-  <testcase name="testRegisterButtonWithValidInput" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="8.301" />
-  <testcase name="testMultipleInputInteractions" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="5.167" />
-  <testcase name="testValidInputRemovesError" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.253" />
-  <testcase name="testEmailInputInteraction" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.028" />
-  <testcase name="testInputFieldClearing" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="5.018" />
-  <testcase name="testPasswordValidation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="3.434" />
-  <testcase name="testPasswordInputInteraction" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="3.603" />
-  <testcase name="testEmailValidation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="3.5" />
-  <testcase name="testRegistrationFragmentBackground" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="2.339" />
-  <testcase name="testRegisterButtonWithInvalidInput" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.196" />
-  <testcase name="testCocktailsRecyclerViewIsScrollable" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="14.503" />
-  <testcase name="testCocktailsFilterAction" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="12.936" />
-  <testcase name="testCocktailsItemClick" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="11.044" />
-  <testcase name="testCocktailsRecyclerViewHasItems" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="10.56" />
-  <testcase name="testCocktailsNavigationToProfile" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="13.188" />
-  <testcase name="testCocktailsNavigationToFavorites" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="12.596" />
-  <testcase name="testCocktailsFragmentDisplaysCorrectly" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="11.404" />
-  <testcase name="testCocktailsSearchAction" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="11.334" />
-  <testcase name="testCocktailsFavoriteButtonInteraction" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="11.016" />
+  <testcase name="testInsertAndGetCocktail" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.026" />
+  <testcase name="testDeleteCocktail" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.028" />
+  <testcase name="testUserIsolation" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.063" />
+  <testcase name="testGetAllFavorites" classname="com.example.cocktailsdbapp.database.DatabaseTests" time="0.032" />
+  <testcase name="testAppFlow" classname="com.example.cocktailsdbapp.ui.AppFlowTest" time="22.646" />
+  <testcase name="testActivityIsNotDestroyed" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="5.144" />
+  <testcase name="testActivityHasWindowFocus" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="1.989" />
+  <testcase name="testMainActivityLaunches" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="2.508" />
+  <testcase name="testActivityNotFinishing" classname="com.example.cocktailsdbapp.ui.MainActivityTest" time="1.687" />
+  <testcase name="testInvalidEmailFormat" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="4.406" />
+  <testcase name="testRegisterButtonClick" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="3.271" />
+  <testcase name="testEmptyEmailValidation" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="2.655" />
+  <testcase name="testLoginFragmentDisplaysCorrectly" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="1.086" />
+  <testcase name="testEmailFieldInteraction" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="3.82" />
+  <testcase name="testEmptyPasswordValidation" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="3.167" />
+  <testcase name="testLoginWithInvalidCredentials" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="4.434" />
+  <testcase name="testPasswordFieldInteraction" classname="com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest" time="2.605" />
+  <testcase name="testRegistrationFormValidation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="8.753" />
+  <testcase name="testLoginButtonNavigation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.73" />
+  <testcase name="testNameInputInteraction" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.308" />
+  <testcase name="testInputFieldFocus" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="3.325" />
+  <testcase name="testRegistrationFragmentDisplaysCorrectly" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="2.473" />
+  <testcase name="testRegistrationWithLongInputs" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="14.599" />
+  <testcase name="testRegisterButtonWithValidInput" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="12.324" />
+  <testcase name="testValidInputRemovesError" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.863" />
+  <testcase name="testEmailInputInteraction" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="5.121" />
+  <testcase name="testInputFieldClearing" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="7.342" />
+  <testcase name="testPasswordValidation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="5.124" />
+  <testcase name="testPasswordInputInteraction" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.215" />
+  <testcase name="testEmailValidation" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="3.402" />
+  <testcase name="testRegisterButtonWithInvalidInput" classname="com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest" time="4.722" />
+  <testcase name="testCocktailsRecyclerViewIsScrollable" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="13.266" />
+  <testcase name="testCocktailsFilterAction" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="11.986" />
+  <testcase name="testCocktailsItemClick" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="10.222" />
+  <testcase name="testCocktailsRecyclerViewHasItems" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="10.298" />
+  <testcase name="testCocktailsFavoriteButtonClick" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="10.488" />
+  <testcase name="testCocktailsFragmentDisplaysCorrectly" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="9.874" />
+  <testcase name="testCocktailsSearchAction" classname="com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest" time="11.363" />
 </testsuite>

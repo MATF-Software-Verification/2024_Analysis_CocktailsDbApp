@@ -1,2 +1,2 @@
-10-20 00:56:59.135  1545  1569 I TestRunner: started: useAppContext(com.example.cocktailsdbapp.ExampleInstrumentedTest)
-10-20 00:56:59.143  1545  1569 I TestRunner: finished: useAppContext(com.example.cocktailsdbapp.ExampleInstrumentedTest)
+10-22 00:11:27.599 21439 21456 I TestRunner: started: useAppContext(com.example.cocktailsdbapp.ExampleInstrumentedTest)
+10-22 00:11:27.611 21439 21456 I TestRunner: finished: useAppContext(com.example.cocktailsdbapp.ExampleInstrumentedTest)

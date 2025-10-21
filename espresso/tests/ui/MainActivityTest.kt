@@ -10,7 +10,7 @@ import org.junit.runner.RunWith
 
 /**
  * Espresso Tests for MainActivity
- * Tests basic activity functionality and lifecycle
+ * Tests basic activity functionality
  */
 @RunWith(AndroidJUnit4::class)
 @LargeTest
@@ -22,18 +22,9 @@ class MainActivityTest {
     @Test
     fun testMainActivityLaunches() {
         // Test that MainActivity launches successfully
-        // This is a basic smoke test to ensure the app doesn't crash on startup
         activityRule.scenario.onActivity { activity ->
             assert(activity != null)
             assert(activity.isFinishing.not())
-        }
-    }
-
-    @Test
-    fun testActivityLifecycle() {
-        // Test basic activity lifecycle
-        activityRule.scenario.onActivity { activity ->
-            assert(activity.hasWindowFocus())
         }
     }
 

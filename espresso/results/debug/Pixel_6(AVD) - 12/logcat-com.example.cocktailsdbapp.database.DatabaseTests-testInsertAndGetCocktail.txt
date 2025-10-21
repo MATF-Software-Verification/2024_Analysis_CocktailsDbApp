@@ -1,2 +1,2 @@
-10-20 00:56:59.148  1545  1569 I TestRunner: started: testInsertAndGetCocktail(com.example.cocktailsdbapp.database.DatabaseTests)
-10-20 00:56:59.226  1545  1569 I TestRunner: finished: testInsertAndGetCocktail(com.example.cocktailsdbapp.database.DatabaseTests)
+10-22 00:11:27.619 21439 21456 I TestRunner: started: testInsertAndGetCocktail(com.example.cocktailsdbapp.database.DatabaseTests)
+10-22 00:11:27.723 21439 21456 I TestRunner: finished: testInsertAndGetCocktail(com.example.cocktailsdbapp.database.DatabaseTests)

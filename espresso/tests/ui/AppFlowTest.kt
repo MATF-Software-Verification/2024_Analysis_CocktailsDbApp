@@ -1,4 +1,4 @@
-package com.example.cocktailsdbapp.ui.cocktails
+package com.example.cocktailsdbapp.ui
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
@@ -14,19 +14,23 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import com.example.cocktailsdbapp.MainActivity
 import com.example.cocktailsdbapp.R
+import com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest
 import org.hamcrest.Matcher
+import org.hamcrest.Matchers.not
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Comprehensive Espresso Tests for CocktailsFragment
- * Tests: Registration -> Login -> Cocktails Fragment functionality
+ * Comprehensive Espresso Tests for App Flow
+ * Register -> Display Cocktails -> Select Category ->
+ * Select Filter -> Favorite Item -> Display Favorites ->
+ * Unfavorite Item -> Navigate to Profile -> Display Empty Favorites
  */
 @RunWith(AndroidJUnit4::class)
 @LargeTest
-class CocktailsFragmentTest {
+class AppFlowTest {
 
     @get:Rule
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
@@ -116,86 +120,52 @@ class CocktailsFragmentTest {
     }
 
     @Test
-    fun testCocktailsFragmentDisplaysCorrectly() {
-        // Verify we're on the cocktails fragment
-        onView(withId(R.id.rv_cocktails))
-            .check(matches(isDisplayed()))
-        
-        // Verify filter label is displayed
-        onView(withId(R.id.ll_label))
-            .check(matches(isDisplayed()))
-        
-        // Verify toolbar elements
-        onView(withId(R.id.action_search))
-            .check(matches(isDisplayed()))
-        
-        onView(withId(R.id.action_filter))
-            .check(matches(isDisplayed()))
-        
-        // Verify bottom navigation
-        onView(withId(R.id.bottomNavigationMenu))
-            .check(matches(isDisplayed()))
-        
-        // Verify navigation tabs
-        onView(withId(R.id.navigation_cocktails))
-            .check(matches(isDisplayed()))
-        
-        onView(withId(R.id.navigation_favorites))
-            .check(matches(isDisplayed()))
-        
-        onView(withId(R.id.navigation_profile))
-            .check(matches(isDisplayed()))
-    }
-
-    @Test
-    fun testCocktailsRecyclerViewHasItems() {
-        // Wait for data to load
-        Thread.sleep(1000)
-
-        // Verify RecyclerView is displayed and has items
-        onView(withId(R.id.rv_cocktails))
-            .check(matches(isDisplayed()))
-            .check(matches(hasMinimumChildCount(1)))
-    }
-
-    @Test
-    fun testCocktailsRecyclerViewIsScrollable() {
-        // Wait for data to load
-        Thread.sleep(1000)
-
-        // Verify RecyclerView is scrollable
-        onView(withId(R.id.rv_cocktails))
-            .check(matches(isDisplayed()))
-            .perform(swipeUp())
-            .perform(swipeDown())
-    }
-
-    @Test
-    fun testCocktailsItemClick() {
-        // Wait for data to load
-        Thread.sleep(1000)
-
-        // Click on first cocktail item
+    fun testAppFlow() {
         try {
-            onView(withId(R.id.rv_cocktails))
+            // Click on category
+            onView(withId(R.id.action_filter))
+                .perform(click())
+
+            // Wait to show category list
+            Thread.sleep(1000)
+
+            // Verify categories are listed
+            onView(withId(R.id.rv_filter))
+                .check(matches(isDisplayed()))
+
+            // Click on second category
+            onView(withId(R.id.rv_filter))
+                .perform(
+                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                        1, // position
+                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
+                    )
+                )
+
+            // Wait to show filter list
+            Thread.sleep(1000)
+
+            // Verify filters are listed
+            onView(withId(R.id.rv_filter))
+                .check(matches(isDisplayed()))
+
+            // Click on first filter
+            onView(withId(R.id.rv_filter))
                 .perform(
                     RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
                         0, // position
-                        MyViewAction.clickChildViewWithId(R.id.iv_drink)
+                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
                     )
                 )
-        } catch (e: Exception) {
-            assert(false)
-        }
-    }
 
-    @Test
-    fun testCocktailsFavoriteButtonClick() {
-        // Wait for data to load
-        Thread.sleep(1000)
+            // Wait to navigate to cocktails screen
+            Thread.sleep(1000)
 
-        // Try to click on favorite button of first item
-        try {
+            // Verify cocktails are loaded
+            onView(withId(R.id.rv_cocktails))
+                .check(matches(isDisplayed()))
+
+            // Favorite first item, so the favorites screen is not empty
             onView(withId(R.id.rv_cocktails))
                 .perform(
                     RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
@@ -204,49 +174,48 @@ class CocktailsFragmentTest {
                     )
                 )
 
-            // Wait for favorite action to complete
             Thread.sleep(1000)
 
+            // Click on favorites tab
+            onView(withId(R.id.navigation_favorites))
+                .perform(click())
+
+            Thread.sleep(1000)
+
+            onView(withId(R.id.rv_cocktails))
+                .check(matches(isDisplayed()))
+
+            // Unfavorite the item, so the favorites screen is empty
+            onView(withId(R.id.rv_cocktails))
+                .perform(
+                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                        0, // position
+                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
+                    )
+                )
+
+            Thread.sleep(1000)
+
+            // Click on profile tab
+            onView(withId(R.id.navigation_profile))
+                .perform(click())
+
+            // Verify profile component is displayed
+            onView(withId(R.id.til_name_input))
+                .check(matches(isDisplayed()))
+
+            // Click on fav tab
+            onView(withId(R.id.navigation_favorites))
+                .perform(click())
+
+            Thread.sleep(1000)
+
+            onView(withId(R.id.rv_cocktails))
+                .check(matches(not(isDisplayed())))
+
         } catch (e: Exception) {
             assert(false)
         }
     }
 
-    @Test
-    fun testCocktailsSearchAction() {
-        // Click on search action in toolbar
-        onView(withId(R.id.action_search))
-            .perform(click())
-        
-        // Wait for search to open
-        Thread.sleep(1000)
-        
-        // Try to interact with search (if it opens)
-        try {
-            // This should expand search input field
-            onView(withId(R.id.action_search_input))
-                .check(matches(isDisplayed()))
-        } catch (e: Exception) {
-            assert(false)
-        }
-    }
-
-    @Test
-    fun testCocktailsFilterAction() {
-        // Click on filter action in toolbar
-        onView(withId(R.id.action_filter))
-            .perform(click())
-        
-        // Wait for filter to open
-        Thread.sleep(1000)
-        
-        // Try to interact with filter (if it opens)
-        try {
-            // This should open a filter list
-            onView(withId(R.id.rv_filter))
-                .check(matches(isDisplayed()))
-        } catch (e: Exception) {
-            assert(false)
-        }
-    }
 }

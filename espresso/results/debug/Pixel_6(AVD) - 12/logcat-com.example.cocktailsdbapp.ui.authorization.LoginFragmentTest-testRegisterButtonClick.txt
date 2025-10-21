@@ -1,62 +1,65 @@
-10-20 00:57:21.925  1545  1569 I TestRunner: started: testRegisterButtonClick(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
-10-20 00:57:21.969  1545  1569 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-10-20 00:57:22.000  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{66e3161 V.E...... ......ID 0,0-0,0}
-10-20 00:57:22.000  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
-10-20 00:57:22.000  1186  1240 D SplashScreenView: Branding: view: android.view.View{1fcc486 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
-10-20 00:57:22.016  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
-10-20 00:57:22.018  1929  1929 I AndroidIME: AbstractIme.onDeactivate():207 PasswordIme.onDeactivate()
-10-20 00:57:22.047  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:57:22.047  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:57:22.050  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:57:22.055  1929  2403 D EGL_emulation: app_time_stats: avg=694.97ms min=12.04ms max=1377.89ms count=2
-10-20 00:57:22.130  1186  1256 D EGL_emulation: app_time_stats: avg=125.63ms min=3.21ms max=2284.45ms count=21
-10-20 00:57:22.184  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@1e89a16 in: PRE_ON_CREATE
-10-20 00:57:22.194  1545  1545 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
-10-20 00:57:22.216   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
-10-20 00:57:22.241   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
-10-20 00:57:22.256   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3fb371000 0x3fbd55000]
-10-20 00:57:22.265  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
-10-20 00:57:22.265  2153  2153 E HwDetectorWithState: a: 3
-10-20 00:57:22.514  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@1e89a16 in: CREATED
-10-20 00:57:22.514  1545  1545 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@1e89a16
-10-20 00:57:22.519  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@1e89a16 in: STARTED
-10-20 00:57:22.520  1545  1545 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@1e89a16
-10-20 00:57:22.526  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@1e89a16 in: RESUMED
-10-20 00:57:22.526  1545  1545 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@1e89a16
-10-20 00:57:22.534   582   593 I system_server: NativeAlloc concurrent copying GC freed 69265(3112KB) AllocSpace objects, 17(436KB) LOS objects, 48% free, 25MB/49MB, paused 138us,53us total 517.252ms
-10-20 00:57:22.573   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ea684000 0x3eb068000]
-10-20 00:57:22.583   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
-10-20 00:57:22.585   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f2400000 0x3f2de4000]
-10-20 00:57:22.656   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +659ms
-10-20 00:57:22.729  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:57:22.729  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:57:22.742  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:57:22.776  1545  1545 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296378/com.example.cocktailsdbapp:id/bt_register>
-10-20 00:57:22.818   582  2833 W InputManager-JNI: Input channel object '42941f4 com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
-10-20 00:57:22.844   423   543 D AudioFlinger: mixer(0x79e478791a70) throttle end: throttle time(35)
-10-20 00:57:22.945   582   623 W InputManager-JNI: Input channel object '655964a Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
-10-20 00:57:23.132  1186  1256 D EGL_emulation: app_time_stats: avg=228.68ms min=3.48ms max=1233.64ms count=6
-10-20 00:57:23.149  1186  1256 D EGL_emulation: app_time_stats: avg=169.57ms min=19.92ms max=803.07ms count=6
-10-20 00:57:23.331  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{699826a V.E...... ......ID 0,0-0,0}
-10-20 00:57:23.331  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
-10-20 00:57:23.331  1186  1240 D SplashScreenView: Branding: view: android.view.View{d15035b G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
-10-20 00:57:23.339  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@1e89a16 in: PAUSED
-10-20 00:57:23.340  1545  1545 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@1e89a16
-10-20 00:57:23.400   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
-10-20 00:57:23.412   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
-10-20 00:57:23.428   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f2de4000 0x3f37c8000]
-10-20 00:57:23.445   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3e9ce3000 0x3ea337000]
-10-20 00:57:23.562   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ea337000 0x3ead1b000]
-10-20 00:57:23.567   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
-10-20 00:57:23.584   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f09e4000 0x3f13c8000]
-10-20 00:57:23.592  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@1e89a16 in: STOPPED
-10-20 00:57:23.594  1545  1545 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@1e89a16
-10-20 00:57:23.612   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +286ms
-10-20 00:57:23.650   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ee790000 0x3eede4000]
-10-20 00:57:23.691  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@1e89a16 in: DESTROYED
-10-20 00:57:23.692  1545  1545 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
-10-20 00:57:23.731   582  2229 W InputManager-JNI: Input channel object '5c75c95 com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
-10-20 00:57:23.761   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f13c8000 0x3f1dac000]
-10-20 00:57:23.766   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f1dac000 0x3f2790000]
-10-20 00:57:23.768   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f6400000 0x3f6de4000]
-10-20 00:57:23.770  1545  1569 I TestRunner: finished: testRegisterButtonClick(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
+10-22 00:12:10.672 21439 21456 I TestRunner: started: testRegisterButtonClick(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
+10-22 00:12:10.754 21439 21456 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-22 00:12:10.877   774   863 D SplashScreenView: Build android.window.SplashScreenView{877454f V.E...... ......ID 0,0-0,0}
+10-22 00:12:10.877   774   863 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-22 00:12:10.877   774   863 D SplashScreenView: Branding: view: android.view.View{c00c4dc G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-22 00:12:11.030   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f1385000 0x3f1d69000]
+10-22 00:12:11.053   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f1d69000 0x3f274d000]
+10-22 00:12:11.071  1506  1506 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+10-22 00:12:11.071  1506  1506 E HwDetectorWithState: a: 3
+10-22 00:12:11.125 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@5a0ce12 in: PRE_ON_CREATE
+10-22 00:12:11.127 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-22 00:12:11.148   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f6790000 0x3f7174000]
+10-22 00:12:11.180  1063  1648 D EGL_emulation: app_time_stats: avg=44.81ms min=2.91ms max=542.76ms count=22
+10-22 00:12:11.235   774   875 D EGL_emulation: app_time_stats: avg=1536.17ms min=29.84ms max=4521.21ms count=3
+10-22 00:12:11.244   774   875 D EGL_emulation: app_time_stats: avg=270.40ms min=26.14ms max=1212.18ms count=5
+10-22 00:12:11.430   511   511 W livelock: sample 3.604s
+10-22 00:12:11.496  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:12:11.500  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:12:11.544 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@5a0ce12 in: CREATED
+10-22 00:12:11.545 21439 21439 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@5a0ce12
+10-22 00:12:11.550 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@5a0ce12 in: STARTED
+10-22 00:12:11.551 21439 21439 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@5a0ce12
+10-22 00:12:11.554 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@5a0ce12 in: RESUMED
+10-22 00:12:11.554 21439 21439 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@5a0ce12
+10-22 00:12:11.619   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
+10-22 00:12:11.627   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f49e4000]
+10-22 00:12:11.645   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3f7177000 0x3f7b5b000]
+10-22 00:12:11.717   572   599 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +890ms
+10-22 00:12:11.818  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:12:11.819  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:12:11.820  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:12:11.863 21439 21439 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296379/com.example.cocktailsdbapp:id/bt_register>
+10-22 00:12:12.075   572  1094 W InputManager-JNI: Input channel object 'a6574b4 Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
+10-22 00:12:12.077   407   533 D AudioFlinger: mixer(0x78d16b108a70) throttle end: throttle time(41)
+10-22 00:12:12.197 21439 21448 I .cocktailsdbap: NativeAlloc concurrent copying GC freed 155891(7273KB) AllocSpace objects, 6(116KB) LOS objects, 49% free, 11MB/23MB, paused 85us,49us total 423.886ms
+10-22 00:12:12.248   774   875 D EGL_emulation: app_time_stats: avg=143.93ms min=12.45ms max=872.40ms count=7
+10-22 00:12:12.260   774   875 D EGL_emulation: app_time_stats: avg=144.77ms min=18.76ms max=868.80ms count=7
+10-22 00:12:13.646 21439 21439 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296811/com.example.cocktailsdbapp:id/tv_register>
+10-22 00:12:13.668 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@5a0ce12 in: PAUSED
+10-22 00:12:13.669 21439 21439 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@5a0ce12
+10-22 00:12:13.695 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a in: PRE_ON_CREATE
+10-22 00:12:13.695 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a
+10-22 00:12:13.718 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a in: CREATED
+10-22 00:12:13.718 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a
+10-22 00:12:13.722 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a in: STARTED
+10-22 00:12:13.722 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a
+10-22 00:12:13.726 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a in: RESUMED
+10-22 00:12:13.728 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a
+10-22 00:12:13.752   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3ed038000 0x3eda1c000]
+10-22 00:12:13.757   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f1385000 0x3f1d69000]
+10-22 00:12:13.762   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f1d69000 0x3f274d000]
+10-22 00:12:13.776   572   599 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +119ms
+10-22 00:12:13.793 21439 21462 D EGL_emulation: app_time_stats: avg=155.45ms min=4.05ms max=1282.76ms count=13
+10-22 00:12:13.806 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@5a0ce12 in: STOPPED
+10-22 00:12:13.809 21439 21439 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@5a0ce12
+10-22 00:12:13.822 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@5a0ce12 in: DESTROYED
+10-22 00:12:13.823 21439 21439 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-22 00:12:13.831   572   651 W InputManager-JNI: Input channel object '3de3a7c com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
+10-22 00:12:13.848   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3ef676000 0x3efcca000]
+10-22 00:12:13.897 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a in: PAUSED
+10-22 00:12:13.898 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@21e137a
+10-22 00:12:13.934  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:12:13.935  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:12:13.937   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
+10-22 00:12:13.932 21439 21456 I TestRunner: finished: testRegisterButtonClick(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)

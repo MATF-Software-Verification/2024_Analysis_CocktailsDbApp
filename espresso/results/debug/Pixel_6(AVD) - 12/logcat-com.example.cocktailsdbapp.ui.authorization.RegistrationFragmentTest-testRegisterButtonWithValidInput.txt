@@ -1,255 +1,459 @@
-10-20 00:58:18.520  1545  1569 I TestRunner: started: testRegisterButtonWithValidInput(com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest)
-10-20 00:58:18.520   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f49e4000 0x3f53c8000]
-10-20 00:58:18.535   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f53c8000 0x3f5dac000]
-10-20 00:58:18.537   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3fb371000 0x3fbd55000]
-10-20 00:58:18.581  1186  1197 I ndroid.systemu: NativeAlloc concurrent copying GC freed 23912(1048KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 10121KB/19MB, paused 31us,17us total 116.633ms
-10-20 00:58:18.588  1545  1569 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-10-20 00:58:18.627  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
-10-20 00:58:18.634  1929  1929 I AndroidIME: AbstractIme.onDeactivate():207 PasswordIme.onDeactivate()
-10-20 00:58:18.685  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{78be807 V.E...... ......ID 0,0-0,0}
-10-20 00:58:18.685  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
-10-20 00:58:18.685  1186  1240 D SplashScreenView: Branding: view: android.view.View{3ae1d34 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
-10-20 00:58:18.697  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:58:18.698  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:58:18.700  1929  2403 D EGL_emulation: app_time_stats: avg=282.05ms min=14.49ms max=1623.01ms count=8
-10-20 00:58:18.704  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:18.724  1186  1256 D EGL_emulation: app_time_stats: avg=325.89ms min=8.02ms max=5580.18ms count=18
-10-20 00:58:18.764  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d6f6eb2 in: PRE_ON_CREATE
-10-20 00:58:18.767  1545  1545 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
-10-20 00:58:18.810   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
-10-20 00:58:18.811  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
-10-20 00:58:18.811  2153  2153 E HwDetectorWithState: a: 3
-10-20 00:58:18.819   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f6cd5000 0x3f76b9000]
-10-20 00:58:18.826   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f8000000 0x3f89e4000]
-10-20 00:58:18.911   582   593 I system_server: NativeAlloc concurrent copying GC freed 90473(3900KB) AllocSpace objects, 19(460KB) LOS objects, 48% free, 25MB/49MB, paused 49us,52us total 575.619ms
-10-20 00:58:18.997  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d6f6eb2 in: CREATED
-10-20 00:58:18.998  1545  1545 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@d6f6eb2
-10-20 00:58:19.003  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d6f6eb2 in: STARTED
-10-20 00:58:19.004  1545  1545 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@d6f6eb2
-10-20 00:58:19.007  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d6f6eb2 in: RESUMED
-10-20 00:58:19.009  1545  1545 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@d6f6eb2
-10-20 00:58:19.068   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ee74d000 0x3ef131000]
-10-20 00:58:19.076   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
-10-20 00:58:19.079   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f89e4000 0x3f93c8000]
-10-20 00:58:19.132   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +508ms
-10-20 00:58:19.182  1545  1545 I AssistStructure: Flattened final assist data: 2668 bytes, containing 1 windows, 16 views
-10-20 00:58:19.207  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:58:19.207  1929  1929 W KeyboardViewController: KeyboardViewController.show():477 Requesting to show sub view with id 2131428268(#0x7f0b03ac) when keyboard HEADER view is not ready to show
-10-20 00:58:19.211  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:58:19.215  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:19.248  1545  1545 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296378/com.example.cocktailsdbapp:id/bt_register>
-10-20 00:58:19.334   582  1320 W InputManager-JNI: Input channel object '888a0d com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
-10-20 00:58:19.432  7378  7378 W svc     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
-10-20 00:58:19.462  1957  1957 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:509588362
-10-20 00:58:19.485   582  2255 W InputManager-JNI: Input channel object '8a89570 Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
-10-20 00:58:19.668  1186  1256 D EGL_emulation: app_time_stats: avg=154.34ms min=5.40ms max=1260.00ms count=9
-10-20 00:58:19.727  1186  1256 D EGL_emulation: app_time_stats: avg=58.53ms min=2.84ms max=746.35ms count=16
-10-20 00:58:20.850  1545  1545 I ViewInteraction: Performing 'type text(John Doe)' action on view view.getId() is <2131296468/com.example.cocktailsdbapp:id/et_name_input>
-10-20 00:58:20.874  1545  1579 D EGL_emulation: app_time_stats: avg=96.80ms min=3.58ms max=1209.37ms count=17
-10-20 00:58:20.901  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:58:20.901  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:58:20.902  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:20.903  1545  1545 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c7be01a VFED..CL. .F.P..ID 119,284-959,392 #7f0900d4 app:id/et_name_input aid=1073741840} flags=0 reason=SHOW_SOFT_INPUT
-10-20 00:58:20.910  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
-10-20 00:58:20.911  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:20.912  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
-10-20 00:58:20.913  1929  1929 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=Text imeActionName=NEXT dump=[inputType=0x61 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=name label=null packageName=com.example.cocktailsdbapp autofillId=1073741840 fieldId=2131296468 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
-10-20 00:58:20.913  1545  1545 I AssistStructure: Flattened final assist data: 2988 bytes, containing 1 windows, 17 views
-10-20 00:58:20.913  1929  1929 I Delight5Facilitator: Delight5Facilitator.initializeForIme():718 initializeForIme() : Locale = [en_US], layout = qwerty
-10-20 00:58:20.913  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():54 cancelShutdown()
-10-20 00:58:20.913  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():66 syncLanguagePacks()
-10-20 00:58:20.914  1929  1929 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1293 inline flag updated to:false
-10-20 00:58:20.919  1929 13454 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():182 maybeScheduleAutoPackDownloadForFallback()
-10-20 00:58:20.919  1929 13454 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():194 maybeScheduleAutoPackDownload() for language tag en-US
-10-20 00:58:20.922  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
-10-20 00:58:20.940  7378  7378 W svc     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
-10-20 00:58:20.942  1929  1929 I KeyboardViewHelper: KeyboardViewHelper.getView():167 Get view with height ratio:1.000000
-10-20 00:58:20.955  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
-10-20 00:58:20.959  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:20.960  1957  1957 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:2068807641
-10-20 00:58:20.960  1929  2492 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
-10-20 00:58:20.962  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
-10-20 00:58:20.966  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:20.967  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
-10-20 00:58:20.967  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:20.969  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
-10-20 00:58:20.972  1929  1929 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$3.display():213 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION
-10-20 00:58:20.975  1929  1929 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
-10-20 00:58:20.989  1186  1256 D EGL_emulation: app_time_stats: avg=210.13ms min=16.30ms max=1171.80ms count=6
-10-20 00:58:20.993  1545  1545 D InsetsController: show(ime(), fromIme=true)
-10-20 00:58:21.000  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.000  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.001  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:21.004  1929  2492 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
-10-20 00:58:21.022  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.043  1929  2403 D EGL_emulation: app_time_stats: avg=468.07ms min=11.90ms max=2224.54ms count=5
-10-20 00:58:21.046  7378  7387 I .gms.persisten: Background young concurrent copying GC freed 239756(10MB) AllocSpace objects, 1(128KB) LOS objects, 44% free, 14MB/25MB, paused 27us,18us total 104.187ms
-10-20 00:58:21.082  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.082  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.091  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.144  1545  1545 D UiControllerImpl: Injecting string: "John Doe"
-10-20 00:58:21.234  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
-10-20 00:58:21.237  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.latin.keyboard.widget.LatinFixedCountCandidatesHolderView{1ea64fd I.E...... ......ID 95,0-975,116 #7f0b145f app:id/softkey_holder_fixed_candidates} to show itself, PREEMPTIVE
-10-20 00:58:21.294  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 12533<12535, inputStateId=11960, lastInputStateId=11961
-10-20 00:58:21.318  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 12535<12537, inputStateId=11962, lastInputStateId=11963
-10-20 00:58:21.361  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
-10-20 00:58:21.362  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.latin.keyboard.widget.LatinFixedCountCandidatesHolderView{1ea64fd I.E...... ......ID 95,0-975,116 #7f0b145f app:id/softkey_holder_fixed_candidates} to show itself, PREEMPTIVE
-10-20 00:58:21.382  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
-10-20 00:58:21.383  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.latin.keyboard.widget.LatinFixedCountCandidatesHolderView{1ea64fd I.E...... ......ID 95,0-975,116 #7f0b145f app:id/softkey_holder_fixed_candidates} to show itself, PREEMPTIVE
-10-20 00:58:21.445  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
-10-20 00:58:21.446  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.latin.keyboard.widget.LatinFixedCountCandidatesHolderView{1ea64fd I.E...... ......ID 95,0-975,116 #7f0b145f app:id/softkey_holder_fixed_candidates} to show itself, PREEMPTIVE
-10-20 00:58:21.471  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
-10-20 00:58:21.472  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.latin.keyboard.widget.LatinFixedCountCandidatesHolderView{1ea64fd I.E...... ......ID 95,0-975,116 #7f0b145f app:id/softkey_holder_fixed_candidates} to show itself, PREEMPTIVE
-10-20 00:58:21.477  1545  1545 I ViewInteraction: Performing 'type text(john.doe@example.com)' action on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
-10-20 00:58:21.527  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
-10-20 00:58:21.528  1545  1545 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{d22874b VFED..CL. .F.P..ID 119,418-959,526 #7f0900d3 app:id/et_email_input aid=1073741841} flags=0 reason=SHOW_SOFT_INPUT
-10-20 00:58:21.533  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
-10-20 00:58:21.541  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
-10-20 00:58:21.543  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():76 shutdown()
-10-20 00:58:21.543  1545  1545 W IInputConnectionWrapper: setComposingRegion on inactive InputConnection
-10-20 00:58:21.544  1929  1929 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
-10-20 00:58:21.546  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:58:21.547  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:58:21.548  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:21.550  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
-10-20 00:58:21.552  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:21.561  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
-10-20 00:58:21.562  1929  1929 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=Email imeActionName=NEXT dump=[inputType=0x21 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=email label=null packageName=com.example.cocktailsdbapp autofillId=1073741841 fieldId=2131296467 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
-10-20 00:58:21.564  1929  1929 I Delight5Facilitator: Delight5Facilitator.initializeForIme():718 initializeForIme() : Locale = [en_US], layout = qwerty
-10-20 00:58:21.564  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():54 cancelShutdown()
-10-20 00:58:21.566  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():66 syncLanguagePacks()
-10-20 00:58:21.573  1929  2492 I native  : I1020 00:58:21.573179    2492 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
-10-20 00:58:21.574  1929  1929 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1293 inline flag updated to:false
-10-20 00:58:21.575  1929 13454 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():182 maybeScheduleAutoPackDownloadForFallback()
-10-20 00:58:21.576  1929 13454 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():194 maybeScheduleAutoPackDownload() for language tag en-US
-10-20 00:58:21.578  1929  2492 I native  : I1020 00:58:21.576906    2492 input-context-store.cc:161] Ignoring stale client request for OverrideDecodedCandidates
-10-20 00:58:21.583  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
-10-20 00:58:21.592  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
-10-20 00:58:21.595  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:21.596  1929  2492 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
-10-20 00:58:21.597  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
-10-20 00:58:21.600  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:21.601  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
-10-20 00:58:21.602  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:21.605  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
-10-20 00:58:21.609  1929  1929 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$3.display():213 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION
-10-20 00:58:21.612  1929  1929 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
-10-20 00:58:21.612  1929  1929 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
-10-20 00:58:21.617  1545  1545 D InsetsController: show(ime(), fromIme=true)
-10-20 00:58:21.620  1545  1545 D InsetsController: show(ime(), fromIme=true)
-10-20 00:58:21.627  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.628  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.634  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 12546<12549, inputStateId=0, lastInputStateId=11974
-10-20 00:58:21.634  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.648  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.649  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.655  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:21.777  1545  1545 D UiControllerImpl: Injecting string: "john.doe@example.com"
-10-20 00:58:21.817   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc1d000 0x3ebc6a000]
-10-20 00:58:21.824   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc6a000 0x3ebcb7000]
-10-20 00:58:21.831   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebcb7000 0x3ebd04000]
-10-20 00:58:21.903  1545  1579 D EGL_emulation: app_time_stats: avg=48.52ms min=8.94ms max=246.83ms count=21
-10-20 00:58:21.918  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
-10-20 00:58:21.922  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.latin.keyboard.widget.LatinFixedCountCandidatesHolderView{1ea64fd I.E...... ......ID 95,0-975,116 #7f0b145f app:id/softkey_holder_fixed_candidates} to show itself, PREEMPTIVE
-10-20 00:58:21.946   582  1320 W InputManager-JNI: Input channel object '58b289f PopupWindow:d5f23f7 (client)' was disposed without first being removed with the input manager!
-10-20 00:58:21.980  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
-10-20 00:58:21.982  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.latin.keyboard.widget.LatinFixedCountCandidatesHolderView{1ea64fd I.E...... ......ID 95,0-975,116 #7f0b145f app:id/softkey_holder_fixed_candidates} to show itself, PREEMPTIVE
-10-20 00:58:22.052  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 12555<12556, inputStateId=11981, lastInputStateId=11982
-10-20 00:58:22.098  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 12557<12558, inputStateId=11983, lastInputStateId=11984
-10-20 00:58:22.141  1929  2492 I native  : I1020 00:58:22.141522    2492 input-context-store.cc:161] Ignoring stale client request for FetchSuggestions
-10-20 00:58:22.142  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 12561<12564, inputStateId=0, lastInputStateId=11988
-10-20 00:58:22.214  1929  1929 W InputContextProxy: InputContextProxy.applyClientDiffInternal():892 Ignore [FetchSuggestions] diff due to stale request: 12568<12569, inputStateId=11993, lastInputStateId=11992
-10-20 00:58:22.219  1929  2403 D EGL_emulation: app_time_stats: avg=61.52ms min=4.21ms max=276.11ms count=18
-10-20 00:58:22.652  1545  1545 I ViewInteraction: Performing 'type text(password123)' action on view view.getId() is <2131296469/com.example.cocktailsdbapp:id/et_password_input>
-10-20 00:58:22.706  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
-10-20 00:58:22.707  1545  1545 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{beea528 VFED..CL. .F.P..ID 119,552-959,660 #7f0900d5 app:id/et_password_input aid=1073741842} flags=0 reason=SHOW_SOFT_INPUT
-10-20 00:58:22.712  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
-10-20 00:58:22.716  1929  1929 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
-10-20 00:58:22.716  1929  1929 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():76 shutdown()
-10-20 00:58:22.718  1929  1929 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
-10-20 00:58:22.721  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:58:22.722  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:58:22.723  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:22.727  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
-10-20 00:58:22.731  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:58:22.746  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
-10-20 00:58:22.752  1929  1929 I AndroidIME: AbstractIme.onActivate():86 PasswordIme.onActivate() : EditorInfo = inputType=Password imeActionName=DONE dump=[inputType=0x81 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=password label=null packageName=com.example.cocktailsdbapp autofillId=1073741842 fieldId=2131296469 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
-10-20 00:58:22.765  1929  1929 I KeyboardViewHelper: KeyboardViewHelper.getView():167 Get view with height ratio:1.000000
-10-20 00:58:22.779  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
-10-20 00:58:22.780  1929  1929 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
-10-20 00:58:22.782  1929  1929 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
-10-20 00:58:22.784  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:22.785  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
-10-20 00:58:22.785  1929  1929 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
-10-20 00:58:22.787  1929  1929 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
-10-20 00:58:22.792  1929  1929 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$3.display():213 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION
-10-20 00:58:22.796  1929  1929 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-SettingOff,MicIconHidden-PasswordOrNumberOrDateInputType,}
-10-20 00:58:22.797  1929  1929 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
-10-20 00:58:22.803  1545  1545 D InsetsController: show(ime(), fromIme=true)
-10-20 00:58:22.815  1545  1545 D InsetsController: show(ime(), fromIme=true)
-10-20 00:58:22.850  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:22.851  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:22.861  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:22.893  7442  7442 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:22.893  7442  7442 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:22.905  7442  7442 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
-10-20 00:58:22.945  1545  1545 D UiControllerImpl: Injecting string: "password123"
-10-20 00:58:23.036  1545  1579 D EGL_emulation: app_time_stats: avg=42.79ms min=3.15ms max=303.92ms count=26
-10-20 00:58:23.051   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc1d000 0x3ebc6a000]
-10-20 00:58:23.057   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc6a000 0x3ebcb7000]
-10-20 00:58:23.061   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebcb7000 0x3ebd04000]
-10-20 00:58:23.103  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.216  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.238   582  1320 W InputManager-JNI: Input channel object 'b7ac987 PopupWindow:43a395 (client)' was disposed without first being removed with the input manager!
-10-20 00:58:23.283  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.361  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.418  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.462  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.531  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.575  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.606  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.644  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.684  1929  1929 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority android.widget.LinearLayout{a3fff2a I.E...... .......D 0,0-1080,116 #7f0b03ac app:id/key_pos_password_header_numbers} to show itself, DEFAULT
-10-20 00:58:23.695  1545  1545 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296378/com.example.cocktailsdbapp:id/bt_register>
-10-20 00:58:23.767   423   543 D AudioFlinger: mixer(0x79e478791a70) throttle end: throttle time(38)
-10-20 00:58:24.049  1545  1579 D EGL_emulation: app_time_stats: avg=35.45ms min=5.69ms max=112.80ms count=26
-10-20 00:58:24.080   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebc1d000 0x3ebdde000]
-10-20 00:58:24.093   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ebdde000 0x3ebf9f000]
-10-20 00:58:24.096   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ea3bd000 0x3ea57e000]
-10-20 00:58:24.214  1186  1256 D EGL_emulation: app_time_stats: avg=169.11ms min=2.42ms max=2904.91ms count=18
-10-20 00:58:25.172  1545  1579 D EGL_emulation: app_time_stats: avg=29.35ms min=5.71ms max=463.86ms count=37
-10-20 00:58:25.609  1545  1579 D EGL_emulation: app_time_stats: avg=161.87ms min=3.30ms max=1297.44ms count=9
-10-20 00:58:26.468  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{6f09593 V.E...... ......ID 0,0-0,0}
-10-20 00:58:26.468  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
-10-20 00:58:26.468  1186  1240 D SplashScreenView: Branding: view: android.view.View{4b4a9d0 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
-10-20 00:58:26.471  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d6f6eb2 in: PAUSED
-10-20 00:58:26.472  1545  1545 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@d6f6eb2
-10-20 00:58:26.481   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ea57e000 0x3eaf1f000]
-10-20 00:58:26.545   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
-10-20 00:58:26.558   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ef131000 0x3efb15000]
-10-20 00:58:26.562   354   354 I Zygote  : Process 28511 exited due to signal 9 (Killed)
-10-20 00:58:26.566   582   652 I libprocessgroup: Successfully killed process cgroup uid 10101 pid 28511 in 47ms
-10-20 00:58:26.577   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3e9342000 0x3e9996000]
-10-20 00:58:26.579   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f168c000 0x3f2070000]
-10-20 00:58:26.627  1186  1256 D EGL_emulation: app_time_stats: avg=769.57ms min=10.21ms max=6815.06ms count=9
-10-20 00:58:26.634  1545  1579 D EGL_emulation: app_time_stats: avg=48.21ms min=2.93ms max=683.19ms count=19
-10-20 00:58:26.634  1186  1256 D EGL_emulation: app_time_stats: avg=266.57ms min=10.57ms max=2290.51ms count=9
-10-20 00:58:26.647   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
-10-20 00:58:26.652   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
-10-20 00:58:26.662   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f26c4000 0x3f30a8000]
-10-20 00:58:26.694   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ee790000 0x3eede4000]
-10-20 00:58:26.744  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d6f6eb2 in: STOPPED
-10-20 00:58:26.744  1545  1545 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@d6f6eb2
-10-20 00:58:26.750  1545  1545 D AutofillManager: onActivityFinishing(): calling cancelLocked()
-10-20 00:58:26.758   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3eede4000 0x3ef785000]
-10-20 00:58:26.779   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f168c000 0x3f2070000]
-10-20 00:58:26.786   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f30a8000 0x3f3a8c000]
-10-20 00:58:26.788   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
-10-20 00:58:26.803   582  2229 W InputManager-JNI: Input channel object '75d60b9 Splash Screen com.example.cocktailsdbapp.test (client)' was disposed without first being removed with the input manager!
-10-20 00:58:26.803  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
-10-20 00:58:26.809  2153  2153 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
-10-20 00:58:26.810  2153  2153 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
-10-20 00:58:26.813  2441  2795 I OpenGLRenderer: Davey! duration=19501ms; Flags=1, FrameTimelineVsyncId=221699, IntendedVsync=30874234071116, Vsync=30874234071116, InputEventId=0, HandleInputStart=30874236866170, AnimationStart=30874236866834, PerformTraversalsStart=30874236867088, DrawStart=30874265324786, FrameDeadline=30874267404448, FrameInterval=30874236863696, FrameStartTime=16666666, SyncQueued=30874265387096, SyncStart=30874265708356, IssueDrawCommandsStart=30874266223798, SwapBuffers=30874266317775, FrameCompleted=30893735674813, DequeueBufferDuration=5064, QueueBufferDuration=8013969, GpuCompleted=30893735674813, SwapBuffersCompleted=30874275669962, DisplayPresentTime=0,
-10-20 00:58:26.823  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d6f6eb2 in: DESTROYED
-10-20 00:58:26.824  1545  1545 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
-10-20 00:58:26.824  1545  1569 I TestRunner: finished: testRegisterButtonWithValidInput(com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest)
+10-22 00:13:17.514 21439 21456 I TestRunner: started: testRegisterButtonWithValidInput(com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest)
+10-22 00:13:17.543 21439 21456 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-22 00:13:17.611   774   863 D SplashScreenView: Build android.window.SplashScreenView{4e0c81f V.E...... ......ID 0,0-0,0}
+10-22 00:13:17.611   774   863 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-22 00:13:17.611   774   863 D SplashScreenView: Branding: view: android.view.View{7a8d76c G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-22 00:13:17.678   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f354f000 0x3f3f33000]
+10-22 00:13:17.686   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f0ca8000 0x3f168c000]
+10-22 00:13:17.694 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@3a00e87 in: PRE_ON_CREATE
+10-22 00:13:17.695 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-22 00:13:17.698   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f168c000 0x3f2070000]
+10-22 00:13:17.738  1506  1506 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+10-22 00:13:17.738  1506  1506 E HwDetectorWithState: a: 3
+10-22 00:13:17.827   774   875 D EGL_emulation: app_time_stats: avg=2402.12ms min=11.63ms max=14328.58ms count=6
+10-22 00:13:17.835   774   875 D EGL_emulation: app_time_stats: avg=99.27ms min=5.72ms max=585.75ms count=10
+10-22 00:13:17.986 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@3a00e87 in: CREATED
+10-22 00:13:17.987 21439 21439 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@3a00e87
+10-22 00:13:17.991 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@3a00e87 in: STARTED
+10-22 00:13:17.992 21439 21439 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@3a00e87
+10-22 00:13:17.994 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@3a00e87 in: RESUMED
+10-22 00:13:17.995 21439 21439 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@3a00e87
+10-22 00:13:18.050   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3fafa7000 0x3fb98b000]
+10-22 00:13:18.059   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f49e4000]
+10-22 00:13:18.065   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f49e4000 0x3f53c8000]
+10-22 00:13:18.084  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:13:18.098  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:13:18.147   572   599 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +571ms
+10-22 00:13:18.210 21439 21439 I AssistStructure: Flattened final assist data: 2668 bytes, containing 1 windows, 16 views
+10-22 00:13:18.226  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:13:18.226  1385  1385 W KeyboardViewController: KeyboardViewController.show():477 Requesting to show sub view with id 2131428268(#0x7f0b03ac) when keyboard HEADER view is not ready to show
+10-22 00:13:18.239  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:13:18.243  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:13:18.314 21439 21439 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296379/com.example.cocktailsdbapp:id/bt_register>
+10-22 00:13:18.467  3983  3983 W svc     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+10-22 00:13:18.484   572  2188 W InputManager-JNI: Input channel object 'df3e262 Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
+10-22 00:13:18.559  1008  1008 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:370321102
+10-22 00:13:18.868   774   875 D EGL_emulation: app_time_stats: avg=127.94ms min=17.94ms max=779.23ms count=8
+10-22 00:13:18.922   774   875 D EGL_emulation: app_time_stats: avg=121.28ms min=17.64ms max=729.85ms count=9
+10-22 00:13:20.206 21439 21439 I ViewInteraction: Performing 'type text(John Doe)' action on view view.getId() is <2131296469/com.example.cocktailsdbapp:id/et_name_input>
+10-22 00:13:20.226 21439 21462 D EGL_emulation: app_time_stats: avg=166.79ms min=7.23ms max=1202.44ms count=12
+10-22 00:13:20.265  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:13:20.266  1385  1385 W KeyboardViewController: KeyboardViewController.show():477 Requesting to show sub view with id 2131428268(#0x7f0b03ac) when keyboard HEADER view is not ready to show
+10-22 00:13:20.267 21439 21439 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c1e26f3 VFED..CL. .F.P..ID 119,284-959,392 #7f0900d5 app:id/et_name_input aid=1073741840} flags=0 reason=SHOW_SOFT_INPUT
+10-22 00:13:20.270  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:13:20.272  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:13:20.274  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
+10-22 00:13:20.285  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:13:20.286  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-22 00:13:20.287  1385  1385 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=Text imeActionName=NEXT dump=[inputType=0x61 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=name label=null packageName=com.example.cocktailsdbapp autofillId=1073741840 fieldId=2131296469 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
+10-22 00:13:20.287  1385  1385 I Delight5Facilitator: Delight5Facilitator.initializeForIme():718 initializeForIme() : Locale = [en_US], layout = qwerty
+10-22 00:13:20.288  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():54 cancelShutdown()
+10-22 00:13:20.288  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():66 syncLanguagePacks()
+10-22 00:13:20.289  1385  5303 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():182 maybeScheduleAutoPackDownloadForFallback()
+10-22 00:13:20.289  1385  5303 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():194 maybeScheduleAutoPackDownload() for language tag en-US
+10-22 00:13:20.294 21439 21439 I AssistStructure: Flattened final assist data: 2988 bytes, containing 1 windows, 17 views
+10-22 00:13:20.295  1385  1385 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1293 inline flag updated to:false
+10-22 00:13:20.308  1385  1385 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-22 00:13:20.330  1385  1385 I KeyboardViewHelper: KeyboardViewHelper.getView():167 Get view with height ratio:1.000000
+10-22 00:13:20.337  3983  3983 W svc     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+10-22 00:13:20.360  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:13:20.364  1008  1008 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:622536285
+10-22 00:13:20.402  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:20.407  1385  2206 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-22 00:13:20.413  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:13:20.418  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:20.419  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:13:20.421  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:20.424  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:13:20.427  1385  1385 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
+10-22 00:13:20.439  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:20.439  1385  2206 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-22 00:13:20.445   774   875 D EGL_emulation: app_time_stats: avg=786.43ms min=80.32ms max=1492.54ms count=2
+10-22 00:13:20.452  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:20.453  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:20.465 21439 21439 D InsetsController: show(ime(), fromIme=true)
+10-22 00:13:20.466  1385  2053 D EGL_emulation: app_time_stats: avg=628.43ms min=9.10ms max=3716.17ms count=6
+10-22 00:13:20.471  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:20.543  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:20.559  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:20.573 21439 21439 D UiControllerImpl: Injecting string: "John Doe"
+10-22 00:13:20.599  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:20.847  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:13:20.931  1385  2206 I native  : I1022 00:13:20.931247    2206 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-22 00:13:20.934  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7983<7985, inputStateId=7671, lastInputStateId=7671
+10-22 00:13:20.985  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:13:21.007  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:13:21.071  1385  2206 I native  : I1022 00:13:21.070953    2206 input-context-store.cc:178] Using roll back input context for operation: [FetchSuggestions] rolled back operation: [OverrideDecodedCandidates] reason: client [7675] vs decoder [7677]
+10-22 00:13:21.076  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7989<7990, inputStateId=7677, lastInputStateId=7675
+10-22 00:13:21.103  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:13:21.199  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7992<7996, inputStateId=7681, lastInputStateId=7684
+10-22 00:13:21.210  1385  2206 I native  : I1022 00:13:21.210328    2206 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-22 00:13:21.231 21439 21462 D EGL_emulation: app_time_stats: avg=62.64ms min=12.41ms max=346.40ms count=16
+10-22 00:13:21.249  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7995<7997, inputStateId=7684, lastInputStateId=7684
+10-22 00:13:21.264  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:13:21.265 21439 21448 I .cocktailsdbap: Background young concurrent copying GC freed 203064(9003KB) AllocSpace objects, 1(20KB) LOS objects, 40% free, 12MB/21MB, paused 122us,19us total 230.453ms
+10-22 00:13:21.277 21439 21439 I ViewInteraction: Performing 'type text(john.doe@example.com)' action on view view.getId() is <2131296468/com.example.cocktailsdbapp:id/et_email_input>
+10-22 00:13:21.283  1385  1385 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():594 current view doesn't has the priority com.google.android.apps.inputmethod.libs.framework.keyboard.widget.AccessPointsBar{38333e6 I.E...... ......ID 95,0-975,116 #7f0b0017 app:id/0_resource_name_obfuscated} to show itself, DEFAULT
+10-22 00:13:21.345 21439 21439 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{ba6cfb0 VFED..CL. .F.P..ID 119,418-959,526 #7f0900d4 app:id/et_email_input aid=1073741841} flags=0 reason=SHOW_SOFT_INPUT
+10-22 00:13:21.348  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
+10-22 00:13:21.353  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
+10-22 00:13:21.359  1385  1385 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-22 00:13:21.364  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():76 shutdown()
+10-22 00:13:21.367  1385  1385 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+10-22 00:13:21.371  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:13:21.374  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:13:21.374  1385  2206 W Delight5Decoder: Delight5DecoderWrapper.shouldAbandonMessage():1874 Detected old [FetchSuggestions] request in background: 7999<8000
+10-22 00:13:21.381 21439 21439 W IInputConnectionWrapper: setComposingRegion on inactive InputConnection
+10-22 00:13:21.385  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:13:21.389  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
+10-22 00:13:21.392  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:13:21.393  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-22 00:13:21.395  1385  1385 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=Email imeActionName=NEXT dump=[inputType=0x21 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=email label=null packageName=com.example.cocktailsdbapp autofillId=1073741841 fieldId=2131296468 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
+10-22 00:13:21.396  1385  1385 I Delight5Facilitator: Delight5Facilitator.initializeForIme():718 initializeForIme() : Locale = [en_US], layout = qwerty
+10-22 00:13:21.398  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():54 cancelShutdown()
+10-22 00:13:21.399  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():66 syncLanguagePacks()
+10-22 00:13:21.400  1385  5303 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():182 maybeScheduleAutoPackDownloadForFallback()
+10-22 00:13:21.401  1385  5303 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():194 maybeScheduleAutoPackDownload() for language tag en-US
+10-22 00:13:21.404  1385  1385 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1293 inline flag updated to:false
+10-22 00:13:21.413  1385  1385 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-22 00:13:21.422  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:13:21.441  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:21.442  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:13:21.444  1385  2206 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-22 00:13:21.448  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:21.451  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:13:21.451  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:21.456  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:13:21.458  1385  1385 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
+10-22 00:13:21.459  1385  1385 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
+10-22 00:13:21.469 21439 21439 D InsetsController: show(ime(), fromIme=true)
+10-22 00:13:21.476  1385  2053 D EGL_emulation: app_time_stats: avg=66.52ms min=12.40ms max=194.04ms count=15
+10-22 00:13:21.479 21439 21439 D InsetsController: show(ime(), fromIme=true)
+10-22 00:13:21.482  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:21.483  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:21.490  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:21.507  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:21.507  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:21.517  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:21.625 21439 21439 D UiControllerImpl: Injecting string: "john.doe@example.com"
+10-22 00:13:21.808   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3efd53000 0x3efda0000]
+10-22 00:13:21.825   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3efda0000 0x3efded000]
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 3 milliseconds, 673218 nanoseconds delay) for ott@dd3388b[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@4ab9d68]]]
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:21.829  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:21.832  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 113 ms
+10-22 00:13:21.848   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3efded000 0x3efe3a000]
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 11 milliseconds, 832044 nanoseconds delay) for ott@6c03626[status=PENDING, info=[task=[running=[NOT STARTED YET], jek@7bad267]]]
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jfd.a(PG:4)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jfm.r(PG:17)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at dro.ah(PG:2)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jdq.W(PG:1)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at izv.call(PG:1)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jao.p(PG:2)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jao.W(PG:2)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at izs.W(PG:1)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at izs.W(PG:1)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at izg.m(PG:1)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at ehz.e(PG:2)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at com.google.android.apps.inputmethod.libs.latin5.LatinIme.e(PG:1)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at dro.Y(PG:6)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at drd.a(PG:2)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:7)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:21.951  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:21.965  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_TEXT_BEFORE_CURSOR took 118 ms
+10-22 00:13:22.278 21439 21462 D EGL_emulation: app_time_stats: avg=148.63ms min=18.97ms max=386.21ms count=7
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 191 milliseconds, 568669 nanoseconds delay) for ott@ce98eb2[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@8982e03]]]
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:22.444  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:22.444  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 297 ms
+10-22 00:13:22.533  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 8004<8007, inputStateId=7691, lastInputStateId=7693
+10-22 00:13:22.612   572  2170 W InputManager-JNI: Input channel object 'acf22f6 PopupWindow:54d7eb3 (client)' was disposed without first being removed with the input manager!
+10-22 00:13:22.749  1385  2206 I native  : I1022 00:13:22.749510    2206 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 30 milliseconds, 695902 nanoseconds delay) for ott@e675a7b[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@5b53098]]]
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:22.819  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:22.834  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 151 ms
+10-22 00:13:22.935  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 8007<8009, inputStateId=7694, lastInputStateId=7694
+10-22 00:13:22.950  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:13:23.085  1385  2053 D EGL_emulation: app_time_stats: avg=1608.81ms min=1608.81ms max=1608.81ms count=1
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 3 milliseconds, 48378 nanoseconds delay) for ott@1709df3[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@a057ab0]]]
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:23.194  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:23.195  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 107 ms
+10-22 00:13:23.368  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 8011<8012, inputStateId=7697, lastInputStateId=7698
+10-22 00:13:23.504 21439 21462 D EGL_emulation: app_time_stats: avg=187.33ms min=20.62ms max=305.56ms count=6
+10-22 00:13:23.528  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 106 milliseconds, 933519 nanoseconds delay) for ott@d419047[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@cca4074]]]
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:23.879  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:23.879  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 208 ms
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 2 milliseconds, 20418 nanoseconds delay) for ott@f09299[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@e6f395e]]]
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:24.101  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:24.102  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 105 ms
+10-22 00:13:24.151  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 8021<8022, inputStateId=7707, lastInputStateId=7706
+10-22 00:13:24.163  1385  2053 D EGL_emulation: app_time_stats: avg=215.30ms min=60.80ms max=414.20ms count=5
+10-22 00:13:24.539 21439 21462 D EGL_emulation: app_time_stats: avg=102.91ms min=39.77ms max=313.93ms count=10
+10-22 00:13:24.970 21439 21439 I ViewInteraction: Performing 'type text(password123)' action on view view.getId() is <2131296470/com.example.cocktailsdbapp:id/et_password_input>
+10-22 00:13:25.027  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
+10-22 00:13:25.028  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
+10-22 00:13:25.028 21439 21439 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{b6e3e29 VFED..CL. .F.P..ID 119,552-959,660 #7f0900d6 app:id/et_password_input aid=1073741842} flags=0 reason=SHOW_SOFT_INPUT
+10-22 00:13:25.035  1385  1385 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-22 00:13:25.035  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():76 shutdown()
+10-22 00:13:25.036  1385  1385 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+10-22 00:13:25.046  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:13:25.047  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:13:25.054  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:13:25.057  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
+10-22 00:13:25.062  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:13:25.077  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-22 00:13:25.079  1385  1385 I AndroidIME: AbstractIme.onActivate():86 PasswordIme.onActivate() : EditorInfo = inputType=Password imeActionName=DONE dump=[inputType=0x81 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=password label=null packageName=com.example.cocktailsdbapp autofillId=1073741842 fieldId=2131296470 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
+10-22 00:13:25.087  1385  1385 I KeyboardViewHelper: KeyboardViewHelper.getView():167 Get view with height ratio:1.000000
+10-22 00:13:25.096  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:13:25.098  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
+10-22 00:13:25.101  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:13:25.104  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:25.106  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:13:25.106  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:13:25.109  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:13:25.110  1385  1385 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-SettingOff,MicIconHidden-PasswordOrNumberOrDateInputType,}
+10-22 00:13:25.111  1385  1385 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
+10-22 00:13:25.121 21439 21439 D InsetsController: show(ime(), fromIme=true)
+10-22 00:13:25.145 21439 21439 D InsetsController: show(ime(), fromIme=true)
+10-22 00:13:25.151  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:25.152  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:25.170  1385  2053 D EGL_emulation: app_time_stats: avg=502.70ms min=10.72ms max=994.67ms count=2
+10-22 00:13:25.172  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:25.191  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:25.192  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:25.204  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:13:25.289 21439 21439 D UiControllerImpl: Injecting string: "password123"
+10-22 00:13:25.367   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3efd53000 0x3efda0000]
+10-22 00:13:25.374   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3efda0000 0x3efded000]
+10-22 00:13:25.380   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3efded000 0x3efe3a000]
+10-22 00:13:25.509   572  2170 W InputManager-JNI: Input channel object 'efab500 PopupWindow:2c14a16 (client)' was disposed without first being removed with the input manager!
+10-22 00:13:25.549 21439 21462 D EGL_emulation: app_time_stats: avg=67.05ms min=12.38ms max=283.07ms count=15
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 1 milliseconds, 953107 nanoseconds delay) for ott@2395cd2[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@920b1a3]]]
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:25.886  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:25.902  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 149 ms
+10-22 00:13:26.287 21439 21439 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296379/com.example.cocktailsdbapp:id/bt_register>
+10-22 00:13:26.353   407   533 D AudioFlinger: mixer(0x78d16b108a70) throttle end: throttle time(41)
+10-22 00:13:26.553 21439 21462 D EGL_emulation: app_time_stats: avg=39.18ms min=4.87ms max=350.42ms count=23
+10-22 00:13:26.684   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3efd53000 0x3eff14000]
+10-22 00:13:26.692   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec1c1000]
+10-22 00:13:26.699   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3ec1c1000 0x3ec382000]
+10-22 00:13:26.815   774   875 D EGL_emulation: app_time_stats: avg=394.06ms min=6.02ms max=5929.73ms count=16
+10-22 00:13:27.759 21439 21462 D EGL_emulation: app_time_stats: avg=28.78ms min=3.60ms max=434.05ms count=36
+10-22 00:13:28.194 21439 21462 D EGL_emulation: app_time_stats: avg=181.42ms min=6.54ms max=1151.64ms count=8
+10-22 00:13:29.287 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@3a00e87 in: PAUSED
+10-22 00:13:29.288 21439 21439 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@3a00e87
+10-22 00:13:29.305   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f354f000 0x3f3ef0000]
+10-22 00:13:29.343 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c in: PRE_ON_CREATE
+10-22 00:13:29.345 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c
+10-22 00:13:29.367 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c in: CREATED
+10-22 00:13:29.368 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c
+10-22 00:13:29.371 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c in: STARTED
+10-22 00:13:29.372 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c
+10-22 00:13:29.375 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c in: RESUMED
+10-22 00:13:29.376 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c
+10-22 00:13:29.412   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f0ca8000 0x3f168c000]
+10-22 00:13:29.420   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f168c000 0x3f2070000]
+10-22 00:13:29.427   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f7177000 0x3f7b5b000]
+10-22 00:13:29.444   572   599 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +178ms
+10-22 00:13:29.474 21439 21462 D EGL_emulation: app_time_stats: avg=71.62ms min=3.20ms max=1014.79ms count=16
+10-22 00:13:29.485   774   875 D EGL_emulation: app_time_stats: avg=291.20ms min=7.70ms max=2495.25ms count=9
+10-22 00:13:29.497 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@3a00e87 in: STOPPED
+10-22 00:13:29.508 21439 21439 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@3a00e87
+10-22 00:13:29.519 21439 21439 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+10-22 00:13:29.539 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@3a00e87 in: DESTROYED
+10-22 00:13:29.541 21439 21439 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-22 00:13:29.556   572   898 W InputManager-JNI: Input channel object '392b33f com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
+10-22 00:13:29.614 21439 21439 E WindowManager: android.view.WindowLeaked: Activity com.example.cocktailsdbapp.MainActivity has leaked window DecorView@1a87b8[MainActivity] that was originally added here
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:783)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:767)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:389)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:133)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.app.Dialog.show(Dialog.java:345)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at com.example.cocktailsdbapp.ui.BaseFragment.showSuccessPopUp(BaseFragment.kt:54)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at com.example.cocktailsdbapp.ui.authorization.RegistrationFragment.registerListeners$lambda$1(RegistrationFragment.kt:71)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at com.example.cocktailsdbapp.ui.authorization.RegistrationFragment.$r8$lambda$3aacJzQnC146SFZ_d-0gq1R0Y8c(Unknown Source:0)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at com.example.cocktailsdbapp.ui.authorization.RegistrationFragment$$ExternalSyntheticLambda2.onClick(Unknown Source:2)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.View.performClick(View.java:7441)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1213)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.View.performClickInternal(View.java:7418)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.View.access$3700(View.java:835)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.view.View$PerformClick.run(View.java:28676)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.base.TestLooperManagerCompat.execute(TestLooperManagerCompat.java:121)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:128)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:513)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:469)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:235)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:175)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:138)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.action.Tap.sendSingleTap(Tap.java:168)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.action.Tap.-$$Nest$smsendSingleTap(Unknown Source:0)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.action.Tap$1.sendTap(Tap.java:46)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:134)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:429)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:297)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.ViewInteraction.-$$Nest$mdoPerform(Unknown Source:0)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:193)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:182)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:13:29.614 21439 21439 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:13:29.643   572  2188 W InputManager-JNI: Input channel object 'bb94cd7 com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
+10-22 00:13:29.656   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f26c4000 0x3f2d18000]
+10-22 00:13:29.727 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c in: PAUSED
+10-22 00:13:29.727 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@4b2666c
+10-22 00:13:29.776 21439 21456 I TestRunner: finished: testRegisterButtonWithValidInput(com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest)

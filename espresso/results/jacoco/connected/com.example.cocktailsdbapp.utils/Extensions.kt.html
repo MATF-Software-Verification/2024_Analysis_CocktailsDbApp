@@ -13,7 +13,7 @@ import com.example.cocktailsdbapp.model.CocktailResponse
 
 // Transform Room model
 fun RoomCocktail.toCocktail(isFavorite: Boolean): Cocktail {
-<span class="nc" id="L16">    return Cocktail(strDrink, strDrinkThumb, idDrink, isFavorite)</span>
+<span class="fc" id="L16">    return Cocktail(strDrink, strDrinkThumb, idDrink, isFavorite)</span>
 }
 
 fun TextView.makeLastNCharactersBold(characterCount: Int) {
@@ -38,19 +38,19 @@ fun TextView.makeLastNCharactersBold(characterCount: Int) {
 
 fun CocktailResponse?.markFavorites(favorites: List&lt;RoomCocktail&gt;?): CocktailResponse? {
     // Check if either the response or favorites is null
-<span class="pc bpc" id="L41" title="4 of 8 branches missed.">    if (this == null || favorites.isNullOrEmpty()) {</span>
+<span class="pc bpc" id="L41" title="2 of 8 branches missed.">    if (this == null || favorites.isNullOrEmpty()) {</span>
 <span class="fc" id="L42">        return this</span>
     }
 
     // Create a map from the drinks list for faster lookups
-<span class="nc bnc" id="L46" title="All 2 branches missed.">    val drinksMap = drinks?.associateBy { it.idDrink }</span>
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">    val drinksMap = drinks?.associateBy { it.idDrink }</span>
 
     // Mark cocktails received from API as favorite if they are already saved
-<span class="nc" id="L49">    favorites.forEach { favorite -&gt;</span>
-<span class="nc bnc" id="L50" title="All 4 branches missed.">        drinksMap?.get(favorite.idDrink)?.isFavorite = true</span>
-<span class="nc" id="L51">    }</span>
+<span class="fc" id="L49">    favorites.forEach { favorite -&gt;</span>
+<span class="pc bpc" id="L50" title="2 of 4 branches missed.">        drinksMap?.get(favorite.idDrink)?.isFavorite = true</span>
+<span class="fc" id="L51">    }</span>
 
-<span class="nc" id="L53">    return this</span>
+<span class="fc" id="L53">    return this</span>
 }
 
 fun CocktailDetails.toCocktail(): Cocktail {

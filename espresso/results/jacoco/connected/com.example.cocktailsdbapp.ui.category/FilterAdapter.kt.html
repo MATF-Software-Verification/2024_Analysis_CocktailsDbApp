@@ -14,8 +14,8 @@ import com.example.cocktailsdbapp.ui.BaseAdapter
     override fun bindItem(holder: ViewHolder, item: String) {
 <span class="fc" id="L15">        holder.binding.tvFilterText.text = item</span>
 <span class="fc" id="L16">        holder.binding.clFilterView.setOnClickListener {</span>
-<span class="nc bnc" id="L17" title="All 2 branches missed.">            onItemClickListener?.openFilter(item)</span>
-<span class="nc" id="L18">        }</span>
+<span class="pc bpc" id="L17" title="1 of 2 branches missed.">            onItemClickListener?.openFilter(item)</span>
+<span class="fc" id="L18">        }</span>
 <span class="fc" id="L19">    }</span>
 
     interface OnItemClickListener {
@@ -30,10 +30,10 @@ import com.example.cocktailsdbapp.ui.BaseAdapter
 <span class="fc" id="L30">            oldList = oldList,</span>
 <span class="fc" id="L31">            newList = newList,</span>
 <span class="fc" id="L32">            areItemsTheSame = { oldItem, newItem -&gt;</span>
-<span class="nc" id="L33">                oldItem == newItem</span>
+<span class="fc" id="L33">                oldItem == newItem</span>
             },
 <span class="fc" id="L35">            areContentsTheSame = { oldItem, newItem -&gt;</span>
-<span class="nc" id="L36">                oldItem == newItem</span>
+<span class="fc" id="L36">                oldItem == newItem</span>
             }
         )
     }

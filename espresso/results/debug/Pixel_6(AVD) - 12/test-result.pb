@@ -1,7 +1,7 @@
 
-2ö
-`
-ExampleInstrumentedTestcom.example.cocktailsdbappuseAppContext2√Ÿ’«Ä¥íç:√Ÿ’«¿»ú"î
+'ò
+^
+ExampleInstrumentedTestcom.example.cocktailsdbappuseAppContext2êä‡«¿ö‡a:êä‡«Ä ¨t"î
 
 logcatandroid˛
 ˚/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ExampleInstrumentedTest-useAppContext.txt"‹
@@ -13,9 +13,9 @@
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÆ
-j
-DatabaseTests#com.example.cocktailsdbapp.databasetestInsertAndGetCocktail2√Ÿ’«Äû¯•:√Ÿ’«ÄÆôµ"û
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo≠
+i
+DatabaseTests#com.example.cocktailsdbapp.databasetestInsertAndGetCocktail2êä‡«¿®Æ~:êä‡«¿≠Çö"û
 
 logcatandroidà
 Ö/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testInsertAndGetCocktail.txt"‹
@@ -29,7 +29,7 @@ j
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¢
 d
-DatabaseTests#com.example.cocktailsdbapp.databasetestDeleteCocktail2√Ÿ’«Ä∑ì∂:√Ÿ’«¿¬˜ƒ"ò
+DatabaseTests#com.example.cocktailsdbapp.databasetestDeleteCocktail2êä‡«Ä≤øö:êä‡«Ä∞Ïß"ò
 
 logcatandroidÇ
 ˇ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testDeleteCocktail.txt"‹
@@ -43,7 +43,7 @@ d
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo†
 c
-DatabaseTests#com.example.cocktailsdbapp.databasetestUserIsolation2√Ÿ’«¿ÀÒ≈:√Ÿ’«ÄŒ€”"ó
+DatabaseTests#com.example.cocktailsdbapp.databasetestUserIsolation2êä‡«ÄπÊ®:êä‡«¿‘Î∆"ó
 
 logcatandroidÅ
 ˛/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testUserIsolation.txt"‹
@@ -57,7 +57,7 @@ c
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo§
 e
-DatabaseTests#com.example.cocktailsdbapp.databasetestGetAllFavorites2√Ÿ’«¿“ò‘:√Ÿ’«¿‚π„"ô
+DatabaseTests#com.example.cocktailsdbapp.databasetestGetAllFavorites2êä‡«ÄŸ®«:êä‡«¿‰å÷"ô
 
 logcatandroidÉ
 Ä/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.database.DatabaseTests-testGetAllFavorites.txt"‹
@@ -69,12 +69,12 @@ e
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¶
-f
-NetworkTest"com.example.cocktailsdbapp.networktestNetworkConnectivity2√Ÿ’«ÄÁˆ„:√Ÿ’«¿Òµ∂"ö
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÉ
+T
+AppFlowTestcom.example.cocktailsdbapp.uitestAppFlow2êä‡«¿ÌÜ◊:ßä‡«Äπ›."â
 
-logcatandroidÑ
-Å/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.network.NetworkTest-testNetworkConnectivity.txt"‹
+logcatandroidÛ
+/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.AppFlowTest-testAppFlow.txt"‹
 
 device-infoandroid¡
 æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
@@ -83,23 +83,9 @@ f
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo∞
-k
-NetworkTest"com.example.cocktailsdbapp.networktestApiEndpointConfiguration2√Ÿ’«Ä˝ô≈:√Ÿ’«ÄÜî∆"ü
-
-logcatandroidâ
-Ü/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.network.NetworkTest-testApiEndpointConfiguration.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo´
-h
-MainActivityTestcom.example.cocktailsdbapp.uitestActivityIsNotDestroyed2√Ÿ’«¿ä—∆:∆Ÿ’«Ä¢ï"ù
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¨
+i
+MainActivityTestcom.example.cocktailsdbapp.uitestActivityIsNotDestroyed2ßä‡«Ä‘›•:¨ä‡«Ä∫ùŸ"ù
 
 logcatandroidá
 Ñ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityIsNotDestroyed.txt"‹
@@ -111,9 +97,9 @@ h
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo™
-g
-MainActivityTestcom.example.cocktailsdbapp.uitestActivityHasWindowFocus2∆Ÿ’«Ä´è:«Ÿ’«ÄÔπ4"ù
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¨
+i
+MainActivityTestcom.example.cocktailsdbapp.uitestActivityHasWindowFocus2≠ä‡«ÄÙüƒ:Øä‡«¿¬Äø"ù
 
 logcatandroidá
 Ñ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityHasWindowFocus.txt"‹
@@ -125,9 +111,9 @@ g
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¶
-e
-MainActivityTestcom.example.cocktailsdbapp.uitestMainActivityLaunches2«Ÿ’«¿˙ùC:»Ÿ’«ÄÈ¿\"õ
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo®
+g
+MainActivityTestcom.example.cocktailsdbapp.uitestMainActivityLaunches2∞ä‡«ÄÜãÃ:≤ä‡«¿ÔÎΩ"õ
 
 logcatandroidÖ
 Ç/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testMainActivityLaunches.txt"‹
@@ -139,23 +125,9 @@ e
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo°
-c
-MainActivityTestcom.example.cocktailsdbapp.uitestActivityLifecycle2»Ÿ’«ÄÚ∫]:…Ÿ’«Äï˛§"ò
-
-logcatandroidÇ
-ˇ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityLifecycle.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo®
 g
-MainActivityTestcom.example.cocktailsdbapp.uitestActivityNotFinishing2…Ÿ’«¿ôª•: Ÿ’«¿Ò¨º"õ
+MainActivityTestcom.example.cocktailsdbapp.uitestActivityNotFinishing2≥ä‡«¿…ßÕ:µä‡«¿π˝√"õ
 
 logcatandroidÖ
 Ç/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.MainActivityTest-testActivityNotFinishing.txt"‹
@@ -167,23 +139,9 @@ g
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoœ
-z
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestLoginWithValidCredentials2 Ÿ’«ÄÎú…:œŸ’«ÄÚ∫]"Ø
-
-logcatandroidô
-ñ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginWithValidCredentials.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¡
-s
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestInvalidEmailFormat2œŸ’«ÄÄâz:“Ÿ’«¿‘Ù¿"®
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¬
+t
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestInvalidEmailFormat2µä‡«¿¨Ô—:∫ä‡«Ä¯ºØ"®
 
 logcatandroidí
 è/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testInvalidEmailFormat.txt"‹
@@ -195,37 +153,9 @@ s
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÕ
-y
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestPasswordVisibilityToggle2“Ÿ’«Ä‡ÿœ:’Ÿ’«¿Ú—x"Æ
-
-logcatandroidò
-ï/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testPasswordVisibilityToggle.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoΩ
-q
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestLoginButtonClick2’Ÿ’«¿ı“°:⁄Ÿ’«¿ç∑"¶
-
-logcatandroidê
-ç/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginButtonClick.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo√
-t
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestRegisterButtonClick2⁄Ÿ’«¿õÖ:€Ÿ’«ÄÌÅ∞"©
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoƒ
+u
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestRegisterButtonClick2ªä‡«¿˛Ö:æä‡«Äœâä"©
 
 logcatandroidì
 ê/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testRegisterButtonClick.txt"‹
@@ -237,9 +167,9 @@ t
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo∆
-v
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmptyEmailValidation2€Ÿ’«ÄÙ®æ:ﬁŸ’«¿ïï¿"™
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo≈
+u
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmptyEmailValidation2øä‡«Ä‡∆[:¡ä‡«¿„ì"™
 
 logcatandroidî
 ë/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testEmptyEmailValidation.txt"‹
@@ -253,7 +183,7 @@ v
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo€
 Ä
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorization"testLoginFragmentDisplaysCorrectly2ﬁŸ’«¿ûè¡:‡Ÿ’«¿ßâ¬"¥
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorization"testLoginFragmentDisplaysCorrectly2¬ä‡«ÄÁˆ„:√ä‡«ÄÍ˜å"¥
 
 logcatandroidû
 õ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginFragmentDisplaysCorrectly.txt"‹
@@ -265,9 +195,9 @@ v
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo»
-w
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmailFieldInteraction2‡Ÿ’«¿∑™—:·Ÿ’«Äÿ˙ê"´
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo«
+v
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmailFieldInteraction2ƒä‡«¿¯ P:«ä‡«¿–◊’"´
 
 logcatandroidï
 í/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testEmailFieldInteraction.txt"‹
@@ -279,9 +209,9 @@ w
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÀ
-x
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmptyPasswordValidation2·Ÿ’«¿„ﬁü:‰Ÿ’«¿ü¥}"≠
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÃ
+y
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmptyPasswordValidation2»ä‡«¿€õœ:Àä‡«¿ÿ£†"≠
 
 logcatandroidó
 î/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testEmptyPasswordValidation.txt"‹
@@ -293,9 +223,9 @@ x
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo”
-|
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestLoginWithInvalidCredentials2‰Ÿ’«Ä§Ò}:ËŸ’«¿µÈ“"±
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo‘
+}
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestLoginWithInvalidCredentials2Ãä‡«ÄÛËì:–ä‡«ÄÇÓ‡"±
 
 logcatandroidõ
 ò/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testLoginWithInvalidCredentials.txt"‹
@@ -309,7 +239,7 @@ x
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÕ
 y
-LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestPasswordFieldInteraction2ÈŸ’«Ä≠‚:ÎŸ’«¿€õœ"Æ
+LoginFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestPasswordFieldInteraction2—ä‡«¿®Æ~:”ä‡«Ä¬Úù"Æ
 
 logcatandroidò
 ï/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest-testPasswordFieldInteraction.txt"‹
@@ -321,23 +251,10 @@ y
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo·
-É
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestRegistrationFragmentLayout2ÎŸ’«¿Îºﬁ:ÓŸ’«ÄûÅ†"∑
-
-logcatandroid°
-û/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFragmentLayout.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo·
-É
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestRegistrationFormValidation2ÓŸ’«¿¨Ê◊:˜Ÿ’«¿∞É√"∑
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo‡
+Ç
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestRegistrationFormValidation2‘ä‡«Ä»ŸÅ:›ä‡«¿Á˚
+"∑
 
 logcatandroid°
 û/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFormValidation.txt"‹
@@ -351,7 +268,7 @@ y
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo÷
 ~
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestLoginButtonNavigation2˜Ÿ’«ÄºÁ—:¸Ÿ’«Äû¯•"≤
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestLoginButtonNavigation2›ä‡«¿Ìè—:‚ä‡«Ä≥Ì–"≤
 
 logcatandroidú
 ô/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testLoginButtonNavigation.txt"‹
@@ -363,9 +280,10 @@ y
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo‘
-}
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestNameInputInteraction2¸Ÿ’«¿∞É√:Ä⁄’«¿É™∏"±
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo”
+|
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestNameInputInteraction2„ä‡«¿Á˚
+:Áä‡«¿»ú"±
 
 logcatandroidõ
 ò/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testNameInputInteraction.txt"‹
@@ -377,9 +295,9 @@ y
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo 
-x
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestInputFieldFocus2Ä⁄’«¿ìÀ«:Ñ⁄’«Ä˛«˚"¨
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo…
+w
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestInputFieldFocus2Áä‡«¿ÊÒº:Îä‡«Äí˝{"¨
 
 logcatandroidñ
 ì/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testInputFieldFocus.txt"‹
@@ -393,7 +311,7 @@ x
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo˜
 é
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization)testRegistrationFragmentDisplaysCorrectly2Ñ⁄’«¿ì‘¡:á⁄’«Ä˛æÅ"¬
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization)testRegistrationFragmentDisplaysCorrectly2Îä‡«¿ØÁÄ:Óä‡«ÄÏ¡Ö"¬
 
 logcatandroid¨
 ©/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFragmentDisplaysCorrectly.txt"‹
@@ -405,23 +323,9 @@ x
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÔ
-ä
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization%testRegistrationWithSpecialCharacters2á⁄’«ÄÉìù:ä⁄’«¿°ô‰"æ
-
-logcatandroid®
-•/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationWithSpecialCharacters.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo·
 É
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestRegistrationWithLongInputs2ä⁄’«Ä≠˝Ú:í⁄’«¿¬Äø"∑
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestRegistrationWithLongInputs2Óä‡«¿Ä≤â:˝ä‡«Äö“¿"∑
 
 logcatandroid°
 û/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationWithLongInputs.txt"‹
@@ -433,9 +337,9 @@ x
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÂ
-Ö
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization testRegisterButtonWithValidInput2í⁄’«Ä–∑¿:ö⁄’«Äñæœ"π
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo‰
+Ñ
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization testRegisterButtonWithValidInput2˛ä‡«¿éÂ7:äã‡«ÄèÖÕ"π
 
 logcatandroid£
 †/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegisterButtonWithValidInput.txt"‹
@@ -447,23 +351,9 @@ x
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo›
-Ä
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestMultipleInputInteractions2õ⁄’«¿áæ):†⁄’«ÄÓîx"∂
-
-logcatandroid†
-ù/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testMultipleInputInteractions.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo◊
 ~
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestValidInputRemovesError2†⁄’«¿˚Ày:§⁄’«ÄÄíÙ"≥
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestValidInputRemovesError2ãã‡«Ä‰Ï@:èã‡«¿èÆ‹"≥
 
 logcatandroidù
 ö/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testValidInputRemovesError.txt"‹
@@ -477,7 +367,7 @@ x
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo÷
 ~
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmailInputInteraction2§⁄’«Äâåı:®⁄’«¿Ç¸Å"≤
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmailInputInteraction2êã‡«Äê≥É:ïã‡«Äµ…Ω"≤
 
 logcatandroidú
 ô/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testEmailInputInteraction.txt"‹
@@ -491,7 +381,7 @@ x
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo–
 {
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestInputFieldClearing2®⁄’«Äïáü:≠⁄’«¿·îß"Ø
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestInputFieldClearing2ñã‡«¿≠Çö:ùã‡«¿ßíº"Ø
 
 logcatandroidô
 ñ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testInputFieldClearing.txt"‹
@@ -505,7 +395,7 @@ x
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoœ
 z
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestPasswordValidation2≠⁄’«ÄÊ—ß:±⁄’«ÄÛﬂ"Ø
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestPasswordValidation2ûã‡«ÄÑØ_:£ã‡«Ä©≈ô"Ø
 
 logcatandroidô
 ñ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testPasswordValidation.txt"‹
@@ -519,7 +409,7 @@ z
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo‹
 Ä
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestPasswordInputInteraction2±⁄’«¿˛√(:¥⁄’«Äòà»"µ
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestPasswordInputInteraction2§ã‡«ÄËí&:®ã‡«Ä¥íç"µ
 
 logcatandroidü
 ú/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testPasswordInputInteraction.txt"‹
@@ -533,7 +423,7 @@ z
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo…
 w
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmailValidation2¥⁄’«¿£Ï÷:∏⁄’«Ä’˘g"¨
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorizationtestEmailValidation2©ã‡«¿ö‡a:¨ã‡«ÄπÔ¢"¨
 
 logcatandroidñ
 ì/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testEmailValidation.txt"‹
@@ -545,23 +435,9 @@ w
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoË
-Ü
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization"testRegistrationFragmentBackground2∏⁄’«ÄÂöw:∫⁄’«Ä÷∞ò"ª
-
-logcatandroid•
-¢/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegistrationFragmentBackground.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÈ
 á
-RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization"testRegisterButtonWithInvalidInput2∫⁄’«¿·îß:æ⁄’«ÄÿåÖ"ª
+RegistrationFragmentTest+com.example.cocktailsdbapp.ui.authorization"testRegisterButtonWithInvalidInput2≠ã‡«¿ä—∆:≤ã‡«Äëÿø"ª
 
 logcatandroid•
 ¢/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.authorization.RegistrationFragmentTest-testRegisterButtonWithInvalidInput.txt"‹
@@ -573,9 +449,9 @@ w
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo·
-É
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails%testCocktailsRecyclerViewIsScrollable2æ⁄’«¿‹…Ö:Õ⁄’«ÄÏ¡Ö"∑
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo‡
+Ç
+CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails%testCocktailsRecyclerViewIsScrollable2≤ã‡«ÄŒÌ«:¿ã‡«ÄÁj"∑
 
 logcatandroid°
 û/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsRecyclerViewIsScrollable.txt"‹
@@ -589,7 +465,7 @@ w
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo»
 w
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktailstestCocktailsFilterAction2Õ⁄’«Äÿ˙ê:⁄⁄’«Ä—”Ç"´
+CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktailstestCocktailsFilterAction2¿ã‡«Ää√•:Ãã‡«ÄÊ⁄°"´
 
 logcatandroidï
 í/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsFilterAction.txt"‹
@@ -603,7 +479,7 @@ w
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo¬
 t
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktailstestCocktailsItemClick2⁄⁄’«¿˜•î:Â⁄’«Äû¯•"®
+CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktailstestCocktailsItemClick2Õã‡«ÄˆÈº:◊ã‡«¿ÿö¶"®
 
 logcatandroidí
 è/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsItemClick.txt"‹
@@ -617,7 +493,7 @@ t
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoÿ
 
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails!testCocktailsRecyclerViewHasItems2Â⁄’«¿†‚≥:Ô⁄’«¿ÔÎΩ"≥
+CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails!testCocktailsRecyclerViewHasItems2ÿã‡«ÄÏ¡Ö:‚ã‡«¿≠ãî"≥
 
 logcatandroidù
 ö/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsRecyclerViewHasItems.txt"‹
@@ -631,10 +507,10 @@ t
 device-info.cpuinfoandroid∫
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo’
 }
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails testCocktailsNavigationToProfile2Ô⁄’«¿ˇåÕ:˝⁄’«Äæ±J"≤
+CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails testCocktailsFavoriteButtonClick2„ã‡«¿Ωö/:Ìã‡«Äƒºñ"≤
 
 logcatandroidú
-ô/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsNavigationToProfile.txt"‹
+ô/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsFavoriteButtonClick.txt"‹
 
 device-infoandroid¡
 æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
@@ -643,23 +519,9 @@ t
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfoŸ
-
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails"testCocktailsNavigationToFavorites2˝⁄’«¿¬ÓJ:â€’«Ä∏ Ê"¥
-
-logcatandroidû
-õ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsNavigationToFavorites.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo‚
-É
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails&testCocktailsFragmentDisplaysCorrectly2â€’«¿ºáÁ:ï€’«Ä¨ΩH"∏
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo·
+Ç
+CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails&testCocktailsFragmentDisplaysCorrectly2Óã‡«¿ﬂØ@:¯ã‡«¿ñ±"∏
 
 logcatandroid¢
 ü/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsFragmentDisplaysCorrectly.txt"‹
@@ -671,26 +533,13 @@ t
 ∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
 
 device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo«
-v
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktailstestCocktailsSearchAction2ï€’«Ä√Öf:†€’«Ä¢ßÖ"´
+∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo∆
+u
+CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktailstestCocktailsSearchAction2¯ã‡«ÄÆ¢Ø:
+Ñå‡«Äâz"´
 
 logcatandroidï
 í/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsSearchAction.txt"‹
-
-device-infoandroid¡
-æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›
-
-device-info.meminfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/meminfo"›
-
-device-info.cpuinfoandroid∫
-∑/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/cpuinfo„
-Ñ
-CocktailsFragmentTest'com.example.cocktailsdbapp.ui.cocktails&testCocktailsFavoriteButtonInteraction2†€’«ÄπÔ¢:´€’«Ä¯≈©"∏
-
-logcatandroid¢
-ü/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/logcat-com.example.cocktailsdbapp.ui.cocktails.CocktailsFragmentTest-testCocktailsFavoriteButtonInteraction.txt"‹
 
 device-infoandroid¡
 æ/Users/stefanvucan/Desktop/matf/SoftwareVerificationProject/2024_Analysis_CocktailsDbApp/CocktailsDbApp/app/build/outputs/androidTest-results/connected/debug/Pixel_6(AVD) - 12/device-info.pb"›

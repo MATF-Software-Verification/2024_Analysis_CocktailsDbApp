@@ -11,57 +11,57 @@ import com.example.cocktailsdbapp.ui.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-<span class="fc" id="L14">class CocktailDetailsFragment: BaseFragment&lt;FragmentCocktailDetailsBinding&gt;(FragmentCocktailDetailsBinding::inflate) {</span>
+<span class="nc" id="L14">class CocktailDetailsFragment: BaseFragment&lt;FragmentCocktailDetailsBinding&gt;(FragmentCocktailDetailsBinding::inflate) {</span>
 
-<span class="fc" id="L16">    private val cocktailDetailsViewModel: CocktailDetailsViewModel by viewModels()</span>
+<span class="nc" id="L16">    private val cocktailDetailsViewModel: CocktailDetailsViewModel by viewModels()</span>
 
     private var ingredientsAdapter: IngredientsAdapter? = null
 
-<span class="fc" id="L20">    private val args: CocktailDetailsFragmentArgs by navArgs()</span>
+<span class="nc" id="L20">    private val args: CocktailDetailsFragmentArgs by navArgs()</span>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-<span class="fc" id="L23">        super.onViewCreated(view, savedInstanceState)</span>
-<span class="fc" id="L24">        binding.tvName.text = args.cocktailId</span>
-<span class="fc" id="L25">        setObservers()</span>
-<span class="fc" id="L26">        cocktailDetailsViewModel.getDetails(args.cocktailId)</span>
-<span class="fc" id="L27">    }</span>
+<span class="nc" id="L23">        super.onViewCreated(view, savedInstanceState)</span>
+<span class="nc" id="L24">        binding.tvName.text = args.cocktailId</span>
+<span class="nc" id="L25">        setObservers()</span>
+<span class="nc" id="L26">        cocktailDetailsViewModel.getDetails(args.cocktailId)</span>
+<span class="nc" id="L27">    }</span>
 
     override fun onStart() {
-<span class="fc" id="L30">        super.onStart()</span>
-<span class="fc" id="L31">        communicator.apply {</span>
-<span class="fc" id="L32">            showSearchIconView(false)</span>
-<span class="fc" id="L33">            showSearchInputView(false)</span>
-<span class="fc" id="L34">            showFilterView(false)</span>
-<span class="fc" id="L35">        }</span>
-<span class="fc" id="L36">    }</span>
+<span class="nc" id="L30">        super.onStart()</span>
+<span class="nc" id="L31">        communicator.apply {</span>
+<span class="nc" id="L32">            showSearchIconView(false)</span>
+<span class="nc" id="L33">            showSearchInputView(false)</span>
+<span class="nc" id="L34">            showFilterView(false)</span>
+<span class="nc" id="L35">        }</span>
+<span class="nc" id="L36">    }</span>
 
     private fun setObservers() {
-<span class="fc" id="L39">        cocktailDetailsViewModel.cocktailDetailsData.observe(viewLifecycleOwner) {</span>
-<span class="fc" id="L40">            setupUi(it)</span>
-<span class="fc" id="L41">        }</span>
-<span class="fc" id="L42">    }</span>
+<span class="nc" id="L39">        cocktailDetailsViewModel.cocktailDetailsData.observe(viewLifecycleOwner) {</span>
+<span class="nc" id="L40">            setupUi(it)</span>
+<span class="nc" id="L41">        }</span>
+<span class="nc" id="L42">    }</span>
 
     private fun setupUi(cocktail: CocktailDetails) {
-<span class="fc" id="L45">        with(binding) {</span>
-<span class="fc" id="L46">            Glide.with(root.context)</span>
-<span class="fc" id="L47">                .load(cocktail.strDrinkThumb)</span>
-<span class="fc" id="L48">                .into(ivDrink)</span>
-<span class="fc" id="L49">            tvName.text = cocktail.strDrink</span>
-<span class="fc" id="L50">            tvCategory.text = cocktail.strCategory</span>
-<span class="fc" id="L51">            tvGlass.text = cocktail.strGlass</span>
-<span class="fc" id="L52">            expandTextView.text = cocktail.strInstructions</span>
-<span class="fc" id="L53">        }</span>
-<span class="fc" id="L54">        setIngredientsAdapter(cocktail.getIngredientsWithMeasures())</span>
-<span class="fc" id="L55">    }</span>
+<span class="nc" id="L45">        with(binding) {</span>
+<span class="nc" id="L46">            Glide.with(root.context)</span>
+<span class="nc" id="L47">                .load(cocktail.strDrinkThumb)</span>
+<span class="nc" id="L48">                .into(ivDrink)</span>
+<span class="nc" id="L49">            tvName.text = cocktail.strDrink</span>
+<span class="nc" id="L50">            tvCategory.text = cocktail.strCategory</span>
+<span class="nc" id="L51">            tvGlass.text = cocktail.strGlass</span>
+<span class="nc" id="L52">            expandTextView.text = cocktail.strInstructions</span>
+<span class="nc" id="L53">        }</span>
+<span class="nc" id="L54">        setIngredientsAdapter(cocktail.getIngredientsWithMeasures())</span>
+<span class="nc" id="L55">    }</span>
 
     private fun setIngredientsAdapter(ingredients: List&lt;Pair&lt;String, String&gt;&gt;?) {
-<span class="fc" id="L58">        ingredientsAdapter = IngredientsAdapter()</span>
-<span class="fc" id="L59">        ingredientsAdapter.let { adapter -&gt;</span>
-<span class="pc bpc" id="L60" title="1 of 2 branches missed.">            ingredients?.let {</span>
-<span class="pc bpc" id="L61" title="1 of 2 branches missed.">                adapter?.updateData(it) }</span>
-<span class="fc" id="L62">            binding.rvIngredients.adapter = adapter</span>
-<span class="fc" id="L63">        }</span>
+<span class="nc" id="L58">        ingredientsAdapter = IngredientsAdapter()</span>
+<span class="nc" id="L59">        ingredientsAdapter.let { adapter -&gt;</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">            ingredients?.let {</span>
+<span class="nc bnc" id="L61" title="All 2 branches missed.">                adapter?.updateData(it) }</span>
+<span class="nc" id="L62">            binding.rvIngredients.adapter = adapter</span>
+<span class="nc" id="L63">        }</span>
 
-<span class="fc" id="L65">    }</span>
+<span class="nc" id="L65">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>Generated by the Android Gradle plugin 8.2.0</div></body></html>

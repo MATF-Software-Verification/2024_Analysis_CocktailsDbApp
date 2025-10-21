@@ -1,52 +1,144 @@
-10-20 00:57:28.285  1545  1569 I TestRunner: started: testEmailFieldInteraction(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
-10-20 00:57:28.303  1545  1569 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-10-20 00:57:28.373  1186  1197 I ndroid.systemu: NativeAlloc concurrent copying GC freed 20510(962KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 10125KB/19MB, paused 398us,1.932ms total 306.412ms
-10-20 00:57:28.378   582   776 W InputManager-JNI: Input channel object '6730a88 Splash Screen com.example.cocktailsdbapp.test (client)' was disposed without first being removed with the input manager!
-10-20 00:57:28.402  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: PRE_ON_CREATE
-10-20 00:57:28.402  1545  1545 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
-10-20 00:57:28.409  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{dd6e770 V.E...... ......ID 0,0-0,0}
-10-20 00:57:28.409  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
-10-20 00:57:28.409  1186  1240 D SplashScreenView: Branding: view: android.view.View{fa4dae9 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
-10-20 00:57:28.433   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec9e4000 0x3ed3c8000]
-10-20 00:57:28.444   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
-10-20 00:57:28.447   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09e4000]
-10-20 00:57:28.452  2153  2153 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
-10-20 00:57:28.454  2153  2153 E HwDetectorWithState: a: 3
-10-20 00:57:28.502   582   593 I system_server: NativeAlloc concurrent copying GC freed 56884(2551KB) AllocSpace objects, 9(180KB) LOS objects, 48% free, 25MB/49MB, paused 4.508ms,46us total 503.257ms
-10-20 00:57:28.604  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: CREATED
-10-20 00:57:28.606  1545  1545 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
-10-20 00:57:28.613  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: STARTED
-10-20 00:57:28.614  1545  1545 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
-10-20 00:57:28.617  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: RESUMED
-10-20 00:57:28.618  1545  1545 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
-10-20 00:57:28.677   372   372 D goldfish-address-space: claimShared: Ask to claim region [0x3ea337000 0x3ead1b000]
-10-20 00:57:28.681   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ef438000 0x3efe1c000]
-10-20 00:57:28.684   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f2400000 0x3f2de4000]
-10-20 00:57:28.744   582   637 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +413ms
-10-20 00:57:28.831  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
-10-20 00:57:28.832  1929  1929 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
-10-20 00:57:28.833  1929  1929 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
-10-20 00:57:28.876  1545  1545 I ViewInteraction: Performing 'replace text(test@example.com)' action on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
-10-20 00:57:28.880   582  2175 W InputManager-JNI: Input channel object '67e7a07 com.example.cocktailsdbapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
-10-20 00:57:28.931  1545  1545 I AssistStructure: Flattened final assist data: 2700 bytes, containing 1 windows, 16 views
-10-20 00:57:28.946  1545  1545 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "test@example.com"}' assertion on view view.getId() is <2131296467/com.example.cocktailsdbapp:id/et_email_input>
-10-20 00:57:28.970  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: PAUSED
-10-20 00:57:28.971  1545  1545 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
-10-20 00:57:28.978  1186  1240 D SplashScreenView: Build android.window.SplashScreenView{5b15b5d V.E...... ......ID 0,0-0,0}
-10-20 00:57:28.978  1186  1240 D SplashScreenView: Icon: view: null drawable: null size: 0
-10-20 00:57:28.978  1186  1240 D SplashScreenView: Branding: view: android.view.View{d486cd2 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
-10-20 00:57:29.012   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3eddac000 0x3ee790000]
-10-20 00:57:29.030   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f1038000 0x3f1a1c000]
-10-20 00:57:29.035   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f1a1c000 0x3f2400000]
-10-20 00:57:29.042   582   641 W InputManager-JNI: Input channel object 'be99a30 Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
-10-20 00:57:29.049   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3f4ca8000 0x3f52fc000]
-10-20 00:57:29.108   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3e9ce3000 0x3ea6c7000]
-10-20 00:57:29.118   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ea6c7000 0x3eb0ab000]
-10-20 00:57:29.126   372 13548 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
-10-20 00:57:29.136  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: STOPPED
-10-20 00:57:29.138  1545  1545 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@d7197e8
-10-20 00:57:29.140  1545  1545 D AutofillManager: onActivityFinishing(): calling cancelLocked()
-10-20 00:57:29.144  1957  1957 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1369126554
-10-20 00:57:29.148  1545  1545 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@d7197e8 in: DESTROYED
-10-20 00:57:29.149  1545  1545 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
-10-20 00:57:29.152  1545  1569 I TestRunner: finished: testEmailFieldInteraction(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
+10-22 00:12:19.558 21439 21456 I TestRunner: started: testEmailFieldInteraction(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
+10-22 00:12:19.576 21439 21456 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-22 00:12:19.601   774   863 D SplashScreenView: Build android.window.SplashScreenView{bb2fd9a V.E...... ......ID 0,0-0,0}
+10-22 00:12:19.601   774   863 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-22 00:12:19.601   774   863 D SplashScreenView: Branding: view: android.view.View{39716cb G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-22 00:12:19.783  1506  1506 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+10-22 00:12:19.785  1506  1506 E HwDetectorWithState: a: 3
+10-22 00:12:19.819   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f1385000 0x3f1d69000]
+10-22 00:12:19.852 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@a55c708 in: PRE_ON_CREATE
+10-22 00:12:19.853 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-22 00:12:19.856   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f1d69000 0x3f274d000]
+10-22 00:12:19.866   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3f49a1000 0x3f5385000]
+10-22 00:12:19.934   774   875 D EGL_emulation: app_time_stats: avg=131.43ms min=10.70ms max=997.20ms count=14
+10-22 00:12:19.943   774   875 D EGL_emulation: app_time_stats: avg=159.57ms min=10.49ms max=979.50ms count=11
+10-22 00:12:20.165 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@a55c708 in: CREATED
+10-22 00:12:20.166 21439 21439 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.cocktailsdbapp.MainActivity@a55c708
+10-22 00:12:20.173 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@a55c708 in: STARTED
+10-22 00:12:20.174 21439 21439 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.cocktailsdbapp.MainActivity@a55c708
+10-22 00:12:20.179 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@a55c708 in: RESUMED
+10-22 00:12:20.180 21439 21439 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.cocktailsdbapp.MainActivity@a55c708
+10-22 00:12:20.203  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:12:20.205  1718  1718 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=63, right=0, bottom=126}
+10-22 00:12:20.258   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3ee070000 0x3eea54000]
+10-22 00:12:20.271   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3eea54000 0x3ef438000]
+10-22 00:12:20.276   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3ec000000 0x3ec9e4000]
+10-22 00:12:20.385   572   599 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/.MainActivity: +786ms
+10-22 00:12:20.507  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:12:20.508  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:12:20.518  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:12:20.552 21439 21439 I ViewInteraction: Performing 'type text(test@example.com)' action on view view.getId() is <2131296468/com.example.cocktailsdbapp:id/et_email_input>
+10-22 00:12:20.641 21439 21439 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{2908aad VFED..CL. .F.P..ID 119,284-959,392 #7f0900d4 app:id/et_email_input aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-22 00:12:20.647  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:12:20.649  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:12:20.651  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:12:20.659  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2148
+10-22 00:12:20.668  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:12:20.677  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():166 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-22 00:12:20.679  1385  1385 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=Email imeActionName=NEXT dump=[inputType=0x21 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=email label=null packageName=com.example.cocktailsdbapp autofillId=1073741824 fieldId=2131296468 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], IncognitoMode = false, DeviceLocked = false
+10-22 00:12:20.680  1385  1385 I Delight5Facilitator: Delight5Facilitator.initializeForIme():718 initializeForIme() : Locale = [en_US], layout = qwerty
+10-22 00:12:20.682 21439 21439 I AssistStructure: Flattened final assist data: 2668 bytes, containing 1 windows, 16 views
+10-22 00:12:20.689  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():54 cancelShutdown()
+10-22 00:12:20.689  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():66 syncLanguagePacks()
+10-22 00:12:20.691  1385  1385 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1293 inline flag updated to:false
+10-22 00:12:20.693  1385  5303 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():182 maybeScheduleAutoPackDownloadForFallback()
+10-22 00:12:20.694  1385  5303 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():194 maybeScheduleAutoPackDownload() for language tag en-US
+10-22 00:12:20.717  1385  1385 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-22 00:12:20.746  1385  1385 I KeyboardViewHelper: KeyboardViewHelper.getView():167 Get view with height ratio:1.000000
+10-22 00:12:20.753   572  1813 W InputManager-JNI: Input channel object 'ea6631f Splash Screen com.example.cocktailsdbapp (client)' was disposed without first being removed with the input manager!
+10-22 00:12:20.778  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:12:20.783  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:12:20.784  1385  2206 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-22 00:12:20.784  1385  1385 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():62 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+10-22 00:12:20.794  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:12:20.795  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:12:20.795  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:12:20.799  1385  1385 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():513 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+10-22 00:12:20.809  1385  1385 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
+10-22 00:12:20.810  1385  1385 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():354 No private IME option set to start voice input.
+10-22 00:12:20.837  1385  1385 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():109 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-22 00:12:20.839  1385  2206 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():434 setKeyboardLayout()
+10-22 00:12:20.871 21439 21439 D InsetsController: show(ime(), fromIme=true)
+10-22 00:12:20.885  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:12:20.886  1385  2053 D EGL_emulation: app_time_stats: avg=3716.08ms min=3716.08ms max=3716.08ms count=1
+10-22 00:12:20.887  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:12:20.936 21439 21439 D UiControllerImpl: Injecting string: "test@example.com"
+10-22 00:12:20.968   774   875 D EGL_emulation: app_time_stats: avg=258.28ms min=25.70ms max=897.26ms count=4
+10-22 00:12:20.978  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:12:21.000  8529  8529 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:12:21.001  8529  8529 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:12:21.013  8529  8529 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-22 00:12:21.033  3983  3983 W svc     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+10-22 00:12:21.037   361   403 D goldfish-address-space: claimShared: Ask to claim region [0x3ef438000 0x3ef485000]
+10-22 00:12:21.041   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3ef485000 0x3ef4d2000]
+10-22 00:12:21.048   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3ef4d2000 0x3ef51f000]
+10-22 00:12:21.078  1008  1008 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1623657190
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: InputConnectionWrapper.waitForInputConnectionFutureInternal():1486 Failed to get the input connection call's result.
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: java.util.concurrent.TimeoutException: Waited 100 milliseconds (plus 5 milliseconds, 63321 nanoseconds delay) for ott@888888a[status=PENDING, info=[task=[running=[RUNNING ON ICWrapper-1], jeu@785efb]]]
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at oqk.get(PG:50)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at jfe.u(PG:2)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at jfe.t(PG:2)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at jfd.e(PG:8)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at jfm.D(PG:1)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at jfm.x(PG:1)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at jfm.c(PG:5)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at jfe.b(PG:14)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at dro.onUpdateSelection(PG:5)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.InputMethodService$InputMethodSessionImpl.updateSelection(InputMethodService.java:1020)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at android.inputmethodservice.IInputMethodSessionWrapper.executeMessage(IInputMethodSessionWrapper.java:105)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at android.os.Looper.loop(Looper.java:288)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at java.lang.reflect.Method.invoke(Native Method)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-22 00:12:21.115  1385  1385 E InputConnectionWrapper: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+10-22 00:12:21.133  1385  1385 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1449 IPC IC_GET_SURROUNDING_TEXT took 112 ms
+10-22 00:12:21.174   774   875 D EGL_emulation: app_time_stats: avg=246.03ms min=22.74ms max=751.04ms count=5
+10-22 00:12:21.229  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7613<7615, inputStateId=7312, lastInputStateId=7314
+10-22 00:12:21.253  1385  2206 I native  : I1022 00:12:21.253377    2206 input-context-store.cc:238] Ignoring stale client request for FetchSuggestions
+10-22 00:12:21.265   572  1094 W InputManager-JNI: Input channel object 'e9ca573 PopupWindow:b96791d (client)' was disposed without first being removed with the input manager!
+10-22 00:12:21.269  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7616<7618, inputStateId=7315, lastInputStateId=7315
+10-22 00:12:21.279  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:12:21.421  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7620<7621, inputStateId=7318, lastInputStateId=7319
+10-22 00:12:21.503  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.textCandidatesUpdated():621 Not showing inline suggestion tooltip v2; has candidates
+10-22 00:12:21.545 21439 21462 D EGL_emulation: app_time_stats: avg=61.20ms min=2.81ms max=313.37ms count=18
+10-22 00:12:21.632  1385  1385 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():880 Ignore [FetchSuggestions] diff due to stale request: 7627<7629, inputStateId=7324, lastInputStateId=7326
+10-22 00:12:22.318 21439 21439 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "test@example.com"}' assertion on view view.getId() is <2131296468/com.example.cocktailsdbapp:id/et_email_input>
+10-22 00:12:22.553 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@a55c708 in: PAUSED
+10-22 00:12:22.554 21439 21439 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.cocktailsdbapp.MainActivity@a55c708
+10-22 00:12:22.582   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3ef438000 0x3efdd9000]
+10-22 00:12:22.657 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575 in: PRE_ON_CREATE
+10-22 00:12:22.659 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575
+10-22 00:12:22.715 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575 in: CREATED
+10-22 00:12:22.718 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575
+10-22 00:12:22.730 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575 in: STARTED
+10-22 00:12:22.734 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575
+10-22 00:12:22.742 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575 in: RESUMED
+10-22 00:12:22.743 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575
+10-22 00:12:22.824   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3ed68c000 0x3ee070000]
+10-22 00:12:22.840   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3f09a1000 0x3f1385000]
+10-22 00:12:22.848   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3f1385000 0x3f1d69000]
+10-22 00:12:22.874 21439 21462 D EGL_emulation: app_time_stats: avg=110.32ms min=40.19ms max=599.04ms count=12
+10-22 00:12:22.891   572   599 I ActivityTaskManager: Displayed com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +402ms
+10-22 00:12:22.990  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2365
+10-22 00:12:22.999  1385  1385 I InlineSuggestionCandidateViewController: InlineSuggestionCandidateViewController.setInlineSuggestionCandidateImpl():1163 set  to inlineSuggestionTextView
+10-22 00:12:23.001  1385  1385 I KeyboardWrapper: KeyboardWrapper.consumeEvent():287 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-22 00:12:23.002  1385  1385 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():76 shutdown()
+10-22 00:12:23.002  1385  1385 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+10-22 00:12:23.010  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+10-22 00:12:23.011 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@a55c708 in: STOPPED
+10-22 00:12:23.011  1385  1385 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+10-22 00:12:23.012 21439 21439 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.cocktailsdbapp.MainActivity@a55c708
+10-22 00:12:23.026 21439 21439 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+10-22 00:12:23.031  1385  1385 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+10-22 00:12:23.082   774   875 D EGL_emulation: app_time_stats: avg=138.09ms min=3.60ms max=1705.08ms count=13
+10-22 00:12:23.089 21439 21439 D LifecycleMonitor: Lifecycle status change: com.example.cocktailsdbapp.MainActivity@a55c708 in: DESTROYED
+10-22 00:12:23.090 21439 21439 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-22 00:12:23.106   572   898 W InputManager-JNI: Input channel object 'af7b934 com.example.cocktailsdbapp/com.example.cocktailsdbapp.MainActivity (client)' was disposed without first being removed with the input manager!
+10-22 00:12:23.134  1385  2053 D EGL_emulation: app_time_stats: avg=320.90ms min=53.10ms max=1436.91ms count=7
+10-22 00:12:23.147   361   405 D goldfish-address-space: claimShared: Ask to claim region [0x3ee070000 0x3ee6c4000]
+10-22 00:12:23.271 21439 21439 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575 in: PAUSED
+10-22 00:12:23.278 21439 21439 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.cocktailsdbapp/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.cocktailsdbapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7312575
+10-22 00:12:23.347 21439 21456 I TestRunner: finished: testEmailFieldInteraction(com.example.cocktailsdbapp.ui.authorization.LoginFragmentTest)
