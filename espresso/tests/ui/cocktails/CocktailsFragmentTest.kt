@@ -175,18 +175,14 @@ class CocktailsFragmentTest {
         // Wait for data to load
         Thread.sleep(1000)
 
-        // Click on first cocktail item
-        try {
-            onView(withId(R.id.rv_cocktails))
-                .perform(
-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
-                        0, // position
-                        MyViewAction.clickChildViewWithId(R.id.iv_drink)
-                    )
+        onView(withId(R.id.rv_cocktails))
+            .perform(
+                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                    0, // position
+                    MyViewAction.clickChildViewWithId(R.id.iv_drink)
                 )
-        } catch (e: Exception) {
-            assert(false)
-        }
+            )
+
     }
 
     @Test
@@ -194,22 +190,16 @@ class CocktailsFragmentTest {
         // Wait for data to load
         Thread.sleep(1000)
 
-        // Try to click on favorite button of first item
-        try {
-            onView(withId(R.id.rv_cocktails))
-                .perform(
-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
-                        0, // position
-                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
-                    )
+        onView(withId(R.id.rv_cocktails))
+            .perform(
+                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                    0, // position
+                    MyViewAction.clickChildViewWithId(R.id.iv_favorite)
                 )
+            )
 
-            // Wait for favorite action to complete
-            Thread.sleep(1000)
-
-        } catch (e: Exception) {
-            assert(false)
-        }
+        // Wait for favorite action to complete
+        Thread.sleep(1000)
     }
 
     @Test
@@ -220,15 +210,10 @@ class CocktailsFragmentTest {
         
         // Wait for search to open
         Thread.sleep(1000)
-        
-        // Try to interact with search (if it opens)
-        try {
-            // This should expand search input field
-            onView(withId(R.id.action_search_input))
-                .check(matches(isDisplayed()))
-        } catch (e: Exception) {
-            assert(false)
-        }
+
+        // This should expand search input field
+        onView(withId(R.id.action_search_input))
+            .check(matches(isDisplayed()))
     }
 
     @Test
@@ -239,14 +224,11 @@ class CocktailsFragmentTest {
         
         // Wait for filter to open
         Thread.sleep(1000)
-        
-        // Try to interact with filter (if it opens)
-        try {
-            // This should open a filter list
-            onView(withId(R.id.rv_filter))
+
+
+        // This should open a filter list
+        onView(withId(R.id.rv_filter))
                 .check(matches(isDisplayed()))
-        } catch (e: Exception) {
-            assert(false)
-        }
+
     }
 }

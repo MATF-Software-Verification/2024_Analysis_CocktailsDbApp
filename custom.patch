@@ -25,6 +25,280 @@ index e95fd81..54d3939 100644
    </component>
  </project>
 \ No newline at end of file
+diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/AppFlowTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/AppFlowTest.kt
+index 03ba46c..3b36127 100644
+--- a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/AppFlowTest.kt
++++ b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/AppFlowTest.kt
+@@ -121,101 +121,96 @@ class AppFlowTest {
+ 
+     @Test
+     fun testAppFlow() {
+-        try {
+-            // Click on category
+-            onView(withId(R.id.action_filter))
+-                .perform(click())
+ 
+-            // Wait to show category list
+-            Thread.sleep(1000)
++        // Click on category
++        onView(withId(R.id.action_filter))
++            .perform(click())
+ 
+-            // Verify categories are listed
+-            onView(withId(R.id.rv_filter))
+-                .check(matches(isDisplayed()))
++        // Wait to show category list
++        Thread.sleep(1000)
++
++        // Verify categories are listed
++        onView(withId(R.id.rv_filter))
++            .check(matches(isDisplayed()))
+ 
+-            // Click on second category
+-            onView(withId(R.id.rv_filter))
+-                .perform(
+-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+-                        1, // position
+-                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
+-                    )
++        // Click on second category
++        onView(withId(R.id.rv_filter))
++            .perform(
++                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                    1, // position
++                    MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
+                 )
++            )
+ 
+-            // Wait to show filter list
+-            Thread.sleep(1000)
++        // Wait to show filter list
++        Thread.sleep(1000)
+ 
+-            // Verify filters are listed
+-            onView(withId(R.id.rv_filter))
+-                .check(matches(isDisplayed()))
++        // Verify filters are listed
++        onView(withId(R.id.rv_filter))
++            .check(matches(isDisplayed()))
+ 
+-            // Click on first filter
+-            onView(withId(R.id.rv_filter))
+-                .perform(
+-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+-                        0, // position
+-                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
+-                    )
++        // Click on first filter
++        onView(withId(R.id.rv_filter))
++            .perform(
++                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                    0, // position
++                    MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
+                 )
++            )
+ 
+-            // Wait to navigate to cocktails screen
+-            Thread.sleep(1000)
++        // Wait to navigate to cocktails screen
++        Thread.sleep(1000)
+ 
+-            // Verify cocktails are loaded
+-            onView(withId(R.id.rv_cocktails))
+-                .check(matches(isDisplayed()))
++        // Verify cocktails are loaded
++        onView(withId(R.id.rv_cocktails))
++            .check(matches(isDisplayed()))
+ 
+-            // Favorite first item, so the favorites screen is not empty
+-            onView(withId(R.id.rv_cocktails))
+-                .perform(
+-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+-                        0, // position
+-                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
+-                    )
++        // Favorite first item, so the favorites screen is not empty
++        onView(withId(R.id.rv_cocktails))
++            .perform(
++                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                    0, // position
++                    MyViewAction.clickChildViewWithId(R.id.iv_favorite)
+                 )
++            )
+ 
+-            Thread.sleep(1000)
++        Thread.sleep(1000)
+ 
+-            // Click on favorites tab
+-            onView(withId(R.id.navigation_favorites))
+-                .perform(click())
++        // Click on favorites tab
++        onView(withId(R.id.navigation_favorites))
++            .perform(click())
+ 
+-            Thread.sleep(1000)
++        Thread.sleep(1000)
+ 
+-            onView(withId(R.id.rv_cocktails))
+-                .check(matches(isDisplayed()))
++        onView(withId(R.id.rv_cocktails))
++            .check(matches(isDisplayed()))
+ 
+-            // Unfavorite the item, so the favorites screen is empty
+-            onView(withId(R.id.rv_cocktails))
+-                .perform(
+-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+-                        0, // position
+-                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
+-                    )
++        // Unfavorite the item, so the favorites screen is empty
++        onView(withId(R.id.rv_cocktails))
++            .perform(
++                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                    0, // position
++                    MyViewAction.clickChildViewWithId(R.id.iv_favorite)
+                 )
++            )
+ 
+-            Thread.sleep(1000)
+-
+-            // Click on profile tab
+-            onView(withId(R.id.navigation_profile))
+-                .perform(click())
++        Thread.sleep(1000)
+ 
+-            // Verify profile component is displayed
+-            onView(withId(R.id.til_name_input))
+-                .check(matches(isDisplayed()))
++        // Click on profile tab
++        onView(withId(R.id.navigation_profile))
++            .perform(click())
+ 
+-            // Click on fav tab
+-            onView(withId(R.id.navigation_favorites))
+-                .perform(click())
++        // Verify profile component is displayed
++        onView(withId(R.id.til_name_input))
++            .check(matches(isDisplayed()))
+ 
+-            Thread.sleep(1000)
++        // Click on fav tab
++        onView(withId(R.id.navigation_favorites))
++            .perform(click())
+ 
+-            onView(withId(R.id.rv_cocktails))
+-                .check(matches(not(isDisplayed())))
++        Thread.sleep(1000)
+ 
+-        } catch (e: Exception) {
+-            assert(false)
+-        }
++        onView(withId(R.id.rv_cocktails))
++            .check(matches(not(isDisplayed())))
+     }
+-
+ }
+diff --git a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/cocktails/CocktailsFragmentTest.kt b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/cocktails/CocktailsFragmentTest.kt
+index abbc9b8..c7b5878 100644
+--- a/app/src/androidTest/java/com/example/cocktailsdbapp/ui/cocktails/CocktailsFragmentTest.kt
++++ b/app/src/androidTest/java/com/example/cocktailsdbapp/ui/cocktails/CocktailsFragmentTest.kt
+@@ -175,18 +175,14 @@ class CocktailsFragmentTest {
+         // Wait for data to load
+         Thread.sleep(1000)
+ 
+-        // Click on first cocktail item
+-        try {
+-            onView(withId(R.id.rv_cocktails))
+-                .perform(
+-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+-                        0, // position
+-                        MyViewAction.clickChildViewWithId(R.id.iv_drink)
+-                    )
++        onView(withId(R.id.rv_cocktails))
++            .perform(
++                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                    0, // position
++                    MyViewAction.clickChildViewWithId(R.id.iv_drink)
+                 )
+-        } catch (e: Exception) {
+-            assert(false)
+-        }
++            )
++
+     }
+ 
+     @Test
+@@ -194,22 +190,16 @@ class CocktailsFragmentTest {
+         // Wait for data to load
+         Thread.sleep(1000)
+ 
+-        // Try to click on favorite button of first item
+-        try {
+-            onView(withId(R.id.rv_cocktails))
+-                .perform(
+-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+-                        0, // position
+-                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
+-                    )
++        onView(withId(R.id.rv_cocktails))
++            .perform(
++                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
++                    0, // position
++                    MyViewAction.clickChildViewWithId(R.id.iv_favorite)
+                 )
++            )
+ 
+-            // Wait for favorite action to complete
+-            Thread.sleep(1000)
+-
+-        } catch (e: Exception) {
+-            assert(false)
+-        }
++        // Wait for favorite action to complete
++        Thread.sleep(1000)
+     }
+ 
+     @Test
+@@ -220,15 +210,10 @@ class CocktailsFragmentTest {
+         
+         // Wait for search to open
+         Thread.sleep(1000)
+-        
+-        // Try to interact with search (if it opens)
+-        try {
+-            // This should expand search input field
+-            onView(withId(R.id.action_search_input))
+-                .check(matches(isDisplayed()))
+-        } catch (e: Exception) {
+-            assert(false)
+-        }
++
++        // This should expand search input field
++        onView(withId(R.id.action_search_input))
++            .check(matches(isDisplayed()))
+     }
+ 
+     @Test
+@@ -239,14 +224,11 @@ class CocktailsFragmentTest {
+         
+         // Wait for filter to open
+         Thread.sleep(1000)
+-        
+-        // Try to interact with filter (if it opens)
+-        try {
+-            // This should open a filter list
+-            onView(withId(R.id.rv_filter))
++
++
++        // This should open a filter list
++        onView(withId(R.id.rv_filter))
+                 .check(matches(isDisplayed()))
+-        } catch (e: Exception) {
+-            assert(false)
+-        }
++
+     }
+ }
 diff --git a/app/src/test/java/com/example/cocktailsdbapp/database/RoomCocktailTest.kt b/app/src/test/java/com/example/cocktailsdbapp/database/RoomCocktailTest.kt
 index e71f97b..c6618ae 100644
 --- a/app/src/test/java/com/example/cocktailsdbapp/database/RoomCocktailTest.kt

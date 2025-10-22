@@ -121,101 +121,96 @@ class AppFlowTest {
 
     @Test
     fun testAppFlow() {
-        try {
-            // Click on category
-            onView(withId(R.id.action_filter))
-                .perform(click())
 
-            // Wait to show category list
-            Thread.sleep(1000)
+        // Click on category
+        onView(withId(R.id.action_filter))
+            .perform(click())
 
-            // Verify categories are listed
-            onView(withId(R.id.rv_filter))
-                .check(matches(isDisplayed()))
+        // Wait to show category list
+        Thread.sleep(1000)
 
-            // Click on second category
-            onView(withId(R.id.rv_filter))
-                .perform(
-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
-                        1, // position
-                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
-                    )
+        // Verify categories are listed
+        onView(withId(R.id.rv_filter))
+            .check(matches(isDisplayed()))
+
+        // Click on second category
+        onView(withId(R.id.rv_filter))
+            .perform(
+                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                    1, // position
+                    MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
                 )
+            )
 
-            // Wait to show filter list
-            Thread.sleep(1000)
+        // Wait to show filter list
+        Thread.sleep(1000)
 
-            // Verify filters are listed
-            onView(withId(R.id.rv_filter))
-                .check(matches(isDisplayed()))
+        // Verify filters are listed
+        onView(withId(R.id.rv_filter))
+            .check(matches(isDisplayed()))
 
-            // Click on first filter
-            onView(withId(R.id.rv_filter))
-                .perform(
-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
-                        0, // position
-                        MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
-                    )
+        // Click on first filter
+        onView(withId(R.id.rv_filter))
+            .perform(
+                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                    0, // position
+                    MyViewAction.clickChildViewWithId(R.id.cl_filter_view)
                 )
+            )
 
-            // Wait to navigate to cocktails screen
-            Thread.sleep(1000)
+        // Wait to navigate to cocktails screen
+        Thread.sleep(1000)
 
-            // Verify cocktails are loaded
-            onView(withId(R.id.rv_cocktails))
-                .check(matches(isDisplayed()))
+        // Verify cocktails are loaded
+        onView(withId(R.id.rv_cocktails))
+            .check(matches(isDisplayed()))
 
-            // Favorite first item, so the favorites screen is not empty
-            onView(withId(R.id.rv_cocktails))
-                .perform(
-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
-                        0, // position
-                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
-                    )
+        // Favorite first item, so the favorites screen is not empty
+        onView(withId(R.id.rv_cocktails))
+            .perform(
+                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                    0, // position
+                    MyViewAction.clickChildViewWithId(R.id.iv_favorite)
                 )
+            )
 
-            Thread.sleep(1000)
+        Thread.sleep(1000)
 
-            // Click on favorites tab
-            onView(withId(R.id.navigation_favorites))
-                .perform(click())
+        // Click on favorites tab
+        onView(withId(R.id.navigation_favorites))
+            .perform(click())
 
-            Thread.sleep(1000)
+        Thread.sleep(1000)
 
-            onView(withId(R.id.rv_cocktails))
-                .check(matches(isDisplayed()))
+        onView(withId(R.id.rv_cocktails))
+            .check(matches(isDisplayed()))
 
-            // Unfavorite the item, so the favorites screen is empty
-            onView(withId(R.id.rv_cocktails))
-                .perform(
-                    RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
-                        0, // position
-                        MyViewAction.clickChildViewWithId(R.id.iv_favorite)
-                    )
+        // Unfavorite the item, so the favorites screen is empty
+        onView(withId(R.id.rv_cocktails))
+            .perform(
+                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+                    0, // position
+                    MyViewAction.clickChildViewWithId(R.id.iv_favorite)
                 )
+            )
 
-            Thread.sleep(1000)
+        Thread.sleep(1000)
 
-            // Click on profile tab
-            onView(withId(R.id.navigation_profile))
-                .perform(click())
+        // Click on profile tab
+        onView(withId(R.id.navigation_profile))
+            .perform(click())
 
-            // Verify profile component is displayed
-            onView(withId(R.id.til_name_input))
-                .check(matches(isDisplayed()))
+        // Verify profile component is displayed
+        onView(withId(R.id.til_name_input))
+            .check(matches(isDisplayed()))
 
-            // Click on fav tab
-            onView(withId(R.id.navigation_favorites))
-                .perform(click())
+        // Click on fav tab
+        onView(withId(R.id.navigation_favorites))
+            .perform(click())
 
-            Thread.sleep(1000)
+        Thread.sleep(1000)
 
-            onView(withId(R.id.rv_cocktails))
-                .check(matches(not(isDisplayed())))
-
-        } catch (e: Exception) {
-            assert(false)
-        }
+        onView(withId(R.id.rv_cocktails))
+            .check(matches(not(isDisplayed())))
     }
-
 }
