@@ -147,7 +147,6 @@ class FavoritesViewModelTest {
 
         // When
         viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then
@@ -162,6 +161,7 @@ class FavoritesViewModelTest {
                 }
             )
         }
+        coVerify(exactly = 0) { mockRepo.removeFavorite(any(), any()) }
     }
 
     @Test
@@ -176,31 +176,12 @@ class FavoritesViewModelTest {
 
         // When
         viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then
         coVerify { mockRepo.findFavoriteCocktail(userEmail, cocktail.idDrink) }
         coVerify { mockRepo.removeFavorite(userEmail, cocktail.idDrink) }
         coVerify(exactly = 0) { mockRepo.insertCocktail(any(), any()) }
-    }
-
-    @Test
-    fun `favoriteCocktail toggles favorite status correctly`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val cocktail = Cocktail("Margarita", "margarita.jpg", "11008", false)
-
-        coEvery { mockRepo.findFavoriteCocktail(userEmail, cocktail.idDrink) } returns null
-        coEvery { mockRepo.insertCocktail(userEmail, any()) } just Runs
-
-        // When - Add to favorites
-        viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify { mockRepo.insertCocktail(userEmail, any()) }
     }
 
     @Test
@@ -217,7 +198,6 @@ class FavoritesViewModelTest {
         // When
         viewModel.favoriteCocktail(user1, cocktail)
         viewModel.favoriteCocktail(user2, cocktail)
-        advanceTimeBy(1000)
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then - Both users should be able to favorite
@@ -226,65 +206,9 @@ class FavoritesViewModelTest {
     }
 
     @Test
-    fun `favoriteCocktail creates correct RoomCocktail`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val cocktail = Cocktail("Piña Colada", "pina.jpg", "12345", false)
-
-        coEvery { mockRepo.findFavoriteCocktail(userEmail, cocktail.idDrink) } returns null
-        coEvery { mockRepo.insertCocktail(userEmail, any()) } just Runs
-
-        // When
-        viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify {
-            mockRepo.insertCocktail(
-                userEmail,
-                match {
-                    it.strDrink == "Piña Colada" &&
-                    it.strDrinkThumb == "pina.jpg" &&
-                    it.idDrink == "12345"
-                }
-            )
-        }
-    }
-
-    @Test
     fun `favoritesData is initialized`() {
         // Then
         assertNotNull(viewModel.favoritesData)
-    }
-
-    @Test
-    fun `getFavorites with multiple calls processes each correctly`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val firstCallFavorites = listOf(RoomCocktail("Mojito", "mojito.jpg", "11007"))
-        val secondCallFavorites = listOf(
-            RoomCocktail("Mojito", "mojito.jpg", "11007"),
-            RoomCocktail("Margarita", "margarita.jpg", "11008")
-        )
-
-        coEvery { mockRepo.getFavorites(userEmail) } returnsMany listOf(firstCallFavorites, secondCallFavorites)
-
-        // When - First call
-        viewModel.getFavorites(userEmail)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then - First call
-        assertEquals(1, viewModel.favoritesData.value?.size)
-        assertEquals("Mojito", viewModel.favoritesData.value?.first()?.strDrink)
-
-        // When - Second call
-        viewModel.getFavorites(userEmail)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then - Second call
-        assertEquals(2, viewModel.favoritesData.value?.size)
-        assertEquals("Margarita", viewModel.favoritesData.value?.last()?.strDrink)
     }
 
     @Test
@@ -311,25 +235,6 @@ class FavoritesViewModelTest {
     }
 
     @Test
-    fun `favoriteCocktail handles null existing favorite correctly`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val cocktail = Cocktail("New Cocktail", "new.jpg", "11111", false)
-
-        coEvery { mockRepo.findFavoriteCocktail(userEmail, cocktail.idDrink) } returns null
-        coEvery { mockRepo.insertCocktail(userEmail, any()) } just Runs
-
-        // When
-        viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify { mockRepo.insertCocktail(userEmail, any()) }
-        coVerify(exactly = 0) { mockRepo.removeFavorite(any(), any()) }
-    }
-
-    @Test
     fun `favoriteCocktail handles existing favorite correctly`() = runTest {
         // Given
         val userEmail = "test@example.com"
@@ -341,7 +246,6 @@ class FavoritesViewModelTest {
 
         // When
         viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then

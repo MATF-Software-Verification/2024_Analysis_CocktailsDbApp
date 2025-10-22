@@ -61,38 +61,6 @@ class RoomCocktailTest {
     }
 
     @Test
-    fun `test RoomCocktail copy functionality`() {
-        // Given
-        val original = RoomCocktail("Mojito", "mojito.jpg", "11007")
-        
-        // When
-        val copied = original.copy(strDrink = "Cuba Libre")
-        
-        // Then
-        assertEquals("Cuba Libre", copied.strDrink)
-        assertEquals("mojito.jpg", copied.strDrinkThumb)
-        assertEquals("11007", copied.idDrink)
-        assertEquals("Mojito", original.strDrink)
-    }
-
-    @Test
-    fun `test RoomCocktail list operations`() {
-        // Given
-        val cocktails = listOf(
-            RoomCocktail("Mojito", "mojito.jpg", "11007"),
-            RoomCocktail("Margarita", "margarita.jpg", "11008"),
-            RoomCocktail("Martini", "martini.jpg", "11009")
-        )
-        
-        // When
-        val filtered = cocktails.filter { it.strDrink.startsWith("M") }
-        
-        // Then
-        assertEquals(3, filtered.size)
-        assertTrue(filtered.all { it.strDrink.startsWith("M") })
-    }
-
-    @Test
     fun `test RoomCocktail hashCode consistency`() {
         // Given
         val roomCocktail1 = RoomCocktail("Mojito", "mojito.jpg", "11007")

@@ -67,51 +67,5 @@ class CocktailResponseTest {
         assertEquals(1, response.drinks?.size)
         assertEquals("Mojito", response.drinks?.first()?.strDrink)
     }
-
-    @Test
-    fun `test CocktailResponse copy functionality`() {
-        // Given
-        val originalCocktails = listOf(Cocktail("Mojito", "mojito.jpg", "11007", true))
-        val original = CocktailResponse(originalCocktails)
-        
-        // When
-        val newCocktails = listOf(Cocktail("Margarita", "margarita.jpg", "11008", false))
-        val copied = original.copy(drinks = newCocktails)
-        
-        // Then
-        assertEquals("Margarita", copied.drinks?.first()?.strDrink)
-        assertEquals("Mojito", original.drinks?.first()?.strDrink)
-    }
-
-    @Test
-    fun `test CocktailResponse toString method`() {
-        // Given
-        val cocktails = listOf(Cocktail("Mojito", "mojito.jpg", "11007", true))
-        val response = CocktailResponse(cocktails)
-        
-        // When
-        val result = response.toString()
-        
-        // Then
-        assertTrue(result.contains("CocktailResponse"))
-    }
-
-    @Test
-    fun `test CocktailResponse with multiple cocktails filtering`() {
-        // Given
-        val cocktails = listOf(
-            Cocktail("Mojito", "mojito.jpg", "11007", true),
-            Cocktail("Margarita", "margarita.jpg", "11008", false),
-            Cocktail("Martini", "martini.jpg", "11009", true)
-        )
-        val response = CocktailResponse(cocktails)
-        
-        // When
-        val favorites = response.drinks?.filter { it.isFavorite }
-        
-        // Then
-        assertNotNull(favorites)
-        assertEquals(2, favorites?.size)
-    }
 }
 

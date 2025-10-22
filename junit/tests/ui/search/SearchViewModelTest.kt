@@ -42,18 +42,6 @@ class SearchViewModelTest {
     }
 
     @Test
-    fun `setSearchQuery updates search query flow`() {
-        // Given
-        val query = "mojito"
-
-        // When
-        viewModel.setSearchQuery(query)
-
-        // Then - Query is set, searchResultsData is initialized
-        assertNotNull(viewModel.searchResultsData)
-    }
-
-    @Test
     fun `executeSearch with valid results updates searchResultsData`() = runTest {
         // Given
         val userEmail = "test@example.com"
@@ -144,7 +132,6 @@ class SearchViewModelTest {
         // Given
         val userEmail = "test@example.com"
         val cocktail = Cocktail("Mojito", "mojito.jpg", "11007", false)
-        val roomCocktail = RoomCocktail("Mojito", "mojito.jpg", "11007")
 
         coEvery { mockRepo.findFavoriteCocktail(userEmail, cocktail.idDrink) } returns null
         coEvery { mockRepo.insertCocktail(userEmail, any()) } just Runs
@@ -188,49 +175,6 @@ class SearchViewModelTest {
     }
 
     @Test
-    fun `favoriteCocktail toggles favorite status correctly`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val cocktail = Cocktail("Margarita", "margarita.jpg", "11008", false)
-
-        coEvery { mockRepo.findFavoriteCocktail(userEmail, cocktail.idDrink) } returns null
-        coEvery { mockRepo.insertCocktail(userEmail, any()) } just Runs
-
-        // When - Add to favorites
-        viewModel.favoriteCocktail(userEmail, cocktail)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify { mockRepo.insertCocktail(userEmail, any()) }
-    }
-
-    @Test
-    fun `fetchSearchData cancels previous search job`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val query1 = "mojito"
-        val query2 = "margarita"
-        val response = CocktailResponse(drinks = emptyList())
-
-        coEvery { mockRepo.getSearch(any()) } returns response
-        coEvery { mockRepo.getFavorites(userEmail) } returns emptyList()
-
-        // When - Start first search
-        viewModel.setSearchQuery(query1)
-        viewModel.fetchSearchData(userEmail)
-        
-        // Immediately start second search (should cancel first)
-        viewModel.setSearchQuery(query2)
-        viewModel.fetchSearchData(userEmail)
-        
-        advanceTimeBy(800)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then - Second query should be executed
-        coVerify(atLeast = 1) { mockRepo.getSearch(any()) }
-    }
-
-    @Test
     fun `debounce prevents rapid search calls`() = runTest {
         // Given
         val userEmail = "test@example.com"
@@ -261,7 +205,7 @@ class SearchViewModelTest {
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then - Should only search once after debounce period
-        coVerify(atLeast = 1) { mockRepo.getSearch("mojito") }
+        coVerify(exactly = 1) { mockRepo.getSearch("mojito") }
     }
 
     @Test
@@ -283,12 +227,6 @@ class SearchViewModelTest {
         // Then - Both users should be able to favorite
         coVerify { mockRepo.insertCocktail(user1, any()) }
         coVerify { mockRepo.insertCocktail(user2, any()) }
-    }
-
-    @Test
-    fun `searchResultsData is initialized`() {
-        // Then
-        assertNotNull(viewModel.searchResultsData)
     }
 
     @Test

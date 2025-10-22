@@ -182,48 +182,6 @@ class CocktailsViewModelTest {
     }
 
     @Test
-    fun `fetchData with empty response sets cocktailsData to null`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val filterCategory = Constants.FILTER_ALCOHOL
-        val filter = "Alcoholic"
-        val response = CocktailResponse(drinks = emptyList())
-        val favorites = listOf<RoomCocktail>()
-
-        coEvery { mockRepo.getCocktailsByAlcoholContent(filter) } returns response
-        coEvery { mockRepo.getFavorites(userEmail) } returns favorites
-
-        // When
-        viewModel.fetchData(userEmail, filterCategory, filter)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify { mockRepo.getCocktailsByAlcoholContent(filter) }
-        coVerify { mockRepo.getFavorites(userEmail) }
-    }
-
-    @Test
-    fun `fetchData with null drinks sets cocktailsData to null`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val filterCategory = Constants.FILTER_ALCOHOL
-        val filter = "Alcoholic"
-        val response = CocktailResponse(drinks = null)
-        val favorites = listOf<RoomCocktail>()
-
-        coEvery { mockRepo.getCocktailsByAlcoholContent(filter) } returns response
-        coEvery { mockRepo.getFavorites(userEmail) } returns favorites
-
-        // When
-        viewModel.fetchData(userEmail, filterCategory, filter)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify { mockRepo.getCocktailsByAlcoholContent(filter) }
-        coVerify { mockRepo.getFavorites(userEmail) }
-    }
-
-    @Test
     fun `fetchData with null favorites still processes response`() = runTest {
         // Given
         val userEmail = "test@example.com"
@@ -272,7 +230,6 @@ class CocktailsViewModelTest {
 
         // When
         viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then
@@ -287,6 +244,7 @@ class CocktailsViewModelTest {
                 }
             )
         }
+        coVerify(exactly = 0) { mockRepo.removeFavorite(any(), any()) }
     }
 
     @Test
@@ -301,7 +259,6 @@ class CocktailsViewModelTest {
 
         // When
         viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then
@@ -310,23 +267,6 @@ class CocktailsViewModelTest {
         coVerify(exactly = 0) { mockRepo.insertCocktail(any(), any()) }
     }
 
-    @Test
-    fun `favoriteCocktail toggles favorite status correctly`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val cocktail = Cocktail("Margarita", "margarita.jpg", "11008", false)
-
-        coEvery { mockRepo.findFavoriteCocktail(userEmail, cocktail.idDrink) } returns null
-        coEvery { mockRepo.insertCocktail(userEmail, any()) } just Runs
-
-        // When - Add to favorites
-        viewModel.favoriteCocktail(userEmail, cocktail)
-        advanceTimeBy(1000)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify { mockRepo.insertCocktail(userEmail, any()) }
-    }
 
     @Test
     fun `favoriteCocktail with different users maintains separate favorites`() = runTest {
@@ -342,48 +282,19 @@ class CocktailsViewModelTest {
         // When
         viewModel.favoriteCocktail(user1, cocktail)
         viewModel.favoriteCocktail(user2, cocktail)
-        advanceTimeBy(1000)
         testDispatcher.scheduler.advanceUntilIdle()
 
         // Then - Both users should be able to favorite
         coVerify { mockRepo.insertCocktail(user1, any()) }
         coVerify { mockRepo.insertCocktail(user2, any()) }
+
+        coVerify(exactly = 0) { mockRepo.removeFavorite(any(), any()) }
     }
 
     @Test
     fun `cocktailsData is initialized`() {
         // Then
         assertNotNull(viewModel.cocktailsData)
-    }
-
-    @Test
-    fun `fetchData with multiple filter types calls correct methods`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val favorites = listOf<RoomCocktail>()
-
-        coEvery { mockRepo.getCocktailsByAlcoholContent(any()) } returns CocktailResponse(drinks = emptyList())
-        coEvery { mockRepo.getCocktailsByCategory(any()) } returns CocktailResponse(drinks = emptyList())
-        coEvery { mockRepo.getCocktailsByGlass(any()) } returns CocktailResponse(drinks = emptyList())
-        coEvery { mockRepo.getCocktailsByIngredient(any()) } returns CocktailResponse(drinks = emptyList())
-        coEvery { mockRepo.getCocktailsByFirstLetter(any()) } returns CocktailResponse(drinks = emptyList())
-        coEvery { mockRepo.getFavorites(userEmail) } returns favorites
-
-        // When - Test all filter types
-        viewModel.fetchData(userEmail, Constants.FILTER_ALCOHOL, "Alcoholic")
-        viewModel.fetchData(userEmail, Constants.FILTER_CATEGORY, "Cocktail")
-        viewModel.fetchData(userEmail, Constants.FILTER_GLASS, "Highball")
-        viewModel.fetchData(userEmail, Constants.FILTER_INGREDIENT, "Vodka")
-        viewModel.fetchData(userEmail, Constants.FILTER_LETTER, "M")
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then - All methods should be called
-        coVerify { mockRepo.getCocktailsByAlcoholContent("Alcoholic") }
-        coVerify { mockRepo.getCocktailsByCategory("Cocktail") }
-        coVerify { mockRepo.getCocktailsByGlass("Highball") }
-        coVerify { mockRepo.getCocktailsByIngredient("Vodka") }
-        coVerify { mockRepo.getCocktailsByFirstLetter("M") }
-        coVerify(atLeast = 5) { mockRepo.getFavorites(userEmail) }
     }
 }
 

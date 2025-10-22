@@ -1,12 +1,26 @@
 # 2024_Analysis_CocktailsDbApp
 
 ## Project Description  
-As part of this seminar paper, the project **CocktailsDbApp** was tested, and its source code is available at the following link:  
+Comprehensive software verification analysis of **CocktailsDbApp** - an Android application for cocktail enthusiasts.
+
 - **GitHub URL**: [https://github.com/stefan-hlw/CocktailsDbApp](https://github.com/stefan-hlw/CocktailsDbApp)  
 - **Branch analyzed**: `main`  
 - **Commit hash**: `3ceb0fcb8135c4ce81de034c13dad6109f583237`  
+- **Analysis Date**: October 2025
 
-The project is a Kotlin-based Android application designed for cocktail enthusiasts. It provides a curated collection of recipes for both alcoholic and non-alcoholic drinks. Users can create personalized profiles and save their favorite cocktails for easy access, enhancing their mixology experience.
+### Application Overview
+
+The project is a Kotlin-based Android application designed for cocktail enthusiasts. It provides a 
+curated collection of recipes for both alcoholic and non-alcoholic drinks. Users can create 
+personalized profiles and save their favorite cocktails for easy access, enhancing their mixology 
+experience.
+
+### Analysis Highlights
+
+- **Total Tests**: 140 (101 unit + 39 UI)
+- **Pass Rate**: 100%
+- **Unit Test Coverage**: 11.8% overall (100% on Model & Repository layers)
+- **Static Analysis**: 8 code smells 
 
 ## Author  
 **Dragana Zdravkovic**, mi231020
@@ -15,31 +29,38 @@ Contact: dragana.zdravkovic602@gmail.com
 
 ## Tools and Techniques Used
 
-### 1. **ktlint** - Kotlin Code Style Checker (Formatter/Linter)
-- **Purpose:** Analyzes code formatting, naming conventions, and style violations
-- **Type:** Code formatting and style checking tool
-- **Output:** Plain text and HTML reports showing style violations
-- **Reproducibility:** Script: `ktlint/run_ktlint.sh`
+### 1. **Unit Testing (JUnit + Kover)**
+- **Tests**: 101 unit tests
+- **Framework**: JUnit 5, MockK, Kotlin Coroutines Test
+- **Coverage Tool**: Kover (Kotlin-native code coverage)
+- **Scope**: 
+  - Model layer (40 tests) - 100% coverage
+  - Repository layer (20 tests) - 100% coverage
+  - ViewModel layer (41 tests) - Business logic validation - 100% coverage
+- **Script**: `junit/run_tests.sh`
 
-### 2. **detekt** - Static Code Analysis for Kotlin
-- **Purpose:** Detects code smells, complexity issues, and potential bugs
-- **Type:** Static code analysis tool
-- **Output:** HTML and MD reports with detailed findings
-- **Reproducibility:** Script: `detekt/run_detekt.sh`
+### 2. **UI Testing (Espresso + JaCoCo)**
+- **Tests**: 39 instrumented tests
+- **Framework**: Espresso, AndroidX Test, UIAutomator
+- **Coverage Tool**: JaCoCo
+- **Scope**:
+  - Database tests (4 tests) - Room persistence validation
+  - Authentication flows (22 tests) - Login & registration
+  - Main functionality (13 tests) - Cocktail browsing, favorites, search
+- **Requires**: Connected Android device or emulator (API 29+)
+- **Script**: `espresso/run_espresso.sh`
 
-### 3. **Unit Tests + Kover** - Kotlin/Android Unit Testing with Code Coverage
-- **Purpose:** Validates business logic and measures code test coverage
-- **Type:** Unit Testing
-- **Coverage Tool:** Kover (Kotlin-specific coverage tool, integrated into test infrastructure)
-- **Output:** Test reports and coverage metrics
-- **Reproducibility:** Script: `junit/run_tests.sh`
+### 3. **Static Code Analysis (detekt)**
+- **Purpose**: Code quality, complexity, and code smell detection
+- **Findings**: Only 8 issues across 85 Kotlin files
+- **Script**: `detekt/run_detekt.sh`
 
-### 4. **Espresso** - Android Instrumented UI Testing
-- **Purpose:** Tests UI interactions and Android-specific functionality
-- **Type:** Instrumented/Integration Testing
-- **Requires:** Connected Android device or emulator
-- **Output:** Android instrumented test reports
-- **Reproducibility:** Script: `espresso/run_espresso.sh`
+### 4. **Code Style Analysis (ktlint)**
+- **Purpose**: Kotlin code style and formatting enforcement
+- **Issues Found**: 767 style violations (all auto-fixable)
+- **Scope**: Source code only (auto-generated files excluded)
+- **Impact**: No functional issues, purely stylistic
+- **Script**: `ktlint/run_ktlint.sh`
 
 ## Project Structure
 
@@ -100,34 +121,35 @@ Contact: dragana.zdravkovic602@gmail.com
    bash espresso/run_espresso.sh       # Instrumented tests with JaCoCo coverage
    ```
 
-## Reports Location
+## Analysis Reports
 
-All analysis reports are generated in tool-specific `results/` directories:
+### Comprehensive Analysis Document
+📄 **`ProjectAnalysisReport.md`** - Complete testing and code quality analysis
 
-- **ktlint:** `ktlint/results/`
-  - `ktlint_results.txt` - Text report
-  - `ktlint_report.html` - HTML report
+### Tool-Specific Reports
 
-- **detekt:** `detekt/results/`
-  - `detekt-report.html` - HTML report
-  - `detekt-report.md` - Markdown summary
+All tool reports are in their respective `results/` directories:
 
-- **JUnit Tests:** `junit/results/`
-  - Android unit tests
-  - `index.html` - Test results HTML
-  - `coverage/index.html` - Kover coverage report
+#### **Unit Tests** (`junit/results/`)
+- `index.html` - Test execution results 
+- `coverage/index.html` - Kover coverage report
 
-- **Espresso:** `espresso/results/`
-  - Android instrumented test reports
-  - `debug/index.html` - Test results HTML
-  - `jacoco/connected/index.html` - JaCoCo coverage report
+#### **UI Tests** (`espresso/results/`)
+- `debug/index.html` - Espresso test results 
+- `coverage/androidTest/debug/connected/index.html` - JaCoCo UI coverage
 
-## Reproducing Results
 
-All scripts are self-contained and generate reports in their respective `results/` directories. Each tool can be executed independently using the commands shown in the Setup Instructions section above.
+#### **Static Analysis** (`detekt/results/`)
+- `detekt_report.html` - Interactive HTML report
+- `detekt_report.md` - Markdown summary
 
----
+#### **Code Style** (`ktlint/results/`)
+- `ktlint_report.txt` - Text report (767 issues)
+- `ktlint_report.html` - HTML report with violation details
+
 
 **Author:** Dragana Zdravkovic (mi231020)  
-**Project:** CocktailsDbApp
-**Date:** October, 2025
+**Contact:** dragana.zdravkovic602@gmail.com  
+**Project:** CocktailsDbApp Software Verification Analysis  
+**Date:** October 2025  
+**University:** Faculty of Mathematics, University of Belgrade

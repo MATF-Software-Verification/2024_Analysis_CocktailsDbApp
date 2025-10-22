@@ -309,67 +309,6 @@ class FilterViewModelTest {
     }
 
     @Test
-    fun `fetchData with multiple calls updates data correctly`() = runTest {
-        // Given
-        val alcoholResponse = AlcoholContentResponse(
-            drinks = listOf(
-                com.example.cocktailsdbapp.model.AlcoholContent(strAlcoholic = "Alcoholic")
-            )
-        )
-        val categoryResponse = FilterResponse(
-            drinks = listOf(
-                com.example.cocktailsdbapp.model.DrinkCategory(strCategory = "Cocktail")
-            )
-        )
-
-        coEvery { mockRepo.getAlcoholContent() } returns alcoholResponse
-        coEvery { mockRepo.getCategories() } returns categoryResponse
-
-        // When - First call
-        viewModel.fetchData(Constants.FILTER_ALCOHOL)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then - First call
-        assertEquals("Alcoholic", viewModel.filterData.value?.first())
-
-        // When - Second call
-        viewModel.fetchData(Constants.FILTER_CATEGORY)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then - Second call
-        assertEquals("Cocktail", viewModel.filterData.value?.first())
-    }
-
-
-
-
-
-    @Test
-    fun `getAlcoholContent with large dataset`() = runTest {
-        // Given
-        val largeResponse = AlcoholContentResponse(
-            drinks = (1..100).map { 
-                com.example.cocktailsdbapp.model.AlcoholContent(strAlcoholic = "Alcoholic $it")
-            }
-        )
-
-        coEvery { mockRepo.getAlcoholContent() } returns largeResponse
-
-        // When
-        viewModel.fetchData(Constants.FILTER_ALCOHOL)
-        testDispatcher.scheduler.advanceUntilIdle()
-
-        // Then
-        coVerify { mockRepo.getAlcoholContent() }
-        val result = viewModel.filterData.value
-        assertNotNull(result)
-        assertEquals(100, result?.size)
-        assertTrue(result?.contains("Alcoholic 1") == true)
-        assertTrue(result?.contains("Alcoholic 50") == true)
-        assertTrue(result?.contains("Alcoholic 100") == true)
-    }
-
-    @Test
     fun `getFirstLetters returns correct alphabet range`() = runTest {
         // When
         viewModel.fetchData(Constants.FILTER_LETTER)

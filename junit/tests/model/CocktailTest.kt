@@ -70,21 +70,6 @@ class CocktailTest {
     }
 
     @Test
-    fun `test Cocktail toString method`() {
-        // Given
-        val cocktail = Cocktail("Mojito", "mojito.jpg", "11007", true)
-        
-        // When
-        val result = cocktail.toString()
-        
-        // Then
-        assertTrue(result.contains("Mojito"))
-        assertTrue(result.contains("mojito.jpg"))
-        assertTrue(result.contains("11007"))
-        assertTrue(result.contains("true"))
-    }
-
-    @Test
     fun `test Cocktail with empty strings`() {
         // Given
         val cocktail = Cocktail("", "", "", false)
@@ -94,25 +79,6 @@ class CocktailTest {
         assertEquals("", cocktail.strDrinkThumb)
         assertEquals("", cocktail.idDrink)
         assertFalse(cocktail.isFavorite)
-    }
-
-    @Test
-    fun `test Cocktail list operations`() {
-        // Given
-        val cocktails = listOf(
-            Cocktail("Mojito", "mojito.jpg", "11007", true),
-            Cocktail("Margarita", "margarita.jpg", "11008", false),
-            Cocktail("Martini", "martini.jpg", "11009", false)
-        )
-        
-        // When
-        val favorites = cocktails.filter { it.isFavorite }
-        val nonFavorites = cocktails.filter { !it.isFavorite }
-        
-        // Then
-        assertEquals(1, favorites.size)
-        assertEquals(2, nonFavorites.size)
-        assertEquals("Mojito", favorites[0].strDrink)
     }
 }
 

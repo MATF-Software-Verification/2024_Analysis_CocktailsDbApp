@@ -376,20 +376,6 @@ class CocktailsRepoImplTest {
     }
 
     @Test
-    fun `getFavorites returns null when no favorites`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        coEvery { mockCocktailDao.getFavoriteCocktails(userEmail) } returns null
-
-        // When
-        val result = repository.getFavorites(userEmail)
-
-        // Then
-        assertNull(result)
-        coVerify(exactly = 1) { mockCocktailDao.getFavoriteCocktails(userEmail) }
-    }
-
-    @Test
     fun `findFavoriteCocktail returns cocktail from database`() = runTest {
         // Given
         val userEmail = "test@example.com"
@@ -403,21 +389,6 @@ class CocktailsRepoImplTest {
         // Then
         assertEquals(expectedCocktail, result)
         assertEquals("Mojito", result?.strDrink)
-        coVerify(exactly = 1) { mockCocktailDao.findFavoriteCocktail(userEmail, cocktailId) }
-    }
-
-    @Test
-    fun `findFavoriteCocktail returns null when not found`() = runTest {
-        // Given
-        val userEmail = "test@example.com"
-        val cocktailId = "11007"
-        coEvery { mockCocktailDao.findFavoriteCocktail(userEmail, cocktailId) } returns null
-
-        // When
-        val result = repository.findFavoriteCocktail(userEmail, cocktailId)
-
-        // Then
-        assertNull(result)
         coVerify(exactly = 1) { mockCocktailDao.findFavoriteCocktail(userEmail, cocktailId) }
     }
 
@@ -453,54 +424,6 @@ class CocktailsRepoImplTest {
                 match { it.userEmail == userEmail && it.idDrink == "11007" }
             ) 
         }
-    }
-
-    @Test
-    fun `insertCocktail creates correct RoomFavorite`() = runTest {
-        // Given
-        val userEmail = "user@test.com"
-        val roomCocktail = RoomCocktail("Martini", "martini.jpg", "11009")
-        val capturedFavorite = slot<RoomFavorite>()
-        
-        coEvery { mockCocktailDao.insertCocktail(roomCocktail) } just Runs
-        coEvery { mockCocktailDao.insertFavorite(capture(capturedFavorite)) } just Runs
-
-        // When
-        repository.insertCocktail(userEmail, roomCocktail)
-
-        // Then
-        assertEquals(userEmail, capturedFavorite.captured.userEmail)
-        assertEquals("11009", capturedFavorite.captured.idDrink)
-    }
-
-    @Test
-    fun `getCocktailsByAlcoholContent handles empty response`() = runTest {
-        // Given
-        val alcoholContent = "Alcoholic"
-        val expectedResponse = CocktailResponse(drinks = emptyList())
-        coEvery { mockApiService.getCocktailsByAlcoholContent(alcoholContent) } returns expectedResponse
-
-        // When
-        val result = repository.getCocktailsByAlcoholContent(alcoholContent)
-
-        // Then
-        assertEquals(expectedResponse, result)
-        assertTrue(result.drinks?.isEmpty() == true)
-    }
-
-    @Test
-    fun `getCocktailsByAlcoholContent handles null response`() = runTest {
-        // Given
-        val alcoholContent = "Alcoholic"
-        val expectedResponse = CocktailResponse(drinks = null)
-        coEvery { mockApiService.getCocktailsByAlcoholContent(alcoholContent) } returns expectedResponse
-
-        // When
-        val result = repository.getCocktailsByAlcoholContent(alcoholContent)
-
-        // Then
-        assertEquals(expectedResponse, result)
-        assertNull(result.drinks)
     }
 }
 

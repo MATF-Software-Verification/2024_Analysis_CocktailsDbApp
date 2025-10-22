@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">13</div>
+<div class="counter">9</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.318s</div>
+<div class="counter">0.352s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">debounce prevents rapid search calls</td>
-<td class="success">0.017s</td>
+<td class="success">0.036s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">executeSearch handles exception gracefully</td>
-<td class="success">0.123s</td>
+<td class="success">0.133s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">executeSearch with empty results sets searchResultsData to null</td>
-<td class="success">0.016s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,47 +99,27 @@
 </tr>
 <tr>
 <td class="success">executeSearch with valid results updates searchResultsData</td>
-<td class="success">0.018s</td>
+<td class="success">0.024s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">favoriteCocktail adds cocktail when not already favorite</td>
-<td class="success">0.019s</td>
+<td class="success">0.024s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">favoriteCocktail calls insertCocktail with correct parameters</td>
-<td class="success">0.015s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">favoriteCocktail removes cocktail when already favorite</td>
 <td class="success">0.022s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">favoriteCocktail toggles favorite status correctly</td>
-<td class="success">0.015s</td>
+<td class="success">favoriteCocktail removes cocktail when already favorite</td>
+<td class="success">0.027s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">favoriteCocktail with different users maintains separate favorites</td>
-<td class="success">0.040s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">fetchSearchData cancels previous search job</td>
-<td class="success">0.016s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">searchResultsData is initialized</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">setSearchQuery updates search query flow</td>
-<td class="success">0.001s</td>
+<td class="success">0.056s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -227,31 +207,31 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModel.favoriteCocktail(SearchViewModel.kt:67)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$favoriteCocktail with different users maintains separate favorites$1.invokeSuspend(SearchViewModelTest.kt:279)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$favoriteCocktail with different users maintains separate favorites$1.invokeSuspend(SearchViewModelTest.kt:223)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$favoriteCocktail with different users maintains separate favorites$1.invoke(SearchViewModelTest.kt)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$favoriteCocktail with different users maintains separate favorites$1.invoke(SearchViewModelTest.kt)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:314)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:316)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:28)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:103)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:320)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:322)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280)
-	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
 	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)
 	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:13)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:308)
+	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:310)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:166)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:168)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:158)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:160)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0$default(Unknown Source)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.favoriteCocktail with different users maintains separate favorites(SearchViewModelTest.kt:268)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.favoriteCocktail with different users maintains separate favorites(SearchViewModelTest.kt:212)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -328,31 +308,31 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModel.fetchSearchData(SearchViewModel.kt:39)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invokeSuspend(SearchViewModelTest.kt:134)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invokeSuspend(SearchViewModelTest.kt:122)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invoke(SearchViewModelTest.kt)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invoke(SearchViewModelTest.kt)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:314)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:316)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:28)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:103)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:320)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:322)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280)
-	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
 	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)
 	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:13)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:308)
+	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:310)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:166)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:168)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:158)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:160)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0$default(Unknown Source)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.executeSearch handles exception gracefully(SearchViewModelTest.kt:125)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.executeSearch handles exception gracefully(SearchViewModelTest.kt:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -430,36 +410,36 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModel$fetchSearchData$1.invokeSuspend(SearchViewModel.kt:43)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:28)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy-LRDsOJo(TestCoroutineScheduler.kt:185)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy(TestCoroutineScheduler.kt:157)
-	at kotlinx.coroutines.test.TestScopeKt.advanceTimeBy(TestScope.kt:121)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invokeSuspend(SearchViewModelTest.kt:135)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy-LRDsOJo(TestCoroutineScheduler.kt:181)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy(TestCoroutineScheduler.kt:153)
+	at kotlinx.coroutines.test.TestScopeKt.advanceTimeBy(TestScope.kt:117)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invokeSuspend(SearchViewModelTest.kt:123)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invoke(SearchViewModelTest.kt)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invoke(SearchViewModelTest.kt)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:314)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:316)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:28)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:103)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:320)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:322)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280)
-	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
 	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)
 	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:13)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:308)
+	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:310)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:166)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:168)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:158)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:160)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0$default(Unknown Source)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.executeSearch handles exception gracefully(SearchViewModelTest.kt:125)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.executeSearch handles exception gracefully(SearchViewModelTest.kt:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -539,47 +519,47 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/
 	at com.example.cocktailsdbapp.ui.search.SearchViewModel.access$executeSearch(SearchViewModel.kt:20)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModel$fetchSearchData$1$1.emit(SearchViewModel.kt:45)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModel$fetchSearchData$1$1.emit(SearchViewModel.kt:43)
-	at kotlinx.coroutines.flow.DistinctFlowImpl$collect$2.emit(Distinct.kt:77)
-	at kotlinx.coroutines.flow.FlowKt__DelayKt$debounceInternal$1$3$1.invokeSuspend(Delay.kt:232)
+	at kotlinx.coroutines.flow.DistinctFlowImpl$collect$2.emit(Distinct.kt:73)
+	at kotlinx.coroutines.flow.FlowKt__DelayKt$debounceInternal$1$3$1.invokeSuspend(Delay.kt:226)
 	at kotlinx.coroutines.flow.FlowKt__DelayKt$debounceInternal$1$3$1.invoke(Delay.kt)
 	at kotlinx.coroutines.flow.FlowKt__DelayKt$debounceInternal$1$3$1.invoke(Delay.kt)
-	at kotlinx.coroutines.selects.SelectImplementation$ClauseData.invokeBlock(Select.kt:818)
-	at kotlinx.coroutines.selects.SelectImplementation.processResultAndInvokeBlockRecoveringException(Select.kt:706)
-	at kotlinx.coroutines.selects.SelectImplementation.complete(Select.kt:699)
-	at kotlinx.coroutines.selects.SelectImplementation.doSelectSuspend(Select.kt:434)
-	at kotlinx.coroutines.selects.SelectImplementation.access$doSelectSuspend(Select.kt:243)
+	at kotlinx.coroutines.selects.SelectImplementation$ClauseData.invokeBlock(Select.kt:824)
+	at kotlinx.coroutines.selects.SelectImplementation.processResultAndInvokeBlockRecoveringException(Select.kt:712)
+	at kotlinx.coroutines.selects.SelectImplementation.complete(Select.kt:705)
+	at kotlinx.coroutines.selects.SelectImplementation.doSelectSuspend(Select.kt:441)
+	at kotlinx.coroutines.selects.SelectImplementation.access$doSelectSuspend(Select.kt:239)
 	at kotlinx.coroutines.selects.SelectImplementation$doSelectSuspend$1.invokeSuspend(Select.kt)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:28)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy-LRDsOJo(TestCoroutineScheduler.kt:185)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy(TestCoroutineScheduler.kt:157)
-	at kotlinx.coroutines.test.TestScopeKt.advanceTimeBy(TestScope.kt:121)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invokeSuspend(SearchViewModelTest.kt:135)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy-LRDsOJo(TestCoroutineScheduler.kt:181)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.advanceTimeBy(TestCoroutineScheduler.kt:153)
+	at kotlinx.coroutines.test.TestScopeKt.advanceTimeBy(TestScope.kt:117)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invokeSuspend(SearchViewModelTest.kt:123)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invoke(SearchViewModelTest.kt)
 	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest$executeSearch handles exception gracefully$1.invoke(SearchViewModelTest.kt)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:314)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:316)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:28)
-	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:103)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:320)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:322)
 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280)
-	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
 	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
-	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)
 	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:13)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:308)
+	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:310)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:166)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:168)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
-	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:158)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:160)
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0$default(Unknown Source)
-	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.executeSearch handles exception gracefully(SearchViewModelTest.kt:125)
+	at com.example.cocktailsdbapp.ui.search.SearchViewModelTest.executeSearch handles exception gracefully(SearchViewModelTest.kt:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -652,7 +632,7 @@ Caused by: java.lang.IllegalStateException: Cannot process instrumented class co
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at Oct 19, 2025, 9:54:08 PM</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at Oct 22, 2025, 1:21:43 PM</p>
 </div>
 </div>
 </body>

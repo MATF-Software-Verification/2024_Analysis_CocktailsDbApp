@@ -18,10 +18,14 @@ echo "Results: ktlint/results/"
 echo ""
 
 echo "Running ktlint..."
-
-ktlint "$PROJECT_PATH" \
-    --reporter=html,output="$RESULTS_DIR/ktlint_report.html" \
-    --reporter=plain,output="$RESULTS_DIR/ktlint_report.txt" > /dev/null 2>&1 || true
+ktlint $(find "$PROJECT_PATH" -type f -name "*.kt" \
+  ! -path "*/build/*" \
+  ! -path "*/generated/*" \
+  ! -path "*/databinding/*" \
+  ! -path "*/hilt_aggregated_deps/*") \
+  --reporter=html,output="$RESULTS_DIR/ktlint_report.html" \
+  --reporter=plain,output="$RESULTS_DIR/ktlint_report.txt" \
+  > /dev/null 2>&1 || true
 
 echo ""
 echo "ktlint analysis completed"
