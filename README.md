@@ -22,11 +22,6 @@ experience.
 - **Unit Test Coverage**: 11.8% overall (100% on Model & Repository layers)
 - **Static Analysis**: 8 code smells 
 
-## Author  
-**Dragana Zdravkovic**, mi231020
-
-Contact: dragana.zdravkovic602@gmail.com
-
 ## Tools and Techniques Used
 
 ### 1. **Unit Testing (JUnit + Kover)**
