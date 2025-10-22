@@ -1,0 +1,233 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > CocktailsRepoImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.repository</a>
+</div>
+
+<h1>Coverage Summary for Class: CocktailsRepoImpl (com.example.cocktailsdbapp.repository)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">CocktailsRepoImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (16/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (18/18)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (108/108)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">CocktailsRepoImpl$getSearch$1</td>
+    <td class="coverageStat"/>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (16/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (18/18)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (108/108)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.repository
+&nbsp;
+&nbsp;import com.example.cocktailsdbapp.database.CocktailDao
+&nbsp;import com.example.cocktailsdbapp.database.RoomCocktail
+&nbsp;import com.example.cocktailsdbapp.database.RoomFavorite
+&nbsp;import com.example.cocktailsdbapp.model.AlcoholContentResponse
+&nbsp;import com.example.cocktailsdbapp.model.CocktailDetailsResponse
+&nbsp;import com.example.cocktailsdbapp.model.CocktailResponse
+&nbsp;import com.example.cocktailsdbapp.model.FilterResponse
+&nbsp;import com.example.cocktailsdbapp.model.GlassesResponse
+&nbsp;import com.example.cocktailsdbapp.model.IngredientListResponse
+&nbsp;import com.example.cocktailsdbapp.network.CocktailApiService
+&nbsp;import com.example.cocktailsdbapp.utils.toCocktailsResponse
+&nbsp;
+<b class="fc">&nbsp;class CocktailsRepoImpl(private val serviceApi: CocktailApiService, private val cocktailDao: CocktailDao): CocktailsRepo {</b>
+&nbsp;    override suspend fun getCocktailsByAlcoholContent(alcoholContent: String): CocktailResponse {
+<b class="fc">&nbsp;        return serviceApi.getCocktailsByAlcoholContent(alcoholContent)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getCocktailsByGlass(glass: String): CocktailResponse {
+<b class="fc">&nbsp;        return serviceApi.getCocktailsByGlass(glass)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getCocktailsByCategory(category: String): CocktailResponse {
+<b class="fc">&nbsp;        return serviceApi.getCocktailsByCategory(category)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getCocktailsByFirstLetter(letter: String): CocktailResponse {
+<b class="fc">&nbsp;        return serviceApi.getCocktailsByFirstLetter(letter)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getCocktailsByIngredient(ingredient: String): CocktailResponse {
+<b class="fc">&nbsp;        return serviceApi.getCocktailsByIngredient(ingredient)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getAlcoholContent(): AlcoholContentResponse {
+<b class="fc">&nbsp;        return serviceApi.getAlcoholContent()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getCategories(): FilterResponse {
+<b class="fc">&nbsp;        return serviceApi.getCategories()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getGlasses(): GlassesResponse {
+<b class="fc">&nbsp;        return serviceApi.getGlasses()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getIngredients(): IngredientListResponse {
+<b class="fc">&nbsp;        return serviceApi.getIngredients()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getCocktailDetails(cocktailId: String): CocktailDetailsResponse {
+<b class="fc">&nbsp;         return serviceApi.getCocktailDetails(cocktailId)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getSearch(searchParam: String): CocktailResponse {
+<b class="pc">&nbsp;        val response = serviceApi.getSearch(searchParam)</b>
+<b class="fc">&nbsp;        return response.toCocktailsResponse()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun getFavorites(userEmail: String): List&lt;RoomCocktail&gt;? {
+<b class="fc">&nbsp;        return cocktailDao.getFavoriteCocktails(userEmail)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun findFavoriteCocktail(userEmail: String, idDrink: String): RoomCocktail? {
+<b class="fc">&nbsp;        return cocktailDao.findFavoriteCocktail(userEmail, idDrink)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun removeFavorite(userEmail: String, idDrink: String) {
+<b class="fc">&nbsp;        cocktailDao.removeFavorite(userEmail, idDrink)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override suspend fun insertCocktail(userEmail: String, roomCocktail: RoomCocktail) {
+<b class="fc">&nbsp;        cocktailDao.insertCocktail(roomCocktail)</b>
+<b class="fc">&nbsp;        cocktailDao.insertFavorite(RoomFavorite(userEmail, roomCocktail.idDrink))</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

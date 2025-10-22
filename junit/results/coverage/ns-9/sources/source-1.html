@@ -1,0 +1,189 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > AuthViewModel</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.ui.authorization</a>
+</div>
+
+<h1>Coverage Summary for Class: AuthViewModel (com.example.cocktailsdbapp.ui.authorization)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">AuthViewModel</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (12/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (27/27)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    98.2%
+  </span>
+  <span class="absValue">
+    (164/167)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.ui.authorization
+&nbsp;
+&nbsp;import android.content.SharedPreferences
+&nbsp;import androidx.lifecycle.ViewModel
+&nbsp;import com.example.cocktailsdbapp.model.User
+&nbsp;import com.example.cocktailsdbapp.utils.Constants
+&nbsp;import dagger.hilt.android.lifecycle.HiltViewModel
+&nbsp;import javax.inject.Inject
+&nbsp;
+&nbsp;@HiltViewModel
+&nbsp;class AuthViewModel @Inject constructor(
+<b class="fc">&nbsp;    private val sharedPreferences: SharedPreferences</b>
+<b class="fc">&nbsp;) : ViewModel() {</b>
+&nbsp;
+<b class="fc">&nbsp;    private var userPool = mutableSetOf&lt;String&gt;()</b>
+&nbsp;
+&nbsp;    fun saveUserData(userData: User) : Boolean {
+<b class="fc">&nbsp;        if(userPool.contains(userData.email)) return false</b>
+<b class="fc">&nbsp;        val editor = sharedPreferences.edit()</b>
+<b class="fc">&nbsp;        editor.putString(&quot;${userData.email}${Constants.SHARED_PREF_NAME}&quot;, userData.name)</b>
+<b class="fc">&nbsp;        editor.putString(&quot;${userData.email}${Constants.SHARED_PREF_EMAIL}&quot;, userData.email)</b>
+<b class="fc">&nbsp;        editor.putString(&quot;${userData.email}${Constants.SHARED_PREF_PASSWORD}&quot;, userData.password)</b>
+<b class="fc">&nbsp;        editor.apply()</b>
+<b class="fc">&nbsp;        userPool.add(userData.email)</b>
+<b class="fc">&nbsp;        return true</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    fun getUserData(userEmail: String): User {
+<b class="fc">&nbsp;            return User(</b>
+<b class="pc">&nbsp;                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_NAME}&quot;, &quot;&quot;) ?: &quot;&quot;,</b>
+<b class="pc">&nbsp;                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_EMAIL}&quot;, &quot;&quot;) ?: &quot;&quot;,</b>
+<b class="pc">&nbsp;                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_PASSWORD}&quot;, &quot;&quot;) ?: &quot;&quot;</b>
+&nbsp;            )
+&nbsp;        }
+&nbsp;
+&nbsp;    fun isUserInfoValid(userEmail: String, password: String): Boolean {
+<b class="pc">&nbsp;        return !(sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_EMAIL}&quot;, &quot;&quot;).isNullOrEmpty() ||</b>
+<b class="fc">&nbsp;                sharedPreferences.getString(&quot;${userEmail}${Constants.SHARED_PREF_PASSWORD}&quot;, &quot;&quot;) != password)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    fun editUserName(userEmail: String, newName: String) {
+&nbsp;        // Copy the current user using updated name
+<b class="fc">&nbsp;        val updatedUser = getUserData(userEmail).copy(name = newName)</b>
+&nbsp;
+&nbsp;        // Save the updated user data back to shared preferences
+<b class="fc">&nbsp;        with(sharedPreferences.edit()) {</b>
+<b class="fc">&nbsp;            putString(&quot;${userEmail}${Constants.SHARED_PREF_NAME}&quot;, updatedUser.name)</b>
+<b class="fc">&nbsp;            apply()</b>
+<b class="fc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;    fun editPassword(userEmail: String, newPassword: String) {
+&nbsp;        // Update the name
+<b class="fc">&nbsp;        val updatedUser = getUserData(userEmail).copy(password = newPassword)</b>
+&nbsp;
+&nbsp;        // Save the updated user data back to shared preferences
+<b class="fc">&nbsp;        with(sharedPreferences.edit()) {</b>
+<b class="fc">&nbsp;            putString(&quot;${userEmail}${Constants.SHARED_PREF_PASSWORD}&quot;, updatedUser.password)</b>
+<b class="fc">&nbsp;            apply()</b>
+<b class="fc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > CocktailDetailsResponse</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.model</a>
+</div>
+
+<h1>Coverage Summary for Class: CocktailDetailsResponse (com.example.cocktailsdbapp.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">CocktailDetailsResponse</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.model
+&nbsp;
+&nbsp;import com.google.gson.annotations.SerializedName
+&nbsp;
+<b class="fc">&nbsp;data class CocktailDetailsResponse(</b>
+<b class="fc">&nbsp;    @SerializedName(&quot;drinks&quot;)</b>
+<b class="fc">&nbsp;    val drinks: List&lt;CocktailDetails&gt;?</b>
+&nbsp;)
+&nbsp;
+&nbsp;data class CocktailDetails(
+&nbsp;    @SerializedName(&quot;idDrink&quot;) val idDrink: String?,
+&nbsp;    @SerializedName(&quot;strDrink&quot;) val strDrink: String?,
+&nbsp;    @SerializedName(&quot;strDrinkAlternate&quot;) val strDrinkAlternate: String?,
+&nbsp;    @SerializedName(&quot;strTags&quot;) val strTags: String?,
+&nbsp;    @SerializedName(&quot;strVideo&quot;) val strVideo: String?,
+&nbsp;    @SerializedName(&quot;strCategory&quot;) val strCategory: String?,
+&nbsp;    @SerializedName(&quot;strIBA&quot;) val strIBA: String?,
+&nbsp;    @SerializedName(&quot;strAlcoholic&quot;) val strAlcoholic: String?,
+&nbsp;    @SerializedName(&quot;strGlass&quot;) val strGlass: String?,
+&nbsp;    @SerializedName(&quot;strInstructions&quot;) val strInstructions: String?,
+&nbsp;    @SerializedName(&quot;strInstructionsES&quot;) val strInstructionsES: String?,
+&nbsp;    @SerializedName(&quot;strInstructionsDE&quot;) val strInstructionsDE: String?,
+&nbsp;    @SerializedName(&quot;strInstructionsFR&quot;) val strInstructionsFR: String?,
+&nbsp;    @SerializedName(&quot;strInstructionsIT&quot;) val strInstructionsIT: String?,
+&nbsp;    @SerializedName(&quot;strInstructionsZH-HANS&quot;) val strInstructionsZH_HANS: String?,
+&nbsp;    @SerializedName(&quot;strInstructionsZH-HANT&quot;) val strInstructionsZH_HANT: String?,
+&nbsp;    @SerializedName(&quot;strDrinkThumb&quot;) val strDrinkThumb: String?,
+&nbsp;    @SerializedName(&quot;strIngredient1&quot;) val strIngredient1: String?,
+&nbsp;    @SerializedName(&quot;strIngredient2&quot;) val strIngredient2: String?,
+&nbsp;    @SerializedName(&quot;strIngredient3&quot;) val strIngredient3: String?,
+&nbsp;    @SerializedName(&quot;strIngredient4&quot;) val strIngredient4: String?,
+&nbsp;    @SerializedName(&quot;strIngredient5&quot;) val strIngredient5: String?,
+&nbsp;    @SerializedName(&quot;strIngredient6&quot;) val strIngredient6: String?,
+&nbsp;    @SerializedName(&quot;strIngredient7&quot;) val strIngredient7: String?,
+&nbsp;    @SerializedName(&quot;strIngredient8&quot;) val strIngredient8: String?,
+&nbsp;    @SerializedName(&quot;strIngredient9&quot;) val strIngredient9: String?,
+&nbsp;    @SerializedName(&quot;strIngredient10&quot;) val strIngredient10: String?,
+&nbsp;    @SerializedName(&quot;strIngredient11&quot;) val strIngredient11: String?,
+&nbsp;    @SerializedName(&quot;strIngredient12&quot;) val strIngredient12: String?,
+&nbsp;    @SerializedName(&quot;strIngredient13&quot;) val strIngredient13: String?,
+&nbsp;    @SerializedName(&quot;strIngredient14&quot;) val strIngredient14: String?,
+&nbsp;    @SerializedName(&quot;strIngredient15&quot;) val strIngredient15: String?,
+&nbsp;    @SerializedName(&quot;strMeasure1&quot;) val strMeasure1: String?,
+&nbsp;    @SerializedName(&quot;strMeasure2&quot;) val strMeasure2: String?,
+&nbsp;    @SerializedName(&quot;strMeasure3&quot;) val strMeasure3: String?,
+&nbsp;    @SerializedName(&quot;strMeasure4&quot;) val strMeasure4: String?,
+&nbsp;    @SerializedName(&quot;strMeasure5&quot;) val strMeasure5: String?,
+&nbsp;    @SerializedName(&quot;strMeasure6&quot;) val strMeasure6: String?,
+&nbsp;    @SerializedName(&quot;strMeasure7&quot;) val strMeasure7: String?,
+&nbsp;    @SerializedName(&quot;strMeasure8&quot;) val strMeasure8: String?,
+&nbsp;    @SerializedName(&quot;strMeasure9&quot;) val strMeasure9: String?,
+&nbsp;    @SerializedName(&quot;strMeasure10&quot;) val strMeasure10: String?,
+&nbsp;    @SerializedName(&quot;strMeasure11&quot;) val strMeasure11: String?,
+&nbsp;    @SerializedName(&quot;strMeasure12&quot;) val strMeasure12: String?,
+&nbsp;    @SerializedName(&quot;strMeasure13&quot;) val strMeasure13: String?,
+&nbsp;    @SerializedName(&quot;strMeasure14&quot;) val strMeasure14: String?,
+&nbsp;    @SerializedName(&quot;strMeasure15&quot;) val strMeasure15: String?,
+&nbsp;    @SerializedName(&quot;strImageSource&quot;) val strImageSource: String?,
+&nbsp;    @SerializedName(&quot;strImageAttribution&quot;) val strImageAttribution: String?,
+&nbsp;    @SerializedName(&quot;strCreativeCommonsConfirmed&quot;) val strCreativeCommonsConfirmed: String?,
+&nbsp;    @SerializedName(&quot;dateModified&quot;) val dateModified: String?,
+&nbsp;    @SerializedName(&quot;isFavorite&quot;) var isFavorite: Boolean = false
+&nbsp;
+&nbsp;) {
+&nbsp;    fun getIngredientsWithMeasures(): List&lt;Pair&lt;String, String&gt;&gt; {
+&nbsp;        val ingredientsWithMeasures = mutableListOf&lt;Pair&lt;String, String&gt;&gt;()
+&nbsp;        val ingredients = listOf&lt;String?&gt;(
+&nbsp;            strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,
+&nbsp;            strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,
+&nbsp;            strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15
+&nbsp;        )
+&nbsp;
+&nbsp;        val measures = listOf(
+&nbsp;            strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,
+&nbsp;            strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,
+&nbsp;            strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15
+&nbsp;        )
+&nbsp;
+&nbsp;        for (i in ingredients.indices) {
+&nbsp;            val ingredient = ingredients.getOrNull(i)
+&nbsp;            val measure = measures.getOrNull(i)
+&nbsp;
+&nbsp;            if (!ingredient.isNullOrBlank() &amp;&amp; !measure.isNullOrBlank()) {
+&nbsp;                ingredientsWithMeasures.add(Pair(ingredient, measure))
+&nbsp;            }
+&nbsp;        }
+&nbsp;        return ingredientsWithMeasures
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > ProfileFragment</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.ui.authorization</a>
+</div>
+
+<h1>Coverage Summary for Class: ProfileFragment (com.example.cocktailsdbapp.ui.authorization)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">ProfileFragment</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/18)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/55)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/250)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">ProfileFragment$special$$inlined$viewModels$default$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+  </tr>
+  <tr>
+    <td class="name">ProfileFragment$special$$inlined$viewModels$default$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+  </tr>
+  <tr>
+    <td class="name">ProfileFragment$special$$inlined$viewModels$default$3</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+  </tr>
+  <tr>
+    <td class="name">ProfileFragment$special$$inlined$viewModels$default$4</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+  </tr>
+  <tr>
+    <td class="name">ProfileFragment$special$$inlined$viewModels$default$5</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/18)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/55)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/250)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.ui.authorization
+&nbsp;
+&nbsp;import android.os.Bundle
+&nbsp;import android.view.View
+&nbsp;import androidx.core.content.res.ResourcesCompat
+&nbsp;import androidx.fragment.app.viewModels
+&nbsp;import androidx.navigation.fragment.findNavController
+&nbsp;import com.example.cocktailsdbapp.R
+&nbsp;import com.example.cocktailsdbapp.databinding.FragmentProfileBinding
+&nbsp;import com.example.cocktailsdbapp.model.User
+&nbsp;import com.example.cocktailsdbapp.ui.BaseFragment
+&nbsp;import dagger.hilt.android.AndroidEntryPoint
+&nbsp;
+&nbsp;@AndroidEntryPoint
+<b class="nc">&nbsp;class ProfileFragment : BaseFragment&lt;FragmentProfileBinding&gt;(FragmentProfileBinding::inflate) {</b>
+&nbsp;
+<b class="nc">&nbsp;    private val authViewModel: AuthViewModel by viewModels()</b>
+&nbsp;
+&nbsp;    private var user: User? = null
+&nbsp;
+&nbsp;    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+<b class="nc">&nbsp;        super.onViewCreated(view, savedInstanceState)</b>
+<b class="nc">&nbsp;        setListeners()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun onStart() {
+<b class="nc">&nbsp;        super.onStart()</b>
+<b class="nc">&nbsp;        communicator.apply {</b>
+<b class="nc">&nbsp;            getCurrentLoggedInUser()?.let {</b>
+<b class="nc">&nbsp;                user = authViewModel.getUserData(it)</b>
+<b class="nc">&nbsp;            }</b>
+<b class="nc">&nbsp;            showSearchIconView(true)</b>
+<b class="nc">&nbsp;            showSearchInputView(false)</b>
+<b class="nc">&nbsp;            showFilterView(true)</b>
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        initUi()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private fun setListeners() {
+<b class="nc">&nbsp;        with(binding) {</b>
+<b class="nc">&nbsp;            btLogout.setOnClickListener {</b>
+<b class="nc">&nbsp;                communicator.setCurrentLoggedInUser(null)</b>
+<b class="nc">&nbsp;                findNavController().navigate(R.id.action_profileFragment_to_initialState)</b>
+&nbsp;            }
+<b class="nc">&nbsp;            tilNameInput.setEndIconOnClickListener {</b>
+<b class="nc">&nbsp;                if (this.etNameInput.isEnabled) {</b>
+<b class="nc">&nbsp;                    this.etNameInput.isEnabled = false</b>
+<b class="nc">&nbsp;                    user?.email?.let { email -&gt;</b>
+<b class="nc">&nbsp;                        authViewModel.editUserName(</b>
+<b class="nc">&nbsp;                            email,</b>
+<b class="nc">&nbsp;                            etNameInput.text.toString()</b>
+&nbsp;                        )
+<b class="nc">&nbsp;                    }</b>
+<b class="nc">&nbsp;                    this.tilNameInput.endIconDrawable =</b>
+<b class="nc">&nbsp;                        ResourcesCompat.getDrawable(resources, R.drawable.baseline_edit_24, null)</b>
+<b class="nc">&nbsp;                    showSuccessPopUp(</b>
+<b class="nc">&nbsp;                        getString(R.string.edit_success_message),</b>
+<b class="nc">&nbsp;                        null</b>
+&nbsp;                    )
+&nbsp;                } else {
+<b class="nc">&nbsp;                    this.etNameInput.isEnabled = true</b>
+<b class="nc">&nbsp;                    this.etNameInput.requestFocus()</b>
+<b class="nc">&nbsp;                    this.tilNameInput.endIconDrawable =</b>
+<b class="nc">&nbsp;                        ResourcesCompat.getDrawable(resources, R.drawable.baseline_save_24, null)</b>
+&nbsp;                }
+&nbsp;            }
+&nbsp;
+<b class="nc">&nbsp;            tilPasswordInput.setEndIconOnClickListener {</b>
+<b class="nc">&nbsp;                if (this.etPasswordInput.isEnabled) {</b>
+<b class="nc">&nbsp;                    this.etPasswordInput.isEnabled = false</b>
+<b class="nc">&nbsp;                    user?.email?.let { email -&gt;</b>
+<b class="nc">&nbsp;                        authViewModel.editPassword(</b>
+<b class="nc">&nbsp;                            email,</b>
+<b class="nc">&nbsp;                            etPasswordInput.text.toString()</b>
+&nbsp;                        )
+<b class="nc">&nbsp;                    }</b>
+<b class="nc">&nbsp;                    this.tilPasswordInput.endIconDrawable =</b>
+<b class="nc">&nbsp;                        ResourcesCompat.getDrawable(resources, R.drawable.baseline_edit_24, null)</b>
+<b class="nc">&nbsp;                    showSuccessPopUp(</b>
+<b class="nc">&nbsp;                        getString(R.string.edit_success_message),</b>
+<b class="nc">&nbsp;                        null</b>
+&nbsp;                    )
+&nbsp;                } else {
+<b class="nc">&nbsp;                    this.etPasswordInput.isEnabled = true</b>
+<b class="nc">&nbsp;                    this.etPasswordInput.requestFocus()</b>
+<b class="nc">&nbsp;                    this.tilPasswordInput.endIconDrawable =</b>
+<b class="nc">&nbsp;                        ResourcesCompat.getDrawable(resources, R.drawable.baseline_save_24, null)</b>
+&nbsp;                }
+&nbsp;            }
+<b class="nc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private fun initUi() {
+<b class="nc">&nbsp;        binding.etNameInput.setText(user?.name)</b>
+<b class="nc">&nbsp;        binding.etPasswordInput.setText(user?.password)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

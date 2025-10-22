@@ -1,0 +1,371 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > AppDatabase_Impl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.database</a>
+</div>
+
+<h1>Coverage Summary for Class: AppDatabase_Impl (com.example.cocktailsdbapp.database)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">AppDatabase_Impl</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/32)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/158)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">AppDatabase_Impl$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/43)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/257)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/24)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/75)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/415)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.database;
+&nbsp;
+&nbsp;import androidx.annotation.NonNull;
+&nbsp;import androidx.room.DatabaseConfiguration;
+&nbsp;import androidx.room.InvalidationTracker;
+&nbsp;import androidx.room.RoomDatabase;
+&nbsp;import androidx.room.RoomOpenHelper;
+&nbsp;import androidx.room.migration.AutoMigrationSpec;
+&nbsp;import androidx.room.migration.Migration;
+&nbsp;import androidx.room.util.DBUtil;
+&nbsp;import androidx.room.util.TableInfo;
+&nbsp;import androidx.sqlite.db.SupportSQLiteDatabase;
+&nbsp;import androidx.sqlite.db.SupportSQLiteOpenHelper;
+&nbsp;import java.lang.Class;
+&nbsp;import java.lang.Override;
+&nbsp;import java.lang.String;
+&nbsp;import java.lang.SuppressWarnings;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.HashMap;
+&nbsp;import java.util.HashSet;
+&nbsp;import java.util.List;
+&nbsp;import java.util.Map;
+&nbsp;import java.util.Set;
+&nbsp;import javax.annotation.processing.Generated;
+&nbsp;
+&nbsp;@Generated(&quot;androidx.room.RoomProcessor&quot;)
+&nbsp;@SuppressWarnings({&quot;unchecked&quot;, &quot;deprecation&quot;})
+<b class="nc">&nbsp;public final class AppDatabase_Impl extends AppDatabase {</b>
+&nbsp;  private volatile CocktailDao _cocktailDao;
+&nbsp;
+&nbsp;  @Override
+&nbsp;  @NonNull
+&nbsp;  protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
+<b class="nc">&nbsp;    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(1) {</b>
+&nbsp;      @Override
+&nbsp;      public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
+<b class="nc">&nbsp;        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS `roomCocktail` (`strDrink` TEXT NOT NULL, `strDrinkThumb` TEXT NOT NULL, `idDrink` TEXT NOT NULL, PRIMARY KEY(`idDrink`))&quot;);</b>
+<b class="nc">&nbsp;        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS `roomFavorite` (`userEmail` TEXT NOT NULL, `idDrink` TEXT NOT NULL, PRIMARY KEY(`idDrink`))&quot;);</b>
+<b class="nc">&nbsp;        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)&quot;);</b>
+<b class="nc">&nbsp;        db.execSQL(&quot;INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, &#39;9347357afc5e97d14942e6f0af48b71d&#39;)&quot;);</b>
+&nbsp;      }
+&nbsp;
+&nbsp;      @Override
+&nbsp;      public void dropAllTables(@NonNull final SupportSQLiteDatabase db) {
+<b class="nc">&nbsp;        db.execSQL(&quot;DROP TABLE IF EXISTS `roomCocktail`&quot;);</b>
+<b class="nc">&nbsp;        db.execSQL(&quot;DROP TABLE IF EXISTS `roomFavorite`&quot;);</b>
+<b class="nc">&nbsp;        final List&lt;? extends RoomDatabase.Callback&gt; _callbacks = mCallbacks;</b>
+<b class="nc">&nbsp;        if (_callbacks != null) {</b>
+<b class="nc">&nbsp;          for (RoomDatabase.Callback _callback : _callbacks) {</b>
+<b class="nc">&nbsp;            _callback.onDestructiveMigration(db);</b>
+&nbsp;          }
+&nbsp;        }
+&nbsp;      }
+&nbsp;
+&nbsp;      @Override
+&nbsp;      public void onCreate(@NonNull final SupportSQLiteDatabase db) {
+<b class="nc">&nbsp;        final List&lt;? extends RoomDatabase.Callback&gt; _callbacks = mCallbacks;</b>
+<b class="nc">&nbsp;        if (_callbacks != null) {</b>
+<b class="nc">&nbsp;          for (RoomDatabase.Callback _callback : _callbacks) {</b>
+<b class="nc">&nbsp;            _callback.onCreate(db);</b>
+&nbsp;          }
+&nbsp;        }
+&nbsp;      }
+&nbsp;
+&nbsp;      @Override
+&nbsp;      public void onOpen(@NonNull final SupportSQLiteDatabase db) {
+<b class="nc">&nbsp;        mDatabase = db;</b>
+<b class="nc">&nbsp;        internalInitInvalidationTracker(db);</b>
+<b class="nc">&nbsp;        final List&lt;? extends RoomDatabase.Callback&gt; _callbacks = mCallbacks;</b>
+<b class="nc">&nbsp;        if (_callbacks != null) {</b>
+<b class="nc">&nbsp;          for (RoomDatabase.Callback _callback : _callbacks) {</b>
+<b class="nc">&nbsp;            _callback.onOpen(db);</b>
+&nbsp;          }
+&nbsp;        }
+&nbsp;      }
+&nbsp;
+&nbsp;      @Override
+&nbsp;      public void onPreMigrate(@NonNull final SupportSQLiteDatabase db) {
+<b class="nc">&nbsp;        DBUtil.dropFtsSyncTriggers(db);</b>
+&nbsp;      }
+&nbsp;
+&nbsp;      @Override
+&nbsp;      public void onPostMigrate(@NonNull final SupportSQLiteDatabase db) {
+<b class="nc">&nbsp;      }</b>
+&nbsp;
+&nbsp;      @Override
+&nbsp;      @NonNull
+&nbsp;      public RoomOpenHelper.ValidationResult onValidateSchema(
+&nbsp;          @NonNull final SupportSQLiteDatabase db) {
+<b class="nc">&nbsp;        final HashMap&lt;String, TableInfo.Column&gt; _columnsRoomCocktail = new HashMap&lt;String, TableInfo.Column&gt;(3);</b>
+<b class="nc">&nbsp;        _columnsRoomCocktail.put(&quot;strDrink&quot;, new TableInfo.Column(&quot;strDrink&quot;, &quot;TEXT&quot;, true, 0, null, TableInfo.CREATED_FROM_ENTITY));</b>
+<b class="nc">&nbsp;        _columnsRoomCocktail.put(&quot;strDrinkThumb&quot;, new TableInfo.Column(&quot;strDrinkThumb&quot;, &quot;TEXT&quot;, true, 0, null, TableInfo.CREATED_FROM_ENTITY));</b>
+<b class="nc">&nbsp;        _columnsRoomCocktail.put(&quot;idDrink&quot;, new TableInfo.Column(&quot;idDrink&quot;, &quot;TEXT&quot;, true, 1, null, TableInfo.CREATED_FROM_ENTITY));</b>
+<b class="nc">&nbsp;        final HashSet&lt;TableInfo.ForeignKey&gt; _foreignKeysRoomCocktail = new HashSet&lt;TableInfo.ForeignKey&gt;(0);</b>
+<b class="nc">&nbsp;        final HashSet&lt;TableInfo.Index&gt; _indicesRoomCocktail = new HashSet&lt;TableInfo.Index&gt;(0);</b>
+<b class="nc">&nbsp;        final TableInfo _infoRoomCocktail = new TableInfo(&quot;roomCocktail&quot;, _columnsRoomCocktail, _foreignKeysRoomCocktail, _indicesRoomCocktail);</b>
+<b class="nc">&nbsp;        final TableInfo _existingRoomCocktail = TableInfo.read(db, &quot;roomCocktail&quot;);</b>
+<b class="nc">&nbsp;        if (!_infoRoomCocktail.equals(_existingRoomCocktail)) {</b>
+<b class="nc">&nbsp;          return new RoomOpenHelper.ValidationResult(false, &quot;roomCocktail(com.example.cocktailsdbapp.database.RoomCocktail).\n&quot;</b>
+&nbsp;                  + &quot; Expected:\n&quot; + _infoRoomCocktail + &quot;\n&quot;
+&nbsp;                  + &quot; Found:\n&quot; + _existingRoomCocktail);
+&nbsp;        }
+<b class="nc">&nbsp;        final HashMap&lt;String, TableInfo.Column&gt; _columnsRoomFavorite = new HashMap&lt;String, TableInfo.Column&gt;(2);</b>
+<b class="nc">&nbsp;        _columnsRoomFavorite.put(&quot;userEmail&quot;, new TableInfo.Column(&quot;userEmail&quot;, &quot;TEXT&quot;, true, 0, null, TableInfo.CREATED_FROM_ENTITY));</b>
+<b class="nc">&nbsp;        _columnsRoomFavorite.put(&quot;idDrink&quot;, new TableInfo.Column(&quot;idDrink&quot;, &quot;TEXT&quot;, true, 1, null, TableInfo.CREATED_FROM_ENTITY));</b>
+<b class="nc">&nbsp;        final HashSet&lt;TableInfo.ForeignKey&gt; _foreignKeysRoomFavorite = new HashSet&lt;TableInfo.ForeignKey&gt;(0);</b>
+<b class="nc">&nbsp;        final HashSet&lt;TableInfo.Index&gt; _indicesRoomFavorite = new HashSet&lt;TableInfo.Index&gt;(0);</b>
+<b class="nc">&nbsp;        final TableInfo _infoRoomFavorite = new TableInfo(&quot;roomFavorite&quot;, _columnsRoomFavorite, _foreignKeysRoomFavorite, _indicesRoomFavorite);</b>
+<b class="nc">&nbsp;        final TableInfo _existingRoomFavorite = TableInfo.read(db, &quot;roomFavorite&quot;);</b>
+<b class="nc">&nbsp;        if (!_infoRoomFavorite.equals(_existingRoomFavorite)) {</b>
+<b class="nc">&nbsp;          return new RoomOpenHelper.ValidationResult(false, &quot;roomFavorite(com.example.cocktailsdbapp.database.RoomFavorite).\n&quot;</b>
+&nbsp;                  + &quot; Expected:\n&quot; + _infoRoomFavorite + &quot;\n&quot;
+&nbsp;                  + &quot; Found:\n&quot; + _existingRoomFavorite);
+&nbsp;        }
+<b class="nc">&nbsp;        return new RoomOpenHelper.ValidationResult(true, null);</b>
+&nbsp;      }
+&nbsp;    }, &quot;9347357afc5e97d14942e6f0af48b71d&quot;, &quot;b9dd780a513f6113fb0cc176ad44fb23&quot;);
+<b class="nc">&nbsp;    final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();</b>
+<b class="nc">&nbsp;    final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);</b>
+<b class="nc">&nbsp;    return _helper;</b>
+&nbsp;  }
+&nbsp;
+&nbsp;  @Override
+&nbsp;  @NonNull
+&nbsp;  protected InvalidationTracker createInvalidationTracker() {
+<b class="nc">&nbsp;    final HashMap&lt;String, String&gt; _shadowTablesMap = new HashMap&lt;String, String&gt;(0);</b>
+<b class="nc">&nbsp;    final HashMap&lt;String, Set&lt;String&gt;&gt; _viewTables = new HashMap&lt;String, Set&lt;String&gt;&gt;(0);</b>
+<b class="nc">&nbsp;    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, &quot;roomCocktail&quot;,&quot;roomFavorite&quot;);</b>
+&nbsp;  }
+&nbsp;
+&nbsp;  @Override
+&nbsp;  public void clearAllTables() {
+<b class="nc">&nbsp;    super.assertNotMainThread();</b>
+<b class="nc">&nbsp;    final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();</b>
+&nbsp;    try {
+<b class="nc">&nbsp;      super.beginTransaction();</b>
+<b class="nc">&nbsp;      _db.execSQL(&quot;DELETE FROM `roomCocktail`&quot;);</b>
+<b class="nc">&nbsp;      _db.execSQL(&quot;DELETE FROM `roomFavorite`&quot;);</b>
+<b class="nc">&nbsp;      super.setTransactionSuccessful();</b>
+&nbsp;    } finally {
+<b class="nc">&nbsp;      super.endTransaction();</b>
+<b class="nc">&nbsp;      _db.query(&quot;PRAGMA wal_checkpoint(FULL)&quot;).close();</b>
+<b class="nc">&nbsp;      if (!_db.inTransaction()) {</b>
+<b class="nc">&nbsp;        _db.execSQL(&quot;VACUUM&quot;);</b>
+&nbsp;      }
+&nbsp;    }
+&nbsp;  }
+&nbsp;
+&nbsp;  @Override
+&nbsp;  @NonNull
+&nbsp;  protected Map&lt;Class&lt;?&gt;, List&lt;Class&lt;?&gt;&gt;&gt; getRequiredTypeConverters() {
+<b class="nc">&nbsp;    final HashMap&lt;Class&lt;?&gt;, List&lt;Class&lt;?&gt;&gt;&gt; _typeConvertersMap = new HashMap&lt;Class&lt;?&gt;, List&lt;Class&lt;?&gt;&gt;&gt;();</b>
+<b class="nc">&nbsp;    _typeConvertersMap.put(CocktailDao.class, CocktailDao_Impl.getRequiredConverters());</b>
+<b class="nc">&nbsp;    return _typeConvertersMap;</b>
+&nbsp;  }
+&nbsp;
+&nbsp;  @Override
+&nbsp;  @NonNull
+&nbsp;  public Set&lt;Class&lt;? extends AutoMigrationSpec&gt;&gt; getRequiredAutoMigrationSpecs() {
+<b class="nc">&nbsp;    final HashSet&lt;Class&lt;? extends AutoMigrationSpec&gt;&gt; _autoMigrationSpecsSet = new HashSet&lt;Class&lt;? extends AutoMigrationSpec&gt;&gt;();</b>
+<b class="nc">&nbsp;    return _autoMigrationSpecsSet;</b>
+&nbsp;  }
+&nbsp;
+&nbsp;  @Override
+&nbsp;  @NonNull
+&nbsp;  public List&lt;Migration&gt; getAutoMigrations(
+&nbsp;      @NonNull final Map&lt;Class&lt;? extends AutoMigrationSpec&gt;, AutoMigrationSpec&gt; autoMigrationSpecs) {
+<b class="nc">&nbsp;    final List&lt;Migration&gt; _autoMigrations = new ArrayList&lt;Migration&gt;();</b>
+<b class="nc">&nbsp;    return _autoMigrations;</b>
+&nbsp;  }
+&nbsp;
+&nbsp;  @Override
+&nbsp;  public CocktailDao cocktailDao() {
+<b class="nc">&nbsp;    if (_cocktailDao != null) {</b>
+<b class="nc">&nbsp;      return _cocktailDao;</b>
+&nbsp;    } else {
+<b class="nc">&nbsp;      synchronized(this) {</b>
+<b class="nc">&nbsp;        if(_cocktailDao == null) {</b>
+<b class="nc">&nbsp;          _cocktailDao = new CocktailDao_Impl(this);</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return _cocktailDao;</b>
+<b class="nc">&nbsp;      }</b>
+&nbsp;    }
+&nbsp;  }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

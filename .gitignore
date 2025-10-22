@@ -71,7 +71,6 @@ lint/reports/
 
 /test-output/
 **/test-results/
-**/coverage/
 
 **/generated/
 

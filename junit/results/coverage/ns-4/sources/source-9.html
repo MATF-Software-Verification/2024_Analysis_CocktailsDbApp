@@ -1,0 +1,208 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > SharedPreferencesModule</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.di</a>
+</div>
+
+<h1>Coverage Summary for Class: SharedPreferencesModule (com.example.cocktailsdbapp.di)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">SharedPreferencesModule</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/9)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.di
+&nbsp;
+&nbsp;import android.content.Context
+&nbsp;import android.content.SharedPreferences
+&nbsp;import androidx.room.Room
+&nbsp;import com.example.cocktailsdbapp.database.AppDatabase
+&nbsp;import com.example.cocktailsdbapp.database.CocktailDao
+&nbsp;import com.example.cocktailsdbapp.network.CocktailApiService
+&nbsp;import com.example.cocktailsdbapp.repository.CocktailsRepo
+&nbsp;import com.example.cocktailsdbapp.repository.CocktailsRepoImpl
+&nbsp;import dagger.Module
+&nbsp;import dagger.Provides
+&nbsp;import dagger.hilt.InstallIn
+&nbsp;import dagger.hilt.android.qualifiers.ApplicationContext
+&nbsp;import dagger.hilt.components.SingletonComponent
+&nbsp;import okhttp3.OkHttpClient
+&nbsp;import okhttp3.logging.HttpLoggingInterceptor
+&nbsp;import retrofit2.Retrofit
+&nbsp;import retrofit2.converter.gson.GsonConverterFactory
+&nbsp;import javax.inject.Singleton
+&nbsp;
+<b class="nc">&nbsp;@Module</b>
+&nbsp;@InstallIn(SingletonComponent::class)
+&nbsp;class SharedPreferencesModule {
+&nbsp;    @Singleton
+&nbsp;    @Provides
+&nbsp;    fun provideSharedPreference(@ApplicationContext context: Context): SharedPreferences {
+<b class="nc">&nbsp;        return context.getSharedPreferences(&quot;app_preferences&quot;, Context.MODE_PRIVATE)</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;@Module
+&nbsp;@InstallIn(SingletonComponent::class)
+&nbsp;object NetworkModule {
+&nbsp;    @Provides
+&nbsp;    @Singleton
+&nbsp;    fun provideCocktailApiService(): CocktailApiService {
+&nbsp;        val okHttpClient = OkHttpClient.Builder().addInterceptor(
+&nbsp;            HttpLoggingInterceptor().apply {
+&nbsp;                level = HttpLoggingInterceptor.Level.BODY
+&nbsp;            }
+&nbsp;        ).build()
+&nbsp;        return Retrofit.Builder()
+&nbsp;            .baseUrl(&quot;https://www.thecocktaildb.com/api/json/v1/1/&quot;)
+&nbsp;            .addConverterFactory(GsonConverterFactory.create())
+&nbsp;            .client(okHttpClient)
+&nbsp;            .build()
+&nbsp;            .create(CocktailApiService::class.java)
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;@Module
+&nbsp;@InstallIn(SingletonComponent::class)
+&nbsp;object RepositoryModule {
+&nbsp;
+&nbsp;    @Provides
+&nbsp;    @Singleton
+&nbsp;    fun provideCocktailsRepository(cocktailsRepoImpl: CocktailsRepoImpl): CocktailsRepo {
+&nbsp;        return cocktailsRepoImpl
+&nbsp;    }
+&nbsp;
+&nbsp;    @Provides
+&nbsp;    @Singleton
+&nbsp;    fun provideCocktailsRepositoryImpl(cocktailApiService: CocktailApiService, cocktailDao: CocktailDao): CocktailsRepoImpl {
+&nbsp;        return CocktailsRepoImpl(cocktailApiService, cocktailDao)
+&nbsp;    }
+&nbsp;
+&nbsp;}
+&nbsp;
+&nbsp;@InstallIn(SingletonComponent::class)
+&nbsp;@Module
+&nbsp;class DatabaseModule {
+&nbsp;    @Provides
+&nbsp;    fun provideChannelDao(appDatabase: AppDatabase): CocktailDao {
+&nbsp;        return appDatabase.cocktailDao()
+&nbsp;    }
+&nbsp;
+&nbsp;    @Provides
+&nbsp;    @Singleton
+&nbsp;    fun provideAppDatabase(@ApplicationContext appContext: Context): AppDatabase {
+&nbsp;        return Room.databaseBuilder(
+&nbsp;            appContext,
+&nbsp;            AppDatabase::class.java,
+&nbsp;            &quot;RssReader&quot;
+&nbsp;        ).build()
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

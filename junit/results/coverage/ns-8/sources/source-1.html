@@ -1,0 +1,255 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > BaseAdapter</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.ui</a>
+</div>
+
+<h1>Coverage Summary for Class: BaseAdapter (com.example.cocktailsdbapp.ui)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">BaseAdapter</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/7)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/15)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/89)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">BaseAdapter$DiffCallback</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/10)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/49)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">BaseAdapter$ViewHolder</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/12)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/13)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/26)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/150)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.ui
+&nbsp;
+&nbsp;import android.content.Context
+&nbsp;import android.view.LayoutInflater
+&nbsp;import android.view.ViewGroup
+&nbsp;import androidx.recyclerview.widget.DiffUtil
+&nbsp;import androidx.recyclerview.widget.RecyclerView
+&nbsp;import androidx.viewbinding.ViewBinding
+&nbsp;
+&nbsp;abstract class BaseAdapter&lt;T, VB : ViewBinding&gt;(
+<b class="nc">&nbsp;    private val inflate: (LayoutInflater, ViewGroup?, Boolean) -&gt; VB</b>
+<b class="nc">&nbsp;) : RecyclerView.Adapter&lt;BaseAdapter&lt;T, VB&gt;.ViewHolder&gt;() {</b>
+&nbsp;
+<b class="nc">&nbsp;    protected var data: List&lt;T&gt; = emptyList()</b>
+<b class="nc">&nbsp;    protected lateinit var context: Context</b>
+&nbsp;
+&nbsp;    private var _binding: VB? = null
+<b class="nc">&nbsp;    val binding get() = _binding!!</b>
+<b class="nc">&nbsp;    inner class ViewHolder(val binding: VB) : RecyclerView.ViewHolder(binding.root)</b>
+&nbsp;
+&nbsp;    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+<b class="nc">&nbsp;        context = parent.context</b>
+<b class="nc">&nbsp;        _binding = inflate.invoke(LayoutInflater.from(context), parent, false)</b>
+<b class="nc">&nbsp;        return ViewHolder(binding)</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    override fun getItemCount(): Int = data.size</b>
+&nbsp;
+&nbsp;    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+<b class="nc">&nbsp;        bindItem(holder, data[position])</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    abstract fun bindItem(holder: ViewHolder, item: T)
+&nbsp;
+&nbsp;    fun updateData(newData: List&lt;T&gt;) {
+<b class="nc">&nbsp;        newData.let {</b>
+<b class="nc">&nbsp;            val diffResult = DiffUtil.calculateDiff(getDiffCallback(data, newData))</b>
+<b class="nc">&nbsp;            data = newData</b>
+<b class="nc">&nbsp;            diffResult.dispatchUpdatesTo(this)</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    abstract fun getDiffCallback(oldList: List&lt;T&gt;, newList: List&lt;T&gt;): DiffUtil.Callback
+&nbsp;
+<b class="nc">&nbsp;    inner class DiffCallback(</b>
+<b class="nc">&nbsp;        private val oldList: List&lt;T&gt;,</b>
+<b class="nc">&nbsp;        private val newList: List&lt;T&gt;,</b>
+<b class="nc">&nbsp;        private val areItemsTheSame: (oldItem: T, newItem: T) -&gt; Boolean,</b>
+<b class="nc">&nbsp;        private val areContentsTheSame: (oldItem: T, newItem: T) -&gt; Boolean</b>
+<b class="nc">&nbsp;    ) : DiffUtil.Callback() {</b>
+&nbsp;
+<b class="nc">&nbsp;        override fun getOldListSize(): Int = oldList.size</b>
+&nbsp;
+<b class="nc">&nbsp;        override fun getNewListSize(): Int = newList.size</b>
+&nbsp;
+&nbsp;        override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean =
+<b class="nc">&nbsp;            areItemsTheSame(oldList[oldItemPosition], newList[newItemPosition])</b>
+&nbsp;
+&nbsp;        override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean =
+<b class="nc">&nbsp;            areContentsTheSame(oldList[oldItemPosition], newList[newItemPosition])</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,329 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > SearchViewModel</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp.ui.search</a>
+</div>
+
+<h1>Coverage Summary for Class: SearchViewModel (com.example.cocktailsdbapp.ui.search)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">SearchViewModel</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    68.8%
+  </span>
+  <span class="absValue">
+    (11/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (14/14)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    93.9%
+  </span>
+  <span class="absValue">
+    (139/148)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">SearchViewModel$executeSearch$1</td>
+    <td class="coverageStat"/>
+  </tr>
+  <tr>
+    <td class="name">SearchViewModel$favoriteCocktail$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    62.5%
+  </span>
+  <span class="absValue">
+    (5/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (64/64)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">SearchViewModel$fetchSearchData$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (24/24)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">SearchViewModel$fetchSearchData$1$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (12/12)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    65.4%
+  </span>
+  <span class="absValue">
+    (17/26)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (23/23)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    96.4%
+  </span>
+  <span class="absValue">
+    (239/248)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp.ui.search
+&nbsp;
+&nbsp;import androidx.lifecycle.MutableLiveData
+&nbsp;import androidx.lifecycle.ViewModel
+&nbsp;import androidx.lifecycle.viewModelScope
+&nbsp;import com.example.cocktailsdbapp.database.RoomCocktail
+&nbsp;import com.example.cocktailsdbapp.model.Cocktail
+&nbsp;import com.example.cocktailsdbapp.repository.CocktailsRepo
+&nbsp;import com.example.cocktailsdbapp.utils.markFavorites
+&nbsp;import com.example.cocktailsdbapp.utils.toCocktail
+&nbsp;import dagger.hilt.android.lifecycle.HiltViewModel
+&nbsp;import kotlinx.coroutines.Dispatchers
+&nbsp;import kotlinx.coroutines.Job
+&nbsp;import kotlinx.coroutines.flow.MutableStateFlow
+&nbsp;import kotlinx.coroutines.flow.debounce
+&nbsp;import kotlinx.coroutines.flow.distinctUntilChanged
+&nbsp;import kotlinx.coroutines.launch
+&nbsp;import javax.inject.Inject
+&nbsp;
+&nbsp;@HiltViewModel
+<b class="fc">&nbsp;class SearchViewModel @Inject constructor(private val cocktailsRepo: CocktailsRepo): ViewModel() {</b>
+&nbsp;
+&nbsp;    private var searchJob: Job? = null
+&nbsp;
+<b class="fc">&nbsp;    var searchResultsData = MutableLiveData&lt;List&lt;Cocktail&gt;?&gt;()</b>
+&nbsp;
+<b class="fc">&nbsp;    private val searchQueryFlow = MutableStateFlow(&quot;&quot;)</b>
+&nbsp;
+&nbsp;    fun setSearchQuery(query: String) {
+&nbsp;        // Update the search query in the flow
+<b class="fc">&nbsp;        searchQueryFlow.value = query</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    fun fetchSearchData(userEmail: String) {
+&nbsp;        // Cancel the previous search job if it exists
+<b class="pc">&nbsp;        searchJob?.cancel()</b>
+&nbsp;
+&nbsp;        // Start a new search job with debounce effect
+<b class="fc">&nbsp;        searchJob = viewModelScope.launch {</b>
+<b class="fc">&nbsp;            searchQueryFlow</b>
+<b class="fc">&nbsp;                .debounce(700)</b>
+<b class="fc">&nbsp;                .distinctUntilChanged()</b>
+<b class="pc">&nbsp;                .collect { query -&gt;</b>
+&nbsp;                    // Use the collected query for the search
+<b class="fc">&nbsp;                    executeSearch(userEmail, query)</b>
+&nbsp;                }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    private suspend fun executeSearch(userEmail: String, queryParam: String) {
+&nbsp;        try {
+<b class="pc">&nbsp;            val response = cocktailsRepo.getSearch(queryParam)</b>
+<b class="pc">&nbsp;            val favorites = cocktailsRepo.getFavorites(userEmail)</b>
+<b class="pc">&nbsp;            favorites?.map { it.toCocktail(true) }</b>
+<b class="fc">&nbsp;            if (response.drinks.isNullOrEmpty()) {</b>
+<b class="fc">&nbsp;                searchResultsData.postValue(null)</b>
+&nbsp;            } else {
+<b class="fc">&nbsp;                val processedResponse = response.markFavorites(favorites)</b>
+<b class="pc">&nbsp;                searchResultsData.postValue(processedResponse?.drinks)</b>
+&nbsp;            }
+&nbsp;        } catch (e: Exception) {
+&nbsp;            // Handle errors
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    fun favoriteCocktail(userEmail: String, cocktail: Cocktail) {
+<b class="fc">&nbsp;        viewModelScope.launch(Dispatchers.IO) {</b>
+<b class="pc">&nbsp;            val isFavorite = cocktailsRepo.findFavoriteCocktail(userEmail, cocktail.idDrink)</b>
+<b class="fc">&nbsp;            if(isFavorite != null) {</b>
+<b class="pc">&nbsp;                cocktailsRepo.removeFavorite(userEmail, cocktail.idDrink)</b>
+&nbsp;            } else {
+<b class="pc">&nbsp;                cocktailsRepo.insertCocktail(userEmail, RoomCocktail(cocktail.strDrink, cocktail.strDrinkThumb, cocktail.idDrink))</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>

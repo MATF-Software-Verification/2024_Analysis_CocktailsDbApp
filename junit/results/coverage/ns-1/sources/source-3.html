@@ -1,0 +1,335 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>app Coverage Report > MainActivity</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope: app<span class="separator">|</span>    <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.cocktailsdbapp</a>
+</div>
+
+<h1>Coverage Summary for Class: MainActivity (com.example.cocktailsdbapp)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">MainActivity</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/14)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/34)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/50)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/301)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">MainActivity$disableBackButton$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MainActivity$inlined$sam$i$androidx_navigation_ui_AppBarConfiguration_OnNavigateUpListener$0</td>
+    <td class="coverageStat"/>
+  </tr>
+  <tr>
+    <td class="name">MainActivity$setupNavigation$$inlined$AppBarConfiguration$default$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/17)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/34)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/52)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/305)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example.cocktailsdbapp
+&nbsp;
+&nbsp;import androidx.appcompat.app.AppCompatActivity
+&nbsp;import android.os.Bundle
+&nbsp;import android.view.Menu
+&nbsp;import android.view.MenuItem
+&nbsp;import android.view.View
+&nbsp;import androidx.activity.OnBackPressedCallback
+&nbsp;import androidx.appcompat.widget.SearchView
+&nbsp;import androidx.appcompat.widget.Toolbar
+&nbsp;import androidx.navigation.NavController
+&nbsp;import androidx.navigation.findNavController
+&nbsp;import androidx.navigation.ui.AppBarConfiguration
+&nbsp;import androidx.navigation.ui.setupWithNavController
+&nbsp;import com.example.cocktailsdbapp.ui.search.SearchFragment
+&nbsp;import com.google.android.material.bottomnavigation.BottomNavigationView
+&nbsp;import dagger.hilt.android.AndroidEntryPoint
+&nbsp;
+&nbsp;@AndroidEntryPoint
+<b class="nc">&nbsp;class MainActivity : AppCompatActivity(), Communicator {</b>
+&nbsp;
+&nbsp;    private lateinit var navController: NavController
+&nbsp;    private var searchIcon: MenuItem? = null
+&nbsp;    private var searchInput: MenuItem? = null
+&nbsp;    private var micOn: MenuItem? = null
+&nbsp;    private var filter: MenuItem? = null
+&nbsp;
+&nbsp;    private var currentUser: String? = null
+&nbsp;    override fun onCreate(savedInstanceState: Bundle?) {
+<b class="nc">&nbsp;        super.onCreate(savedInstanceState)</b>
+<b class="nc">&nbsp;        setContentView(R.layout.activity_main)</b>
+<b class="nc">&nbsp;        setupNavigation()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+<b class="nc">&nbsp;        menuInflater.inflate(R.menu.toolbar_menu, menu)</b>
+<b class="nc">&nbsp;        searchIcon = menu?.findItem(R.id.action_search)</b>
+<b class="nc">&nbsp;        searchInput = menu?.findItem(R.id.action_search_input)</b>
+<b class="nc">&nbsp;        micOn = menu?.findItem(R.id.action_mic)</b>
+<b class="nc">&nbsp;        filter = menu?.findItem(R.id.action_filter)</b>
+<b class="nc">&nbsp;        return true</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {</b>
+<b class="nc">&nbsp;        R.id.action_filter -&gt; {</b>
+&nbsp;            // User chooses the &quot;Filter&quot; item. Open filter fragment.
+<b class="nc">&nbsp;            navController.navigate(R.id.action_global_category_fragment)</b>
+<b class="nc">&nbsp;            true</b>
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        R.id.action_search -&gt; {</b>
+&nbsp;            // User chooses the &quot;Search&quot; action. Open Search fragment.
+<b class="nc">&nbsp;            navController.navigate(R.id.action_global_search_fragment)</b>
+<b class="nc">&nbsp;            true</b>
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        R.id.action_mic -&gt; {</b>
+<b class="nc">&nbsp;            val navHostFragment = supportFragmentManager.fragments.first()</b>
+<b class="nc">&nbsp;            val wantedFragment = navHostFragment.childFragmentManager.fragments.first()</b>
+<b class="nc">&nbsp;            if (wantedFragment is SearchFragment) {</b>
+<b class="nc">&nbsp;                wantedFragment.startVoiceInput()</b>
+&nbsp;            }
+<b class="nc">&nbsp;            true</b>
+&nbsp;        }
+&nbsp;
+&nbsp;        else -&gt; {
+&nbsp;            // The user&#39;s action isn&#39;t recognized.
+&nbsp;            // Invoke the superclass to handle it.
+<b class="nc">&nbsp;            false</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    private fun setupNavigation() {
+<b class="nc">&nbsp;        navController = findNavController(R.id.nav_host_fragment)</b>
+<b class="nc">&nbsp;        val bottomNav = findViewById&lt;BottomNavigationView&gt;(R.id.bottomNavigationMenu)</b>
+<b class="nc">&nbsp;        val toolbar = findViewById&lt;Toolbar&gt;(R.id.toolbar)</b>
+&nbsp;
+<b class="nc">&nbsp;        val appBarConfiguration = AppBarConfiguration(</b>
+<b class="nc">&nbsp;            setOf(</b>
+<b class="nc">&nbsp;                R.id.navigation_cocktails, R.id.navigation_favorites, R.id.navigation_profile</b>
+&nbsp;            )
+&nbsp;        )
+<b class="nc">&nbsp;        toolbar.setupWithNavController(navController, appBarConfiguration)</b>
+<b class="nc">&nbsp;        setSupportActionBar(toolbar)</b>
+&nbsp;
+<b class="nc">&nbsp;        bottomNav.setupWithNavController(navController)</b>
+&nbsp;
+<b class="nc">&nbsp;        navController.addOnDestinationChangedListener { _, destination, _ -&gt;</b>
+<b class="nc">&nbsp;            if (destination.id == R.id.loginFragment || destination.id == R.id.registrationFragment) {</b>
+<b class="nc">&nbsp;                bottomNav.visibility = View.GONE</b>
+<b class="nc">&nbsp;                toolbar.visibility = View.GONE</b>
+&nbsp;            } else {
+<b class="nc">&nbsp;                bottomNav.visibility = View.VISIBLE</b>
+<b class="nc">&nbsp;                toolbar.visibility = View.VISIBLE</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun showSearchIconView(show: Boolean) {
+<b class="nc">&nbsp;        searchIcon?.isVisible = show</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun showSearchInputView(show: Boolean) {
+<b class="nc">&nbsp;        searchInput?.isVisible = show</b>
+<b class="nc">&nbsp;        micOn?.isVisible = show</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun showFilterView(show: Boolean) {
+<b class="nc">&nbsp;        filter?.isVisible = show</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun getCurrentLoggedInUser(): String? {
+<b class="nc">&nbsp;        return currentUser</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun setCurrentLoggedInUser(email: String?) {
+<b class="nc">&nbsp;        currentUser = email</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    override fun onSupportNavigateUp(): Boolean {
+<b class="nc">&nbsp;        return navController.navigateUp() || super.onSupportNavigateUp()</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    override fun disableBackButton() {
+<b class="nc">&nbsp;        onBackPressedDispatcher.addCallback(</b>
+<b class="nc">&nbsp;            this,</b>
+<b class="nc">&nbsp;            object : OnBackPressedCallback(true) {</b>
+&nbsp;                override fun handleOnBackPressed() {
+&nbsp;                    // this disables the Android native back button
+<b class="nc">&nbsp;                }</b>
+&nbsp;            }
+&nbsp;        )
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun getSearchInputViewReference(): SearchView? {
+<b class="nc">&nbsp;        return searchInput?.actionView as? SearchView</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-10-22 13:21</div>
+</div>
+</body>
+</html>
